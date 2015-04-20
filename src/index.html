@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+	<meta charset="UTF-8">
+	<title>Dispute resolution</title>
+	<link rel="stylesheet" href="adr.css">
+</head>
+<body>
+
+	<header>
+		<h1>Dispute resolution</h1>
+
+		<p>Use this tool to discover the options available to you in order to resolve a dispute.</p>
+	</header>
+
+	<main>
+		<form class="madlibs" action="#" method="get">
+			<p>
+				<label for="dispute-level">I have a</label> <input type="text" id="dispute-level" name="dispute-level" list="dispute-level-list" placeholder="dispute">
+				<label for="party-type">with</label> <input type="text" id="party-type" name="party-type" list="party-type-list" placeholder="party">
+				<label for="dispute-type">about</label> <input type="text" id="dispute-type" name="dispute-type" list="dispute-type-list" placeholder="topic">.
+			</p>
+		</form>
+	</main>
+
+	<!-- TODO where to get these lists from? -->
+	<datalist id="dispute-level-list">
+		<option>complaint</option>
+		<option>concern</option>
+		<option>conflict</option>
+		<option>disagreement</option>
+		<option>dispute</option>
+		<option>problem</option>
+	</datalist>
+
+	<datalist id="party-type-list">
+		<option>someone I supervise</option>
+		<option>my supervisor</option>
+		<option>someone on a similar level</option>
+		<option>a co-worker</option>
+		<option>a team member</option>
+		<option>a peer</option>
+		<option>my manager</option>
+	</datalist>
+
+	<datalist id="dispute-type-list">
+		<option>bullying</option>
+		<option>harassment</option>
+		<option>unfair treatment</option>
+		<option>discrimination</option>
+		<option>criticism</option>
+		<option>gossip</option>
+		<option>health and wellbeing</option>
+		<option>performance management</option>
+	</datalist>
+
+	<script src="adr.js"></script>
+
+</body>
+</html>
