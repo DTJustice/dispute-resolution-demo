@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+	<meta charset="UTF-8">
+	<title>Dispute resolution</title>
+	<link rel="stylesheet" href="adr.css">
+</head>
+<body>
+
+	<header>
+		<h1>Dispute resolution</h1>
+
+		<p>Use this tool to discover the options available to you in order to resolve a dispute.</p>
+	</header>
+
+	<main>
+		<form class="form" action="#" method="get">
+			<p>
+				<label for="story">Tell us your story:</label>
+				<textarea name="story" id="story" cols="30" rows="10" placeholder="I have a concern with my supervisor about bullying..."></textarea>
+			</p>
+		</form>
+	</main>
+
+	<ul id="keywords"></ul>
+
+	<!-- combobox values drawn from JSONP data -->
+	<datalist id="dispute-level-list"></datalist>
+	<datalist id="party-type-list"></datalist>
+	<datalist id="dispute-type-list"></datalist>
+
+	<script src="adr.js"></script>
+	<!-- JSONP data -->
+	<script src="data.js"></script>
+
+	<script>
+	var terms = Array.prototype.map.call( document.querySelectorAll( 'datalist > option' ), function( option ) {
+		return option.value;
+	});
+	document.querySelector( 'textarea' ).addEventListener( 'input', function( event ) {
+		var text = event.target.value;
+		var keywords = document.getElementById( 'keywords' );
+		var span = document.createElement( 'span' );
+
+		var foundTerms = terms.filter(function( term ) {
+			return ( new RegExp( '\\b' + term + '\\b', 'i' )).test( text );
+		});
+		keywords.innerHTML = foundTerms.map(function( term ) {
+			span.innerText = term;
+			return '<li>' + span.innerHTML + '</li>';
+		}).join( '' );
+	});
+	</script>
+
+</body>
+</html>

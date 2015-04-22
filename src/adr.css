@@ -18,3 +18,8 @@ input, select, textarea {
 	color: #0CF;
 	transition: width .2s ease-out;
 }
+
+.form label,
+.form input {
+	display: block;
+}

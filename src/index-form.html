@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+	<meta charset="UTF-8">
+	<title>Dispute resolution</title>
+	<link rel="stylesheet" href="adr.css">
+</head>
+<body>
+
+	<header>
+		<h1>Dispute resolution</h1>
+
+		<p>Use this tool to discover the options available to you in order to resolve a dispute.</p>
+	</header>
+
+	<main>
+		<form class="form" action="#" method="get">
+			<p>
+				<label for="dispute-level">I have a</label>
+				<input type="text" id="dispute-level" name="dispute-level" list="dispute-level-list" placeholder="dispute">
+				<label for="party-type">with</label>
+				<input type="text" id="party-type" name="party-type" list="party-type-list" placeholder="party">
+				<label for="dispute-type">about</label>
+				<input type="text" id="dispute-type" name="dispute-type" list="dispute-type-list" placeholder="topic">.
+			</p>
+		</form>
+	</main>
+
+	<!-- combobox values drawn from JSONP data -->
+	<datalist id="dispute-level-list"></datalist>
+	<datalist id="party-type-list"></datalist>
+	<datalist id="dispute-type-list"></datalist>
+
+	<script src="adr.js"></script>
+	<!-- JSONP data -->
+	<script src="data.js"></script>
+
+</body>
+</html>
