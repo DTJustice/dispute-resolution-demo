@@ -19,17 +19,17 @@ var getAlternativeDisputeResolutionData;
 
 		for ( var i = 0, len = d.length; i < len; i++ ) {
 			// ES6: let, exploder
-			var level = d[ i ].disputeType.split( /\s*;\s*/ );
-			var party = d[ i ].party.split( /\s*;\s*/ );
-			var type = d[ i ].disputeSubject.split( /\s*;\s*/ );
+			var disputeTypeValues = d[ i ].disputeType.split( /\s*;\s*/ );
+			var partyValues = d[ i ].party.split( /\s*;\s*/ );
+			var disputeSubjectValues = d[ i ].disputeSubject.split( /\s*;\s*/ );
 
-			disputeType = disputeType.concat( level.filter(function( item ) {
+			disputeType = disputeType.concat( disputeTypeValues.filter(function( item ) {
 				return disputeType.indexOf( item ) === -1;
 			}));
-			party = party.concat( party.filter(function( item ) {
+			party = party.concat( partyValues.filter(function( item ) {
 				return party.indexOf( item ) === -1;
 			}));
-			disputeSubject = disputeSubject.concat( type.filter(function( item ) {
+			disputeSubject = disputeSubject.concat( disputeSubjectValues.filter(function( item ) {
 				return disputeSubject.indexOf( item ) === -1;
 			}));
 		}
