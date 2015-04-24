@@ -6,12 +6,12 @@ var getAlternativeDisputeResolutionData;
 	'use strict';
 
 
-	var data, disputeLevel = [], partyType = [], disputeType = [];
+	var data, disputeType = [], party = [], disputeSubject = [];
 
 	getAlternativeDisputeResolutionData = function( d ) {
 		function createOptionsFromArray( item ) {
 			var span = document.createElement( 'span' );
-			span.innerText = item; // escape HTML
+			span.textContent = item; // escape HTML
 			return '<option>' + span.innerHTML + '</option>';
 		}
 
@@ -19,31 +19,31 @@ var getAlternativeDisputeResolutionData;
 
 		for ( var i = 0, len = d.length; i < len; i++ ) {
 			// ES6: let, exploder
-			var level = d[ i ].Level.split( /\s*;\s*/ );
-			var party = d[ i ].Party.split( /\s*;\s*/ );
-			var type = d[ i ].Dispute.split( /\s*;\s*/ );
+			var level = d[ i ].disputeType.split( /\s*;\s*/ );
+			var party = d[ i ].party.split( /\s*;\s*/ );
+			var type = d[ i ].disputeSubject.split( /\s*;\s*/ );
 
-			disputeLevel = disputeLevel.concat( level.filter(function( item ) {
-				return disputeLevel.indexOf( item ) === -1;
-			}));
-			partyType = partyType.concat( party.filter(function( item ) {
-				return partyType.indexOf( item ) === -1;
-			}));
-			disputeType = disputeType.concat( type.filter(function( item ) {
+			disputeType = disputeType.concat( level.filter(function( item ) {
 				return disputeType.indexOf( item ) === -1;
+			}));
+			party = party.concat( party.filter(function( item ) {
+				return party.indexOf( item ) === -1;
+			}));
+			disputeSubject = disputeSubject.concat( type.filter(function( item ) {
+				return disputeSubject.indexOf( item ) === -1;
 			}));
 		}
 
-		disputeLevel.sort();
-		partyType.sort();
 		disputeType.sort();
+		party.sort();
+		disputeSubject.sort();
 
 		// create option elements from arrays
 		// easy to do with angular scope variable and ng-repeat
 		// what about backbone? angular2?
-		document.getElementById( 'dispute-level-list' ).innerHTML = disputeLevel.map( createOptionsFromArray ).join( '' );
-		document.getElementById( 'party-type-list' ).innerHTML = partyType.map( createOptionsFromArray ).join( '' );
-		document.getElementById( 'dispute-type-list' ).innerHTML = disputeType.map( createOptionsFromArray ).join( '' );
+		document.getElementById( 'dispute-level-list' ).innerHTML = disputeType.map( createOptionsFromArray ).join( '' );
+		document.getElementById( 'party-type-list' ).innerHTML = party.map( createOptionsFromArray ).join( '' );
+		document.getElementById( 'dispute-type-list' ).innerHTML = disputeSubject.map( createOptionsFromArray ).join( '' );
 	};
 
 

@@ -17,9 +17,24 @@
 
 	<main data-ng-controller="resultsController">
 
+		<form class="madlibs" method="get">
+			<p>
+				<label for="dispute-type">I have a</label> <select id="dispute-type" data-ng-model="story.disputeType">
+					<option data-ng-repeat="option in model.disputeType">{{ option }}</option>
+				</select>
+				<label for="party-type">with</label> <select id="party-type" data-ng-model="story.party">
+					<option data-ng-repeat="option in model.party">{{ option }}</option>
+				</select>
+				<label for="dispute-subject">about</label> <select id="dispute-subject" data-ng-model="story.disputeSubject">
+					<option data-ng-repeat="option in model.disputeSubject">{{ option }}</option>
+				</select>.
+			</p>
+		</form>
+
+
 		<!-- TODO: this looks nice, but is it too bold? is that an over-the-shoulder privacy issue? (for workplace or family disputes?) -->
 		<blockquote>
-			<p>I have a <mark>concern</mark> with <mark>my supervisor</mark> about <mark>bullying</mark>.</p>
+			<p>I have a <mark>{{ story.disputeType }}</mark> with <mark>{{ story.party }}</mark> about <mark>{{ story.disputeSubject }}</mark>.</p>
 		</blockquote>
 
 		<!-- TODO continue the madlibs style here! -->
@@ -33,29 +48,57 @@
 		</fieldset>
 
 		<section class="self">
-			<h2>Self-resolution</h2>
+			<h2>Try resolving the {{ story.disputeType }} yourself</h2>
 			<ol class="results">
-				<li data-ng-repeat="result in results">
+				<li data-ng-repeat="result in results | filter:story | filter:{ resolution: 'Self' }">
 					<h3><a data-ng-href="{{ result.URL }}">{{ result.Title }}</a> ({{ result.Source }})</h3>
 					<p>{{ result.Description }}</p>
 					<dl>
-						<dt>Dispute types</dt>
-						<dd>{{ result.Dispute }}</dd>
+						<dt>Subject</dt>
+						<dd>{{ result.disputeSubject }}</dd>
 						<dt>Party</dt>
-						<dd>{{ result.Party }}</dd>
+						<dd>{{ result.party }}</dd>
 						<dt>Actions</dt>
-						<dd>{{ result.Resolution }}</dd>
+						<dd>{{ result.resolution }}</dd>
 					</dl>
 				</li>
 			</ol>
 		</section>
 
 		<section class="assisted">
-			<h2>Assisted dispute resolution</h2>
+			<h2>Assistance resolving your {{ story.disputeType }}</h2>
+			<ol class="results">
+				<li data-ng-repeat="result in results | filter:story | filter:{ resolution: 'Assisted' }">
+					<h3><a data-ng-href="{{ result.URL }}">{{ result.Title }}</a> ({{ result.Source }})</h3>
+					<p>{{ result.Description }}</p>
+					<dl>
+						<dt>Subject</dt>
+						<dd>{{ result.disputeSubject }}</dd>
+						<dt>Party</dt>
+						<dd>{{ result.party }}</dd>
+						<dt>Actions</dt>
+						<dd>{{ result.resolution }}</dd>
+					</dl>
+				</li>
+			</ol>
 		</section>
 
 		<section class="formal">
-			<h2>Formal dispute resolution</h2>
+			<h2>Formal resolution to your {{ story.disputeType }}</h2>
+			<ol class="results">
+				<li data-ng-repeat="result in results | filter:story | filter:{ resolution: 'Formal' }">
+					<h3><a data-ng-href="{{ result.URL }}">{{ result.Title }}</a> ({{ result.Source }})</h3>
+					<p>{{ result.Description }}</p>
+					<dl>
+						<dt>Subject</dt>
+						<dd>{{ result.disputeSubject }}</dd>
+						<dt>Party</dt>
+						<dd>{{ result.party }}</dd>
+						<dt>Actions</dt>
+						<dd>{{ result.resolution }}</dd>
+					</dl>
+				</li>
+			</ol>
 		</section>
 	</main>
 
