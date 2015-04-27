@@ -11,11 +11,6 @@ angular.module( 'disputeResolution', [] )
 .controller( 'resultsController', function( $scope ) {
 	'use strict';
 
-	$scope.story = {
-		disputeSubject: 'bullying',
-		disputeType: 'concern',
-		party: 'my supervisor'
-	};
 	$scope.results = cachedData;
 
 	$scope.model = {
@@ -31,16 +26,21 @@ angular.module( 'disputeResolution', [] )
 		var subject = cachedData[ i ].disputeSubject.split( /\s*;\s*/ );
 
 		$scope.model.disputeType = $scope.model.disputeType.concat( type.filter(function( item ) {
-			return $scope.model.disputeType.indexOf( item ) === -1;
+			return item.length && item !== 'undefined' && $scope.model.disputeType.indexOf( item ) === -1;
 		}));
 		$scope.model.party = $scope.model.party.concat( party.filter(function( item ) {
-			return $scope.model.party.indexOf( item ) === -1;
+			return item.length && item !== 'undefined' && $scope.model.party.indexOf( item ) === -1;
 		}));
 		$scope.model.disputeSubject = $scope.model.disputeSubject.concat( subject.filter(function( item ) {
-			return $scope.model.disputeSubject.indexOf( item ) === -1;
+			return item.length && item !== 'undefined' && $scope.model.disputeSubject.indexOf( item ) === -1;
 		}));
 	}
 
+	$scope.story = {
+		disputeSubject: $scope.model.disputeSubject[ 0 ],
+		disputeType: $scope.model.disputeType[ 0 ],
+		party: $scope.model.party[ 0 ]
+	};
 
 
 });
