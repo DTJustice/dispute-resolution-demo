@@ -51,5 +51,10 @@ blockquote mark {
 .checklist li {
 	display: block;
 	margin: .3em 0;
-	padding: 0;
+	padding: 0 0 0 1em;
+	position: relative;
+}
+.checklist li > input[type="checkbox"] {
+	position: absolute;
+	margin-left: -1em;
 }
