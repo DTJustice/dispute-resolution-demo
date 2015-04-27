@@ -38,4 +38,14 @@ getAlternativeDisputeResolutionData([{
 	Source: 'Queensland Government',
 	Title: 'Staff performance reviews',
 	Description: 'This guide explains the steps you need to take to run an effective performance review process.'
+}, {
+	Comments: '-',
+	URL: 'https://www.qld.gov.au/law/your-rights/workplace-rights/harassment-and-bullying/',
+	disputeType: 'concern; problem; complaint',
+	party: 'someone I supervise; my supervisor; someone on a similar level; a co-worker; a team member; a peer; my manager',
+	disputeSubject: 'bullying; harassment; unfair treatment; discrimination',
+	resolution: 'Self; Assisted; Formal',
+	Source: 'Queensland Government',
+	Title: 'Workplace bullying and harassment',
+	Description: 'What workplace bullying is, how to spot it, prevent it and make a complaint about it.'
 }]);
