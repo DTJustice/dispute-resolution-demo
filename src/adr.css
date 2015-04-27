@@ -41,3 +41,15 @@ blockquote mark {
 	color: #111;
 	background: transparent;
 }
+
+
+/* checklist */
+.checklist {
+	margin: 1em 0;
+	padding: 0;
+}
+.checklist li {
+	display: block;
+	margin: .3em 0;
+	padding: 0;
+}
