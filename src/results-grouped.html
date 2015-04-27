@@ -48,46 +48,12 @@
 			</ul>
 		</fieldset>
 
-		<section class="self">
-			<h2>Try resolving the {{ story.disputeType }} yourself</h2>
+		<section ng-repeat="resolution in ['Self', 'Assisted', 'Formal']" ng-class="{{ resolution }}">
+			<h2 ng-if="resolution === 'Self'">Try resolving the {{ story.disputeType }} yourself</h2>
+			<h2 ng-if="resolution === 'Assisted'">Assistance resolving your {{ story.disputeType }}</h2>
+			<h2 ng-if="resolution === 'Formal'">Formal resolution to your {{ story.disputeType }}</h2>
 			<ol class="results">
-				<li data-ng-repeat="result in results | filter:story | filter:{ resolution: 'Self' }">
-					<h3><a data-ng-href="{{ result.URL }}">{{ result.Title }}</a> ({{ result.Source }})</h3>
-					<p>{{ result.Description }}</p>
-					<dl>
-						<dt>Subject</dt>
-						<dd>{{ result.disputeSubject }}</dd>
-						<dt>Party</dt>
-						<dd>{{ result.party }}</dd>
-						<dt>Actions</dt>
-						<dd>{{ result.resolution }}</dd>
-					</dl>
-				</li>
-			</ol>
-		</section>
-
-		<section class="assisted">
-			<h2>Assistance resolving your {{ story.disputeType }}</h2>
-			<ol class="results">
-				<li data-ng-repeat="result in results | filter:story | filter:{ resolution: 'Assisted' }">
-					<h3><a data-ng-href="{{ result.URL }}">{{ result.Title }}</a> ({{ result.Source }})</h3>
-					<p>{{ result.Description }}</p>
-					<dl>
-						<dt>Subject</dt>
-						<dd>{{ result.disputeSubject }}</dd>
-						<dt>Party</dt>
-						<dd>{{ result.party }}</dd>
-						<dt>Actions</dt>
-						<dd>{{ result.resolution }}</dd>
-					</dl>
-				</li>
-			</ol>
-		</section>
-
-		<section class="formal">
-			<h2>Formal resolution to your {{ story.disputeType }}</h2>
-			<ol class="results">
-				<li data-ng-repeat="result in results | filter:story | filter:{ resolution: 'Formal' }">
+				<li data-ng-repeat="result in results | filter:story | filter:{ resolution: resolution }">
 					<h3><a data-ng-href="{{ result.URL }}">{{ result.Title }}</a> ({{ result.Source }})</h3>
 					<p>{{ result.Description }}</p>
 					<dl>
