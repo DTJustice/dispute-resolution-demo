@@ -58,3 +58,38 @@ blockquote mark {
 	position: absolute;
 	margin-left: -1em;
 }
+
+
+.description {
+	display: block;
+}
+
+
+/* tags */
+.tag {
+	display: inline-block;
+	border-radius: 3px;
+	background: #aaa;
+	color: #fafafa;
+	padding: .2em 1em;
+	box-sizing: border-box;
+}
+.tag.guidelines {
+	background: #fafafa;
+	color: #aaa;
+	border: 1px solid #aaa;
+}
+.tag.procedure {
+	background: green;
+}
+.tag.act {
+	background: #fafafa;
+	color: #333;
+	border: 1px solid #333;
+}
+.tag.form {
+	background: #333;
+}
+.tag.fact.sheet {
+	background: #09c;
+}

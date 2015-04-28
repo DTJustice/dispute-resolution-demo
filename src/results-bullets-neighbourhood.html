@@ -38,15 +38,6 @@
 			<p>I have a <mark>{{ story.disputeType | lowercase }}</mark> with <mark>{{ story.party | lowercase }}</mark> about <mark>{{ story.disputeSubject | lowercase }}</mark>.</p>
 		</blockquote>
 
-		<!-- TODO continue the madlibs style here! -->
-		<fieldset>
-			<legend>You should try to resolve the issue yourself.</legend>
-			<ul>
-				<li><input type="radio" name="self" id="self-yes" value="yes"><label for="self-yes">I have tried to—it didn't work</label></li>
-				<li><input type="radio" name="self" id="self-fear" value="fear"><label for="self-fear">I don't think I can</label></li>
-				<li><input type="radio" name="self" id="self-no" value="no"><label for="self-no">Show me some tips please</label></li>
-			</ul>
-		</fieldset>
 
 		<section data-ng-repeat="resolution in ['Self', 'Assisted', 'Formal']" data-ng-class="{{ resolution }}">
 			<h2 data-ng-if="resolution === 'Self'">Try resolving the {{ story.disputeType | lowercase }} yourself</h2>
@@ -55,9 +46,11 @@
 			<ul class="checklist">
 				<li data-ng-repeat="result in results | filter:story | filter:{ resolution: resolution }">
 					<input type="checkbox">
-					<a data-ng-href="{{ result.URL }}">{{ result.URL }}</a>
+					<a data-ng-href="{{ result.URL }}">{{ result.Title || result.URL }}</a>
+					<small data-ng-if="result.format">({{ result.format }})</small>
+					<small data-ng-if="result.documentType" class="tag" data-ng-class="result.documentType">{{ result.documentType }}</small>
+					<small class="description">{{ result.Description || result.Purpose }}</small>
 <!--
-					<p>{{ result.Description }}</p>
 					<dl>
 						<dt>Subject</dt>
 						<dd>{{ result.disputeSubject }}</dd>
@@ -85,7 +78,7 @@
 	</aside>
 
 	<script src="angular-adr.js"></script>
-	<script src="neighbourhood-data.js"></script>
+	<script src="neighbourhood-data-extras.js"></script>
 
 </body>
 </html>
