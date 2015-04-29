@@ -163,7 +163,10 @@ getAlternativeDisputeResolutionData([{
     "Source": "Unknown",
     "Comments": "QCAT info on general debt disputes - which covers some dividing fence disputes"
 }, {
-    "URL": "http://www.hpw.qld.gov.au/construction/BuildingPlumbing/PoolSafety/PoolFencesSafetyBarriers/Pages/DividingFences.aspx ",
+    "Title": "Dividing fences",
+	"Description": "Recent amendments to the Building Act 1975 (BA) aim to facilitate a common-sense approach to fencing work such as encouraging agreements between neighbours and 'like for like' replacement of fences.",
+	"documentType": "guidelines",
+	"URL": "http://www.hpw.qld.gov.au/construction/BuildingPlumbing/PoolSafety/PoolFencesSafetyBarriers/Pages/DividingFences.aspx ",
     "disputeType": "Concern;Question;Problem;",
     "party": "Neighbour;Neighbour next door;",
     "disputeSubject": "Fences;",
@@ -171,14 +174,21 @@ getAlternativeDisputeResolutionData([{
     "Source": "Unknown",
     "Comments": "HPW info on dividing fences which are pool fences - links to forms and fact sheets"
 }, {
+	"Title": "Fences - Queensland Neighbourhood Disputes",
+	"Description": "While neighbours generally live peacefully side-by-side, one of the most common causes of disagreement is over dividing fences. A dividing fence dispute can arise where neighbours disagree about the design, construction or maintenance of the fence.",
+	"documentType": "guidelines",
     "URL": "http://www.qldneighbourhoods.com/fences.html",
     "disputeType": "Question;",
     "party": "Neighbour;Neighbour next door;",
     "disputeSubject": "Fences;",
     "resolution": "Self Resolution;Assisted Resolution;Formal Resolution;",
-    "Source": "Unknown",
+    "Publisher": "Queensland Neighbourhood Disputes",
+    "Source": "Queensland Neighbourhood Disputes",
     "Comments": "Non-government - page by Queensland Association of Independent Legal Services (QAILS)"
 }, {
+	"Title": "Talk to your neighbour - Queensland Neighbourhood Disputes",
+	"Description": "The best way to resolve a dispute with your neighbour will always be through talking to them face-to-face.  The chance of resolving a dispute at a face-to-face meeting is much higher.",
+	"documentType": "instruction",
     "URL": "http://www.qldneighbourhoods.com/talk-to-your-neighbour.html",
     "disputeType": "Question;Problem;Issue;",
     "party": "Neighbour;Neighbour next door;",
@@ -187,6 +197,9 @@ getAlternativeDisputeResolutionData([{
     "Source": "Unknown",
     "Comments": "QAILS page - Generic info on avoiding and resolving disputes - relevant across range of neighbour issues"
 }, {
+	"Title": "What do I do if my neighbour approaches me about a dividing fence issue? - Queensland Neighbourhood Disputes",
+	"Description": "These types of disputes may seem trivial, but if left unresolved the financial and emotional cost of seeking a remedy can be great. For this reason, if such a dispute does arise you and your neighbour should attempt to resolve the particular issues in a way that will keep you both on good terms.",
+	"documentType": "guidelines",
     "URL": "http://www.qldneighbourhoods.com/what-do-i-do-if-my-neighbour-approaches-me-about-a-dividing-fence-issue.html",
     "disputeType": "Problem;Question;Disagreement;Issue;",
     "party": "Neighbour;Neighbour next door;",
@@ -203,6 +216,9 @@ getAlternativeDisputeResolutionData([{
     "Source": "Unknown",
     "Comments": "QAILS page - provides a template for writing to your neighbour about a fence (and other issues)"
 }, {
+	"Title": "Mediation - Queensland Neighbourhood Disputes",
+	"Description": "If you were unable to resolve the dispute by talking to your neighbour directly, but your neighbour is open to reaching an agreement, you could suggest to your neighbour that you attend mediation.",
+	"documentType": "guidelines",
     "URL": "http://www.qldneighbourhoods.com/mediation.html",
     "disputeType": "Disagreement;Concern;Issue;Conflict;",
     "party": "Neighbour;Neighbour next door;",
@@ -211,14 +227,22 @@ getAlternativeDisputeResolutionData([{
     "Source": "Unknown",
     "Comments": "QAILS page - general information on mediation - provides DRB and YRCL links"
 }, {
+	"Title": "Dividing Fences",
+	"Description": "A self-help kit about the law of building and maintaining fences between neighbours",
+	"documentType": "guidelines",
+	"format": "PDF",
     "URL": "https://caxton.org.au/pdfs/Dividing%20Fences%20kit%202013.pdf",
     "disputeType": "Problem;Issue;Question;Dispute;Disagreement;",
-    "party": " ;",
-    "disputeSubject": " ;",
-    "resolution": " ;",
+    "party": "Neighbour;Neighbour next door",
+    "disputeSubject": "",
+    "resolution": "",
     "Source": "Unknown",
+	"Publisher": "Caxton Legal Centre Inc.",
     "Comments": "Caxton Legal Centre information kit - Dividing fences - A self-help kit about the law of building and maintaining fences between neighbours. Fees are out of date - limited value"
 }, {
+	"Title": "Your responsibility as a fence owner",
+	"Description": "Your rights and responsibilities over a dividing fence between yours and your neighbour’s property.",
+	"documentType": "guidelines",
     "URL": "https://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/avoiding-fence-tree-and-building-disputes/your-responsibility-as-a-fence-owner/",
     "disputeType": "Question;",
     "party": "Neighbour;Neighbour next door;",
@@ -227,6 +251,9 @@ getAlternativeDisputeResolutionData([{
     "Source": "Unknown",
     "Comments": "Retaining walls subheading in page - would require anchor"
 }, {
+	"Title": "Avoiding building disputes",
+	"Description": "To avoid building disputes it is important to work out all details before the building work begins.",
+	"documentType": "guidelines",
     "URL": "http://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/avoiding-fence-tree-and-building-disputes/avoiding-building-disputes/",
     "disputeType": "Question;",
     "party": "Neighbour;Neighbour next door;",
@@ -235,44 +262,62 @@ getAlternativeDisputeResolutionData([{
     "Source": "Unknown",
     "Comments": "Retaining walls subheading in page - would require anchor"
 }, {
-    "URL": "http://www.legalaid.qld.gov.au/legalinformation/livinginthecommunity/Neighbourhood/Pages/Fencesandretainingwalls.aspx#Top",
+    "Title": "Fences and retaining walls",
+	"Description": "You may need legal advice if you: have questions about a dividing fence, need help with your rights concerning a retaining wall.",
+	"documentType": "guidelines",
+	"URL": "http://www.legalaid.qld.gov.au/legalinformation/livinginthecommunity/Neighbourhood/Pages/Fencesandretainingwalls.aspx#Top",
     "disputeType": "Question;Dispute;Conflict;",
     "party": "Neighbour;Neighbour next door;",
     "disputeSubject": "Retaining walls;",
     "resolution": "Formal Resolution;",
     "Source": "Unknown",
+	"Publisher": "Legal Aid Queensland",
     "Comments": "Legal Aid - no legal advice offered - but does contain reference to complex laws and getting independent legal advice"
 }, {
     "URL": "http://www.qldneighbourhoods.com/a-retaining-wall-or-a-wall-that-is-part-of-a-house-garage-or-other-building.html",
-    "disputeType": " ;",
+    "disputeType": "guidelines",
     "party": "Neighbour;Neighbour next door;",
     "disputeSubject": "Retaining walls;",
     "resolution": "Formal Resolution;",
     "Source": "Unknown",
     "Comments": "comments"
 }, {
-    "URL": "http://sskb.com.au/body-corporate-strata-services/car-parking-disputes-commissioners-order/",
+    "Title": "Car parking disputes - Adjudicators order",
+	"Description": "Car parking is quite possibly one of the single, most hotly debated topics in strata. This contentious issue often presents many challenges to both residents and visitors alike.",
+	"documentType": "guidelines",
+	"URL": "http://sskb.com.au/body-corporate-strata-services/car-parking-disputes-commissioners-order/",
     "disputeType": "Question;Dispute;Conflict;",
     "party": "Neighbour;Neighbour next door;Neighbour;Neighbour in my building;Body corporate(!);Lot owner;",
     "disputeSubject": "Parking;",
     "resolution": "Formal Resolution;",
     "Source": "Unknown",
+	"Publisher": "SSKB",
     "Comments": "Many body corporate managers' websites deal with car parking disputes within bodies corporate. This is just one example. "
 }, {
+	"Title": "Illegal and dangerous parking",
+	"Description": "Parking rules and regulations are used throughout Brisbane to maintain the safety of all road users and pedestrians and also to ensure that street parking is available for all to use. An illegally or dangerously parked vehicle, is any vehicle parked outside of Brisbane City Council&#039;s parking rules and regulations or any vehicle that maybe creating a public safety problem.",
+	"documentType": "guidelines",
+	"jurisdiction": "Brisbane, Queensland, Australia",
     "URL": "http://www.brisbane.qld.gov.au/traffic-transport/parking-permits/parking-rules/illegal-dangerous-parking",
     "disputeType": "Question;Dispute;Conflict;",
     "party": "Neighbour;Someone in my neighbourhood;Neighbour next door;Neighbour in my street;",
     "disputeSubject": "Parking;",
     "resolution": "Formal Resolution;",
     "Source": "Unknown",
+	"Publisher": "Brisbane City Council",
     "Comments": "Gives neighbour an avenue to complain/report parking issues"
 }, {
-    "URL": "http://www.problemneighbours.co.uk/parking-disputes.html",
+    "Title": "Parking Disputes Between Neighbours",
+	"Description": "Common courtesy and mutual respect should determine parking policies on public highways in residential areas, but it’s important to know the law with regard to the Highway Code.",
+	"documentType": "guidelines",
+	"jurisdiction": "Other",
+	"URL": "http://www.problemneighbours.co.uk/parking-disputes.html",
     "disputeType": "Question;Dispute;Complaint;",
     "party": "Neighbour;Someone in my neighbourhood;Neighbour next door;Neighbour in my building;",
     "disputeSubject": "Parking;",
     "resolution": "Self Resolution;",
     "Source": "Unknown",
+	"Publisher": "Problem Neighbours",
     "Comments": "Uk website which offers a few self help tips"
 }, {
     "URL": "http://www.legalaid.qld.gov.au/legalinformation/livinginthecommunity/Neighbourhood/Pages/Complaints-noisewatersmellsandfire.aspx",
@@ -323,6 +368,9 @@ getAlternativeDisputeResolutionData([{
     "Source": "Unknown",
     "Comments": "General screen with tabs to select appropriate referal, complaint about noisy neighbours, neighbourhood watch and dogs."
 }, {
+	"Title": "Noise",
+	"Description": "Information about noise exemptions and how to report noise pollution.",
+	"documentType": "guidelines",
     "URL": "http://www.qld.gov.au/environment/pollution/pollution-management/noise/ ",
     "disputeType": "Question;Concern;Issue;",
     "party": "Neighbour;Someone in my neighbourhood;Neighbour in my street;Neighbour in my building;Neighbour next door;",
@@ -339,27 +387,40 @@ getAlternativeDisputeResolutionData([{
     "Source": "Unknown",
     "Comments": "Complaints about noise, water, smells and fire. General legal information "
 }, {
+	"Title": "Noise/Party Complaint Online Form",
+	"Description": "Only use this on-line service if there is excessive noise happening now, and you know where the noise is coming from",
+	"documentType": "form",
     "URL": "https://www.police.qld.gov.au/apps/reports/noiseComplaint",
     "disputeType": "Complaint;",
     "party": "Neighbour;Someone in my neighbourhood;Neighbour next door;Neighbour in my street;Neighbour in my building;",
     "disputeSubject": "Noise;",
     "resolution": "Formal Resolution;",
     "Source": "Unknown",
+	"Publisher": "Queensland Police",
     "Comments": "Online Noise/Party Complaint Online form for QPS"
 }, {
+	"Title": "Noise/Party Complaint Online Form",
+	"Description": "Only use this on-line service if there is excessive noise happening now, and you know where the noise is coming from",
+	"documentType": "form",
     "URL": "https://www.police.qld.gov.au/apps/reports/noiseComplaint",
     "disputeType": "Problem;Question;Concern;",
     "party": "Neighbour;Someone in my neighbourhood;Neighbour next door;Neighbour in my street;Neighbour in my building;",
     "disputeSubject": "Noise;",
     "resolution": "Assisted Resolution;",
     "Source": "Unknown",
+	"Publisher": "Queensland Police",
     "Comments": "QPS Noisy Parties: What you need to know and Template for notifying your neighbours of parties."
 }, {
+	"Title": "Acceptable noise levels and complaints",
+	"Description": "Noise can disrupt sleep and interfere with daily activities. If loud enough, it can also have a negative impact on people's health.",
+	"documentType": "guidelines",
     "URL": "http://www.brisbane.qld.gov.au/laws-permits/complaints-fines/noise-air-light-water-complaints/noise-restrictions-complaints/acceptable-noise-levels-complaints",
     "disputeType": "Complaint;Question;",
     "party": "Neighbour;Someone in my neighbourhood;Neighbour next door;Neighbour in my street;Neighbour in my building;;",
     "disputeSubject": "Noise;;",
     "resolution": "Formal Resolution;",
+	"Publisher": "Brisbane City Council",
+	"jurisdiction": "Brisbane",
     "Source": "Unknown",
     "Comments": "comments"
 }]);
