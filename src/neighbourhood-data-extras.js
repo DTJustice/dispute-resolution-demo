@@ -275,7 +275,8 @@ getAlternativeDisputeResolutionData([{
     "Comments": "Legal Aid - no legal advice offered - but does contain reference to complex laws and getting independent legal advice"
 }, {
     "URL": "http://www.qldneighbourhoods.com/a-retaining-wall-or-a-wall-that-is-part-of-a-house-garage-or-other-building.html",
-    "disputeType": "guidelines",
+    "documentType": "guidelines",
+    "disputeType": "",
     "party": "Neighbour;Neighbour next door;",
     "disputeSubject": "Retaining walls;",
     "resolution": "Formal Resolution;",
