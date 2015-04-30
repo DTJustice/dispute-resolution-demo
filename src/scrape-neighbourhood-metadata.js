@@ -75,16 +75,18 @@ records.forEach(function( record, i ) {
 	// open the page
 	casper.thenOpen( record.URL, function( response ) {
 		casper.echo( 'parsing ' + ( i + 1 ) + '/' + len + ': ' + record.URL + '…' );
-		// grab metadata
-		// record.http = response;
-		record.title = parseTitle( this.getTitle() );
+		// sanity check the URL
+		if ( record.URL === response.url ) {
+			// record.httpResponse = response;
+			// grab metadata
+			record.Title = parseTitle( this.getTitle() );
+			record.Description = this.getElementAttribute( 'meta[name="DCTERMS.description"]', 'content' ) || this.getElementAttribute( 'meta[name="DC.description"]', 'content' ) || this.getElementAttribute( 'meta[name="description"]', 'content' );
+			record.Publisher = parsePublisher( this.getElementAttribute( 'meta[name="DCTERMS.Publisher"]', 'content' ) || this.getElementAttribute( 'meta[name="DC.Publisher"]', 'content' ));
+			record.documentType = this.getElementAttribute( 'meta[name="AGLSTERMS.documentType"]', 'content' ) || inferDocumentType( record, response );
+		}
 		record.format = inferFormat( record, response );
-		record.description = this.getElementAttribute( 'meta[name="DCTERMS.description"]', 'content' ) || this.getElementAttribute( 'meta[name="DC.description"]', 'content' ) || this.getElementAttribute( 'meta[name="description"]', 'content' );
-		record.documentType = this.getElementAttribute( 'meta[name="AGLSTERMS.documentType"]', 'content' ) || inferDocumentType( record, response );
 		record.jurisdiction = inferJurisdiction( records[ 0 ].URL );
-		record.Publisher = parsePublisher( this.getElementAttribute( 'meta[name="DCTERMS.Publisher"]', 'content' ) || this.getElementAttribute( 'meta[name="DC.Publisher"]', 'content' ));
-
-		require( 'fs' ).write( filename, JSON.stringify( record, null, '\t' ), 'a' );
+		require( 'fs' ).write( filename, ( i > 0 ? ', ' : '' ) + JSON.stringify( record, null, '\t' ), 'a' );
 	});
 });
 

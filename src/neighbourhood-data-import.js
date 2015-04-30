@@ -24,14 +24,14 @@
         "disputeType": "Question;Concern;Problem;Issue;",
         "party": "Neighbour;Neighbour next door;",
         "disputeSubject": "Fences;",
-        "resolution": "Self Resolution;Assited Resolution;",
+        "resolution": "Self Resolution;Assisted Resolution;",
         "Comments": "Avoiding disputes about fences"
     }, {
         "URL": "http://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/resolving-tree-and-fence-disputes/step-by-step-guide-to-resolving-tree-and-fence-disputes/",
         "disputeType": "Concern;Problem;Disagreement;Complaint;Conflict;Dispute;",
         "party": "Neighbour;Neighbour next door;",
         "disputeSubject": "Fences;",
-        "resolution": "Self Resolution;Assited Resolution;Formal Resolution",
+        "resolution": "Self Resolution;Assisted Resolution;Formal Resolution",
         "Comments": "Step by step guide to resolving tree and fence disputes"
     }, {
         "URL": "http://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/ways-to-approach-your-neighbour/",
@@ -45,49 +45,49 @@
         "disputeType": "Problem;Disagreement;Conflict;Issue;Dispute;Complaint;",
         "party": "Neighbour;Neighbour next door;",
         "disputeSubject": "Fences;",
-        "resolution": "Self Resolution;Assited Resolution;",
+        "resolution": "Self Resolution;Assisted Resolution;",
         "Comments": "Neighbourhood mediation"
     }, {
         "URL": "https://www.legislation.qld.gov.au/LEGISLTN/CURRENT/N/NeighDisputesDFTA11.pdf",
         "disputeType": "Complaint;Question;",
         "party": "Neighbour;Neighbour next door;",
         "disputeSubject": "Fences;",
-        "resolution": "Assited Resolution;Formal Resolution;",
+        "resolution": "Assisted Resolution;Formal Resolution;",
         "Comments": "Direct link to NDR Act (Trees and Fences) - not sure if relevant - it is referenced in other pages"
     }, {
         "URL": "http://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/resolving-tree-and-fence-disputes/examples-of-dividing-fence-disputes/",
         "disputeType": "Question;Dispute;Issue;",
         "party": "Neighbour;Neighbour next door;",
         "disputeSubject": "Fences;",
-        "resolution": "Assited Resolution;Formal Resolution;",
+        "resolution": "Assisted Resolution;Formal Resolution;",
         "Comments": "Examples of dividing fence disputes"
     }, {
         "URL": "http://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/resolving-tree-and-fence-disputes/resolving-dividing-fence-disputes-with-qcat/",
         "disputeType": "Complaint;Dispute;",
         "party": "Neighbour;Neighbour next door;",
         "disputeSubject": "Fences;",
-        "resolution": "Formal Resolution;Assited Resolution;",
+        "resolution": "Formal Resolution;Assisted Resolution;",
         "Comments": "Resolving dividing fence disputes with QCAT"
     }, {
         "URL": "http://www.qcat.qld.gov.au/matter-types/dividing-fence-disputes",
         "disputeType": "Dispute;Complaint;Conflict;",
         "party": "Neighbour;Neighbour next door;",
         "disputeSubject": "Fences;",
-        "resolution": "Formal Resolution;Assited Resolution;",
+        "resolution": "Formal Resolution;Assisted Resolution;",
         "Comments": "QCAT landing page for fences - need to shift to YRCL if any info not available through YRCL existing link"
     }, {
         "URL": "http://www.qcat.qld.gov.au/__data/assets/pdf_file/0004/129577/Form-53-Application-for-minor-civil-dispute-dividing-fences.pdf",
         "disputeType": "Complaint;Conflict;Dispute;",
         "party": "Neighbour;Neighbour next door;",
         "disputeSubject": "Fences;",
-        "resolution": "Formal Resolution;Assited Resolution;",
+        "resolution": "Formal Resolution;Assisted Resolution;",
         "Comments": "QCAT form 53 - won't be in YRCL until late 2015"
     }, {
         "URL": "http://www.qcat.qld.gov.au/__data/assets/pdf_file/0005/129578/checklist-Form-53-Application-for-minor-civil-dispute-dividing-fences.pdf",
         "disputeType": "Complaint;Dispute;Conflict;",
         "party": "Neighbour;Neighbour next door;",
         "disputeSubject": "Fences;",
-        "resolution": "Formal Resolution;Assited Resolution;",
+        "resolution": "Formal Resolution;Assisted Resolution;",
         "Comments": "Checklist to support QCAT form 53 - unlikely to be needed once form 53 migrates to YRCL"
     }, {
         "URL": "http://www.qcat.qld.gov.au/matter-types/debt-disputes",
@@ -108,7 +108,7 @@
         "disputeType": "Question;",
         "party": "Neighbour;Neighbour next door;",
         "disputeSubject": "Fences;",
-        "resolution": "Self Resolution;Assited Resolution;Formal Resolution",
+        "resolution": "Self Resolution;Assisted Resolution;Formal Resolution",
         "Comments": "Non-government - page by Queensland Association of Independent Legal Services (QAILS)"
     }, {
         "URL": "http://www.qldneighbourhoods.com/talk-to-your-neighbour.html",
@@ -136,7 +136,7 @@
         "disputeType": "Disagreement;Concern;Issue;Conflict;",
         "party": "Neighbour;Neighbour next door;",
         "disputeSubject": "Fences;",
-        "resolution": "Assited Resolution;",
+        "resolution": "Assisted Resolution;",
         "Comments": "QAILS page - general information on mediation - provides DRB and YRCL links"
     }, {
         "URL": "https://caxton.org.au/pdfs/Dividing%20Fences%20kit%202013.pdf",
@@ -199,14 +199,14 @@
         "disputeType": "Complaint;Dispute;",
         "party": "Neighbour;Someone in my neighbourhood;Someone in my neighbourhood;Neighbour next door;Neighbour in my building;",
         "disputeSubject": "Rubbish bins;",
-        "resolution": "Self Resolution;Assited Resolution;",
+        "resolution": "Self Resolution;Assisted Resolution;",
         "Comments": "General nuisance, including smells created from rubbish"
     }, {
         "URL": "http://www.brisbane.qld.gov.au/laws-permits/local-laws/information-about-local-laws/neighbourhood-complaints",
         "disputeType": "Complaint;Dispute;",
         "party": "Neighbour;Someone in my neighbourhood;Neighbour next door;Neighbour in my street;",
         "disputeSubject": "Rubbish bins;Smells;Objects;",
-        "resolution": "Self Resolution;Assited Resolution;Formal Resolution",
+        "resolution": "Self Resolution;Assisted Resolution;Formal Resolution",
         "Comments": "Could cover any dispute with neighbours. Includes a link to DRB."
     }, {
         "URL": "http://www.brisbane.qld.gov.au/environment-waste/rubbish-tips-bins/rubbish-collections/bin-collections",
@@ -227,7 +227,7 @@
         "disputeType": "Complaint;",
         "party": "Neighbour;Someone in my neighbourhood;Neighbour in my street;Neighbour next door;Neighbour in my building;",
         "disputeSubject": "Noise;",
-        "resolution": "Formal Resolution;Assited Resolution;",
+        "resolution": "Formal Resolution;Assisted Resolution;",
         "Comments": "Online Complaint tool for loud music, parties, street racing and burnouts. Referres to Police, DRC, Dpt. Transport and Main Roads, and Liquor and Gaming"
     }, {
         "URL": "http://www.qld.gov.au/law/housing-and-neighbours/noise-and-crime-in-the-neighbourhood/",
@@ -248,7 +248,7 @@
         "disputeType": "Complaint;Issue;Problem;Question;",
         "party": "Neighbour;Someone in my neighbourhood;Neighbour next door;Neighbour in my building;Neighbour in my street;",
         "disputeSubject": "Noise;Dogs;Smells;",
-        "resolution": "Assited Resolution;",
+        "resolution": "Assisted Resolution;",
         "Comments": "Complaints about noise, water, smells and fire. General legal information"
     }, {
         "URL": "https://www.police.qld.gov.au/apps/reports/noiseComplaint",
@@ -262,7 +262,7 @@
         "disputeType": "Problem;Question;Concern;",
         "party": "Neighbour;Someone in my neighbourhood;Neighbour next door;Neighbour in my street;Neighbour in my building;",
         "disputeSubject": "Noise;",
-        "resolution": "Assited Resolution;",
+        "resolution": "Assisted Resolution;",
         "Comments": "QPS Noisy Parties: What you need to know and Template for notifying your neighbours of parties."
     }, {
         "URL": "http://www.brisbane.qld.gov.au/laws-permits/complaints-fines/noise-air-light-water-complaints/noise-restrictions-complaints/acceptable-noise-levels-complaints",

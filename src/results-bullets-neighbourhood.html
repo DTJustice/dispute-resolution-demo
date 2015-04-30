@@ -55,7 +55,7 @@
 				<li data-ng-repeat="result in results | filter:story | filter:{ resolution: resolution } | filter:{ documentType: '!act' } : true">
 					<input type="checkbox">
 					<a data-ng-href="{{ result.URL }}">{{ result.Title || result.URL }}</a>
-					<small data-ng-if="result.format">({{ result.format }})</small>
+					<small data-ng-if="result.format === 'application/pdf'">(PDF)</small>
 					<small data-ng-if="result.documentType" class="tag" data-ng-class="result.documentType">{{ result.documentType }}</small>
 					<small class="description">{{ result.Description || result.Purpose }}</small>
 <!--
@@ -90,7 +90,7 @@
 	</footer>
 
 	<script src="angular-adr.js"></script>
-	<script src="neighbourhood-data-extras.js"></script>
+	<script src="neighbourhood-data-import-out.js"></script>
 
 </body>
 </html>
