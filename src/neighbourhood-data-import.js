@@ -1,4 +1,3 @@
-getAlternativeDisputeResolutionData(
     [{
         "URL": "http://www.justice.qld.gov.au/__data/assets/pdf_file/0007/180484/form-1-ndr.pdf",
         "disputeType": "Question;Concern;Problem;Issue;",
@@ -273,4 +272,3 @@ getAlternativeDisputeResolutionData(
         "resolution": "Formal Resolution;",
         "Comments": "Brisbane City Council clarification of complaints not handled by council and lodgin a complaint for nuisance issues."
     }]
-);
