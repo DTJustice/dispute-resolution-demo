@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+	<meta charset="UTF-8">
+	<title>Neighbourhood dispute resolution</title>
+	<link rel="stylesheet" href="adr.css">
+
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script> -->
+	<script src="angular.min.js"></script>
+</head>
+<body data-ng-app="disputeResolution" data-ng-controller="resultsController">
+
+	<header>
+		<p>HEADER</p>
+		<p>logo, links and breacrumb go here</p>
+	</header>
+
+	<nav>
+		<h2>Menu</h2>
+		<p>website menu goes here</p>
+	</nav>
+
+	<main>
+		<header>
+			<h1>Neighbourhood dispute resolution</h1>
+			<p>Use this tool to discover the options available to you in order to resolve a dispute.</p>
+		</header>
+
+		<form class="madlibs" method="get">
+			<p>
+				<label for="dispute-type">I have a</label> <select id="dispute-type" data-ng-model="story.disputeType">
+					<option data-ng-repeat="option in model.disputeType" value="{{ option }}">{{ option | lowercase }}</option>
+				</select>
+				<label for="party-type">with</label> <select id="party-type" data-ng-model="story.party">
+					<option data-ng-repeat="option in model.party" value="{{ option }}">{{ option | lowercase }}</option>
+				</select>
+				<label for="dispute-subject">about</label> <select id="dispute-subject" data-ng-model="story.disputeSubject">
+					<option data-ng-repeat="option in model.disputeSubject" value="{{ option }}">{{ option | lowercase }}</option>
+				</select>.
+			</p>
+		</form>
+
+
+		<!-- TODO: this looks nice, but is it too bold? is that an over-the-shoulder privacy issue? (for workplace or family disputes?) -->
+		<blockquote>
+			<p>I have a <mark>{{ story.disputeType | lowercase }}</mark> with <mark>{{ story.party | lowercase }}</mark> about <mark>{{ story.disputeSubject | lowercase }}</mark>.</p>
+		</blockquote>
+
+
+		<section data-ng-repeat="resolution in resolutions" data-ng-class="{{ resolution }}">
+			<h2 data-ng-if="resolution === 'Self'">Try resolving the {{ story.disputeType | lowercase }} yourself</h2>
+			<h2 data-ng-if="resolution === 'Assisted'">Assistance resolving your {{ story.disputeType | lowercase }}</h2>
+			<h2 data-ng-if="resolution === 'Formal'">Formal resolution to your {{ story.disputeType | lowercase }}</h2>
+			<ul class="checklist">
+				<li data-ng-repeat="result in results | filter:story | filter:{ resolution: resolution } | filter:{ documentType: '!act' } : true">
+					<input type="checkbox">
+					<a data-ng-href="{{ result.URL }}">{{ result.Title || result.URL }}</a>
+					<small data-ng-if="result.format === 'application/pdf'">(PDF)</small>
+					<small data-ng-if="result.documentType" class="tag" data-ng-class="result.documentType">{{ result.documentType }}</small>
+					<small class="description">{{ result.Description || result.Purpose }}</small>
+<!--
+					<dl>
+						<dt>Subject</dt>
+						<dd>{{ result.disputeSubject }}</dd>
+						<dt>Party</dt>
+						<dd>{{ result.party }}</dd>
+						<dt>Actions</dt>
+						<dd>{{ result.resolution }}</dd>
+					</dl>
+-->
+				</li>
+			</ul>
+		</section>
+	</main>
+
+
+	<aside>
+		<h2>Check the law</h2>
+		<ul>
+			<li data-ng-repeat="result in results | filter:story | filter:{ documentType: 'act' } : true">
+				<a data-ng-href="{{ result.URL }}">{{ result.Title }}</a>
+			</li>
+		</ul>
+	</aside>
+
+	<footer>
+		<p>page feedback and footer links go here</p>
+		<p>© The State of Queensland 1995–2015</p>
+		<p><a href="https://www.qld.gov.au">Queensland Government</a></p>
+	</footer>
+
+	<script src="reorder-angular-adr.js"></script>
+	<script src="neighbourhood-data-import-out.js"></script>
+
+</body>
+</html>
