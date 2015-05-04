@@ -5,6 +5,9 @@
 // 14th row is always blank
 // some data is spread over 2 columns for compact layout in the spreadsheet
 // first row is column headings
+document.addEventListener( 'DOMContentLoaded', function() {
+
+
 
 var records = [];
 
@@ -23,7 +26,8 @@ function newRecord( rowData ) {
 		disputeType: rowData[ 1 ],
 		party: rowData[ 2 ] + ';' + rowData[ 3 ],
 		disputeSubject: rowData[ 4 ] + ';' + rowData[ 5 ],
-		resolution: rowData[ 6 ]
+		resolution: rowData[ 6 ],
+		documentType: rowData[ 7 ]
 	};
 
 	return data;
@@ -51,6 +55,9 @@ function clean() {
 		Object.keys( record ).forEach(function( key ) {
 			record[ key ] = record[ key ].replace( /^\s+/, '' ).replace( /\s+$/, '' ).replace( /\s{2,}/g, ' ' );
 		});
+
+		// fix typo
+		record.resolution = record.resolution.replace( 'Assited', 'Assisted' );
 	});
 }
 
@@ -62,10 +69,24 @@ for ( i = 1, len = tr.length; i < len; i += 14 ) {
 
 	// skip blank rows (no URL)
 	if ( ! /^https?:/.test( rowData[ 0 ] )) {
-		break;
+		// catch copy/paste errors
+		if ( /https?:/.test( rowData[ 0 ] )) {
+			rowData[ 0 ] = rowData[ 0 ].replace( /^.*?http/, 'http' );
+		} else if ( /^www./.test( rowData[ 0 ] )) {
+			rowData[ 0 ] = 'http://' + rowData[ 0 ];
+
+		} else if ( ! /\S/.test( rowData[ 0 ] ) && /\S/.test( rowData[ 1 ] )) {
+			// missing URL
+			rowData[ 0 ] = '';
+
+		} else {
+			console.log( '-> skip', i, len, rowData[ 0 ] );
+			break;
+		}
 	}
 
 	// it is a new record
+	console.log( 'parsing', i, len, rowData[ 0 ] );
 	records.push(newRecord( rowData ));
 
 	// extra data from rows i + 1..7
@@ -98,6 +119,14 @@ for ( i = 1, len = tr.length; i < len; i += 14 ) {
 		rowData = Array.prototype.map.call( tr[ i + j ].querySelectorAll( 'td' ), tableText );
 		appendData( '', '', [ rowData[ 0 ], rowData[ 1 ]] );
 	}
+	// row 13 = description (sometimes omitted)
+	// look ahead
+	rowData = Array.prototype.map.call( tr[ i + 13 ].querySelectorAll( 'td' ), tableText );
+	if ( /^\s*Description:\s*$/.test( rowData[ 0 ] )) {
+		records.Description = rowData[ 1 ];
+		// skip this row on next pass
+		i++;
+	}
 }
 
 // log the final JSON output
@@ -105,5 +134,8 @@ clean();
 // console.log( JSON.stringify( records ));
 
 var code = document.createElement( 'pre' );
-code.textContent = JSON.stringify( records );
+code.textContent = JSON.stringify( records, null, '\t' );
 document.body.appendChild( code );
+
+
+});
