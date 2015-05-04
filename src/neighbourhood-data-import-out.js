@@ -5,6 +5,7 @@ getAlternativeDisputeResolutionData([{
 	"disputeSubject": "Fences;",
 	"resolution": "Self Resolution;",
 	"Comments": "Notice for urgent fencing contribution - option to link directly to form or to landing page on fence disputes. Not a lot of context for how this form is used despite its important role.",
+	"Title": "form 1 ndr",
 	"documentType": "form",
 	"format": "application/pdf",
 	"jurisdiction": "Queensland"
@@ -15,6 +16,7 @@ getAlternativeDisputeResolutionData([{
 	"disputeSubject": "Fences;",
 	"resolution": "Self Resolution;",
 	"Comments": "Notice for fencing contribution - option to link directly to form or to landing page on fence disputes. Not a lot of context for how this form is used despite its important role.",
+	"Title": "form 2 ndr",
 	"documentType": "form",
 	"format": "application/pdf",
 	"jurisdiction": "Queensland"
@@ -90,6 +92,7 @@ getAlternativeDisputeResolutionData([{
 	"disputeSubject": "Fences;",
 	"resolution": "Assisted Resolution;Formal Resolution;",
 	"Comments": "Direct link to NDR Act (Trees and Fences) - not sure if relevant - it is referenced in other pages",
+	"Title": "NeighDisputesDFTA11",
 	"documentType": "act",
 	"format": "application/pdf",
 	"jurisdiction": "Queensland"
@@ -139,6 +142,7 @@ getAlternativeDisputeResolutionData([{
 	"disputeSubject": "Fences;",
 	"resolution": "Formal Resolution;Assisted Resolution;",
 	"Comments": "QCAT form 53 - won't be in YRCL until late 2015",
+	"Title": "Form 53 Application for minor civil dispute dividing fences",
 	"documentType": "form",
 	"format": "application/pdf",
 	"jurisdiction": "Queensland"
@@ -149,6 +153,7 @@ getAlternativeDisputeResolutionData([{
 	"disputeSubject": "Fences;",
 	"resolution": "Formal Resolution;Assisted Resolution;",
 	"Comments": "Checklist to support QCAT form 53 - unlikely to be needed once form 53 migrates to YRCL",
+	"Title": "checklist Form 53 Application for minor civil dispute dividing fences",
 	"documentType": "form",
 	"format": "application/pdf",
 	"jurisdiction": "Queensland"
@@ -250,6 +255,7 @@ getAlternativeDisputeResolutionData([{
 	"disputeSubject": ";",
 	"resolution": ";",
 	"Comments": "Caxton Legal Centre information kit - Dividing fences - A self-help kit about the law of building and maintaining fences between neighbours. Fees are out of date - limited value",
+	"Title": "Dividing%20Fences%20kit%202013",
 	"documentType": "guidelines",
 	"format": "application/pdf",
 	"jurisdiction": "Queensland"

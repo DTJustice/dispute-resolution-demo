@@ -85,7 +85,9 @@ records.forEach(function( record, i ) {
 			record.documentType = this.getElementAttribute( 'meta[name="AGLSTERMS.documentType"]', 'content' ) || inferDocumentType( record, response );
 		} else {
 			// couldn't get a response
-			console.log( 'NO RESPONSE!', response.url );
+			console.log( '-> NO RESPONSE!', record.URL );
+			// infer title from filename, replace -_ with spaces and remove file extension
+			record.Title = record.URL.replace( /^.*\//, '' ).replace( /[-_]+/g, ' ' ).replace( /\.[^.]*$/, '' );
 			record.documentType = inferDocumentType( record, record );
 		}
 		record.format = inferFormat( record, response );
