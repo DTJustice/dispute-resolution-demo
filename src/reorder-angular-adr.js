@@ -48,6 +48,8 @@ angular.module( 'disputeResolution', [] )
 	$scope.$watch( 'story.disputeType', function() {
 		switch ( $scope.story.disputeType ) {
 		case 'Dispute':
+		case 'Conflict':
+		case 'Complaint':
 			$scope.resolutions = [ 'Assisted', 'Formal', 'Self' ];
 			break;
 		default:

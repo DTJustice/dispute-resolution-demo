@@ -68,10 +68,10 @@
 			</header>
 			<ul ng-show="! storyHistory[ resolution ].tried" class="resources">
 				<li data-ng-repeat="result in results | filter:story | filter:{ resolution: resolution } | filter: documentTypeFilter">
-					<a data-ng-href="{{ result.URL }}">{{ result.Title || result.URL }}</a>
+					<a data-ng-href="{{ result.URL }}">{{ result.Title || result.filename }}</a>
 					<small data-ng-if="result.format === 'application/pdf'">(PDF)</small>
 					<small data-ng-if="result.documentType" class="tag" data-ng-class="result.documentType">{{ result.documentType }}</small>
-					<small class="description">{{ result.Description || result.Purpose }}</small>
+					<small class="description">{{ result.Description || result.Purpose || result.Comments }}</small>
 <!--
 					<dl>
 						<dt>Subject</dt>
