@@ -42,5 +42,11 @@ angular.module( 'disputeResolution', [] )
 		party: $scope.model.party[ 0 ]
 	};
 
+	$scope.storyHistory = {
+		Self: { tried: false },
+		Assisted: { tried: false },
+		Formal: { tried: false }
+	};
+
 
 });
