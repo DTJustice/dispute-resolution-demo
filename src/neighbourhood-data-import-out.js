@@ -5,6 +5,7 @@ getAlternativeDisputeResolutionData([{
 	"disputeSubject": "Fences;",
 	"resolution": "Self Resolution;",
 	"Comments": "Notice for urgent fencing contribution - option to link directly to form or to landing page on fence disputes. Not a lot of context for how this form is used despite its important role.",
+	"documentType": "form",
 	"format": "application/pdf",
 	"jurisdiction": "Queensland"
 }, {
@@ -14,6 +15,7 @@ getAlternativeDisputeResolutionData([{
 	"disputeSubject": "Fences;",
 	"resolution": "Self Resolution;",
 	"Comments": "Notice for fencing contribution - option to link directly to form or to landing page on fence disputes. Not a lot of context for how this form is used despite its important role.",
+	"documentType": "form",
 	"format": "application/pdf",
 	"jurisdiction": "Queensland"
 }, {
@@ -75,6 +77,10 @@ getAlternativeDisputeResolutionData([{
 	"disputeSubject": "Fences;",
 	"resolution": "Self Resolution;Assisted Resolution;",
 	"Comments": "Neighbourhood mediation",
+	"Title": "Neighbourhood mediation",
+	"Description": "Free dispute resolution for neighbours, including how this type of mediation works and how to arrange mediation for neighbours",
+	"Publisher": null,
+	"documentType": "guidelines",
 	"format": "text/html",
 	"jurisdiction": "Queensland"
 }, {
@@ -84,6 +90,7 @@ getAlternativeDisputeResolutionData([{
 	"disputeSubject": "Fences;",
 	"resolution": "Assisted Resolution;Formal Resolution;",
 	"Comments": "Direct link to NDR Act (Trees and Fences) - not sure if relevant - it is referenced in other pages",
+	"documentType": "act",
 	"format": "application/pdf",
 	"jurisdiction": "Queensland"
 }, {
@@ -132,6 +139,7 @@ getAlternativeDisputeResolutionData([{
 	"disputeSubject": "Fences;",
 	"resolution": "Formal Resolution;Assisted Resolution;",
 	"Comments": "QCAT form 53 - won't be in YRCL until late 2015",
+	"documentType": "form",
 	"format": "application/pdf",
 	"jurisdiction": "Queensland"
 }, {
@@ -141,6 +149,7 @@ getAlternativeDisputeResolutionData([{
 	"disputeSubject": "Fences;",
 	"resolution": "Formal Resolution;Assisted Resolution;",
 	"Comments": "Checklist to support QCAT form 53 - unlikely to be needed once form 53 migrates to YRCL",
+	"documentType": "form",
 	"format": "application/pdf",
 	"jurisdiction": "Queensland"
 }, {
@@ -241,6 +250,7 @@ getAlternativeDisputeResolutionData([{
 	"disputeSubject": ";",
 	"resolution": ";",
 	"Comments": "Caxton Legal Centre information kit - Dividing fences - A self-help kit about the law of building and maintaining fences between neighbours. Fees are out of date - limited value",
+	"documentType": "guidelines",
 	"format": "application/pdf",
 	"jurisdiction": "Queensland"
 }, {
@@ -432,6 +442,10 @@ getAlternativeDisputeResolutionData([{
 	"disputeSubject": "Noise;Dogs;Smells;",
 	"resolution": "Assisted Resolution;",
 	"Comments": "Complaints about noise, water, smells and fire. General legal information",
+	"Title": "Complaints - noise, water, smells and fire",
+	"Description": null,
+	"Publisher": null,
+	"documentType": "guidelines",
 	"format": "text/html",
 	"jurisdiction": "Queensland"
 }, {

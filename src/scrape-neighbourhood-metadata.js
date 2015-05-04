@@ -33,7 +33,7 @@ function parseTitle( title ) {
 
 
 function inferDocumentType( record, response ) {
-	if ( /\bform\b/i.test( record.URL )) {
+	if ( /\bform\b/i.test( record.URL ) || /\bform\b/i.test( record.Title )) {
 		return 'form';
 	} else if ( /legislation\.qld\.gov\.au/.test( record.URL )) {
 		// other forms of legislation
@@ -75,14 +75,18 @@ records.forEach(function( record, i ) {
 	// open the page
 	casper.thenOpen( record.URL, function( response ) {
 		casper.echo( 'parsing ' + ( i + 1 ) + '/' + len + ': ' + record.URL + '…' );
-		// sanity check the URL
-		if ( record.URL === response.url ) {
+		// sanity check the URL (allow for trailing slash)
+		if ( response.url && record.URL.replace( / /g, '%20' ).replace( /\/$/, '' ) === response.url.replace( /\/$/, '' )) {
 			// record.httpResponse = response;
 			// grab metadata
 			record.Title = parseTitle( this.getTitle() );
 			record.Description = this.getElementAttribute( 'meta[name="DCTERMS.description"]', 'content' ) || this.getElementAttribute( 'meta[name="DC.description"]', 'content' ) || this.getElementAttribute( 'meta[name="description"]', 'content' );
 			record.Publisher = parsePublisher( this.getElementAttribute( 'meta[name="DCTERMS.Publisher"]', 'content' ) || this.getElementAttribute( 'meta[name="DC.Publisher"]', 'content' ));
 			record.documentType = this.getElementAttribute( 'meta[name="AGLSTERMS.documentType"]', 'content' ) || inferDocumentType( record, response );
+		} else {
+			// couldn't get a response
+			console.log( 'NO RESPONSE!', response.url );
+			record.documentType = inferDocumentType( record, record );
 		}
 		record.format = inferFormat( record, response );
 		record.jurisdiction = inferJurisdiction( records[ 0 ].URL );
