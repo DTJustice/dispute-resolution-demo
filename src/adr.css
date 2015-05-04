@@ -123,3 +123,30 @@ blockquote mark {
 .tag.fact.sheet {
 	background: #09c;
 }
+
+
+/* angular animations */
+
+.ng-hide:not(.ng-hide-animate) {
+    /* ensure visibility during the transition */
+    display: block !important; /* yes, important */
+}
+.resources {
+	speak: normal;
+	vertical-align: top;
+	opacity: 1;
+	transform-origin: 0 0;
+	transition:
+		opacity 0.3s ease,
+		transform 0.3s cubic-bezier(.2,.38,.72,1.3);
+}
+.resources.ng-hide {
+	display: block;
+	speak: none;
+	opacity: 0;
+	height: 0;
+	transform: scaleY(0);
+	transition:
+		opacity 0.1s ease,
+		transform 0.12s ease-out;
+}
