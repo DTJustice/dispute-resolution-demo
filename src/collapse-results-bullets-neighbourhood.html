@@ -67,7 +67,7 @@
 				<h2>Formal resolution to your {{ story.disputeType | lowercase }}</h2>
 			</header>
 			<ul ng-show="! storyHistory[ resolution ].tried" class="resources">
-				<li data-ng-repeat="result in results | filter:story | filter:{ resolution: resolution } | filter:{ documentType: '!act' } : true">
+				<li data-ng-repeat="result in results | filter:story | filter:{ resolution: resolution } | filter: documentTypeFilter">
 					<a data-ng-href="{{ result.URL }}">{{ result.Title || result.URL }}</a>
 					<small data-ng-if="result.format === 'application/pdf'">(PDF)</small>
 					<small data-ng-if="result.documentType" class="tag" data-ng-class="result.documentType">{{ result.documentType }}</small>
@@ -93,6 +93,15 @@
 		<ul>
 			<li data-ng-repeat="result in results | filter:story | filter:{ documentType: 'act' } : true">
 				<a data-ng-href="{{ result.URL }}">{{ result.Title }}</a>
+			</li>
+		</ul>
+	</aside>
+
+	<aside>
+		<h2>I want to see</h2>
+		<ul class="filter checklist">
+			<li data-ng-repeat="(tag, value) in resultFilter.documentType">
+				<input type="checkbox" data-ng-model="resultFilter.documentType[ tag ]" data-ng-checked="resultFilter.documentType[ tag ]" id="filter-{{ tag }}"><label class="tag" data-ng-class="tag" for="filter-{{ tag }}">{{ tag }}</label>
 			</li>
 		</ul>
 	</aside>

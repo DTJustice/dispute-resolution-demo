@@ -97,6 +97,7 @@ blockquote mark {
 
 /* tags */
 .tag {
+	font-size: .9rem;
 	display: inline-block;
 	border-radius: 3px;
 	background: #aaa;
@@ -122,6 +123,13 @@ blockquote mark {
 }
 .tag.fact.sheet {
 	background: #09c;
+}
+/* filters */
+.filter input:not([checked]) + label {
+	opacity: .5;
+}
+.filter input[checked] + label {
+	opacity: 1;
 }
 
 

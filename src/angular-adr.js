@@ -19,12 +19,26 @@ angular.module( 'disputeResolution', [] )
 		disputeSubject: []
 	};
 
+	// filters
+	$scope.resultFilter = {
+		documentType: {}
+	};
+	$scope.documentTypeFilter = function( record ) {
+		return record.documentType !== 'act' && $scope.resultFilter.documentType[ record.documentType ] === true;
+	};
+
 	for ( var i = 0, len = cachedData.length; i < len; i++ ) {
 		// ES6: let, exploder
 		var type = cachedData[ i ].disputeType.split( /\s*;\s*/ );
 		var party = cachedData[ i ].party.split( /\s*;\s*/ );
 		var subject = cachedData[ i ].disputeSubject.split( /\s*;\s*/ );
 
+		// collect all document types in use
+		if ( cachedData[ i ].documentType ) {
+			$scope.resultFilter.documentType[ cachedData[ i ].documentType ] = true;
+		}
+
+		// create lists of disputes, parties and topics
 		$scope.model.disputeType = $scope.model.disputeType.concat( type.filter(function( item ) {
 			return item.length && item !== 'undefined' && $scope.model.disputeType.indexOf( item ) === -1;
 		}));
