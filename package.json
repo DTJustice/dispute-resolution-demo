@@ -1,0 +1,16 @@
+{
+  "name": "online-dispute-resolution",
+  "version": "0.0.1-alpha.1",
+  "description": "an online tool to promote alternate pathways for customers seeking to resolve disputes in the Queensland justice system.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "demo": "git push github master:gh-pages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:benjaminsboyle/dispute-resolution.git"
+  },
+  "author": "Queensland Government",
+  "license": "BSD-3-clause"
+}
