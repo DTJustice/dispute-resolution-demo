@@ -51,6 +51,7 @@
 		<section data-ng-repeat="resolution in ['Self', 'Assisted', 'Formal']" data-ng-class="{{ resolution }}">
 			<header data-ng-if="resolution === 'Self'">
 				<h2>Try resolving the {{ story.disputeType | lowercase }} yourself</h2>
+				<p>Self resolution can be the fastest and cheapest way to resolve a {{ story.disputeType | lowercase }}.</p>
 				<div>
 					<input type="checkbox" id="tried-self" data-ng-model="storyHistory[ resolution ].tried">
 					<label for="tried-self">I have already tried to resolve this {{ story.disputeType | lowercase }} myself</label>
@@ -58,6 +59,7 @@
 			</header>
 			<header data-ng-if="resolution === 'Assisted'">
 				<h2>Assistance resolving your {{ story.disputeType | lowercase }}</h2>
+				<p>Mediation saves time, legal fees, and court costs for you and the community.</p>
 				<div>
 					<input type="checkbox" id="tried-assisted" data-ng-model="storyHistory[ resolution ].tried">
 					<label for="tried-assisted">We have tried assisted resolutions to this {{ story.disputeType | lowercase }}</label>
@@ -65,13 +67,14 @@
 			</header>
 			<header data-ng-if="resolution === 'Formal'">
 				<h2>Formal resolution to your {{ story.disputeType | lowercase }}</h2>
+				<p>When you need an official resolution. Costs time and money but will give you a result that can be enforced.</p>
 			</header>
 			<ul ng-show="! storyHistory[ resolution ].tried" class="resources">
 				<li data-ng-repeat="result in results | filter:story | filter:{ resolution: resolution } | filter: documentTypeFilter">
 					<a data-ng-href="{{ result.URL }}">{{ result.Title || result.filename }}</a>
 					<small data-ng-if="result.format === 'application/pdf'">(PDF)</small>
 					<small data-ng-if="result.documentType" class="tag" data-ng-class="result.documentType">{{ result.documentType }}</small>
-					<small class="description">{{ result.Description || result.Purpose || result.Comments }}</small>
+					<span class="description">{{ result.Description || result.Purpose || result.Comments }}</span>
 <!--
 					<dl>
 						<dt>Subject</dt>
