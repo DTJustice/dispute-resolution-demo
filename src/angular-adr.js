@@ -8,6 +8,24 @@ var getAlternativeDisputeResolutionData = function( data ) {
 // basic angular
 angular.module( 'disputeResolution', [] )
 
+
+// custom filter to match pathway and prevent duplicates
+.filter( 'resolutionFilter', function() {
+
+	return function( records, resolution ) {
+		return records.filter(function( record ) {
+			console.log( 'resolutionFilter', record, resolution );
+			var matched = record.resolution.indexOf( resolution ) > -1;
+			var alreadySeen = ( resolution === 'Assisted' && /Self/.test( record.resolution )) ||
+			                  ( resolution === 'Formal'   && /Self|Assisted/.test( record.resolution ));
+
+			return matched && ! alreadySeen;
+		})
+	};
+})
+
+
+// controller
 .controller( 'resultsController', function( $scope ) {
 	'use strict';
 
