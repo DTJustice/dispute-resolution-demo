@@ -258,7 +258,7 @@ getAlternativeDisputeResolutionData([{
 	"Comments": "Caxton Legal Centre information kit - Dividing fences - A self-help kit about the law of building and maintaining fences between neighbours. Fees are out of date - limited value",
 	"Title": "Dividing%20Fences%20kit%202013",
 	"format": "application/pdf",
-	"jurisdiction": "Queensland"
+	"jurisdiction": "Australia"
 }, {
 	"URL": "https://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/avoiding-fence-tree-and-building-disputes/your-responsibility-as-a-fence-owner/",
 	"disputeType": "Question;",
@@ -323,7 +323,7 @@ getAlternativeDisputeResolutionData([{
 	"Description": null,
 	"Publisher": null,
 	"format": "text/html",
-	"jurisdiction": "Queensland"
+	"jurisdiction": "Australia"
 }, {
 	"URL": "http://www.brisbane.qld.gov.au/traffic-transport/parking-permits/parking-rules/illegal-dangerous-parking",
 	"disputeType": "Question;Dispute;Conflict;",
@@ -349,7 +349,7 @@ getAlternativeDisputeResolutionData([{
 	"Description": "Common courtesy and mutual respect should determine parking policies on public highways in residential areas, but it’s important to know the law with regard to the Highway Code.",
 	"Publisher": null,
 	"format": "text/html",
-	"jurisdiction": "Queensland"
+	"jurisdiction": "Other"
 }, {
 	"URL": "http://www.legalaid.qld.gov.au/legalinformation/livinginthecommunity/Neighbourhood/Pages/Complaints-noisewatersmellsandfire.aspx",
 	"disputeType": "Complaint;Dispute;",
@@ -531,7 +531,7 @@ getAlternativeDisputeResolutionData([{
 	"Description": null,
 	"Publisher": null,
 	"format": "text/html",
-	"jurisdiction": "Queensland"
+	"jurisdiction": "Australia"
 }, {
 	"URL": "http://www.dlg.qld.gov.au/local-government/laws/local-laws-database.html",
 	"disputeType": "Question;",
@@ -683,7 +683,7 @@ getAlternativeDisputeResolutionData([{
 	"Comments": "Caxton Legal self help tree dispute kit",
 	"Title": "Tree%20Disputes%20Self%20Help%20Kit%20 %20nov%202013",
 	"format": "application/pdf",
-	"jurisdiction": "Queensland"
+	"jurisdiction": "Australia"
 }, {
 	"URL": ": http://www.qldneighbourhoods.com/what-if-a-complaint-is-made-against-your-animal.html",
 	"disputeType": "Concern;Problem;",
@@ -733,7 +733,7 @@ getAlternativeDisputeResolutionData([{
 	"Description": "Caxton Legal Centre publishes a number of self-help kits to practically assist people if they face certain legal issues",
 	"Publisher": null,
 	"format": "text/html",
-	"jurisdiction": "Queensland"
+	"jurisdiction": "Australia"
 }, {
 	"URL": "",
 	"disputeType": "Disagreement;Conflict;Dispute;Issue;",
@@ -744,7 +744,7 @@ getAlternativeDisputeResolutionData([{
 	"Comments": "Forms 1 (Complaint) and Form 2 (Summons) under the Peace and Good Behaviour Act 1982",
 	"Title": "",
 	"format": "text/html",
-	"jurisdiction": "Queensland"
+	"jurisdiction": "Other"
 }, {
 	"URL": "http://www.qcat.qld.gov.au/matter-types/tree-disputes/faq-tree-disputes",
 	"disputeType": "Dispute;Conflict;",
@@ -825,9 +825,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Child Safety information; main screen \"protecting children\" with links to definitions of preventing, reporting, and responding to child abuse; ongoing intervention; contacts and link to reports/publications.",
-	"Title": "Protecting children - Child Safety Services, Department of Communities, Child Safety and Disability Services (Queensland Government)",
-	"Description": "Our department is dedicated to protecting children and young people who have been harmed, or are at risk of harm.",
-	"Publisher": null,
+	"Title": "protecting children",
 	"format": "text/html",
 	"jurisdiction": "Queensland"
 }, {
@@ -944,7 +942,7 @@ getAlternativeDisputeResolutionData([{
 	"Comments": "Easements - right of way - PDF doc",
 	"Title": "03 Easements",
 	"format": "application/pdf",
-	"jurisdiction": "Queensland"
+	"jurisdiction": "Australia"
 }, {
 	"URL": "http://www.renovate.com.au/rules/index.cfm",
 	"disputeType": "Concern;Question;Issue;Dispute;Disagreement;Problem;",
@@ -957,7 +955,7 @@ getAlternativeDisputeResolutionData([{
 	"Description": "Comprehensive renovation information and services for the Australian home renovator",
 	"Publisher": null,
 	"format": "text/html",
-	"jurisdiction": "Queensland"
+	"jurisdiction": "Australia"
 }, {
 	"URL": "http://www.qldneighbourhoods.com/development-permits-and-approvals.html",
 	"disputeType": "Question;Concern;Conflict;Complaint;Issue;",
@@ -1059,7 +1057,7 @@ getAlternativeDisputeResolutionData([{
 	"Description": "Companion Animals Act 1998 - animals",
 	"Publisher": "State Library of New South Wales",
 	"format": "text/html",
-	"jurisdiction": "Queensland"
+	"jurisdiction": "Australia"
 }, {
 	"URL": "http://www.disputes.vic.gov.au/know-your-rights-0",
 	"disputeType": "Concern;Problem;Complaint;Question;Issue;",
@@ -1072,7 +1070,7 @@ getAlternativeDisputeResolutionData([{
 	"Description": null,
 	"Publisher": null,
 	"format": "text/html",
-	"jurisdiction": "Queensland"
+	"jurisdiction": "Australia"
 }, {
 	"URL": "http://www.crs.org.au/html/neighbourhood_disputes.htm#animal",
 	"disputeType": "Concern;Problem;Complaint;Question;Issue;",
@@ -1085,7 +1083,7 @@ getAlternativeDisputeResolutionData([{
 	"Description": null,
 	"Publisher": null,
 	"format": "text/html",
-	"jurisdiction": "Queensland"
+	"jurisdiction": "Australia"
 }, {
 	"URL": "http://www.goldcoast.qld.gov.au/community/animal-complaints-18356.html",
 	"disputeType": "Concern;Complaint;Question;Issue;",
@@ -1124,7 +1122,7 @@ getAlternativeDisputeResolutionData([{
 	"Description": null,
 	"Publisher": null,
 	"format": "text/html",
-	"jurisdiction": "Queensland"
+	"jurisdiction": "Australia"
 }, {
 	"URL": "http://www.ehp.qld.gov.au/management/non-mining/noise-light-odour.html",
 	"disputeType": "Problem;Complaint;Conflict;Dispute;Issue;",
@@ -1150,7 +1148,7 @@ getAlternativeDisputeResolutionData([{
 	"Description": "Recommendation 14–8 State and territory governments should give jurisdiction to appropriate courts and tribunals to hear complaints about the installation and use of surveillance devices that can monitor neighbours on residential property.",
 	"Publisher": null,
 	"format": "text/html",
-	"jurisdiction": "Queensland"
+	"jurisdiction": "Australia"
 }, {
 	"URL": "http://www.townsville.qld.gov.au/.../Documents/Light Nuisance-final.pdf",
 	"disputeType": "Concern;Problem;Disagreement;Complaint;Dispute;",

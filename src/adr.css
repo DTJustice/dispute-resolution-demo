@@ -137,6 +137,15 @@ blockquote.optional {
 }
 
 
+/* flag jurisdictions */
+.international {
+	color: red;
+}
+.interstate {
+	color: orange;
+}
+
+
 /* angular animations */
 
 .ng-hide:not(.ng-hide-animate) {

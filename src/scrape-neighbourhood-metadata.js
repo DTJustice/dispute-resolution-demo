@@ -6,12 +6,12 @@ var len = records.length;
 
 
 function inferJurisdiction( host ) {
-	if ( /\.qld\.gov\.au/.test( host )) {
+	if ( /qld/.test( host )) {
 		// councils within Queensland? how to tell councils from other qgov subdomains?
 		// Queensland State
 		return 'Queensland';
 
-	} else if ( /\.gov\.au/.test( host )) {
+	} else if ( /\.au/.test( host )) {
 		// other Australian states
 		// federal Australia
 		return 'Australia';
@@ -91,7 +91,7 @@ records.forEach(function( record, i ) {
 			record.documentType = inferDocumentType( record, record );
 		}
 		record.format = inferFormat( record, response );
-		record.jurisdiction = inferJurisdiction( records[ 0 ].URL );
+		record.jurisdiction = inferJurisdiction( record.URL );
 		require( 'fs' ).write( filename, ( i > 0 ? ', ' : '' ) + JSON.stringify( record, null, '\t' ), 'a' );
 	});
 });

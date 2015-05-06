@@ -73,6 +73,8 @@
 				<li data-ng-repeat="result in results | filter:story | filter:{ resolution: resolution } | filter: documentTypeFilter">
 					<a data-ng-href="{{ result.URL }}">{{ result.Title || result.filename }}</a>
 					<small data-ng-if="result.format === 'application/pdf'">(PDF)</small>
+					<small data-ng-if="result.jurisdiction === 'Other'" class="international">† International law</small>
+					<small data-ng-if="result.jurisdiction === 'Australia'" class="interstate">† Interstate law</small>
 					<small data-ng-if="result.documentType" class="tag" data-ng-class="result.documentType">{{ result.documentType }}</small>
 					<span class="description">{{ result.Description || result.Purpose || result.Comments }}</span>
 <!--
@@ -87,6 +89,10 @@
 -->
 				</li>
 			</ul>
+
+			<footer>
+				<small>† Advice based on International or interstate law may not apply in Queensland.</small>
+			</footer>
 		</section>
 	</main>
 
