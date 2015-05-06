@@ -47,14 +47,19 @@
 			<p>I have a <mark>{{ story.disputeType | lowercase }}</mark> with <mark>{{ story.party | lowercase }}</mark> about <mark>{{ story.disputeSubject | lowercase }}</mark>.</p>
 		</blockquote>
 
-		<form class="madlibs" ng-show="story.disputeSubject === 'Dogs'">
-			<p>
-				Some {{ story.disputeType | lowercase }}s about {{ story.disputeSubject | lowercase }} are handled by your local council.
-				We can help you find the right information if you tell us where you live.
-				<label for="location">I live in</label> <input type="text" id="location" data-ng-model="storySituation.location" placeholder="suburb or postcode">.
-			</p>
-		</form>
 
+		<section class="optional" ng-show="story.disputeSubject === 'Dogs'">
+			<form class="madlibs">
+				<p>
+					Some {{ story.disputeType | lowercase }}s about {{ story.disputeSubject | lowercase }} are handled by your local council.
+					We can help you find the right information if you <label for="location">tell us where you live:</label> <input type="text" id="location" data-ng-model="storySituation.location" placeholder="suburb or postcode">.
+				</p>
+			</form>
+
+			<blockquote class="optional" ng-show="storySituation.location.length > 2">
+				<p>I live in <mark>{{ storySituation.location }}</mark>.</p>
+			</blockquote>
+		</section>
 
 
 		<section data-ng-repeat="resolution in ['Self', 'Assisted', 'Formal']" data-ng-class="{{ resolution }}">
