@@ -29,24 +29,34 @@
 
 		<form class="madlibs" method="get">
 			<p>
-				<label for="dispute-type">I have a</label> <select id="dispute-type" data-ng-model="story.disputeType">
+				<label for="dispute-type">I have a</label>
+				<select id="dispute-type" data-ng-model="story.disputeType">
 					<option data-ng-repeat="option in model.disputeType" value="{{ option }}">{{ option | lowercase }}</option>
 				</select>
-				<label for="party-type">with</label> <select id="party-type" data-ng-model="story.party">
+				<label for="party-type">with</label>
+				<select id="party-type" data-ng-model="story.party">
 					<option data-ng-repeat="option in model.party" value="{{ option }}">{{ option | lowercase }}</option>
 				</select>
-				<label for="dispute-subject">about</label> <select id="dispute-subject" data-ng-model="story.disputeSubject">
+				<label for="dispute-subject">about</label>
+				<select id="dispute-subject" data-ng-model="story.disputeSubject">
 					<option data-ng-repeat="option in model.disputeSubject" value="{{ option }}">{{ option | lowercase }}</option>
 				</select>.
 			</p>
 		</form>
 
-
-		<!-- TODO: this looks nice, but is it too bold? is that an over-the-shoulder privacy issue? (for workplace or family disputes?) -->
-		<blockquote>
-			<p>I have a <mark>{{ story.disputeType | lowercase }}</mark> with <mark>{{ story.party | lowercase }}</mark> about <mark>{{ story.disputeSubject | lowercase }}</mark>.</p>
-		</blockquote>
-
+		<section class="optional">
+			<form class="madlibs">
+			<p>
+				<label for="outcome">I want</label>
+				<select id="outcome" data-ng-model="storySituation.outcome">
+					<option value="an end to the fighting">an end to the fighting</option>
+					<option value="an apology">an apology</option>
+					<option value="a change of behaviour">a change of behaviour</option>
+					<option value="money">money</option>
+				</select>.
+			</p>
+			</form>
+		</section>
 
 		<section class="optional" ng-show="story.disputeSubject === 'Dogs'">
 			<form class="madlibs">
@@ -55,11 +65,20 @@
 					We can help you find the right information if you <label for="location">tell us where you live:</label> <input type="text" id="location" data-ng-model="storySituation.location" placeholder="suburb or postcode">.
 				</p>
 			</form>
-
-			<blockquote class="optional" ng-show="storySituation.location.length > 2">
-				<p>I live in <mark>{{ storySituation.location }}</mark>.</p>
-			</blockquote>
 		</section>
+
+		<!-- TODO: this looks nice, but is it too bold? is that an over-the-shoulder privacy issue? (for workplace or family disputes?) -->
+		<blockquote>
+			<p>I have a <mark>{{ story.disputeType | lowercase }}</mark> with <mark>{{ story.party | lowercase }}</mark> about <mark>{{ story.disputeSubject | lowercase }}</mark>.</p>
+		</blockquote>
+
+		<blockquote class="optional" ng-show="storySituation.outcome">
+			<p>I want <mark>{{ storySituation.outcome }}</mark>.</p>
+		</blockquote>
+
+		<blockquote class="optional" ng-show="storySituation.location.length > 2">
+			<p>I live in <mark>{{ storySituation.location }}</mark>.</p>
+		</blockquote>
 
 
 		<section data-ng-repeat="resolution in ['Self', 'Assisted', 'Formal']" data-ng-class="{{ resolution }}">
@@ -136,6 +155,9 @@
 
 	<script src="angular-adr.js"></script>
 	<script src="neighbourhood-data-import-out.js"></script>
+	<script>
+		$( '#dispute-subject' ).val( 'Dogs' );
+	</script>
 
 </body>
 </html>

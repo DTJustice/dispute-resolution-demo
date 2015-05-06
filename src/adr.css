@@ -72,7 +72,7 @@ blockquote mark {
 	color: #111;
 	background: transparent;
 }
-.optional blockquote {
+blockquote.optional {
 	font-size: 2em;
 }
 
