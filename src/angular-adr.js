@@ -74,6 +74,10 @@ angular.module( 'disputeResolution', [] )
 		party: $scope.model.party[ 0 ]
 	};
 
+	$scope.storySituation = {
+		location: ''
+	};
+
 	$scope.storyHistory = {
 		Self: { tried: false },
 		Assisted: { tried: false },
