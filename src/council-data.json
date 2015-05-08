@@ -1,0 +1,459 @@
+{
+    "help": "Search a DataStore resource.\n\n    The datastore_search action allows you to search data in a resource.\n    DataStore resources that belong to private CKAN resource can only be\n    read by you if you have access to the CKAN resource and send the appropriate\n    authorization.\n\n    :param resource_id: id or alias of the resource to be searched against\n    :type resource_id: string\n    :param filters: matching conditions to select, e.g {\"key1\": \"a\", \"key2\": \"b\"} (optional)\n    :type filters: dictionary\n    :param q: full text query (optional)\n    :type q: string\n    :param plain: treat as plain text query (optional, default: true)\n    :type plain: bool\n    :param language: language of the full text query (optional, default: english)\n    :type language: string\n    :param limit: maximum number of rows to return (optional, default: 100)\n    :type limit: int\n    :param offset: offset this number of rows (optional)\n    :type offset: int\n    :param fields: fields to return (optional, default: all fields in original order)\n    :type fields: list or comma separated string\n    :param sort: comma separated field names with ordering\n                 e.g.: \"fieldname1, fieldname2 desc\"\n    :type sort: string\n\n    Setting the ``plain`` flag to false enables the entire PostgreSQL `full text search query language`_.\n\n    A listing of all available resources can be found at the alias ``_table_metadata``.\n\n    .. _full text search query language: http://www.postgresql.org/docs/9.1/static/datatype-textsearch.html#DATATYPE-TSQUERY\n\n    If you need to download the full resource, read :ref:`dump`.\n\n    **Results:**\n\n    The result of this action is a dictionary with the following keys:\n\n    :rtype: A dictionary with the following keys\n    :param fields: fields/columns and their extra metadata\n    :type fields: list of dictionaries\n    :param offset: query offset value\n    :type offset: int\n    :param limit: query limit value\n    :type limit: int\n    :param filters: query filters\n    :type filters: list of dictionaries\n    :param total: number of total matching records\n    :type total: int\n    :param records: list of matching results\n    :type records: list of dictionaries\n\n    ",
+    "success": true,
+    "result": {
+        "resource_id": "e5eed270-880f-4226-b640-4fa5bae6ddb7",
+        "fields": [{
+            "type": "text",
+            "id": "Council"
+        }, {
+            "type": "text",
+            "id": "Generic council email address"
+        }],
+        "records": [{
+            "Council": "Aurukun Shire Council",
+            "Generic council email address": "council@aurukun.qld.gov.au"
+        }, {
+            "Council": "Aurukun Shire Council",
+            "Generic council email address": "council@aurukun.qld.gov.au"
+        }, {
+            "Council": "Balonne Shire Council",
+            "Generic council email address": "council@balonne.qld.gov.au"
+        }, {
+            "Council": "Balonne Shire Council",
+            "Generic council email address": "council@balonne.qld.gov.au"
+        }, {
+            "Council": "Banana Shire Council",
+            "Generic council email address": "enquiries@banana.qld.gov.au"
+        }, {
+            "Council": "Banana Shire Council",
+            "Generic council email address": "enquiries@banana.qld.gov.au"
+        }, {
+            "Council": "Barcaldine Regional Council",
+            "Generic council email address": "admin_office@barcaldinerc.qld.gov.au"
+        }, {
+            "Council": "Barcaldine Regional Council",
+            "Generic council email address": "admin_office@barcaldinerc.qld.gov.au"
+        }, {
+            "Council": "Barcoo Shire Council",
+            "Generic council email address": "shire@barcoo.qld.gov.au"
+        }, {
+            "Council": "Barcoo Shire Council",
+            "Generic council email address": "shire@barcoo.qld.gov.au"
+        }, {
+            "Council": "Blackall-Tambo Regional Council",
+            "Generic council email address": "admin@btrc.qld.gov.au"
+        }, {
+            "Council": "Blackall-Tambo Regional Council",
+            "Generic council email address": "admin@btrc.qld.gov.au"
+        }, {
+            "Council": "Boulia Shire Council",
+            "Generic council email address": "admin@boulia.qld.gov.au"
+        }, {
+            "Council": "Boulia Shire Council",
+            "Generic council email address": "admin@boulia.qld.gov.au"
+        }, {
+            "Council": "Brisbane City Council",
+            "Generic council email address": "brisbane.qld.gov.au"
+        }, {
+            "Council": "Brisbane City Council",
+            "Generic council email address": "brisbane.qld.gov.au"
+        }, {
+            "Council": "Bulloo Shire Council",
+            "Generic council email address": "Council@bulloo.qld.gov.au"
+        }, {
+            "Council": "Bulloo Shire Council",
+            "Generic council email address": "Council@bulloo.qld.gov.au"
+        }, {
+            "Council": "Bundaberg Regional Council",
+            "Generic council email address": "ceo@bundaberg.qld.gov.au"
+        }, {
+            "Council": "Bundaberg Regional Council",
+            "Generic council email address": "ceo@bundaberg.qld.gov.au"
+        }, {
+            "Council": "Burdekin Shire Council",
+            "Generic council email address": "burdekinsc@burdekin.qld.gov.au"
+        }, {
+            "Council": "Burdekin Shire Council",
+            "Generic council email address": "burdekinsc@burdekin.qld.gov.au"
+        }, {
+            "Council": "Burke Shire Council",
+            "Generic council email address": "office@burke.qld.gov.au"
+        }, {
+            "Council": "Burke Shire Council",
+            "Generic council email address": "office@burke.qld.gov.au"
+        }, {
+            "Council": "Cairns Regional Council",
+            "Generic council email address": "council@cairns.qld.gov.au"
+        }, {
+            "Council": "Cairns Regional Council",
+            "Generic council email address": "council@cairns.qld.gov.au"
+        }, {
+            "Council": "Carpentaria Shire Council",
+            "Generic council email address": "council@carpentaria.qld.gov.au"
+        }, {
+            "Council": "Carpentaria Shire Council",
+            "Generic council email address": "council@carpentaria.qld.gov.au"
+        }, {
+            "Council": "Cassowary Coast Regional Council",
+            "Generic council email address": "enquiries@ccrc.qld.gov.au"
+        }, {
+            "Council": "Cassowary Coast Regional Council",
+            "Generic council email address": "enquiries@ccrc.qld.gov.au"
+        }, {
+            "Council": "Central Highlands Regional Council",
+            "Generic council email address": "enquiries@chrc.qld.gov.au"
+        }, {
+            "Council": "Central Highlands Regional Council",
+            "Generic council email address": "enquiries@chrc.qld.gov.au"
+        }, {
+            "Council": "Charters Towers Regional Council",
+            "Generic council email address": "mail@charterstowers.qld.gov.au"
+        }, {
+            "Council": "Charters Towers Regional Council",
+            "Generic council email address": "mail@charterstowers.qld.gov.au"
+        }, {
+            "Council": "Cherbourg Aboriginal Shire Council",
+            "Generic council email address": "ceo@cherbourg.qld.gov.au"
+        }, {
+            "Council": "Cherbourg Aboriginal Shire Council",
+            "Generic council email address": "ceo@cherbourg.qld.gov.au"
+        }, {
+            "Council": "Cloncurry Shire Council",
+            "Generic council email address": "council@cloncurry.qld.gov.au"
+        }, {
+            "Council": "Cloncurry Shire Council",
+            "Generic council email address": "council@cloncurry.qld.gov.au"
+        }, {
+            "Council": "Cook Shire Council",
+            "Generic council email address": "mail@cook.qld.gov.au"
+        }, {
+            "Council": "Cook Shire Council",
+            "Generic council email address": "mail@cook.qld.gov.au"
+        }, {
+            "Council": "Croydon Shire Council",
+            "Generic council email address": "admin@croydon.qld.gov.au"
+        }, {
+            "Council": "Croydon Shire Council",
+            "Generic council email address": "admin@croydon.qld.gov.au"
+        }, {
+            "Council": "Diamantina Shire Council",
+            "Generic council email address": "admin@diamantina.qld.gov.au"
+        }, {
+            "Council": "Diamantina Shire Council",
+            "Generic council email address": "admin@diamantina.qld.gov.au"
+        }, {
+            "Council": "Doomadgee Aboriginal Shire Council",
+            "Generic council email address": "ceo@doomadgee.qld.gov.au"
+        }, {
+            "Council": "Doomadgee Aboriginal Shire Council",
+            "Generic council email address": "ceo@doomadgee.qld.gov.au"
+        }, {
+            "Council": "Etheridge Shire Council",
+            "Generic council email address": "info@etheridge.qld.gov.au"
+        }, {
+            "Council": "Etheridge Shire Council",
+            "Generic council email address": "info@etheridge.qld.gov.au"
+        }, {
+            "Council": "Flinders Shire Council",
+            "Generic council email address": "flinders@flinders.qld.gov.au"
+        }, {
+            "Council": "Flinders Shire Council",
+            "Generic council email address": "flinders@flinders.qld.gov.au"
+        }, {
+            "Council": "Fraser Coast Regional Council",
+            "Generic council email address": "enquiry@frasercoast.qld.gov.au"
+        }, {
+            "Council": "Fraser Coast Regional Council",
+            "Generic council email address": "enquiry@frasercoast.qld.gov.au"
+        }, {
+            "Council": "Gladstone Regional Council",
+            "Generic council email address": "info@gladstonerc.qld.gov.au"
+        }, {
+            "Council": "Gladstone Regional Council",
+            "Generic council email address": "info@gladstonerc.qld.gov.au"
+        }, {
+            "Council": "Gold Coast City Council",
+            "Generic council email address": "gcccmail@goldcoast.qld.gov.au"
+        }, {
+            "Council": "Gold Coast City Council",
+            "Generic council email address": "gcccmail@goldcoast.qld.gov.au"
+        }, {
+            "Council": "Goondiwindi Regional Council",
+            "Generic council email address": "mail@grc.qld.gov.au"
+        }, {
+            "Council": "Goondiwindi Regional Council",
+            "Generic council email address": "mail@grc.qld.gov.au"
+        }, {
+            "Council": "Gympie Regional Council",
+            "Generic council email address": "council@gympie.qld.gov.au"
+        }, {
+            "Council": "Gympie Regional Council",
+            "Generic council email address": "council@gympie.qld.gov.au"
+        }, {
+            "Council": "Hinchinbrook Shire Council",
+            "Generic council email address": "council@hinchinbrook.qld.gov.au"
+        }, {
+            "Council": "Hinchinbrook Shire Council",
+            "Generic council email address": "council@hinchinbrook.qld.gov.au"
+        }, {
+            "Council": "Hope Vale Aboriginal Shire Council",
+            "Generic council email address": "hopevalecouncil@hopevale.qld.gov.au"
+        }, {
+            "Council": "Hope Vale Aboriginal Shire Council",
+            "Generic council email address": "hopevalecouncil@hopevale.qld.gov.au"
+        }, {
+            "Council": "Ipswich City Council",
+            "Generic council email address": "council@ipswich.qld.gov.au"
+        }, {
+            "Council": "Ipswich City Council",
+            "Generic council email address": "council@ipswich.qld.gov.au"
+        }, {
+            "Council": "Isaac Regional Council",
+            "Generic council email address": "records@isaac.qld.gov.au"
+        }, {
+            "Council": "Isaac Regional Council",
+            "Generic council email address": "records@isaac.qld.gov.au"
+        }, {
+            "Council": "Kowanyama Aboriginal Shire Council",
+            "Generic council email address": "admin@kowanyama.qld.gov.au"
+        }, {
+            "Council": "Kowanyama Aboriginal Shire Council",
+            "Generic council email address": "admin@kowanyama.qld.gov.au"
+        }, {
+            "Council": "Lockhart River Aboriginal Shire Council",
+            "Generic council email address": "Reception@lockhart.qld.gov.au"
+        }, {
+            "Council": "Lockhart River Aboriginal Shire Council",
+            "Generic council email address": "Reception@lockhart.qld.gov.au"
+        }, {
+            "Council": "Lockyer Valley Regional Council",
+            "Generic council email address": "mailbox@lvrc.qld.gov.au"
+        }, {
+            "Council": "Lockyer Valley Regional Council",
+            "Generic council email address": "mailbox@lvrc.qld.gov.au"
+        }, {
+            "Council": "Logan City Council",
+            "Generic council email address": "council@logan.qld.gov.au"
+        }, {
+            "Council": "Logan City Council",
+            "Generic council email address": "council@logan.qld.gov.au"
+        }, {
+            "Council": "Longreach Regional Council",
+            "Generic council email address": "assist@longreach.qld.gov.au"
+        }, {
+            "Council": "Longreach Regional Council",
+            "Generic council email address": "assist@longreach.qld.gov.au"
+        }, {
+            "Council": "Mackay Regional Council",
+            "Generic council email address": "council@mackay.qld.gov.au"
+        }, {
+            "Council": "Mackay Regional Council",
+            "Generic council email address": "council@mackay.qld.gov.au"
+        }, {
+            "Council": "Mapoon Aboriginal Shire Council",
+            "Generic council email address": "mapoon.admin@mapoon.qld.gov.au"
+        }, {
+            "Council": "Mapoon Aboriginal Shire Council",
+            "Generic council email address": "mapoon.admin@mapoon.qld.gov.au"
+        }, {
+            "Council": "Maranoa Regional Council",
+            "Generic council email address": "council@maranoa.qld.gov.au"
+        }, {
+            "Council": "Maranoa Regional Council",
+            "Generic council email address": "council@maranoa.qld.gov.au"
+        }, {
+            "Council": "McKinlay Shire Council",
+            "Generic council email address": "reception@mckinlay.qld.gov.au"
+        }, {
+            "Council": "McKinlay Shire Council",
+            "Generic council email address": "reception@mckinlay.qld.gov.au"
+        }, {
+            "Council": "Moreton Bay Regional Council",
+            "Generic council email address": "mbrc@moretonbay.qld.gov.au"
+        }, {
+            "Council": "Moreton Bay Regional Council",
+            "Generic council email address": "mbrc@moretonbay.qld.gov.au"
+        }, {
+            "Council": "Mornington Shire Council",
+            "Generic council email address": "mail@mornington.qld.gov.au"
+        }, {
+            "Council": "Mornington Shire Council",
+            "Generic council email address": "mail@mornington.qld.gov.au"
+        }, {
+            "Council": "Mount Isa City Council",
+            "Generic council email address": "city@mountisa.qld.gov.au"
+        }, {
+            "Council": "Mount Isa City Council",
+            "Generic council email address": "city@mountisa.qld.gov.au"
+        }, {
+            "Council": "Murweh Shire Council",
+            "Generic council email address": "ceo@murweh.qld.gov.au"
+        }, {
+            "Council": "Murweh Shire Council",
+            "Generic council email address": "ceo@murweh.qld.gov.au"
+        }, {
+            "Council": "Napranum Aboriginal Shire Council",
+            "Generic council email address": "reception@napranum.qld.gov.au"
+        }, {
+            "Council": "Napranum Aboriginal Shire Council",
+            "Generic council email address": "reception@napranum.qld.gov.au"
+        }, {
+            "Council": "North Burnett Regional Council",
+            "Generic council email address": "admin@northburnett.qld.gov.au"
+        }, {
+            "Council": "North Burnett Regional Council",
+            "Generic council email address": "admin@northburnett.qld.gov.au"
+        }, {
+            "Council": "Northern Peninsula Area Regional Council",
+            "Generic council email address": "info@nparc.qld.gov.au"
+        }, {
+            "Council": "Northern Peninsula Area Regional Council",
+            "Generic council email address": "info@nparc.qld.gov.au"
+        }, {
+            "Council": "Palm Island Aboriginal Shire Council",
+            "Generic council email address": "reception@palmcouncil.qld.gov.au"
+        }, {
+            "Council": "Palm Island Aboriginal Shire Council",
+            "Generic council email address": "reception@palmcouncil.qld.gov.au"
+        }, {
+            "Council": "Paroo Shire Council",
+            "Generic council email address": "council@paroo.qld.gov.au"
+        }, {
+            "Council": "Paroo Shire Council",
+            "Generic council email address": "council@paroo.qld.gov.au"
+        }, {
+            "Council": "Pormpuraaw Aboriginal Shire Council",
+            "Generic council email address": "ceo@pormpuraaw.qld.gov.au"
+        }, {
+            "Council": "Pormpuraaw Aboriginal Shire Council",
+            "Generic council email address": "ceo@pormpuraaw.qld.gov.au"
+        }, {
+            "Council": "Quilpie Shire Council",
+            "Generic council email address": "admin@quilpie.qld.gov.au"
+        }, {
+            "Council": "Quilpie Shire Council",
+            "Generic council email address": "admin@quilpie.qld.gov.au"
+        }, {
+            "Council": "Redland City Council",
+            "Generic council email address": "rcc@redland.qld.gov.au"
+        }, {
+            "Council": "Redland City Council",
+            "Generic council email address": "rcc@redland.qld.gov.au"
+        }, {
+            "Council": "Richmond Shire Council",
+            "Generic council email address": "enquiries@richmond.qld.gov.au"
+        }, {
+            "Council": "Richmond Shire Council",
+            "Generic council email address": "enquiries@richmond.qld.gov.au"
+        }, {
+            "Council": "Rockhampton Regional Council",
+            "Generic council email address": "enquiries@rrc.qld.gov.au"
+        }, {
+            "Council": "Rockhampton Regional Council",
+            "Generic council email address": "enquiries@rrc.qld.gov.au"
+        }, {
+            "Council": "Scenic Rim Regional Council",
+            "Generic council email address": "mail@scenicrim.qld.gov.au"
+        }, {
+            "Council": "Scenic Rim Regional Council",
+            "Generic council email address": "mail@scenicrim.qld.gov.au"
+        }, {
+            "Council": "Somerset Regional Council",
+            "Generic council email address": "mail@somerset.qld.gov.au"
+        }, {
+            "Council": "Somerset Regional Council",
+            "Generic council email address": "mail@somerset.qld.gov.au"
+        }, {
+            "Council": "South Burnett Regional Council",
+            "Generic council email address": "info@southburnett.qld.gov.au"
+        }, {
+            "Council": "South Burnett Regional Council",
+            "Generic council email address": "info@southburnett.qld.gov.au"
+        }, {
+            "Council": "Southern Downs Regional Council",
+            "Generic council email address": "mail@southerndowns.qld.gov.au"
+        }, {
+            "Council": "Southern Downs Regional Council",
+            "Generic council email address": "mail@southerndowns.qld.gov.au"
+        }, {
+            "Council": "Sunshine Coast Regional Council",
+            "Generic council email address": "mail@sunshinecoast.qld.gov.au"
+        }, {
+            "Council": "Sunshine Coast Regional Council",
+            "Generic council email address": "mail@sunshinecoast.qld.gov.au"
+        }, {
+            "Council": "Tablelands Regional Council",
+            "Generic council email address": "info@trc.qld.gov.au"
+        }, {
+            "Council": "Tablelands Regional Council",
+            "Generic council email address": "info@trc.qld.gov.au"
+        }, {
+            "Council": "Toowoomba Regional Council",
+            "Generic council email address": "info@toowoombaRC.qld.gov.au"
+        }, {
+            "Council": "Toowoomba Regional Council",
+            "Generic council email address": "info@toowoombaRC.qld.gov.au"
+        }, {
+            "Council": "Torres Shire Council",
+            "Generic council email address": "admin@torres.qld.gov.au"
+        }, {
+            "Council": "Torres Shire Council",
+            "Generic council email address": "admin@torres.qld.gov.au"
+        }, {
+            "Council": "Torres Strait Island Regional Council",
+            "Generic council email address": "info@tsirc.qld.gov.au"
+        }, {
+            "Council": "Yarrabah Aboriginal Shire Council",
+            "Generic council email address": "secretary@yarrabah.qld.gov.au"
+        }, {
+            "Council": "Torres Strait Island Regional Council",
+            "Generic council email address": "info@tsirc.qld.gov.au"
+        }, {
+            "Council": "Townsville City Council",
+            "Generic council email address": "enquiries@townsville.qld.gov.au"
+        }, {
+            "Council": "Townsville City Council",
+            "Generic council email address": "enquiries@townsville.qld.gov.au"
+        }, {
+            "Council": "Western Downs Regional Council",
+            "Generic council email address": "info@wdrc.qld.gov.au"
+        }, {
+            "Council": "Western Downs Regional Council",
+            "Generic council email address": "info@wdrc.qld.gov.au"
+        }, {
+            "Council": "Whitsunday Regional Council",
+            "Generic council email address": "info@whitsundayrc.qld.gov.au"
+        }, {
+            "Council": "Whitsunday Regional Council",
+            "Generic council email address": "info@whitsundayrc.qld.gov.au"
+        }, {
+            "Council": "Winton Shire Council",
+            "Generic council email address": "info@winton.qld.gov.au"
+        }, {
+            "Council": "Winton Shire Council",
+            "Generic council email address": "info@winton.qld.gov.au"
+        }, {
+            "Council": "Woorabinda Aboriginal Shire Council",
+            "Generic council email address": "ceo@woorabinda.qld.gov.au"
+        }, {
+            "Council": "Woorabinda Aboriginal Shire Council",
+            "Generic council email address": "ceo@woorabinda.qld.gov.au"
+        }, {
+            "Council": "Wujal Wujal Aboriginal Shire Council",
+            "Generic council email address": "chambers@wujalwujalcouncil.qld.gov.au"
+        }, {
+            "Council": "Wujal Wujal Aboriginal Shire Council",
+            "Generic council email address": "chambers@wujalwujalcouncil.qld.gov.au"
+        }, {
+            "Council": "Yarrabah Aboriginal Shire Council",
+            "Generic council email address": "secretary@yarrabah.qld.gov.au"
+        }],
+        "_links": {
+            "start": "/api/action/datastore_search?fields=Council%2CGeneric+council+email+address&limit=500&resource_id=e5eed270-880f-4226-b640-4fa5bae6ddb7",
+            "next": "/api/action/datastore_search?fields=Council%2CGeneric+council+email+address&offset=500&limit=500&resource_id=e5eed270-880f-4226-b640-4fa5bae6ddb7"
+        },
+        "limit": 500,
+        "total": 146
+    }
+}

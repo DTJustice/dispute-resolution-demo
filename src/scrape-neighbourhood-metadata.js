@@ -5,9 +5,41 @@ var records = JSON.parse( require( 'fs' ).read( filename ));
 var len = records.length;
 
 
+function getCouncilData() {
+	// fetch from data portal
+	// https://data.qld.gov.au/api/action/datastore_search?resource_id=e5eed270-880f-4226-b640-4fa5bae6ddb7&fields=Council,Generic%20council%20email%20address&limit=500
+	var data = JSON.parse( require( 'fs' ).read( 'src/council-data.json' ));
+	var council = {};
+
+	data.result.records.forEach(function( result ) {
+		// infer domain from email (ignore blanks)
+		// TODO regex test that a domain is present
+		if ( result[ 'Generic council email address' ].length > 3 ) {
+			council[ result.Council ] = result[ 'Generic council email address' ].replace( /^.*@/, '' );
+		}
+	});
+
+	return council;
+}
+var councils = getCouncilData();
+require( 'fs' ).write( 'src/council-domains.json', JSON.stringify( councils, '\t' ), 'w' );
+
+
 function inferJurisdiction( host ) {
-	if ( /qld/.test( host )) {
-		// councils within Queensland? how to tell councils from other qgov subdomains?
+	// councils within Queensland (check against known domains)
+	var council = Object.keys( councils ).filter(function( key ) {
+		// if ( host.indexOf( councils[ key ] ) > -1 ) {
+		// 	casper.echo( 'council match! ' + host + ' === ' + councils[ key ] );
+		// }
+		return host.indexOf( councils[ key ] ) > -1;
+	});
+
+
+	if ( council.length > 0 ) {
+		casper.echo( 'found council! ' + council.length + ' for ' + host );
+		return council[ 0 ];
+
+	} else if ( /qld/.test( host )) {
 		// Queensland State
 		return 'Queensland';
 
@@ -74,7 +106,7 @@ casper.start();
 records.forEach(function( record, i ) {
 	// open the page
 	casper.thenOpen( record.URL, function( response ) {
-		casper.echo( 'parsing ' + ( i + 1 ) + '/' + len + ': ' + record.URL + '…' );
+		casper.echo( 'parsing ' + ( i + 1 ) + '/' + len + ': ' + record.URL + '…', 'INFO' );
 		// sanity check the URL (allow for trailing slash)
 		if ( response.url && record.URL.replace( / /g, '%20' ).replace( /\/$/, '' ) === response.url.replace( /\/$/, '' )) {
 			// record.httpResponse = response;
@@ -85,7 +117,7 @@ records.forEach(function( record, i ) {
 			record.documentType = this.getElementAttribute( 'meta[name="AGLSTERMS.documentType"]', 'content' ) || inferDocumentType( record, response );
 		} else {
 			// couldn't get a response
-			console.log( '-> NO RESPONSE!', record.URL );
+			casper.echo( '-> NO RESPONSE! ' + record.URL, 'WARNING' );
 			// infer title from filename, replace -_ with spaces and remove file extension
 			record.Title = record.URL.replace( /^.*\//, '' ).replace( /[-_]+/g, ' ' ).replace( /\.[^.]*$/, '' );
 			record.documentType = inferDocumentType( record, record );
@@ -99,7 +131,7 @@ records.forEach(function( record, i ) {
 casper.run(function() {
 	// completed: close JSONP
 	require( 'fs' ).write( filename, ']);', 'a' );
-	casper.echo( 'Done.\n\n' );
+	casper.echo( 'Done.\n\n', 'GREEN_BAR' );
 
 	casper.exit();
 });
