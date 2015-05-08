@@ -24,7 +24,7 @@
 		<header>
 			<h1>Neighbourhood dispute resolution</h1>
 			<p>Use this tool to discover the options available to you in order to resolve a dispute.</p>
-			<p>We provide general information on avoiding and resolving neighbourhood disputes. It is not legal advice and does not consider your exact circumstances. If you are unsure about your legal rights you should get independent legal advice.</p>
+			<p>We provide general information on avoiding and resolving neighbourhood disputes. It is not legal advice and does not consider your exact circumstances. If you are unsure about your legal rights you should get <a href="http://www.qld.gov.au/law/legal-mediation-and-justice-of-the-peace/legal-advice-and-investment/legal-information-and-advice/">independent legal advice</a>.</p>
 		</header>
 
 		<form class="madlibs" method="get">
@@ -76,6 +76,15 @@
 
 
 	<aside>
+		<h2>I want to see</h2>
+		<ul class="filter checklist">
+			<li data-ng-repeat="(tag, value) in resultFilter.documentType">
+				<input type="checkbox" data-ng-model="resultFilter.documentType[ tag ]" data-ng-checked="resultFilter.documentType[ tag ]" id="filter-{{ tag }}"><label class="tag" data-ng-class="tag" for="filter-{{ tag }}">{{ tag }}</label>
+			</li>
+		</ul>
+	</aside>
+
+	<aside>
 		<h2>Check the law</h2>
 		<ul>
 			<li data-ng-repeat="result in results | filter:story | filter:{ documentType: 'act' } : true">
@@ -85,12 +94,8 @@
 	</aside>
 
 	<aside>
-		<h2>I want to see</h2>
-		<ul class="filter checklist">
-			<li data-ng-repeat="(tag, value) in resultFilter.documentType">
-				<input type="checkbox" data-ng-model="resultFilter.documentType[ tag ]" data-ng-checked="resultFilter.documentType[ tag ]" id="filter-{{ tag }}"><label class="tag" data-ng-class="tag" for="filter-{{ tag }}">{{ tag }}</label>
-			</li>
-		</ul>
+		<h2>Legal information and advice</h2>
+		<p><a href="http://www.qld.gov.au/law/legal-mediation-and-justice-of-the-peace/legal-advice-and-investment/legal-information-and-advice/">Find a solicitor</a>, law firm, barrister or free legal services available to vulnerable and disadvantaged Queenslanders.</p>
 	</aside>
 
 
