@@ -4,6 +4,9 @@ var getAlternativeDisputeResolutionData = function( data ) {
 	cachedData = data;
 };
 
+// TODO service for council data
+var URI_DATA_COUNCIL = 
+
 
 // basic angular
 angular.module( 'disputeResolution', [] )
@@ -17,7 +20,7 @@ angular.module( 'disputeResolution', [] )
 			console.log( 'resolutionFilter', record, resolution );
 			var matched = record.resolution.indexOf( resolution ) > -1;
 			var alreadySeen = ( resolution === 'Assisted' && /Self/.test( record.resolution )) ||
-			                  ( resolution === 'Formal'   && /Self|Assisted/.test( record.resolution ));
+							  ( resolution === 'Formal'   && /Self|Assisted/.test( record.resolution ));
 
 			return matched && ! alreadySeen;
 		})
@@ -26,7 +29,7 @@ angular.module( 'disputeResolution', [] )
 
 
 // controller
-.controller( 'resultsController', function( $scope ) {
+.controller( 'resultsController', function( $scope, $http ) {
 	'use strict';
 
 	$scope.results = cachedData;
@@ -45,6 +48,8 @@ angular.module( 'disputeResolution', [] )
 		return record.documentType !== 'act' && $scope.resultFilter.documentType[ record.documentType ] === true;
 	};
 
+
+	// init
 	for ( var i = 0, len = cachedData.length; i < len; i++ ) {
 		// ES6: let, exploder
 		var type = cachedData[ i ].disputeType.split( /\s*;\s*/ );
@@ -66,16 +71,40 @@ angular.module( 'disputeResolution', [] )
 		$scope.model.disputeSubject = $scope.model.disputeSubject.concat( subject.filter(function( item ) {
 			return item.length && item !== 'undefined' && $scope.model.disputeSubject.indexOf( item ) === -1;
 		}));
+
+		// councils
+		// TODO create a service wrapper
+		// fetch from data portal
+		// https://data.qld.gov.au/dataset/local-government-contacts
+		// https://data.qld.gov.au/api/action/datastore_search?resource_id=e5eed270-880f-4226-b640-4fa5bae6ddb7&fields=Council,Generic%20council%20email%20address&limit=500
+		$http.jsonp( 'https://data.qld.gov.au/api/action/datastore_search', {
+			params: {
+				resource_id: 'e5eed270-880f-4226-b640-4fa5bae6ddb7',
+				fields: 'Council,Generic council email address',
+				limit: 500, // make sure we get them all!
+				callback: 'JSON_CALLBACK'
+			},
+			cache: true
+		}).success(function( data ) {
+			$scope.model.councils = {};
+			data.result.records.forEach(function( record ) {
+				$scope.model.councils[ record.Council ] = {
+					domain: record[ 'Generic council email address' ].replace( /^.*@/, '' )
+				};
+			});
+			console.log( 'success', $scope.model.councils );
+		});
 	}
 
-	$scope.story = {
-		disputeSubject: $scope.model.disputeSubject[ 0 ],
-		disputeType: $scope.model.disputeType[ 0 ],
-		party: $scope.model.party[ 0 ]
-	};
+	// TODO initial state!?
+	// $scope.story = {
+	// 	disputeSubject: $scope.model.disputeSubject[ 0 ],
+	// 	disputeType: $scope.model.disputeType[ 0 ],
+	// 	party: $scope.model.party[ 0 ]
+	// };
 
 	$scope.storySituation = {
-		location: ''
+		council: ''
 	};
 
 	$scope.storyHistory = {

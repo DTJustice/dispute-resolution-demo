@@ -59,11 +59,14 @@
 			</form>
 		</section>
 
-		<section class="optional" ng-show="story.disputeSubject === 'Dogs'">
+		<section class="optional">
 			<form class="madlibs">
 				<p>
 					Some {{ story.disputeType | lowercase }}s about {{ story.disputeSubject | lowercase }} are handled by your local council.
-					We can help you find the right information if you <label for="location">tell us where you live:</label> <input type="text" id="location" data-ng-model="storySituation.location" placeholder="suburb or postcode">.
+					We can help you find the right information if you <label for="council">tell us where you live:</label>
+					<select id="council" data-ng-model="storySituation.council">
+						<option data-ng-repeat="(org, data) in model.councils" value="{{ org }}">{{ org }}</option>
+					</select>.
 				</p>
 			</form>
 		</section>
@@ -82,50 +85,55 @@
 		</blockquote>
 
 
-		<section data-ng-repeat="resolution in ['Self', 'Assisted', 'Formal']" data-ng-class="{{ resolution }}">
-			<header data-ng-if="resolution === 'Self'">
-				<h2>Try resolving the {{ story.disputeType | lowercase }} yourself</h2>
-				<p>Self resolution can be the fastest and cheapest way to resolve a {{ story.disputeType | lowercase }}.</p>
-				<div>
-					<input type="checkbox" id="tried-self" data-ng-model="storyHistory[ resolution ].tried">
-					<label for="tried-self">I have already tried to resolve this {{ story.disputeType | lowercase }} myself</label>
-				</div>
-			</header>
-			<header data-ng-if="resolution === 'Assisted'">
-				<h2>Assistance resolving your {{ story.disputeType | lowercase }}</h2>
-				<p>Mediation saves time, legal fees, and court costs for you and the community.</p>
-				<div>
-					<input type="checkbox" id="tried-assisted" data-ng-model="storyHistory[ resolution ].tried">
-					<label for="tried-assisted">We have tried assisted resolutions to this {{ story.disputeType | lowercase }}</label>
-				</div>
-			</header>
-			<header data-ng-if="resolution === 'Formal'">
-				<h2>Formal resolution to your {{ story.disputeType | lowercase }}</h2>
-				<p>When you need an official resolution. Costs time and money but will give you a result that can be enforced.</p>
-			</header>
-			<ul ng-show="! storyHistory[ resolution ].tried" class="resources">
-				<li data-ng-if="storySituation.location.indexOf( '4510' ) > -1 &amp;&amp; resolution === 'Self'">
-					<a href="https://www.moretonbay.qld.gov.au/general.aspx?id=13577">Barking dogs - Moreton Bay Regional Council</a>
-					<small class="tag guidelines">guidelines</small>
-					<span class="description">All dogs bark, but some barking dogs become a real neighbourhood nuisance – greatly reducing the quality of life for their neighbours. Barking is the most common animal behaviour problem Council is asked to deal with.</span>
-				</li>
-				<li data-ng-repeat="result in results | filter:story | filter:{ resolution: resolution } | filter: documentTypeFilter">
-					<a data-ng-href="{{ result.URL }}">{{ result.Title || result.filename }}</a>
-					<small data-ng-if="result.format === 'application/pdf'">(PDF)</small>
-					<small data-ng-if="result.documentType" class="tag" data-ng-class="result.documentType">{{ result.documentType }}</small>
-					<span class="description">{{ result.Description || result.Purpose || result.Comments }}</span>
-<!--
-					<dl>
-						<dt>Subject</dt>
-						<dd>{{ result.disputeSubject }}</dd>
-						<dt>Party</dt>
-						<dd>{{ result.party }}</dd>
-						<dt>Actions</dt>
-						<dd>{{ result.resolution }}</dd>
-					</dl>
--->
-				</li>
-			</ul>
+		<section class="results" ng-show="story.disputeType.length > 0 &amp;&amp; story.party.length > 0 &amp;&amp; story.disputeSubject.length > 0">
+			<section data-ng-repeat="resolution in ['Self', 'Assisted', 'Formal']" data-ng-class="{{ resolution }}">
+				<header data-ng-if="resolution === 'Self'">
+					<h2>Try resolving the {{ story.disputeType | lowercase }} yourself</h2>
+					<p>Self resolution can be the fastest and cheapest way to resolve a {{ story.disputeType | lowercase }}.</p>
+					<div>
+						<input type="checkbox" id="tried-self" data-ng-model="storyHistory[ resolution ].tried">
+						<label for="tried-self">I have already tried to resolve this {{ story.disputeType | lowercase }} myself</label>
+					</div>
+				</header>
+				<header data-ng-if="resolution === 'Assisted'">
+					<h2>Assistance resolving your {{ story.disputeType | lowercase }}</h2>
+					<p>Mediation saves time, legal fees, and court costs for you and the community.</p>
+					<div>
+						<input type="checkbox" id="tried-assisted" data-ng-model="storyHistory[ resolution ].tried">
+						<label for="tried-assisted">We have tried assisted resolutions to this {{ story.disputeType | lowercase }}</label>
+					</div>
+				</header>
+				<header data-ng-if="resolution === 'Formal'">
+					<h2>Formal resolution to your {{ story.disputeType | lowercase }}</h2>
+					<p>When you need an official resolution. Costs time and money but will give you a result that can be enforced.</p>
+				</header>
+				<ul ng-show="! storyHistory[ resolution ].tried" class="resources">
+	<!-- 			
+						<li data-ng-if="storySituation.location.indexOf( '4510' ) > -1 &amp;&amp; resolution === 'Self'">
+							<a href="https://www.moretonbay.qld.gov.au/general.aspx?id=13577">Barking dogs - Moreton Bay Regional Council</a>
+							<small class="tag guidelines">guidelines</small>
+							<span class="description">All dogs bark, but some barking dogs become a real neighbourhood nuisance – greatly reducing the quality of life for their neighbours. Barking is the most common animal behaviour problem Council is asked to deal with.</span>
+						</li>
+					 -->
+					<li data-ng-repeat="result in results | filter:story | filter:{ resolution: resolution } | filter: documentTypeFilter | filter: { jurisdiction: storySituation.council }">
+						<a data-ng-href="{{ result.URL }}">{{ result.Title || result.filename }}</a>
+						<small>({{ result.jurisdiction }})</small>
+						<small data-ng-if="result.format === 'application/pdf'">(PDF)</small>
+						<small data-ng-if="result.documentType" class="tag" data-ng-class="result.documentType">{{ result.documentType }}</small>
+						<span class="description">{{ result.Description || result.Purpose || result.Comments }}</span>
+	<!--
+						<dl>
+							<dt>Subject</dt>
+							<dd>{{ result.disputeSubject }}</dd>
+							<dt>Party</dt>
+							<dd>{{ result.party }}</dd>
+							<dt>Actions</dt>
+							<dd>{{ result.resolution }}</dd>
+						</dl>
+	-->
+					</li>
+				</ul>
+			</section>
 		</section>
 	</main>
 
@@ -161,9 +169,6 @@
 
 	<script src="angular-adr.js"></script>
 	<script src="neighbourhood-data-import-out.js"></script>
-	<script>
-		$( '#dispute-subject' ).val( 'Dogs' );
-	</script>
 
 </body>
 </html>

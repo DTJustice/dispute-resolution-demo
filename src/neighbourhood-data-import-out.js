@@ -336,7 +336,7 @@ getAlternativeDisputeResolutionData([{
 	"Description": "Parking rules and regulations are used throughout Brisbane to maintain the safety of all road users and pedestrians and also to ensure that street parking is available for all to use.\nAn illegally or dangerously parked vehicle, is any vehicle parked outside of Brisbane City Council's parking rules and regulations or any vehicle that maybe creating a public safety problem.",
 	"Publisher": null,
 	"format": "text/html",
-	"jurisdiction": "Queensland"
+	"jurisdiction": "Brisbane City Council"
 }, {
 	"URL": "http://www.problemneighbours.co.uk/parking-disputes.html",
 	"disputeType": "Question;Dispute;Complaint;",
@@ -375,7 +375,7 @@ getAlternativeDisputeResolutionData([{
 	"Description": "This section has information about common neighbourhood complaints, including actions you can take as a good neighbour to avoid disturbing surrounding residents.",
 	"Publisher": null,
 	"format": "text/html",
-	"jurisdiction": "Queensland"
+	"jurisdiction": "Brisbane City Council"
 }, {
 	"URL": "http://www.brisbane.qld.gov.au/environment-waste/rubbish-tips-bins/rubbish-collections/bin-collections",
 	"disputeType": "Complaint;Dispute;",
@@ -388,7 +388,7 @@ getAlternativeDisputeResolutionData([{
 	"Description": "Your home has wheelie bins for separating general rubbish from green waste and recyclables. Check your bin collection day with the bin collection calendar. \nTo make sure your bin is collected:",
 	"Publisher": null,
 	"format": "text/html",
-	"jurisdiction": "Queensland"
+	"jurisdiction": "Brisbane City Council"
 }, {
 	"URL": "http://www.brisbane.qld.gov.au/traffic-transport/parking-permits/parking-rules/residential-parking",
 	"disputeType": "Question;Complaint;",
@@ -401,7 +401,7 @@ getAlternativeDisputeResolutionData([{
 	"Description": "Brisbane residential areas have parking rules in place to ensure parked or stopped vehicles do not affect local access or traffic flow. Parking illegally can be frustrating for neighbours and the community. Residents are often prevented from accessing their home or local area. If vehicles are illegally parked, Council can help.\nThere are two courses of action you can take to deal with parking problems in your area.",
 	"Publisher": null,
 	"format": "text/html",
-	"jurisdiction": "Queensland"
+	"jurisdiction": "Brisbane City Council"
 }, {
 	"URL": "http://www.qld.gov.au/law/housing-and-neighbours/noise-and-crime-in-the-neighbourhood/complain-about-noisy-neighbours/",
 	"disputeType": "Complaint;",
@@ -492,7 +492,7 @@ getAlternativeDisputeResolutionData([{
 	"Description": "Noise can disrupt sleep and interfere with daily activities. If loud enough, it can also have a negative impact on people's health.\nComplaints not handled by Council\nCouncil does not deal with noise complaints about:",
 	"Publisher": null,
 	"format": "text/html",
-	"jurisdiction": "Queensland"
+	"jurisdiction": "Brisbane City Council"
 }, {
 	"URL": "http://www.brisbane.qld.gov.au/laws-permits/complaints-fines/overgrown-land-pests/overgrown-land-unsightly-vegetation",
 	"disputeType": "Problem;Issue;Complaint;",
@@ -505,7 +505,7 @@ getAlternativeDisputeResolutionData([{
 	"Description": "Vegetation that is overgrown and unsightly and not in accordance with the local amenity needs to be removed or cleaned up. This includes land that has:",
 	"Publisher": null,
 	"format": "text/html",
-	"jurisdiction": "Queensland"
+	"jurisdiction": "Brisbane City Council"
 }, {
 	"URL": "http://www.trc.qld.gov.au/sites/default/files/Fact%20Sheet%20-%20overgrown.pdf.",
 	"disputeType": "Problem;Complaint;Issue;",
@@ -518,7 +518,7 @@ getAlternativeDisputeResolutionData([{
 	"Description": null,
 	"Publisher": null,
 	"format": "application/pdf",
-	"jurisdiction": "Queensland"
+	"jurisdiction": "Tablelands Regional Council"
 }, {
 	"URL": "http://www.bettercouncils.net.au/find-your-council",
 	"disputeType": "Question;",
@@ -1018,7 +1018,7 @@ getAlternativeDisputeResolutionData([{
 	"Comments": "Council information about stormwater drainage",
 	"Title": "stormwater factsheet",
 	"format": "application/pdf",
-	"jurisdiction": "Queensland"
+	"jurisdiction": "Logan City Council"
 }, {
 	"URL": "http://www.brisbane.qld.gov.au/laws-permits/complaints-fines/noise-air-light-water-complaints/stormwater-pollution-runoff-drainage-complaints",
 	"disputeType": "Complaint;Question;",
@@ -1031,7 +1031,7 @@ getAlternativeDisputeResolutionData([{
 	"Description": "As a result of Brisbane’s climate and topography, pollution, flooding and nuisance issues from stormwater runoff can be a common problem for many Brisbane residents resulting in environmental harm, damage to property and distress to residents.",
 	"Publisher": null,
 	"format": "text/html",
-	"jurisdiction": "Queensland"
+	"jurisdiction": "Brisbane City Council"
 }, {
 	"URL": "http://www.qldneighbourhoods.com/animals.html",
 	"disputeType": "Concern;Problem;Complaint;Question;Issue;",
@@ -1096,7 +1096,7 @@ getAlternativeDisputeResolutionData([{
 	"Description": "Information on how to report an animal complaint.",
 	"Publisher": "corporateName=City of Gold Coast",
 	"format": "text/html",
-	"jurisdiction": "Queensland"
+	"jurisdiction": "Gold Coast City Council"
 }, {
 	"URL": "http://www.legalaid.qld.gov.au/LEGALINFORMATION/LIVINGINTHECOMMUNITY/NEIGHBOURHOOD/Pages/Animals-controllingtreatingandowning.aspx",
 	"disputeType": "Concern;Complaint;",
@@ -1117,7 +1117,7 @@ getAlternativeDisputeResolutionData([{
 	"disputeSubject": "Cameras;",
 	"resolution": "Self Resolution;Assisted Resolution;",
 	"documentType": "guidelines",
-	"Comments": "Office of the Australian Information Commissioner - What can I do about my neighbours security camera? > Refers to state community mediation centres",
+	"Comments": "Office of the Australian Information Commissioner - What can I do about my neighbours security camera? > Refers to state community mediation centres [This is the only relevant resource available]",
 	"Title": "What can I do about my neighbour’s security camera?| Office of the Australian Information Commissioner - OAIC",
 	"Description": null,
 	"Publisher": null,
@@ -1137,19 +1137,6 @@ getAlternativeDisputeResolutionData([{
 	"format": "text/html",
 	"jurisdiction": "Queensland"
 }, {
-	"URL": "https://www.alrc.gov.au/publications/14-surveillance-devices/alternative-forums-complaints-about-surveillance",
-	"disputeType": "Question;Problem;Issue;",
-	"party": "Neighbour;Neighbour next door;Neighbour in my street;",
-	"disputeSubject": "Cameras;",
-	"resolution": "Formal Resolution;",
-	"documentType": "guidelines",
-	"Comments": "ALRC - Serious invasions of privacy in the digital era. Alternative forums for complaints about surveillance; make recommendations about the appropriate jurisdictions to hear complaints about the installation and use of surveillance devices that can monitor neighbours on residential property.",
-	"Title": "Alternative forums for complaints about surveillance | ALRC",
-	"Description": "Recommendation 14–8 State and territory governments should give jurisdiction to appropriate courts and tribunals to hear complaints about the installation and use of surveillance devices that can monitor neighbours on residential property.",
-	"Publisher": null,
-	"format": "text/html",
-	"jurisdiction": "Australia"
-}, {
 	"URL": "http://www.townsville.qld.gov.au/.../Documents/Light Nuisance-final.pdf",
 	"disputeType": "Concern;Problem;Disagreement;Complaint;Dispute;",
 	"party": "Someone in my neighbourhood;Neighbour;Neighbour next door;Neighbour in my street;Neighbour in my building;",
@@ -1161,7 +1148,7 @@ getAlternativeDisputeResolutionData([{
 	"Description": null,
 	"Publisher": null,
 	"format": "application/pdf",
-	"jurisdiction": "Queensland"
+	"jurisdiction": "Townsville City Council"
 }, {
 	"URL": "http://www.sunshinecoast.qld.gov.au/sitePage.cfm?code=noise-light",
 	"disputeType": "Issue;Concern;Disagreement;Complaint;Dispute;Question;",
@@ -1174,7 +1161,7 @@ getAlternativeDisputeResolutionData([{
 	"Description": "",
 	"Publisher": null,
 	"format": "text/html",
-	"jurisdiction": "Queensland"
+	"jurisdiction": "Sunshine Coast Regional Council"
 }, {
 	"URL": "http://www.lawstuff.org.au/qld_law/topics/",
 	"disputeType": "Question;",
@@ -1188,4 +1175,15 @@ getAlternativeDisputeResolutionData([{
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
+}, {
+	"URL": "http://www.brisbane.qld.gov.au/sites/default/files/lawful_point_discharge_neighbours.pdf",
+	"disputeType": "Question;Problem;",
+	"party": "a neighbour;someone in my neighbourhood;a neighbour next door;an adjoining landowners;",
+	"disputeSubject": "Drainage;",
+	"resolution": "Self Resolution;",
+	"documentType": "guidelines",
+	"Comments": "Brisbane City Council Information for neighbours about stormwater lawful points of discharge.",
+	"Title": "lawful point discharge neighbours",
+	"format": "application/pdf",
+	"jurisdiction": "Brisbane City Council"
 }]);

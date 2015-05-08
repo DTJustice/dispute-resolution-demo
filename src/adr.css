@@ -152,6 +152,7 @@ blockquote.optional {
     /* ensure visibility during the transition */
     display: block !important; /* yes, important */
 }
+.results,
 .optional,
 .resources {
 	speak: normal;
@@ -162,6 +163,7 @@ blockquote.optional {
 		opacity 0.3s ease,
 		transform 0.3s cubic-bezier(.2,.38,.72,1.3);
 }
+.results.ng-hide,
 .optional.ng-hide,
 .resources.ng-hide {
 	display: block;

@@ -49,6 +49,7 @@
 		</blockquote>
 
 
+		<section class="results" ng-show="story.disputeType.length > 0 &amp;&amp; story.party.length > 0 &amp;&amp; story.disputeSubject.length > 0">
 		<section data-ng-repeat="resolution in ['Self', 'Assisted', 'Formal']" data-ng-class="{{ resolution }}">
 			<header data-ng-if="resolution === 'Self'">
 				<h2>Try resolving the {{ story.disputeType | lowercase }} yourself</h2>
@@ -88,6 +89,7 @@
 -->
 				</li>
 			</ul>
+		</section>
 		</section>
 	</main>
 
