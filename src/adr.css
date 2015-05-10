@@ -75,6 +75,21 @@ blockquote mark {
 blockquote.optional {
 	font-size: 2em;
 }
+blockquote.question {
+	font-size: 1.5em;
+	padding-left: 1em;
+	position: relative;
+}
+blockquote.question input {
+	transform: scale(1.5);
+	position: absolute;
+	left: 0;
+	top: .3em;
+}
+blockquote.question input:checked + label {
+	color: #111;
+}
+
 
 
 /* checklist */
