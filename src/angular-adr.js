@@ -37,7 +37,13 @@ angular.module( 'disputeResolution', [] )
 	$scope.model = {
 		disputeType: [],
 		party: [],
-		disputeSubject: []
+		disputeSubject: [],
+		// TODO how is this list maintained? data portal?
+		councilSubject: [
+			'Dogs',
+			'Fences',
+			'Noise'
+		]
 	};
 
 	// filters
