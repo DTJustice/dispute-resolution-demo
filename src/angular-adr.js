@@ -110,6 +110,8 @@ angular.module( 'disputeResolution', [] )
 	// };
 
 	$scope.storySituation = {
+		outcome: '',
+		blocker: '',
 		council: ''
 	};
 

@@ -45,17 +45,29 @@
 			</p>
 		</form>
 
-		<section class="optional">
+		<section class="optional" data-ng-show="story.disputeType.length > 0 &amp;&amp; story.party.length > 0 &amp;&amp; story.disputeSubject.length > 0">
 			<form class="madlibs">
-			<p>
-				<label for="outcome">I want</label>
-				<select id="outcome" data-ng-model="storySituation.outcome">
-					<option value="an end to the fighting">an end to the fighting</option>
-					<option value="an apology">an apology</option>
-					<option value="a change of behaviour">a change of behaviour</option>
-					<option value="money">money</option>
-				</select>.
-			</p>
+				<p>
+					<label for="outcome">I want</label>
+					<select id="outcome" data-ng-model="storySituation.outcome">
+						<option value="an end to the fighting">an end to the fighting</option>
+						<option value="an apology">an apology</option>
+						<option value="a change of behaviour">a change of behaviour</option>
+						<option value="money">money</option>
+					</select>.
+				</p>
+			</form>
+		</section>
+
+		<section class="optional" data-ng-show="storySituation.outcome.length > 0">
+			<form class="madlibs">
+				<p>
+					<label for="blocker">I don't know</label>
+					<select id="blocker" data-ng-model="storySituation.blocker">
+						<option value="what to do next">what to do next</option>
+						<option value="who to ask">who to ask</option>
+					</select>.
+				</p>
 			</form>
 		</section>
 
@@ -66,6 +78,10 @@
 
 		<blockquote class="optional" ng-show="storySituation.outcome">
 			<p>I want <mark>{{ storySituation.outcome }}</mark>.</p>
+		</blockquote>
+
+		<blockquote class="optional" ng-show="storySituation.blocker">
+			<p>I don't know <mark>{{ storySituation.blocker }}</mark>.</p>
 		</blockquote>
 
 		<section class="optional" data-ng-show="model.councilSubject.indexOf( story.disputeSubject ) > -1">
