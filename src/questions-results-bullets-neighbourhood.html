@@ -36,15 +36,16 @@
 				</select>
 				<label for="party-type">with</label>
 				<select id="party-type" data-ng-model="story.party">
-					<option data-ng-repeat="option in model.party" value="{{ option }}">{{ option | lowercase }}</option>
+					<option data-ng-repeat="option in model.party | orderBy:'+'" value="{{ option }}">{{ option | lowercase }}</option>
 				</select>
 				<label for="dispute-subject">about</label>
 				<select id="dispute-subject" data-ng-model="story.disputeSubject">
-					<option data-ng-repeat="option in model.disputeSubject" value="{{ option }}">{{ option | lowercase }}</option>
+					<option data-ng-repeat="option in model.disputeSubject | orderBy:'+'" value="{{ option }}">{{ option | lowercase }}</option>
 				</select>.
 			</p>
 		</form>
 
+<!--
 		<section class="optional" data-ng-show="story.disputeType.length > 0 &amp;&amp; story.party.length > 0 &amp;&amp; story.disputeSubject.length > 0">
 			<form class="madlibs">
 				<p>
@@ -70,12 +71,14 @@
 				</p>
 			</form>
 		</section>
+-->
 
 		<!-- TODO: this looks nice, but is it too bold? is that an over-the-shoulder privacy issue? (for workplace or family disputes?) -->
 		<blockquote class="story" data-ng-show="story.disputeType.length > 0 &amp;&amp; story.party.length > 0 &amp;&amp; story.disputeSubject.length > 0">
 			<p>I have a <mark>{{ story.disputeType | lowercase }}</mark> with <mark>{{ story.party | lowercase }}</mark> about <mark>{{ story.disputeSubject | lowercase }}</mark>.</p>
 		</blockquote>
 
+<!--
 		<blockquote class="optional" ng-show="storySituation.outcome">
 			<p>I want <mark>{{ storySituation.outcome }}</mark>.</p>
 		</blockquote>
@@ -83,6 +86,16 @@
 		<blockquote class="optional" ng-show="storySituation.blocker">
 			<p>I don't know <mark>{{ storySituation.blocker }}</mark>.</p>
 		</blockquote>
+-->
+
+		<section class="optional" data-ng-show="story.disputeType.length > 0 &amp;&amp; story.party.length > 0 &amp;&amp; story.disputeSubject.length > 0">
+			<p>If this is a body corporate {{ story.disputeType | lowercase }} then you will need to pursue the matter through the appropriate channels.</p>
+			<blockquote class="question">
+				<input type="checkbox" id="body-corporate" data-ng-model="storySituation.bodyCorporate">
+				<label for="body-corporate">I live in a body corporate<br><small>(i.e. you share common property with other owners and occupiers)</small></label>
+			</blockquote>
+		</section>
+
 
 		<section class="optional" data-ng-show="model.councilSubject.indexOf( story.disputeSubject ) > -1">
 			<form class="madlibs">

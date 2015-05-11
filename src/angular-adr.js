@@ -40,7 +40,7 @@ angular.module( 'disputeResolution', [] )
 		disputeSubject: [],
 		// TODO how is this list maintained? data portal?
 		councilSubject: [
-			'Dogs',
+			'Dogs and other pets',
 			'Fences',
 			'Noise'
 		]
@@ -98,7 +98,6 @@ angular.module( 'disputeResolution', [] )
 					domain: record[ 'Generic council email address' ].replace( /^.*@/, '' )
 				};
 			});
-			console.log( 'success', $scope.model.councils );
 		});
 	}
 
