@@ -48,7 +48,7 @@ function appendData( disputeType, party, disputeSubject, resolution ) {
 function clean() {
 	records.forEach(function( record ) {
 		[ 'disputeType', 'party', 'disputeSubject', 'resolution' ].forEach(function( key ) {
-			record[ key ] = record[ key ].replace( /;(\s+;)+/g, ';' );
+			record[ key ] = record[ key ].replace( /;(\s*;)+/g, ';' );
 		});
 		// trim leading/trailing whitespace
 		// serialise whitespace
@@ -58,13 +58,24 @@ function clean() {
 
 		// fix typo
 		record.resolution = record.resolution.replace( 'Assited', 'Assisted' );
+
+		// update old terms to new
+		record.party = record.party.toLowerCase();
+		record.party.replace( /^neighbour/, 'a neighbour' );
+		record.party.replace( /;neighbour/g, ';a neighbour' );
+		record.party.replace( 'body corporate(!)', 'the body corporate' );
+		record.party.replace( 'an adjoining lot owners', 'an adjoining lot owner' );
+		record.party.replace( ';lot owner', ';another unit owner/lot owner' );
+		record.party.replace( /^lot owner/, 'another unit owner/lot owner' );
+		record.disputeSubject.replace( /Dogs;/, 'Dogs and other pets;' );
+		record.disputeSubject.replace( /Dogs$/, 'Dogs and other pets' );
 	});
 }
 
 
 // get each row
 var tr = document.querySelectorAll( 'tr' );
-for ( i = 1, len = tr.length; i < len; i += 14 ) {
+for ( i = 1, len = tr.length; i < len; i++ ) {
 	var rowData = Array.prototype.map.call( tr[ i ].querySelectorAll( 'td' ), tableText );
 
 	// skip blank rows (no URL)
@@ -81,53 +92,58 @@ for ( i = 1, len = tr.length; i < len; i += 14 ) {
 
 		} else {
 			console.log( '-> skip', i, len, rowData[ 0 ] );
-			break;
+			rowData = undefined;
 		}
 	}
 
-	// it is a new record
-	console.log( 'parsing', i, len, rowData[ 0 ] );
-	records.push(newRecord( rowData ));
+	if ( rowData ) {
+		// it is a new record
+		console.log( 'parsing', i, len, rowData[ 0 ] );
+		records.push(newRecord( rowData ));
 
-	// extra data from rows i + 1..7
+		// extra data from rows i + 1..7
 
-	// 1, 2 = ordinary rows (no first column)
-	for ( j = 1; j <= 2; j++ ) {
-		rowData = Array.prototype.map.call( tr[ i + j ].querySelectorAll( 'td' ), tableText );
-		appendData( rowData[ 0 ], [ rowData[ 1 ], rowData[ 2 ]], [ rowData[ 3 ], rowData[ 4 ]], rowData[ 5 ]);
-	}
-	// rows 3..5 = no first column, no last column
-	for ( j = 3; j <= 5; j++ ) {
-		rowData = Array.prototype.map.call( tr[ i + j ].querySelectorAll( 'td' ), tableText );
-		appendData( rowData[ 0 ], [ rowData[ 1 ], rowData[ 2 ]], [ rowData[ 3 ], rowData[ 4 ]]);
-	}
-	// row 6 and 7: ignore first cell ("comments" label)
-	for ( j = 6; j <= 7; j++ ) {
-		rowData = Array.prototype.map.call( tr[ i + j ].querySelectorAll( 'td' ), tableText );
-		appendData( rowData[ 1 ], [ rowData[ 2 ], rowData[ 3 ]], [ rowData[ 4 ], rowData[ 5 ]]);
-	}
-	// get comment from row 7
-	records[ records.length - 1 ].Comments = rowData[ 0 ];
-	// row 8:
-	rowData = Array.prototype.map.call( tr[ i + 8 ].querySelectorAll( 'td' ), tableText );
-	appendData( '', [ rowData[ 2 ]], [ rowData[ 3 ], rowData[ 4 ]]);
-	// row 9:
-	rowData = Array.prototype.map.call( tr[ i + 8 ].querySelectorAll( 'td' ), tableText );
-	appendData( '', '', [ rowData[ 1 ], rowData[ 2 ]]);
-	// row 10..12:
-	for ( j = 10; j <= 12; j++ ) {
-		rowData = Array.prototype.map.call( tr[ i + j ].querySelectorAll( 'td' ), tableText );
-		appendData( '', '', [ rowData[ 0 ], rowData[ 1 ]] );
-	}
-	// row 13 = description (sometimes omitted)
-	// look ahead
-	rowData = Array.prototype.map.call( tr[ i + 13 ].querySelectorAll( 'td' ), tableText );
-	if ( /^\s*Description:\s*$/.test( rowData[ 0 ] )) {
-		records.Description = rowData[ 1 ];
-		// skip this row on next pass
-		i++;
+		// 1, 2 = ordinary rows (no first column)
+		for ( j = 1; j <= 2; j++ ) {
+			rowData = Array.prototype.map.call( tr[ i + j ].querySelectorAll( 'td' ), tableText );
+			appendData( rowData[ 0 ], [ rowData[ 1 ], rowData[ 2 ]], [ rowData[ 3 ], rowData[ 4 ]], rowData[ 5 ]);
+		}
+		// rows 3..5 = no first column, no last column
+		for ( j = 3; j <= 5; j++ ) {
+			rowData = Array.prototype.map.call( tr[ i + j ].querySelectorAll( 'td' ), tableText );
+			appendData( rowData[ 0 ], [ rowData[ 1 ], rowData[ 2 ]], [ rowData[ 3 ], rowData[ 4 ]]);
+		}
+		// row 6 and 7: ignore first cell ("comments" label)
+		for ( j = 6; j <= 7; j++ ) {
+			rowData = Array.prototype.map.call( tr[ i + j ].querySelectorAll( 'td' ), tableText );
+			appendData( rowData[ 1 ], [ rowData[ 2 ], rowData[ 3 ]], [ rowData[ 4 ], rowData[ 5 ]]);
+		}
+		// get comment from row 7
+		records[ records.length - 1 ].Comments = rowData[ 0 ];
+		// row 8:
+		rowData = Array.prototype.map.call( tr[ i + 8 ].querySelectorAll( 'td' ), tableText );
+		appendData( '', [ rowData[ 2 ]], [ rowData[ 3 ], rowData[ 4 ]]);
+		// row 9:
+		rowData = Array.prototype.map.call( tr[ i + 8 ].querySelectorAll( 'td' ), tableText );
+		appendData( '', '', [ rowData[ 1 ], rowData[ 2 ]]);
+		// row 10..12:
+		for ( j = 10; j <= 12; j++ ) {
+			rowData = Array.prototype.map.call( tr[ i + j ].querySelectorAll( 'td' ), tableText );
+			appendData( '', '', [ rowData[ 0 ], rowData[ 1 ]] );
+		}
+		// row 13 = description (sometimes omitted)
+		// look ahead
+		rowData = Array.prototype.map.call( tr[ i + 13 ].querySelectorAll( 'td' ), tableText );
+		if ( /^\s*Description:\s*$/.test( rowData[ 0 ] )) {
+			records.Description = rowData[ 1 ];
+			// skip this row on next pass
+			i += 13;
+		} else {
+			i += 12;
+		}
 	}
 }
+
 
 // log the final JSON output
 clean();
