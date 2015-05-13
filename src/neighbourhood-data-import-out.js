@@ -1,6 +1,6 @@
 getAlternativeDisputeResolutionData([{
 	"URL": "http://www.justice.qld.gov.au/__data/assets/pdf_file/0007/180484/form-1-ndr.pdf",
-	"disputeType": "Question;Concern;Problem;Issue",
+	"disputeType": "Question;Concern;Problem;Issue;",
 	"party": "a neighbour next door;",
 	"disputeSubject": "Fences;",
 	"resolution": "Self Resolution",
@@ -11,7 +11,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.justice.qld.gov.au/__data/assets/pdf_file/0006/180483/form-2-ndr.pdf",
-	"disputeType": "Question;Concern;Problem;Disagreement;Issue",
+	"disputeType": "Question;Concern;Problem;Disagreement;Issue;",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Fences;",
 	"resolution": "Self Resolution",
@@ -22,7 +22,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/avoiding-fence-tree-and-building-disputes/your-responsibility-as-a-fence-owner/",
-	"disputeType": "Question;Issue;Disagreement;Problem;Conflict;Concern",
+	"disputeType": "Question;Issue;Disagreement;Problem;Conflict;Concern;",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Fences;",
 	"resolution": "Self Resolution",
@@ -35,7 +35,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/avoiding-fence-tree-and-building-disputes/avoiding-disputes-about-fences/",
-	"disputeType": "Question;Concern;Problem;Issue",
+	"disputeType": "Question;Concern;Problem;Issue;",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Fences;",
 	"resolution": "Self Resolution;Assisted Resolution",
@@ -48,7 +48,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/resolving-tree-and-fence-disputes/step-by-step-guide-to-resolving-tree-and-fence-disputes/",
-	"disputeType": "Concern;Problem;Disagreement;Complaint;Conflict;Dispute",
+	"disputeType": "Concern;Problem;Disagreement;Complaint;Conflict;Dispute;",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Fences;",
 	"resolution": "Self Resolution;Assisted Resolution;Formal Resolution",
@@ -61,7 +61,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/ways-to-approach-your-neighbour/",
-	"disputeType": "Concern;Question;Issue",
+	"disputeType": "Concern;Question;Issue;",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Fences;",
 	"resolution": "Self Resolution",
@@ -74,7 +74,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.qld.gov.au/law/legal-mediation-and-justice-of-the-peace/setting-disputes-out-of-court/neighbourhood-mediation",
-	"disputeType": "Problem;Disagreement;Conflict;Issue;Dispute;Complaint",
+	"disputeType": "Problem;Disagreement;Conflict;Issue;Dispute;Complaint;",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Fences;",
 	"resolution": "Self Resolution;Assisted Resolution",
@@ -87,7 +87,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "https://www.legislation.qld.gov.au/LEGISLTN/CURRENT/N/NeighDisputesDFTA11.pdf",
-	"disputeType": "Complaint;Question",
+	"disputeType": "Complaint;Question;",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Fences;",
 	"resolution": "Assisted Resolution;Formal Resolution",
@@ -98,7 +98,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/resolving-tree-and-fence-disputes/examples-of-dividing-fence-disputes/",
-	"disputeType": "Question;Dispute;Issue",
+	"disputeType": "Question;Dispute;Issue;",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Fences;",
 	"resolution": "Assisted Resolution;Formal Resolution",
@@ -111,7 +111,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/resolving-tree-and-fence-disputes/resolving-dividing-fence-disputes-with-qcat/",
-	"disputeType": "Complaint;Dispute",
+	"disputeType": "Complaint;Dispute;",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Fences;",
 	"resolution": "Formal Resolution;Assisted Resolution",
@@ -124,7 +124,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.qcat.qld.gov.au/matter-types/dividing-fence-disputes",
-	"disputeType": "Dispute;Complaint;Conflict",
+	"disputeType": "Dispute;Complaint;Conflict;",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Fences;",
 	"resolution": "Formal Resolution;Assisted Resolution",
@@ -137,7 +137,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.qcat.qld.gov.au/__data/assets/pdf_file/0004/129577/Form-53-Application-for-minor-civil-dispute-dividing-fences.pdf",
-	"disputeType": "Complaint;Conflict;Dispute",
+	"disputeType": "Complaint;Conflict;Dispute;",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Fences;",
 	"resolution": "Formal Resolution;Assisted Resolution",
@@ -148,7 +148,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.qcat.qld.gov.au/__data/assets/pdf_file/0005/129578/checklist-Form-53-Application-for-minor-civil-dispute-dividing-fences.pdf",
-	"disputeType": "Complaint;Dispute;Conflict",
+	"disputeType": "Complaint;Dispute;Conflict;",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Fences;",
 	"resolution": "Formal Resolution;Assisted Resolution",
@@ -159,7 +159,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.qcat.qld.gov.au/matter-types/debt-disputes",
-	"disputeType": "Problem;Disagreement;Complaint;Conflict;Dispute;Issue",
+	"disputeType": "Problem;Disagreement;Complaint;Conflict;Dispute;Issue;",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Fences;",
 	"resolution": "Formal Resolution",
@@ -172,7 +172,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.hpw.qld.gov.au/construction/BuildingPlumbing/PoolSafety/PoolFencesSafetyBarriers/Pages/DividingFences.aspx",
-	"disputeType": "Concern;Question;Problem",
+	"disputeType": "Concern;Question;Problem;",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Fences;",
 	"resolution": "Self Resolution;Formal Resolution",
@@ -185,7 +185,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.qldneighbourhoods.com/fences.html",
-	"disputeType": "Question",
+	"disputeType": "Question;",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Fences;",
 	"resolution": "Self Resolution;Assisted Resolution;Formal Resolution",
@@ -198,7 +198,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.qldneighbourhoods.com/talk-to-your-neighbour.html",
-	"disputeType": "Question;Problem;Issue",
+	"disputeType": "Question;Problem;Issue;",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Fences;",
 	"resolution": "Self Resolution",
@@ -211,7 +211,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.qldneighbourhoods.com/what-do-i-do-if-my-neighbour-approaches-me-about-a-dividing-fence-issue.html",
-	"disputeType": "Problem;Question;Disagreement;Issue",
+	"disputeType": "Problem;Question;Disagreement;Issue;",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Fences;",
 	"resolution": "Self Resolution",
@@ -224,7 +224,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.qldneighbourhoods.com/writing-to-your-neighbour.html",
-	"disputeType": "Question;Issue;Disagreement",
+	"disputeType": "Question;Issue;Disagreement;",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Fences;",
 	"resolution": "Self Resolution",
@@ -237,7 +237,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.qldneighbourhoods.com/mediation.html",
-	"disputeType": "Disagreement;Concern;Issue;Conflict",
+	"disputeType": "Disagreement;Concern;Issue;Conflict;",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Fences;",
 	"resolution": "Assisted Resolution",
@@ -250,7 +250,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "https://caxton.org.au/pdfs/Dividing%20Fences%20kit%202013.pdf",
-	"disputeType": "Problem;Issue;Question;Dispute;Disagreement",
+	"disputeType": "Problem;Issue;Question;Dispute;Disagreement;",
 	"party": ";",
 	"disputeSubject": ";",
 	"resolution": "",
@@ -261,7 +261,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Australia"
 }, {
 	"URL": "https://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/avoiding-fence-tree-and-building-disputes/your-responsibility-as-a-fence-owner/",
-	"disputeType": "Question",
+	"disputeType": "Question;",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Retaining walls;",
 	"resolution": "Formal Resolution",
@@ -274,7 +274,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/avoiding-fence-tree-and-building-disputes/avoiding-building-disputes/",
-	"disputeType": "Question",
+	"disputeType": "Question;",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Retaining walls;",
 	"resolution": "Self Resolution",
@@ -287,7 +287,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.legalaid.qld.gov.au/legalinformation/livinginthecommunity/Neighbourhood/Pages/Fencesandretainingwalls.aspx#Top",
-	"disputeType": "Question;Dispute;Conflict",
+	"disputeType": "Question;Dispute;Conflict;",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Retaining walls;",
 	"resolution": "Formal Resolution",
@@ -300,7 +300,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.qldneighbourhoods.com/a-retaining-wall-or-a-wall-that-is-part-of-a-house-garage-or-other-building.html",
-	"disputeType": "",
+	"disputeType": ";",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Retaining walls;",
 	"resolution": "Formal Resolution",
@@ -313,7 +313,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://sskb.com.au/body-corporate-strata-services/car-parking-disputes-commissioners-order/",
-	"disputeType": "Question;Dispute;Conflict",
+	"disputeType": "Question;Dispute;Conflict;",
 	"party": "a neighbour;a neighbour next door;a neighbour;a neighbour in my building;the body corporate;another unit owner/lot owner;",
 	"disputeSubject": "Parking;",
 	"resolution": "Formal Resolution",
@@ -326,7 +326,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Australia"
 }, {
 	"URL": "http://www.brisbane.qld.gov.au/traffic-transport/parking-permits/parking-rules/illegal-dangerous-parking",
-	"disputeType": "Question;Dispute;Conflict",
+	"disputeType": "Question;Dispute;Conflict;",
 	"party": "a neighbour;someone in my neighbourhood;a neighbour next door;a neighbour in my street;",
 	"disputeSubject": "Parking;",
 	"resolution": "Formal Resolution",
@@ -339,7 +339,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Brisbane City Council"
 }, {
 	"URL": "http://www.legalaid.qld.gov.au/legalinformation/livinginthecommunity/Neighbourhood/Pages/Complaints-noisewatersmellsandfire.aspx",
-	"disputeType": "Complaint;Dispute",
+	"disputeType": "Complaint;Dispute;",
 	"party": "a neighbour;someone in my neighbourhood;someone in my neighbourhood;a neighbour next door;a neighbour in my building;",
 	"disputeSubject": "Rubbish bins;",
 	"resolution": "Self Resolution;Assisted Resolution",
@@ -352,7 +352,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.brisbane.qld.gov.au/laws-permits/local-laws/information-about-local-laws/neighbourhood-complaints",
-	"disputeType": "Complaint;Dispute",
+	"disputeType": "Complaint;Dispute;",
 	"party": "a neighbour;someone in my neighbourhood;a neighbour next door;a neighbour in my street;",
 	"disputeSubject": "Rubbish bins;Smells;Objects;",
 	"resolution": "Self Resolution;Assisted Resolution;Formal Resolution",
@@ -365,7 +365,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Brisbane City Council"
 }, {
 	"URL": "http://www.brisbane.qld.gov.au/environment-waste/rubbish-tips-bins/rubbish-collections/bin-collections",
-	"disputeType": "Complaint;Dispute",
+	"disputeType": "Complaint;Dispute;",
 	"party": "a neighbour;someone in my neighbourhood;a neighbour next door;a neighbour in my street;",
 	"disputeSubject": "Rubbish bins;",
 	"resolution": "Formal Resolution",
@@ -378,7 +378,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Brisbane City Council"
 }, {
 	"URL": "http://www.brisbane.qld.gov.au/traffic-transport/parking-permits/parking-rules/residential-parking",
-	"disputeType": "Question;Complaint",
+	"disputeType": "Question;Complaint;",
 	"party": "a neighbour;someone in my neighbourhood;a neighbour next door;a neighbour in my street;a neighbour in my building;",
 	"disputeSubject": "Access;",
 	"resolution": "Formal Resolution",
@@ -391,7 +391,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Brisbane City Council"
 }, {
 	"URL": "http://www.qld.gov.au/law/housing-and-neighbours/noise-and-crime-in-the-neighbourhood/complain-about-noisy-neighbours/",
-	"disputeType": "Complaint",
+	"disputeType": "Complaint;",
 	"party": "a neighbour;someone in my neighbourhood;a neighbour in my street;a neighbour next door;a neighbour in my building;",
 	"disputeSubject": "Noise;",
 	"resolution": "Formal Resolution",
@@ -404,7 +404,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.qld.gov.au/environment/pollution/pollution-management/noise/",
-	"disputeType": "Question;Concern;Issue",
+	"disputeType": "Question;Concern;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;a neighbour in my street;a neighbour in my building;a neighbour next door;",
 	"disputeSubject": "Noise;",
 	"resolution": "Self Resolution",
@@ -417,7 +417,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.legalaid.qld.gov.au/legalinformation/livinginthecommunity/Neighbourhood/Pages/Complaints-noisewatersmellsandfire.aspx#What is a nuisance?",
-	"disputeType": "Complaint;Issue;Problem;Question",
+	"disputeType": "Complaint;Issue;Problem;Question;",
 	"party": "a neighbour;someone in my neighbourhood;a neighbour next door;a neighbour in my building;a neighbour in my street;",
 	"disputeSubject": "Noise;Dogs and other pets;Smells;",
 	"resolution": "Assisted Resolution",
@@ -430,7 +430,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "https://www.police.qld.gov.au/apps/reports/noiseComplaint",
-	"disputeType": "Complaint",
+	"disputeType": "Complaint;",
 	"party": "a neighbour;someone in my neighbourhood;a neighbour next door;a neighbour in my street;a neighbour in my building;",
 	"disputeSubject": "Noise;",
 	"resolution": "Formal Resolution",
@@ -443,7 +443,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "https://www.police.qld.gov.au/apps/reports/noiseComplaint",
-	"disputeType": "Problem;Question;Concern",
+	"disputeType": "Problem;Question;Concern;",
 	"party": "a neighbour;someone in my neighbourhood;a neighbour next door;a neighbour in my street;a neighbour in my building;",
 	"disputeSubject": "Noise;",
 	"resolution": "Assisted Resolution",
@@ -456,7 +456,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.dlg.qld.gov.au/local-government/laws/local-laws-database.html",
-	"disputeType": "Question",
+	"disputeType": "Question;",
 	"party": "a neighbour;",
 	"disputeSubject": "Noise;Dogs and other pets;Overgrown gardens;",
 	"resolution": "Self Resolution",
@@ -469,7 +469,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "https://www.qld.gov.au/families/government/pets/",
-	"disputeType": "Question;Issue;Concern",
+	"disputeType": "Question;Issue;Concern;",
 	"party": "a neighbour;",
 	"disputeSubject": "Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -482,7 +482,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "https://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/resolving-tree-and-fence-disputes/step-by-step-guide-to-resolving-tree-and-fence-disputes/",
-	"disputeType": "Dispute;Disagreement;Question",
+	"disputeType": "Dispute;Disagreement;Question;",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Trees;",
 	"resolution": "Self Resolution",
@@ -495,7 +495,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "https://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/resolving-tree-and-fence-disputes/what-to-do-if-a-neighbours-tree-is-affecting-you/",
-	"disputeType": "Concern;Question",
+	"disputeType": "Concern;Question;",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Trees;",
 	"resolution": "Self Resolution",
@@ -508,7 +508,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "https://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/avoiding-fence-tree-and-building-disputes/avoiding-disputes-about-trees/",
-	"disputeType": "Concern;Question",
+	"disputeType": "Concern;Question;",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Trees;",
 	"resolution": "Self Resolution",
@@ -521,7 +521,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "https://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/avoiding-fence-tree-and-building-disputes/your-responsibilities-as-a-tree-keeper/",
-	"disputeType": "Question",
+	"disputeType": "Question;",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Trees;",
 	"resolution": "Self Resolution",
@@ -534,7 +534,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.legalaid.qld.gov.au/legalinformation/livinginthecommunity/Neighbourhood/Pages/Treesandplants.aspx",
-	"disputeType": "Disagreement;Dispute;Conflict",
+	"disputeType": "Disagreement;Dispute;Conflict;",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Trees;",
 	"resolution": "Assisted Resolution;Self Resolution",
@@ -547,7 +547,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.qld.gov.au/law/housing-and-neighbours/noise-and-crime-in-the-neighbourhood/barking-dogs-in-the-neighbourhood/",
-	"disputeType": "Complaint",
+	"disputeType": "Complaint;",
 	"party": "a neighbour;",
 	"disputeSubject": "Dogs and other pets;",
 	"resolution": "Formal Resolution",
@@ -560,7 +560,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.legalaid.qld.gov.au/legalinformation/livinginthecommunity/Neighbourhood/Pages/Animals-controllingtreatingandowning.aspx",
-	"disputeType": "Question;Problem;Concern",
+	"disputeType": "Question;Problem;Concern;",
 	"party": "a neighbour;",
 	"disputeSubject": "Dogs and other pets;",
 	"resolution": "Assisted Resolution",
@@ -573,7 +573,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.justice.qld.gov.au/__data/assets/pdf_file/0010/134893/resolving-neighbourhood-disputes-trees.pdf",
-	"disputeType": "Question",
+	"disputeType": "Question;",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Trees;",
 	"resolution": "Assisted Resolution",
@@ -584,7 +584,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.qldneighbourhoods.com/animals.html",
-	"disputeType": "Problem;Concern;Question",
+	"disputeType": "Problem;Concern;Question;",
 	"party": "a neighbour;",
 	"disputeSubject": "Dogs and other pets;",
 	"resolution": "Assisted Resolution",
@@ -597,7 +597,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "https://caxton.org.au/pdfs/Tree%20Disputes%20Self%20Help%20Kit%20-%20nov%202013.pdf",
-	"disputeType": "Problem;Concern;Disagreement;Dispute",
+	"disputeType": "Problem;Concern;Disagreement;Dispute;",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Trees;",
 	"resolution": "Self Resolution;Assisted Resolution",
@@ -608,7 +608,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Australia"
 }, {
 	"URL": "http://www.qldneighbourhoods.com/what-if-a-complaint-is-made-against-your-animal.html",
-	"disputeType": "Concern;Problem",
+	"disputeType": "Concern;Problem;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -621,7 +621,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.qcat.qld.gov.au/matter-types/tree-disputes",
-	"disputeType": "Concern;Disagreement;Conflict;Dispute",
+	"disputeType": "Concern;Disagreement;Conflict;Dispute;",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Trees;",
 	"resolution": "Self Resolution;Assisted Resolution;Formal Resolution",
@@ -634,7 +634,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.courts.qld.gov.au/about/fact-sheets",
-	"disputeType": "Complaint;Problem;Disagreement;Conflict;Dispute;Issue",
+	"disputeType": "Complaint;Problem;Disagreement;Conflict;Dispute;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Behaviours;Abuse;Threats;Harassment;",
 	"resolution": "Formal Resolution",
@@ -647,7 +647,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "https://caxton.org.au/self_help_kits.html",
-	"disputeType": "Disagreement;Conflict;Dispute;Issue",
+	"disputeType": "Disagreement;Conflict;Dispute;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Behaviours;Abuse;Threats;Harassment;",
 	"resolution": "Formal Resolution",
@@ -660,7 +660,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Australia"
 }, {
 	"URL": "",
-	"disputeType": "Disagreement;Conflict;Dispute;Issue",
+	"disputeType": "Disagreement;Conflict;Dispute;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Behaviours;Abuse;Threats;Harassment;",
 	"resolution": "Formal Resolution",
@@ -671,7 +671,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Other"
 }, {
 	"URL": "http://www.qcat.qld.gov.au/matter-types/tree-disputes/faq-tree-disputes",
-	"disputeType": "Dispute;Conflict",
+	"disputeType": "Dispute;Conflict;",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Trees;",
 	"resolution": "Formal Resolution",
@@ -684,7 +684,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.qcat.qld.gov.au/matter-types/tree-disputes/overhanging-branches",
-	"disputeType": "Conflict;Dispute",
+	"disputeType": "Conflict;Dispute;",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Trees;",
 	"resolution": "Formal Resolution",
@@ -697,7 +697,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.qcat.qld.gov.au/matter-types/tree-disputes/tree-dispute-application",
-	"disputeType": "Conflict;Dispute;Question",
+	"disputeType": "Conflict;Dispute;Question;",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Trees;",
 	"resolution": "Formal Resolution",
@@ -710,7 +710,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.qcat.qld.gov.au/__data/assets/pdf_file/0014/205403/Application-checklist-Tree-dispute-resolution.pdf",
-	"disputeType": "Dispute;Conflict",
+	"disputeType": "Dispute;Conflict;",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Trees;",
 	"resolution": "Formal Resolution",
@@ -721,7 +721,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.qcat.qld.gov.au/__data/assets/pdf_file/0011/129683/Form-51-application-for-a-tree-dispute-v2.pdf",
-	"disputeType": "Dispute",
+	"disputeType": "Dispute;",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Trees;",
 	"resolution": "Formal Resolution",
@@ -732,7 +732,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.qcat.qld.gov.au/__data/assets/pdf_file/0003/129684/Form-52-Response-to-application-for-a-tree-dispute-v2.pdf",
-	"disputeType": "Dispute",
+	"disputeType": "Dispute;",
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Trees;",
 	"resolution": "Formal Resolution",
@@ -743,7 +743,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.communities.qld.gov.au/childsafety/protecting-children",
-	"disputeType": "Dispute;Concern;Problem;Question;Complaint",
+	"disputeType": "Dispute;Concern;Problem;Question;Complaint;",
 	"party": "someone in my neighbourhood;a neighbour next door;a neighbour in my building;a neighbour in my street;a neighbour;",
 	"disputeSubject": "Children;",
 	"resolution": "Formal Resolution",
@@ -754,7 +754,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.legalaid.qld.gov.au/legalinformation/livinginthecommunity/Neighbourhood/Pages/Thingspeoplesay.aspx#What can I do if children are taunting me or my child, or making comments?",
-	"disputeType": "Problem;Concern;Dispute;Conflict;Question",
+	"disputeType": "Problem;Concern;Dispute;Conflict;Question;",
 	"party": "someone in my neighbourhood;a neighbour next door;a neighbour in my building;a neighbour in my street;a neighbour;",
 	"disputeSubject": "Children;",
 	"resolution": "Formal Resolution",
@@ -767,7 +767,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "https://www.qld.gov.au/disability/children-young-people/bullying/facts.html",
-	"disputeType": "Problem;Concern;Dispute;Conflict;Question",
+	"disputeType": "Problem;Concern;Dispute;Conflict;Question;",
 	"party": "someone in my neighbourhood;a neighbour next door;a neighbour in my building;a neighbour in my street;a neighbour;",
 	"disputeSubject": "Children;",
 	"resolution": "Formal Resolution",
@@ -780,7 +780,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.legalaid.qld.gov.au/legalinformation/livinginthecommunity/neighbourhood/pages/boundariesandeasements.aspx",
-	"disputeType": "Concern;Problem;Complaint;Question",
+	"disputeType": "Concern;Problem;Complaint;Question;",
 	"party": "someone in my neighbourhood;a neighbour next door;a neighbour in my street;a neighbour;",
 	"disputeSubject": "Easements;",
 	"resolution": "Self Resolution;Assisted Resolution",
@@ -793,7 +793,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://pan.search.qld.gov.au/search/click.cgi?rank=4&collection=qld-gov&url=https%3A%2F%2Fwww.dnrm.qld.gov.au%2F%3Fa%3D109113%3Apolicy_registry%2Feasement.pdf&index_url=https%3A%2F%2Fwww.dnrm.qld.gov.au%2F%3Fa%3D109113%3Apolicy_registry%2Feasement.pdf&auth=AGl9LU383MAOeg4hm4%2Fe7Q&search_referer=&query=easements&profile=dnrm&identifier=1430176784.7555",
-	"disputeType": "Question",
+	"disputeType": "Question;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Easements;",
 	"resolution": "Self Resolution",
@@ -806,7 +806,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.qldneighbourhoods.com/easements.html",
-	"disputeType": "Question",
+	"disputeType": "Question;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Easements;",
 	"resolution": "Self Resolution",
@@ -819,7 +819,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.statedevelopment.qld.gov.au/compulsory-land-acquisition/easements.html",
-	"disputeType": "Question",
+	"disputeType": "Question;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Easements;",
 	"resolution": "Self Resolution",
@@ -832,7 +832,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.justice.qld.gov.au/fair-and-safe-work/industrial-relations/codes-of-practice-and-guidelines/queensland-code-of-practice-for-the-building-and-construction-industry",
-	"disputeType": "Question;Concern;Conflict;Complaint;Issue",
+	"disputeType": "Question;Concern;Conflict;Complaint;Issue;",
 	"party": "someone in my neighbourhood;a neighbour;a neighbour next door;a neighbour in my street;a neighbour in my building;",
 	"disputeSubject": "Renovations;",
 	"resolution": "Formal Resolution",
@@ -845,7 +845,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.qld.gov.au/environment/land/state/easements/applying/",
-	"disputeType": "Question",
+	"disputeType": "Question;",
 	"party": "someone in my neighbourhood;a neighbour;",
 	"disputeSubject": "Easements;",
 	"resolution": "Self Resolution",
@@ -858,7 +858,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.landservices.sa.gov.au/5Publications/Brochures_and_Fact_Sheets/_files/_Fact_Sheets/03_Easements.pdf",
-	"disputeType": "Question",
+	"disputeType": "Question;",
 	"party": "someone in my neighbourhood;a neighbour;",
 	"disputeSubject": "Easements;",
 	"resolution": "Self Resolution",
@@ -869,7 +869,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Australia"
 }, {
 	"URL": "http://www.renovate.com.au/rules/index.cfm",
-	"disputeType": "Concern;Question;Issue;Dispute;Disagreement;Problem",
+	"disputeType": "Concern;Question;Issue;Dispute;Disagreement;Problem;",
 	"party": "someone in my neighbourhood;a neighbour;a neighbour next door;a neighbour in my street;a neighbour in my building;",
 	"disputeSubject": "Renovations;",
 	"resolution": "Self Resolution",
@@ -882,7 +882,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Australia"
 }, {
 	"URL": "http://www.qldneighbourhoods.com/development-permits-and-approvals.html",
-	"disputeType": "Question;Concern;Conflict;Complaint;Issue",
+	"disputeType": "Question;Concern;Conflict;Complaint;Issue;",
 	"party": "someone in my neighbourhood;a neighbour;a neighbour next door;a neighbour in my street;a neighbour in my building;",
 	"disputeSubject": "Renovations;",
 	"resolution": "Self Resolution;Assisted Resolution;Formal Resolution",
@@ -895,7 +895,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/avoiding-fence-tree-and-building-disputes/avoiding-building-disputes/",
-	"disputeType": "Question;Concern;Conflict;Complaint;Issue",
+	"disputeType": "Question;Concern;Conflict;Complaint;Issue;",
 	"party": "someone in my neighbourhood;a neighbour;a neighbour next door;a neighbour in my street;a neighbour in my building;",
 	"disputeSubject": "Renovations;",
 	"resolution": "Self Resolution",
@@ -908,7 +908,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.legalaid.qld.gov.au/legalinformation/youngpeople/Pages/Youngpeopleandthejusticesystem.aspx",
-	"disputeType": "Question;Concern;Conflict;Complaint;Issue",
+	"disputeType": "Question;Concern;Conflict;Complaint;Issue;",
 	"party": "someone in my neighbourhood;a neighbour;a neighbour next door;a neighbour in my street;a neighbour in my building;",
 	"disputeSubject": "Children;",
 	"resolution": "Formal Resolution",
@@ -921,7 +921,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.justice.qld.gov.au/youth-justice",
-	"disputeType": "Question;Concern;Conflict;Complaint;Issue",
+	"disputeType": "Question;Concern;Conflict;Complaint;Issue;",
 	"party": "someone in my neighbourhood;a neighbour;a neighbour next door;a neighbour in my street;a neighbour in my building;",
 	"disputeSubject": "Children;",
 	"resolution": "Formal Resolution",
@@ -934,7 +934,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.logan.qld.gov.au/__data/assets/pdf_file/0007/49093/stormwater-factsheet.pdf",
-	"disputeType": "Concern;Question;Issue",
+	"disputeType": "Concern;Question;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;a neighbour in my street;",
 	"disputeSubject": "Drainage;",
 	"resolution": "Self Resolution",
@@ -945,7 +945,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Logan City Council"
 }, {
 	"URL": "http://www.brisbane.qld.gov.au/laws-permits/complaints-fines/noise-air-light-water-complaints/stormwater-pollution-runoff-drainage-complaints",
-	"disputeType": "Complaint;Question",
+	"disputeType": "Complaint;Question;",
 	"party": "a neighbour;a neighbour next door;a neighbour in my street;",
 	"disputeSubject": "Drainage;",
 	"resolution": "Self Resolution;Assisted Resolution",
@@ -958,7 +958,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Brisbane City Council"
 }, {
 	"URL": "http://www.qldneighbourhoods.com/animals.html",
-	"disputeType": "Concern;Problem;Complaint;Question;Issue",
+	"disputeType": "Concern;Problem;Complaint;Question;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;a neighbour next door;a neighbour in my street;a neighbour in my building;",
 	"disputeSubject": "Wildlife;",
 	"resolution": "Self Resolution;Assisted Resolution",
@@ -971,7 +971,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.legalanswers.sl.nsw.gov.au/guides/neighbours/animals.html",
-	"disputeType": "Concern;Problem;Complaint;Question;Issue",
+	"disputeType": "Concern;Problem;Complaint;Question;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;a neighbour next door;a neighbour in my street;a neighbour in my building;",
 	"disputeSubject": "Wildlife;",
 	"resolution": "Self Resolution;Assisted Resolution;Formal Resolution",
@@ -984,7 +984,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Australia"
 }, {
 	"URL": "http://www.disputes.vic.gov.au/know-your-rights-0",
-	"disputeType": "Concern;Problem;Complaint;Question;Issue",
+	"disputeType": "Concern;Problem;Complaint;Question;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;a neighbour next door;a neighbour in my street;a neighbour in my building;",
 	"disputeSubject": "Wildlife;",
 	"resolution": "Self Resolution;Assisted Resolution",
@@ -997,7 +997,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Australia"
 }, {
 	"URL": "http://www.crs.org.au/html/neighbourhood_disputes.htm#animal",
-	"disputeType": "Concern;Problem;Complaint;Question;Issue",
+	"disputeType": "Concern;Problem;Complaint;Question;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;a neighbour next door;a neighbour in my street;a neighbour in my building;",
 	"disputeSubject": "Wildlife;",
 	"resolution": "Self Resolution",
@@ -1010,7 +1010,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Australia"
 }, {
 	"URL": "http://www.goldcoast.qld.gov.au/community/animal-complaints-18356.html",
-	"disputeType": "Concern;Complaint;Question;Issue",
+	"disputeType": "Concern;Complaint;Question;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;a neighbour next door;a neighbour in my street;a neighbour in my building;",
 	"disputeSubject": "Wildlife;",
 	"resolution": "Self Resolution;Assisted Resolution",
@@ -1023,7 +1023,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Gold Coast City Council"
 }, {
 	"URL": "http://www.legalaid.qld.gov.au/LEGALINFORMATION/LIVINGINTHECOMMUNITY/NEIGHBOURHOOD/Pages/Animals-controllingtreatingandowning.aspx",
-	"disputeType": "Concern;Complaint",
+	"disputeType": "Concern;Complaint;",
 	"party": "a neighbour;someone in my neighbourhood;a neighbour next door;a neighbour in my street;a neighbour in my building;",
 	"disputeSubject": "Wildlife;Dogs and other pets;",
 	"resolution": "Self Resolution;Assisted Resolution",
@@ -1036,7 +1036,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.oaic.gov.au/privacy/privacy-topics/photos-and-surveillance/what-can-i-do-about-my-neighbour-s-security-camera",
-	"disputeType": "Problem;Complaint;Conflict;Dispute;Issue",
+	"disputeType": "Problem;Complaint;Conflict;Dispute;Issue;",
 	"party": "a neighbour;a neighbour next door;a neighbour in my street;a neighbour in my building;",
 	"disputeSubject": "Cameras;",
 	"resolution": "Self Resolution;Assisted Resolution",
@@ -1049,7 +1049,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Australia"
 }, {
 	"URL": "http://www.ehp.qld.gov.au/management/non-mining/noise-light-odour.html",
-	"disputeType": "Problem;Complaint;Conflict;Dispute;Issue",
+	"disputeType": "Problem;Complaint;Conflict;Dispute;Issue;",
 	"party": "someone in my neighbourhood;a neighbour in my building;a neighbour next door;a neighbour in my street;a neighbour;",
 	"disputeSubject": "Lighting;Noise;Smells;",
 	"resolution": "Self Resolution",
@@ -1062,7 +1062,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.townsville.qld.gov.au/.../Documents/Light Nuisance-final.pdf",
-	"disputeType": "Concern;Problem;Disagreement;Complaint;Dispute",
+	"disputeType": "Concern;Problem;Disagreement;Complaint;Dispute;",
 	"party": "someone in my neighbourhood;a neighbour;a neighbour next door;a neighbour in my street;a neighbour in my building;",
 	"disputeSubject": "Lighting;",
 	"resolution": "Self Resolution;Assisted Resolution;Formal Resolution",
@@ -1075,7 +1075,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Townsville City Council"
 }, {
 	"URL": "http://www.sunshinecoast.qld.gov.au/sitePage.cfm?code=noise-light",
-	"disputeType": "Issue;Concern;Disagreement;Complaint;Dispute;Question",
+	"disputeType": "Issue;Concern;Disagreement;Complaint;Dispute;Question;",
 	"party": "someone in my neighbourhood;a neighbour in my building;a neighbour next door;a neighbour in my street;a neighbour;",
 	"disputeSubject": "Lighting;Noise;",
 	"resolution": "Self Resolution;Assisted Resolution;Formal Resolution",
@@ -1088,7 +1088,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Sunshine Coast Regional Council"
 }, {
 	"URL": "http://www.lawstuff.org.au/qld_law/topics/",
-	"disputeType": "Question",
+	"disputeType": "Question;",
 	"party": "someone in my neighbourhood;",
 	"disputeSubject": "Children;",
 	"resolution": "Formal Resolution",
@@ -1101,7 +1101,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.brisbane.qld.gov.au/sites/default/files/lawful_point_discharge_neighbours.pdf",
-	"disputeType": "Question;Problem",
+	"disputeType": "Question;Problem;",
 	"party": "a neighbour;someone in my neighbourhood;a neighbour next door;an adjoining landowners;",
 	"disputeSubject": "Drainage;",
 	"resolution": "Self Resolution",
@@ -1112,7 +1112,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Brisbane City Council"
 }, {
 	"URL": "http://www.brisbane.qld.gov.au/laws-permits/laws-permits-residents/animals-pets/cats-dogs/barking-dogs",
-	"disputeType": "Concern;Problem;Complaint;Issue",
+	"disputeType": "Concern;Problem;Complaint;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1125,7 +1125,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Brisbane City Council"
 }, {
 	"URL": "http://www.goldcoast.qld.gov.au/community/barking-dogs-3498.html",
-	"disputeType": "Question;Issue",
+	"disputeType": "Question;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1138,7 +1138,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Gold Coast City Council"
 }, {
 	"URL": "http://www.goldcoast.qld.gov.au/report-a-problem-animals-24148.html",
-	"disputeType": "Complaint;Problem;Concern;Issue",
+	"disputeType": "Complaint;Problem;Concern;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;a neighbour in my street;",
 	"disputeSubject": "Trees;Dogs and other pets;",
 	"resolution": "Formal Resolution",
@@ -1151,7 +1151,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Gold Coast City Council"
 }, {
 	"URL": "http://www.ipswich.qld.gov.au/residents/animals/dogs",
-	"disputeType": "Complaint;Problem;Concern;Issue",
+	"disputeType": "Complaint;Problem;Concern;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;a neighbour in my street;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution;Assisted Resolution",
@@ -1164,7 +1164,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Ipswich City Council"
 }, {
 	"URL": "http://www.lockyervalley.qld.gov.au/community/animal-control/barking-dogs",
-	"disputeType": "Concern;Problem;Complaint;Issue",
+	"disputeType": "Concern;Problem;Complaint;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;a neighbour in my street;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1177,7 +1177,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.logan.qld.gov.au/facilities-and-recreation/animals/pet-care/animal-seminars",
-	"disputeType": "Question",
+	"disputeType": "Question;",
 	"party": "a neighbour;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Assisted Resolution",
@@ -1190,7 +1190,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Logan City Council"
 }, {
 	"URL": "http://www.logan.qld.gov.au/facilities-and-recreation/animals/pet-care/barking-dogs",
-	"disputeType": "Concern;Problem;Complaint;Issue",
+	"disputeType": "Concern;Problem;Complaint;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;a neighbour in my street;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1203,7 +1203,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Logan City Council"
 }, {
 	"URL": "https://www.moretonbay.qld.gov.au/general.aspx?id=13577",
-	"disputeType": "Concern;Problem;Complaint;Issue",
+	"disputeType": "Concern;Problem;Complaint;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1216,7 +1216,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Moreton Bay Regional Council"
 }, {
 	"URL": "http://www.redland.qld.gov.au/FormsPermits/PetManagement/Dog/Pages/BarkingDogs.aspx",
-	"disputeType": "Concern;Problem;Complaint;Issue",
+	"disputeType": "Concern;Problem;Complaint;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution;Formal Resolution",
@@ -1229,7 +1229,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Redland City Council"
 }, {
 	"URL": "http://www.scenicrim.qld.gov.au/environment/animalnoise.shtml",
-	"disputeType": "Concern;Problem;Complaint;Issue",
+	"disputeType": "Concern;Problem;Complaint;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution;Assisted Resolution",
@@ -1242,7 +1242,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Scenic Rim Regional Council"
 }, {
 	"URL": "http://www.somerset.qld.gov.au/documents/611941/4483953/Fact%20Sheet%20-%20Barking%20Dogs%20-%20A%20Dog%20Owners%20View.pdf",
-	"disputeType": "Issue",
+	"disputeType": "Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1253,7 +1253,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Somerset Regional Council"
 }, {
 	"URL": "http://www.somerset.qld.gov.au/documents/611941/4483953/Fact%20Sheet%20-%20Barking%20Dogs%20-%20A%20Neighbours%20View.pdf",
-	"disputeType": "Concern;Problem;Complaint;Issue",
+	"disputeType": "Concern;Problem;Complaint;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1264,7 +1264,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Somerset Regional Council"
 }, {
 	"URL": "http://www.sunshinecoast.qld.gov.au/addfiles/documents/animals/barking_complainant.pdf",
-	"disputeType": "Concern;Problem;Complaint;Issue",
+	"disputeType": "Concern;Problem;Complaint;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1275,7 +1275,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Sunshine Coast Regional Council"
 }, {
 	"URL": "http://www.sunshinecoast.qld.gov.au/addfiles/documents/animals/barking_owner.pdf",
-	"disputeType": "Issue",
+	"disputeType": "Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1286,7 +1286,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Sunshine Coast Regional Council"
 }, {
 	"URL": "http://www.banana.qld.gov.au/animals-complaints-pound",
-	"disputeType": "Concern;Problem;Conflict;Issue",
+	"disputeType": "Concern;Problem;Conflict;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Formal Resolution",
@@ -1299,7 +1299,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Banana Shire Council"
 }, {
 	"URL": "http://www.bundaberg.qld.gov.au/environment/animals",
-	"disputeType": "Concern;Problem;Complaint;Issue",
+	"disputeType": "Concern;Problem;Complaint;Issue;",
 	"party": "someone in my neighbourhood;a neighbour;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1312,7 +1312,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Bundaberg Regional Council"
 }, {
 	"URL": "http://www.frasercoast.qld.gov.au/animal-management",
-	"disputeType": "Concern;Problem;Complaint;Issue",
+	"disputeType": "Concern;Problem;Complaint;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1325,7 +1325,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Fraser Coast Regional Council"
 }, {
 	"URL": "https://www.gympie.qld.gov.au/animal-management",
-	"disputeType": "Concern;Problem;Complaint;Issue",
+	"disputeType": "Concern;Problem;Complaint;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1338,7 +1338,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Gympie Regional Council"
 }, {
 	"URL": "http://www.northburnett.qld.gov.au/?id=155",
-	"disputeType": "Concern;Problem;Complaint;Issue",
+	"disputeType": "Concern;Problem;Complaint;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1351,7 +1351,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "North Burnett Regional Council"
 }, {
 	"URL": "http://www.southburnett.qld.gov.au/animal-control#Barking",
-	"disputeType": "Concern;Problem;Complaint;Issue",
+	"disputeType": "Concern;Problem;Complaint;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1364,7 +1364,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "South Burnett Regional Council"
 }, {
 	"URL": "http://www.southburnett.qld.gov.au/contact-us",
-	"disputeType": "Concern;Problem;Complaint;Issue",
+	"disputeType": "Concern;Problem;Complaint;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Formal Resolution",
@@ -1377,7 +1377,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "South Burnett Regional Council"
 }, {
 	"URL": "http://www.goondiwindirc.qld.gov.au/documents/17518/211487/Managing%20barking%20in%20our%20community.pdf",
-	"disputeType": "Concern;Problem;Complaint;Issue",
+	"disputeType": "Concern;Problem;Complaint;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1388,7 +1388,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.goondiwindirc.qld.gov.au/documents/17518/211487/Neighbours%20Dog%20Barking%20Excessively%20Brochure.pdf",
-	"disputeType": "Concern;Problem;Complaint;Issue",
+	"disputeType": "Concern;Problem;Complaint;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1399,7 +1399,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.toowoombarc.qld.gov.au/laws-and-permits/animal-regulations/2792-barking-dogs",
-	"disputeType": "Concern;Problem;Complaint;Issue",
+	"disputeType": "Concern;Problem;Complaint;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1412,7 +1412,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.centralhighlands.qld.gov.au/barking-dogs",
-	"disputeType": "Concern;Problem;Complaint;Issue",
+	"disputeType": "Concern;Problem;Complaint;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1425,7 +1425,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.gladstone.qld.gov.au/nuisances/complaints",
-	"disputeType": "Concern;Problem;Complaint;Issue",
+	"disputeType": "Concern;Problem;Complaint;Issue;",
 	"party": "a neighbour;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1438,7 +1438,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.isaac.qld.gov.au/nuisance-animals",
-	"disputeType": "Concern;Problem;Complaint;Issue",
+	"disputeType": "Concern;Problem;Complaint;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Formal Resolution",
@@ -1451,7 +1451,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Isaac Regional Council"
 }, {
 	"URL": "http://www.mackay.qld.gov.au/residents/local_laws/animal_management/responsible_dog_ownership/barking_dogs",
-	"disputeType": "Concern;Problem;Complaint;Issue",
+	"disputeType": "Concern;Problem;Complaint;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1464,7 +1464,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Mackay Regional Council"
 }, {
 	"URL": "http://www.rockhamptonregion.qld.gov.au/Council_Services/Animal_Management/Helpful_information_for_pet_owners/Barking_Dogs",
-	"disputeType": "Concern;Problem;Complaint;Issue",
+	"disputeType": "Concern;Problem;Complaint;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1477,7 +1477,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.burdekin.qld.gov.au/regulations-laws-and-forms/animal-management/dogs/barking-dogs/",
-	"disputeType": "Concern;Problem;Complaint;Issue",
+	"disputeType": "Concern;Problem;Complaint;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution;Formal Resolution",
@@ -1490,7 +1490,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Burdekin Shire Council"
 }, {
 	"URL": "http://www.charterstowers.qld.gov.au/documents/41682213/41699791/Fact%20Sheet%20Barking%20Dogs.pdf",
-	"disputeType": "Concern;Problem;Complaint;Issue",
+	"disputeType": "Concern;Problem;Complaint;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1501,7 +1501,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Charters Towers Regional Council"
 }, {
 	"URL": "http://www.hinchinbrook.qld.gov.au/barking-dogs",
-	"disputeType": "Concern;Problem;Complaint;Issue",
+	"disputeType": "Concern;Problem;Complaint;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1514,7 +1514,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Hinchinbrook Shire Council"
 }, {
 	"URL": "http://www.townsville.qld.gov.au/resident/animals/Documents/Barking%20Dogs.pdf",
-	"disputeType": "Concern;Problem;Complaint;Issue",
+	"disputeType": "Concern;Problem;Complaint;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1525,7 +1525,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Townsville City Council"
 }, {
 	"URL": "http://www.whitsunday.qld.gov.au/barking-dogs",
-	"disputeType": "Concern;Problem;Complaint;Issue",
+	"disputeType": "Concern;Problem;Complaint;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1538,7 +1538,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.cairns.qld.gov.au/community-environment/pets-and-domestic-animals/complaints/barking-dog",
-	"disputeType": "Concern;Problem;Complaint;Issue",
+	"disputeType": "Concern;Problem;Complaint;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1551,7 +1551,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Cairns Regional Council"
 }, {
 	"URL": "http://www.cassowarycoast.qld.gov.au/barking-dog-issue",
-	"disputeType": "Concern;Problem;Complaint;Issue",
+	"disputeType": "Concern;Problem;Complaint;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution;Formal Resolution",
@@ -1564,7 +1564,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.cook.qld.gov.au/",
-	"disputeType": "Concern;Problem;Complaint;Issue",
+	"disputeType": "Concern;Problem;Complaint;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Formal Resolution",
@@ -1577,7 +1577,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Cook Shire Council"
 }, {
 	"URL": "http://lockhart.qld.gov.au/environment/animal-management/",
-	"disputeType": "Problem;Complaint;Issue",
+	"disputeType": "Problem;Complaint;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution;Formal Resolution",
@@ -1590,7 +1590,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Lockhart River Aboriginal Shire Council"
 }, {
 	"URL": "http://napranum.qld.gov.au/council-departments/rangers",
-	"disputeType": "Concern;Complaint;Issue",
+	"disputeType": "Concern;Complaint;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1603,7 +1603,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Napranum Aboriginal Shire Council"
 }, {
 	"URL": "http://www.nparc.qld.gov.au/animal-control",
-	"disputeType": "Concern;Complaint;Issue",
+	"disputeType": "Concern;Complaint;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Dogs and other pets;",
 	"resolution": "Formal Resolution",
@@ -1616,7 +1616,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Northern Peninsula Area Regional Council"
 }, {
 	"URL": "http://www.trc.qld.gov.au/animal-services/",
-	"disputeType": "Concern;Complaint;Issue",
+	"disputeType": "Concern;Complaint;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Dogs and other pets;Noise;",
 	"resolution": "Self Resolution",
@@ -1629,7 +1629,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Tablelands Regional Council"
 }, {
 	"URL": "http://www.torres.qld.gov.au/animal-control",
-	"disputeType": "Concern;Issue",
+	"disputeType": "Concern;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Dogs and other pets;",
 	"resolution": "Assisted Resolution",
@@ -1642,7 +1642,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Torres Shire Council"
 }, {
 	"URL": "http://www.weipatownoffice.com/55.html",
-	"disputeType": "Concern;Issue",
+	"disputeType": "Concern;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Dogs and other pets;",
 	"resolution": "Assisted Resolution",
@@ -1655,7 +1655,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Other"
 }, {
 	"URL": "http://www.burke.qld.gov.au/pet-registration",
-	"disputeType": "Concern;Issue",
+	"disputeType": "Concern;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1668,7 +1668,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Burke Shire Council"
 }, {
 	"URL": "http://www.carpentaria.qld.gov.au/pets-and-animals",
-	"disputeType": "Issue;Question",
+	"disputeType": "Issue;Question;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1681,7 +1681,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Carpentaria Shire Council"
 }, {
 	"URL": "http://www.cloncurry.qld.gov.au/ranger/-/journal_content/56/674573/6050901?p_p_auth=SUfox2iy&_56_showArticlTitleInPortlet=true",
-	"disputeType": "Question",
+	"disputeType": "Question;",
 	"party": "someone in my neighbourhood;",
 	"disputeSubject": "Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1694,7 +1694,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Cloncurry Shire Council"
 }, {
 	"URL": "http://www.cloncurry.qld.gov.au/ranger?p_p_auth=aWyN00mH&p_p_id=101&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_101_struts_action=%2Fasset_publisher%2Fview_content&_101_assetEntryId=685970&_101_type=document&redirect=http%3A%2F%2Fwww.cloncurry.qld.gov.au%2Franger%3Fp_p_id%3D3%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_3_groupId%3D0%26_3_keywords%3Dbarking%26_3_struts_action%3D%252Fsearch%252Fsearch%26_3_redirect%3D%252Franger%253Fp_p_id%253D3%2526p_p_lifecycle%253D0%2526p_p_state%253Dmaximized%2526p_p_mode%253Dview%2526_3_struts_action%253D%25252Fsearch%25252Fsearch%2526_3_redirect%253D%25252Franger%25252F-%25252Fjournal_content%25252F56%25252F674573%25252F6050901%25253Fp_p_auth%25253DSUfox2iy%252526_56_showArticlTitleInPortlet%25253Dtrue%2526_3_keywords%253Dnoise%2526_3_groupId%253D0",
-	"disputeType": "Question;Issue",
+	"disputeType": "Question;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1707,7 +1707,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Cloncurry Shire Council"
 }, {
 	"URL": "http://www.croydon.qld.gov.au/domestic-animals",
-	"disputeType": "Question;Issue",
+	"disputeType": "Question;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1720,7 +1720,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Croydon Shire Council"
 }, {
 	"URL": "http://www.etheridge.qld.gov.au/domestic-animals",
-	"disputeType": "Concern;Issue",
+	"disputeType": "Concern;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1733,7 +1733,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Etheridge Shire Council"
 }, {
 	"URL": "http://www.flinders.qld.gov.au/request-for-service",
-	"disputeType": "Concern;Problem;Issue",
+	"disputeType": "Concern;Problem;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Dogs and other pets;Noise;",
 	"resolution": "Formal Resolution",
@@ -1746,7 +1746,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Flinders Shire Council"
 }, {
 	"URL": "http://www.mckinlay.qld.gov.au/councilservices/animals.shtml/-/journal_content/56_INSTANCE_0000/17564/310F2ED26835C089F81D0635240BF2C0?p_p_state_rcv=1",
-	"disputeType": "Question",
+	"disputeType": "Question;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1759,7 +1759,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "McKinlay Shire Council"
 }, {
 	"URL": "http://www.mountisa.qld.gov.au/animal-ownership1#Barking",
-	"disputeType": "Concern;Problem;Issue",
+	"disputeType": "Concern;Problem;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1772,7 +1772,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Mount Isa City Council"
 }, {
 	"URL": "http://www.richmond.qld.gov.au/animal-control",
-	"disputeType": "Concern;Question",
+	"disputeType": "Concern;Question;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1785,7 +1785,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Richmond Shire Council"
 }, {
 	"URL": "http://www.barcaldinerc.qld.gov.au/documents/311418/9733156/Barking%20Dog%20Nuisance%20Pack.pdf",
-	"disputeType": "Concern;Problem;Issue",
+	"disputeType": "Concern;Problem;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Assisted Resolution",
@@ -1796,7 +1796,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Barcaldine Regional Council"
 }, {
 	"URL": "http://www.barcoo.qld.gov.au/about-council/animal-registration",
-	"disputeType": "Concern;Issue;Issue",
+	"disputeType": "Concern;Issue;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1809,7 +1809,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Barcoo Shire Council"
 }, {
 	"URL": "http://www.btrc.qld.gov.au/responsible-pet-owner",
-	"disputeType": "Question;Concern;Issue",
+	"disputeType": "Question;Concern;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Dogs and other pets;Noise;",
 	"resolution": "Self Resolution",
@@ -1822,7 +1822,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Blackall-Tambo Regional Council"
 }, {
 	"URL": "http://www.diamantina.qld.gov.au/dog-registration",
-	"disputeType": "Concern;Problem;Complaint",
+	"disputeType": "Concern;Problem;Complaint;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Formal Resolution",
@@ -1835,7 +1835,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Diamantina Shire Council"
 }, {
 	"URL": "http://www.longreach.qld.gov.au/animal-control-registration#dogscats",
-	"disputeType": "Question",
+	"disputeType": "Question;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1848,7 +1848,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Longreach Regional Council"
 }, {
 	"URL": "http://www.winton.qld.gov.au/animal-control",
-	"disputeType": "Question",
+	"disputeType": "Question;",
 	"party": "a neighbour;",
 	"disputeSubject": "Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1861,7 +1861,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Winton Shire Council"
 }, {
 	"URL": "http://www.balonne.qld.gov.au/index.shtml/-/journal_content/56/722471/B41CFE72600AF432E56120DCA134FC93?p_p_auth=2DJqNgcS&_56_showArticlTitleInPortlet=true",
-	"disputeType": "Issue;Question",
+	"disputeType": "Issue;Question;",
 	"party": "a neighbour;",
 	"disputeSubject": "Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1874,7 +1874,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Balonne Shire Council"
 }, {
 	"URL": "http://www.bulloo.qld.gov.au/domestic-animals1",
-	"disputeType": "Question;Issue",
+	"disputeType": "Question;Issue;",
 	"party": "a neighbour;",
 	"disputeSubject": "Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1887,7 +1887,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Bulloo Shire Council"
 }, {
 	"URL": "http://www.maranoa.qld.gov.au/barking-dogs",
-	"disputeType": "Concern;Problem;Issue",
+	"disputeType": "Concern;Problem;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;",
 	"disputeSubject": "Dogs and other pets;Noise;",
 	"resolution": "Self Resolution",
@@ -1900,7 +1900,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Maranoa Regional Council"
 }, {
 	"URL": "http://www.murweh.qld.gov.au/animals-agistment",
-	"disputeType": "Concern;Problem;Issue",
+	"disputeType": "Concern;Problem;Issue;",
 	"party": "a neighbour;",
 	"disputeSubject": "Dogs and other pets;Noise;",
 	"resolution": "Assisted Resolution",
@@ -1913,7 +1913,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Murweh Shire Council"
 }, {
 	"URL": "http://www.paroo.qld.gov.au/c/document_library/get_file?uuid=19d2355f-23b9-48fa-a79a-b52ef3cc1908&groupId=597641",
-	"disputeType": "Concern;Issue;Question",
+	"disputeType": "Concern;Issue;Question;",
 	"party": "someone in my neighbourhood;a neighbour;",
 	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1924,7 +1924,7 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Paroo Shire Council"
 }, {
 	"URL": "http://quilpie.qld.gov.au/about/community/pet-ownership/",
-	"disputeType": "Question",
+	"disputeType": "Question;",
 	"party": "a neighbour;",
 	"disputeSubject": "Dogs and other pets;",
 	"resolution": "Self Resolution",
@@ -1938,7 +1938,7 @@ getAlternativeDisputeResolutionData([{
 }, {
 	"URL": "http://www.qld.gov.au/law/housing-and-neighbours/body-corporate/body-corporate-disputes/types-of-dispute-resolution/adjudication-for-body-corporate-disputes/",
 	"disputeType": "Disagreement;Complaint;Conflict;Dispute;",
-	"party": "a neighbour in my body corporate;",
+	"party": "a neighbour in my body corporate;the body corporate;",
 	"disputeSubject": "Noise;Trees;Fences;Dogs and other pets;Children;Pools;Retaining walls;Overgrown gardens;Rubbish bins;Privacy;Lighting;Cameras;Security;Behaviours;Smells;Abuse;Threats;Drainage;Renovations;Parking;Objects;Easements;Access;By-law breaches (body corporate);Common property (body corporate);Harassment;Wildlife",
 	"resolution": "Formal Resolution",
 	"documentType": "procedure",
@@ -1951,7 +1951,7 @@ getAlternativeDisputeResolutionData([{
 }, {
 	"URL": "http://www.qld.gov.au/law/housing-and-neighbours/body-corporate/body-corporate-disputes/types-of-dispute-resolution/conciliation-for-body-corporate-disputes/",
 	"disputeType": "Problem;Issue;Disagreement;Complaint;Conflict;",
-	"party": "a neighbour in my body corporate;",
+	"party": "a neighbour in my body corporate;the body corporate;",
 	"disputeSubject": "Noise;Trees;Fences;Dogs and other pets;Children;Pools;Retaining walls;Overgrown gardens;Rubbish bins;Privacy;Lighting;Cameras;Security;Behaviours;Smells;Abuse;Threats;Drainage;Renovations;Parking;Objects;Easements;Access;By-law breaches (body corporate);Common property (body corporate);Harassment;Wildlife",
 	"resolution": "Assisted Resolution",
 	"documentType": "procedure",
@@ -1964,7 +1964,7 @@ getAlternativeDisputeResolutionData([{
 }, {
 	"URL": "http://www.qld.gov.au/law/housing-and-neighbours/body-corporate/body-corporate-disputes/types-of-dispute-resolution/self-resolution-for-disputes/",
 	"disputeType": "Question;Concern;Problem;Issue;Disagreement;",
-	"party": "a neighbour in my body corporate;",
+	"party": "a neighbour in my body corporate;the body corporate;",
 	"disputeSubject": "Noise;Trees;Fences;Dogs and other pets;Children;Pools;Retaining walls;Overgrown gardens;Rubbish bins;Privacy;Lighting;Cameras;Security;Behaviours;Smells;Abuse;Threats;Drainage;Renovations;Parking;Objects;Easements;Access;By-law breaches (body corporate);Common property (body corporate);Harassment;Wildlife",
 	"resolution": "Self Resolution",
 	"documentType": "procedure",

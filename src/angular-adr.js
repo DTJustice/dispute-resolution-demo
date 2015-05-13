@@ -72,6 +72,24 @@ angular.module( 'disputeResolution', [] )
 	};
 
 
+	// turn body corporate results on/off
+	var oldParty = '';
+	$scope.toggleBodyCorporate = function() {
+		if ( ! oldParty ) {
+			oldParty = $scope.story.party;
+		}
+		if ( $scope.storySituation.bodyCorporate ) {
+			$scope.story.party = oldParty.indexOf( 'body corporate' ) > -1 ? oldParty : 'a neighbour in my body corporate';
+		} else {
+			$scope.story.party = oldParty.indexOf( 'body corporate' ) > -1 ? 'a neighbour' : oldParty;
+		}
+
+		if ( $scope.story.party === oldParty ) {
+			oldParty = '';
+		}
+	};
+
+
 	// init
 	for ( var i = 0, len = cachedData.length; i < len; i++ ) {
 		// ES6: let, exploder
