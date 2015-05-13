@@ -24,7 +24,7 @@ angular.module( 'disputeResolution', [] )
 			              record.disputeSubject.indexOf( story.disputeSubject + ';' ) > -1;
 
 			return matched;
-		})
+		});
 	};
 })
 
@@ -40,7 +40,15 @@ angular.module( 'disputeResolution', [] )
 							  ( resolution === 'Formal'   && /Self|Assisted/.test( record.resolution ));
 
 			return matched && ! alreadySeen;
-		})
+		});
+	};
+})
+
+
+// a/an filter
+.filter( 'aOrAn', function() {
+	return function( s ) {
+		return /^[aeiou]/i.test( s ) ? 'an' : 'a';
 	};
 })
 

@@ -75,7 +75,7 @@
 
 		<!-- TODO: this looks nice, but is it too bold? is that an over-the-shoulder privacy issue? (for workplace or family disputes?) -->
 		<blockquote class="story" data-ng-show="story.disputeType.length > 0 &amp;&amp; story.party.length > 0 &amp;&amp; story.disputeSubject.length > 0">
-			<p>I have a <mark>{{ story.disputeType | lowercase }}</mark> with <mark>{{ story.party | lowercase }}</mark> about <mark>{{ story.disputeSubject | lowercase }}</mark>.</p>
+			<p>I have {{ story.disputeType | aOrAn }} <mark>{{ story.disputeType | lowercase }}</mark> with <mark>{{ story.party | lowercase }}</mark> about <mark>{{ story.disputeSubject | lowercase }}</mark>.</p>
 		</blockquote>
 
 <!--
