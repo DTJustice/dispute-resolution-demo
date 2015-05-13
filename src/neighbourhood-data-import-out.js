@@ -91,7 +91,7 @@ getAlternativeDisputeResolutionData([{
 	"party": "a neighbour;a neighbour next door;",
 	"disputeSubject": "Fences;",
 	"resolution": "Assisted Resolution;Formal Resolution",
-	"documentType": "act",
+	"documentType": "legislation",
 	"Comments": "Direct link to NDR Act (Trees and Fences) - not sure if relevant - it is referenced in other pages",
 	"Title": "NeighDisputesDFTA11",
 	"format": "application/pdf",

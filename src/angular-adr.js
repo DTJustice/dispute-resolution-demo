@@ -68,7 +68,7 @@ angular.module( 'disputeResolution', [] )
 		documentType: {}
 	};
 	$scope.documentTypeFilter = function( record ) {
-		return record.documentType !== 'act' && $scope.resultFilter.documentType[ record.documentType ] === true;
+		return record.documentType !== 'legislation' && $scope.resultFilter.documentType[ record.documentType ] === true;
 	};
 
 

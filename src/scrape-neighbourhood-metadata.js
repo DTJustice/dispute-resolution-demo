@@ -68,8 +68,8 @@ function inferDocumentType( record, response ) {
 	if ( /\bform\b/i.test( record.URL ) || /\bform\b/i.test( record.Title )) {
 		return 'form';
 	} else if ( /legislation\.qld\.gov\.au/.test( record.URL )) {
-		// other forms of legislation
-		return 'act';
+		// acts and other forms of legislation
+		return 'legislation';
 	}
 	return 'guidelines';
 }
