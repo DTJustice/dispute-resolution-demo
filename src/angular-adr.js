@@ -12,6 +12,23 @@ var URI_DATA_COUNCIL =
 angular.module( 'disputeResolution', [] )
 
 
+// custom filter to match story
+// check for term; (semi-colon prevents accidental partial matches)
+.filter( 'storyFilter', function() {
+
+	return function( records, story ) {
+		return records.filter(function( record ) {
+			var matched = story &&
+			              record.disputeType.indexOf( story.disputeType + ';' ) > -1 &&
+			              record.party.indexOf( story.party + ';' ) > -1 &&
+			              record.disputeSubject.indexOf( story.disputeSubject + ';' ) > -1;
+
+			return matched;
+		})
+	};
+})
+
+
 // custom filter to match pathway and prevent duplicates
 .filter( 'resolutionFilter', function() {
 

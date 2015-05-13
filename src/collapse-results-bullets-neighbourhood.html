@@ -72,7 +72,7 @@
 				<p>When you need an official resolution. Costs time and money but will give you a result that can be enforced.</p>
 			</header>
 			<ul ng-show="! storyHistory[ resolution ].tried" class="resources">
-				<li data-ng-repeat="result in results | filter:story | filter:{ resolution: resolution } | filter: documentTypeFilter">
+				<li data-ng-repeat="result in results | storyFilter:story | filter:{ resolution: resolution } | filter: documentTypeFilter">
 					<a data-ng-href="{{ result.URL }}">{{ result.Title || result.filename }}</a>
 					<small data-ng-if="result.format === 'application/pdf'">(PDF)</small>
 					<small data-ng-if="result.jurisdiction === 'Other'" class="international">† International law</small>
@@ -112,7 +112,7 @@
 	<aside>
 		<h2>Check the law</h2>
 		<ul>
-			<li data-ng-repeat="result in results | filter:story | filter:{ documentType: 'act' } : true">
+			<li data-ng-repeat="result in results | storyFilter:story | filter:{ documentType: 'act' } : true">
 				<a data-ng-href="{{ result.URL }}">{{ result.Title }}</a>
 			</li>
 		</ul>

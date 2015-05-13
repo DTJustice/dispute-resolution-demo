@@ -55,7 +55,7 @@
 			<h2 ng-if="resolution === 'Assisted'">Assistance resolving your {{ story.disputeType }}</h2>
 			<h2 ng-if="resolution === 'Formal'">Formal resolution to your {{ story.disputeType }}</h2>
 			<ul class="checklist">
-				<li data-ng-repeat="result in results | filter:story | filter:{ resolution: resolution }">
+				<li data-ng-repeat="result in results | storyFilter:story | filter:{ resolution: resolution }">
 					<input type="checkbox">
 					<a data-ng-href="{{ result.URL }}">{{ result.Title }}</a> ({{ result.Source }})
 <!--

@@ -151,7 +151,7 @@
 							<span class="description">All dogs bark, but some barking dogs become a real neighbourhood nuisance – greatly reducing the quality of life for their neighbours. Barking is the most common animal behaviour problem Council is asked to deal with.</span>
 						</li>
 					 -->
-					<li data-ng-repeat="result in results | filter:story | filter:{ resolution: resolution } | filter: documentTypeFilter | filter: { jurisdiction: storySituation.council }">
+					<li data-ng-repeat="result in results | storyFilter:story | filter:{ resolution: resolution } | filter: documentTypeFilter | filter: { jurisdiction: storySituation.council }">
 						<a data-ng-href="{{ result.URL }}">{{ result.Title || result.filename }}</a>
 						<small>({{ result.jurisdiction }})</small>
 						<small data-ng-if="result.format === 'application/pdf'">(PDF)</small>
@@ -186,7 +186,7 @@
 	<aside>
 		<h2>Check the law</h2>
 		<ul>
-			<li data-ng-repeat="result in results | filter:story | filter:{ documentType: 'act' } : true">
+			<li data-ng-repeat="result in results | storyFilter:story | filter:{ documentType: 'act' } : true">
 				<a data-ng-href="{{ result.URL }}">{{ result.Title }}</a>
 			</li>
 		</ul>

@@ -55,7 +55,7 @@
 			<h2 ng-if="resolution === 'Assisted'">Assistance resolving your {{ story.disputeType }}</h2>
 			<h2 ng-if="resolution === 'Formal'">Formal resolution to your {{ story.disputeType }}</h2>
 			<ol class="results">
-				<li data-ng-repeat="result in results | filter:story | filter:{ resolution: resolution }">
+				<li data-ng-repeat="result in results | storyFilter:story | filter:{ resolution: resolution }">
 					<h3><a data-ng-href="{{ result.URL }}">{{ result.Title }}</a> ({{ result.Source }})</h3>
 					<p>{{ result.Description }}</p>
 					<dl>
