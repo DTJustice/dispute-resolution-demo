@@ -77,10 +77,10 @@
 	</main>
 
 
-	<aside>
+	<aside class="optional" data-ng-show="story.disputeSubject">
 		<h2>Check the law</h2>
 		<ul>
-			<li data-ng-repeat="result in results | storyFilter:story | filter:{ documentType: 'legislation' } : true">
+			<li data-ng-repeat="result in results | filter:{ disputeSubject: story.disputeSubject } | filter:{ documentType: 'legislation' } : true">
 				<a data-ng-href="{{ result.URL }}">{{ result.Title }}</a>
 			</li>
 		</ul>
