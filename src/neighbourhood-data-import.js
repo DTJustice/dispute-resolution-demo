@@ -1384,5 +1384,32 @@
         "resolution": "Self Resolution",
         "documentType": "guidelines",
         "Comments": "Quilpie Shire Council - Pet ownership inforamtion"
+    },
+    {
+        "URL": "http://www.qld.gov.au/law/housing-and-neighbours/body-corporate/body-corporate-disputes/types-of-dispute-resolution/adjudication-for-body-corporate-disputes/",
+        "disputeType": "Question;Concern;Problem;Disagreement",
+        "party": "a neighbour in my body corporate;",
+        "disputeSubject": "Noise;Trees;Fences;Dogs and other pets;Children;Pools;Retaining walls;Overgrown gardens;Rubbish bins;Privacy;Lighting;Cameras;Security;Behaviours;Smells;Abuse;Threats;Drainage;Renovations;Parking;Objects;Easements;Access;By-law breaches (body corporate);Common property (body corporate);Harassment;Wildlife",
+        "resolution": "Formal Resolution",
+        "documentType": "procedure",
+        "Comments": "Adjudication for parties living in a body corporate"
+    },
+    {
+        "URL": "http://www.qld.gov.au/law/housing-and-neighbours/body-corporate/body-corporate-disputes/types-of-dispute-resolution/conciliation-for-body-corporate-disputes/",
+        "disputeType": "Problem;Disagreement;Complaint;Conflict;",
+        "party": "a neighbour in my body corporate;",
+        "disputeSubject": "Noise;Trees;Fences;Dogs and other pets;Children;Pools;Retaining walls;Overgrown gardens;Rubbish bins;Privacy;Lighting;Cameras;Security;Behaviours;Smells;Abuse;Threats;Drainage;Renovations;Parking;Objects;Easements;Access;By-law breaches (body corporate);Common property (body corporate);Harassment;Wildlife",
+        "resolution": "Assisted Resolution",
+        "documentType": "procedure",
+        "Comments": "Conciliation for parties living in a body corporate"
+    },
+    {
+        "URL": "http://www.qld.gov.au/law/housing-and-neighbours/body-corporate/body-corporate-disputes/types-of-dispute-resolution/self-resolution-for-disputes/",
+        "disputeType": "Disagreement;Complaint;Conflict;Dispute",
+        "party": "a neighbour in my body corporate;",
+        "disputeSubject": "Noise;Trees;Fences;Dogs and other pets;Children;Pools;Retaining walls;Overgrown gardens;Rubbish bins;Privacy;Lighting;Cameras;Security;Behaviours;Smells;Abuse;Threats;Drainage;Renovations;Parking;Objects;Easements;Access;By-law breaches (body corporate);Common property (body corporate);Harassment;Wildlife",
+        "resolution": "Self Resolution",
+        "documentType": "procedure",
+        "Comments": "Self- resolution for body corporate disputes"
     }
 ]

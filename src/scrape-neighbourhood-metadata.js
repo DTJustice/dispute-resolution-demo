@@ -114,13 +114,13 @@ records.forEach(function( record, i ) {
 			record.Title = parseTitle( this.getTitle() );
 			record.Description = this.getElementAttribute( 'meta[name="DCTERMS.description"]', 'content' ) || this.getElementAttribute( 'meta[name="DC.description"]', 'content' ) || this.getElementAttribute( 'meta[name="description"]', 'content' );
 			record.Publisher = parsePublisher( this.getElementAttribute( 'meta[name="DCTERMS.Publisher"]', 'content' ) || this.getElementAttribute( 'meta[name="DC.Publisher"]', 'content' ));
-			record.documentType = this.getElementAttribute( 'meta[name="AGLSTERMS.documentType"]', 'content' ) || inferDocumentType( record, response );
+			record.documentType = record.documentType || this.getElementAttribute( 'meta[name="AGLSTERMS.documentType"]', 'content' ) || inferDocumentType( record, response );
 		} else {
 			// couldn't get a response
 			casper.echo( '-> NO RESPONSE! ' + record.URL, 'WARNING' );
 			// infer title from filename, replace -_ with spaces and remove file extension
 			record.Title = record.URL.replace( /^.*\//, '' ).replace( /[-_]+/g, ' ' ).replace( /\.[^.]*$/, '' );
-			record.documentType = inferDocumentType( record, record );
+			record.documentType = record.documentType || inferDocumentType( record, record );
 		}
 		record.format = inferFormat( record, response );
 		record.jurisdiction = inferJurisdiction( record.URL );
