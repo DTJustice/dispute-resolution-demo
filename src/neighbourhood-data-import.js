@@ -1387,7 +1387,7 @@
     },
     {
         "URL": "http://www.qld.gov.au/law/housing-and-neighbours/body-corporate/body-corporate-disputes/types-of-dispute-resolution/adjudication-for-body-corporate-disputes/",
-        "disputeType": "Question;Concern;Problem;Disagreement",
+        "disputeType": "Disagreement;Complaint;Conflict;Dispute;",
         "party": "a neighbour in my body corporate;",
         "disputeSubject": "Noise;Trees;Fences;Dogs and other pets;Children;Pools;Retaining walls;Overgrown gardens;Rubbish bins;Privacy;Lighting;Cameras;Security;Behaviours;Smells;Abuse;Threats;Drainage;Renovations;Parking;Objects;Easements;Access;By-law breaches (body corporate);Common property (body corporate);Harassment;Wildlife",
         "resolution": "Formal Resolution",
@@ -1396,7 +1396,7 @@
     },
     {
         "URL": "http://www.qld.gov.au/law/housing-and-neighbours/body-corporate/body-corporate-disputes/types-of-dispute-resolution/conciliation-for-body-corporate-disputes/",
-        "disputeType": "Problem;Disagreement;Complaint;Conflict;",
+        "disputeType": "Problem;Issue;Disagreement;Complaint;Conflict;",
         "party": "a neighbour in my body corporate;",
         "disputeSubject": "Noise;Trees;Fences;Dogs and other pets;Children;Pools;Retaining walls;Overgrown gardens;Rubbish bins;Privacy;Lighting;Cameras;Security;Behaviours;Smells;Abuse;Threats;Drainage;Renovations;Parking;Objects;Easements;Access;By-law breaches (body corporate);Common property (body corporate);Harassment;Wildlife",
         "resolution": "Assisted Resolution",
@@ -1405,7 +1405,7 @@
     },
     {
         "URL": "http://www.qld.gov.au/law/housing-and-neighbours/body-corporate/body-corporate-disputes/types-of-dispute-resolution/self-resolution-for-disputes/",
-        "disputeType": "Disagreement;Complaint;Conflict;Dispute",
+        "disputeType": "Question;Concern;Problem;Issue;Disagreement;",
         "party": "a neighbour in my body corporate;",
         "disputeSubject": "Noise;Trees;Fences;Dogs and other pets;Children;Pools;Retaining walls;Overgrown gardens;Rubbish bins;Privacy;Lighting;Cameras;Security;Behaviours;Smells;Abuse;Threats;Drainage;Renovations;Parking;Objects;Easements;Access;By-law breaches (body corporate);Common property (body corporate);Harassment;Wildlife",
         "resolution": "Self Resolution",
