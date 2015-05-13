@@ -88,15 +88,6 @@
 		</blockquote>
 -->
 
-		<section class="optional" data-ng-show="story.disputeType.length > 0 &amp;&amp; story.party.length > 0 &amp;&amp; story.disputeSubject.length > 0">
-			<p>If this is a body corporate {{ story.disputeType | lowercase }} then you will need to pursue the matter through the appropriate channels.</p>
-			<blockquote class="question">
-				<input type="checkbox" id="body-corporate" data-ng-model="storySituation.bodyCorporate">
-				<label for="body-corporate">I live in a body corporate<br><small>(i.e. you share common property with other owners and occupiers)</small></label>
-			</blockquote>
-		</section>
-
-
 		<section class="optional" data-ng-show="model.councilSubject.indexOf( story.disputeSubject ) > -1">
 			<form class="madlibs">
 				<p>
@@ -113,6 +104,21 @@
 		<blockquote class="optional" ng-show="storySituation.location.length > 2">
 			<p>I live in <mark>{{ storySituation.location }}</mark>.</p>
 		</blockquote>
+
+
+		<section class="optional" data-ng-show="story.disputeType.length > 0 &amp;&amp; story.party.length > 0 &amp;&amp; story.disputeSubject.length > 0">
+			<p>If this is a body corporate {{ story.disputeType | lowercase }} then you will need to pursue the matter through the appropriate channels.</p>
+			<blockquote class="question">
+				<input type="checkbox" id="body-corporate" data-ng-model="storySituation.bodyCorporate">
+				<label for="body-corporate">I live in a body corporate<br><small>(i.e. you share common property with other owners and occupiers)</small></label>
+			</blockquote>
+			<div class="optional" data-ng-show="storySituation.bodyCorporate">
+				<p>
+					Formal resolution of many disputes between neighbours in a body corporate can only be able to be dealt with through the Office of the Commissioner for Body Corporate and Community Management.
+				</p>
+				<p>It is possible that there may be other avenues to resolve your dispute/issue/concern.  If you would like to explore other options please ‘untick’ the “I live in a body corporate” box.</p>
+			</div>
+		</section>
 
 
 		<section class="results" data-ng-show="story.disputeType.length > 0 &amp;&amp; story.party.length > 0 &amp;&amp; story.disputeSubject.length > 0">
@@ -189,6 +195,11 @@
 	<aside>
 		<h2>Legal information and advice</h2>
 		<p><a href="http://www.qld.gov.au/law/legal-mediation-and-justice-of-the-peace/legal-advice-and-investment/legal-information-and-advice/">Find a solicitor</a>, law firm, barrister or free legal services available to vulnerable and disadvantaged Queenslanders.</p>
+	</aside>
+
+	<aside>
+		<h2>Body corporate disputes</h2>
+		<p>Formal resolution of many disputes between neighbours in a body corporate can only be able to be dealt with through the <a href="http://www.qld.gov.au/law/housing-and-neighbours/body-corporate/body-corporate-disputes/">Office of the Commissioner for Body Corporate and Community Management</a>.</p>
 	</aside>
 
 	<footer>
