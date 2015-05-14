@@ -121,9 +121,9 @@
 		</section>
 
 
-		<h2>Showing 1–{{ vm.results.length }} results.</h2>
+		<h2 class="results" data-ng-show="vm.storyComplete">Showing 1–{{ vm.results.length }} results.</h2>
 
-		<section class="results" data-ng-show="story.disputeType &amp;&amp; story.party &amp;&amp; story.disputeSubject">
+		<section class="results" data-ng-show="vm.storyComplete">
 			<section data-ng-repeat="resolution in ['Self', 'Assisted', 'Formal']" data-ng-class="{{ resolution }}">
 				<header data-ng-if="resolution === 'Self'">
 					<h2>Try resolving the {{ story.disputeType | lowercase }} yourself</h2>
@@ -176,7 +176,7 @@
 	</main>
 
 
-	<aside class="optional" data-ng-show="story.disputeType &amp;&amp; story.party &amp;&amp; story.disputeSubject">
+	<aside class="optional" data-ng-show="vm.storyComplete">
 		<h2>I want to see</h2>
 		<ul class="filter checklist">
 			<li data-ng-repeat="(tag, value) in resultFilter.documentType">

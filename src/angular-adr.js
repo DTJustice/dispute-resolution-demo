@@ -5,7 +5,7 @@ var getAlternativeDisputeResolutionData = function( data ) {
 };
 
 // TODO service for council data
-var URI_DATA_COUNCIL = 
+var URI_DATA_COUNCIL =
 
 
 // basic angular
@@ -166,6 +166,7 @@ angular.module( 'disputeResolution', [] )
 
 
 	$scope.vm = {
+		storyComplete: false,
 		results: [],
 		totals: {
 			documentType: {}
@@ -176,6 +177,9 @@ angular.module( 'disputeResolution', [] )
 	$scope.$watchCollection( 'story', function() {
 		// counts
 		console.log( 'story changed', $scope.story );
+
+		// story complete?
+		$scope.vm.storyComplete = $scope.story.disputeType && $scope.story.party && $scope.story.disputeSubject;
 
 		var resultsMatchingStory = $filter( 'storyFilter' )( $scope.results, $scope.story );
 		// $filter('filter')(array, expression)
