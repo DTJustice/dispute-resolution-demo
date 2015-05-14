@@ -121,7 +121,9 @@
 		</section>
 
 
-		<section class="results" data-ng-show="story.disputeType.length > 0 &amp;&amp; story.party.length > 0 &amp;&amp; story.disputeSubject.length > 0">
+		<h2>Showing 1–{{ vm.results.length }} results.</h2>
+
+		<section class="results" data-ng-show="story.disputeType &amp;&amp; story.party &amp;&amp; story.disputeSubject">
 			<section data-ng-repeat="resolution in ['Self', 'Assisted', 'Formal']" data-ng-class="{{ resolution }}">
 				<header data-ng-if="resolution === 'Self'">
 					<h2>Try resolving the {{ story.disputeType | lowercase }} yourself</h2>
@@ -144,13 +146,13 @@
 					<p>When you need an official resolution. Costs time and money but will give you a result that can be enforced.</p>
 				</header>
 				<ul ng-show="! storyHistory[ resolution ].tried" class="resources">
-	<!-- 			
+	<!--
 						<li data-ng-if="storySituation.location.indexOf( '4510' ) > -1 &amp;&amp; resolution === 'Self'">
 							<a href="https://www.moretonbay.qld.gov.au/general.aspx?id=13577">Barking dogs - Moreton Bay Regional Council</a>
 							<small class="tag guidelines">guidelines</small>
 							<span class="description">All dogs bark, but some barking dogs become a real neighbourhood nuisance – greatly reducing the quality of life for their neighbours. Barking is the most common animal behaviour problem Council is asked to deal with.</span>
 						</li>
-					 -->
+	-->
 					<li data-ng-repeat="result in results | storyFilter:story | filter:{ resolution: resolution } | filter: documentTypeFilter | filter: { jurisdiction: storySituation.council }">
 						<a data-ng-href="{{ result.URL }}">{{ result.Title || result.filename }}</a>
 						<small>({{ result.jurisdiction }})</small>
@@ -174,11 +176,12 @@
 	</main>
 
 
-	<aside>
+	<aside class="optional" data-ng-show="story.disputeType &amp;&amp; story.party &amp;&amp; story.disputeSubject">
 		<h2>I want to see</h2>
 		<ul class="filter checklist">
 			<li data-ng-repeat="(tag, value) in resultFilter.documentType">
 				<input type="checkbox" data-ng-model="resultFilter.documentType[ tag ]" data-ng-checked="resultFilter.documentType[ tag ]" id="filter-{{ tag }}"><label class="tag" data-ng-class="tag" for="filter-{{ tag }}">{{ tag }}</label>
+				<span>({{ vm.count.documentType[ tag ] || 0 }})</span>
 			</li>
 		</ul>
 	</aside>

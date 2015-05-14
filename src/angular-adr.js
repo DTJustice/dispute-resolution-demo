@@ -54,7 +54,8 @@ angular.module( 'disputeResolution', [] )
 
 
 // controller
-.controller( 'resultsController', function( $scope, $http ) {
+.controller( 'resultsController', [ '$scope', '$http', '$filter',
+	                       function( $scope,   $http,   $filter ) {
 	'use strict';
 
 	$scope.results = cachedData;
@@ -164,4 +165,24 @@ angular.module( 'disputeResolution', [] )
 	};
 
 
-});
+	$scope.vm = {
+		results: [],
+		totals: {
+			documentType: {}
+		}
+	};
+
+	// calculate totals
+	$scope.$watchCollection( 'story', function() {
+		// counts
+		console.log( 'story changed', $scope.story );
+
+		var resultsMatchingStory = $filter( 'storyFilter' )( $scope.results, $scope.story );
+		// $filter('filter')(array, expression)
+		// $filter('filter')(resultsMatchingStory, 'resolution')
+		// ng-repeat="result in results | storyFilter:story | filter:{ resolution: resolution } | filter: documentTypeFilter | filter: { jurisdiction: storySituation.council }
+
+		$scope.vm.results = resultsMatchingStory;
+	});
+
+}]);
