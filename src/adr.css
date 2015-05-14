@@ -150,6 +150,9 @@ blockquote.question input:checked + label {
 .filter input[checked] + label {
 	opacity: 1;
 }
+.filter .disabled {
+	opacity: .33;
+}
 
 
 /* flag jurisdictions */

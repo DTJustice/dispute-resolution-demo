@@ -168,25 +168,30 @@ angular.module( 'disputeResolution', [] )
 	$scope.vm = {
 		storyComplete: false,
 		results: [],
-		totals: {
+		count: {
 			documentType: {}
 		}
 	};
 
 	// calculate totals
 	$scope.$watchCollection( 'story', function() {
-		// counts
-		console.log( 'story changed', $scope.story );
 
 		// story complete?
-		$scope.vm.storyComplete = $scope.story.disputeType && $scope.story.party && $scope.story.disputeSubject;
+		$scope.vm.storyComplete = $scope.story && $scope.story.disputeType && $scope.story.party && $scope.story.disputeSubject;
 
+		// results that match story
 		var resultsMatchingStory = $filter( 'storyFilter' )( $scope.results, $scope.story );
+		$scope.vm.results = resultsMatchingStory;
+
 		// $filter('filter')(array, expression)
 		// $filter('filter')(resultsMatchingStory, 'resolution')
 		// ng-repeat="result in results | storyFilter:story | filter:{ resolution: resolution } | filter: documentTypeFilter | filter: { jurisdiction: storySituation.council }
 
-		$scope.vm.results = resultsMatchingStory;
+
+		// results that match story, by document type
+		angular.forEach( $scope.resultFilter.documentType, function( value, key ) {
+			$scope.vm.count.documentType[ key ] = $filter( 'filter' )( resultsMatchingStory, { documentType: key }).length;
+		});
 	});
 
 }]);

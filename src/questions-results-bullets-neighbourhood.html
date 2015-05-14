@@ -179,9 +179,14 @@
 	<aside class="optional" data-ng-show="vm.storyComplete">
 		<h2>I want to see</h2>
 		<ul class="filter checklist">
-			<li data-ng-repeat="(tag, value) in resultFilter.documentType">
-				<input type="checkbox" data-ng-model="resultFilter.documentType[ tag ]" data-ng-checked="resultFilter.documentType[ tag ]" id="filter-{{ tag }}"><label class="tag" data-ng-class="tag" for="filter-{{ tag }}">{{ tag }}</label>
-				<span>({{ vm.count.documentType[ tag ] || 0 }})</span>
+			<li data-ng-repeat="(tag, value) in resultFilter.documentType"
+			    data-ng-if="tag !== 'legislation'"
+			    data-ng-class="{ disabled: vm.count.documentType[ tag ] === 0 }">
+				<input type="checkbox" data-ng-model="resultFilter.documentType[ tag ]"
+				 data-ng-checked="resultFilter.documentType[ tag ]" id="filter-{{ tag }}"
+				 data-ng-disabled="vm.count.documentType[ tag ] === 0"
+				><label class="tag" data-ng-class="tag" for="filter-{{ tag }}">{{ tag }}</label>
+				<span>({{ vm.count.documentType[ tag ] || 'none' }})</span>
 			</li>
 		</ul>
 	</aside>
