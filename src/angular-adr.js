@@ -48,7 +48,7 @@ angular.module( 'disputeResolution', [] )
 // a/an filter
 .filter( 'aOrAn', function() {
 	return function( s ) {
-		return /^[aeiou]/i.test( s ) ? 'an' : 'a';
+		return s && /^[aeiou]/i.test( s ) ? 'an' : 'a';
 	};
 })
 
@@ -170,6 +170,7 @@ angular.module( 'disputeResolution', [] )
 		results: [],
 		count: {
 			pathway: {},
+			disputeType: {},
 			documentType: {}
 		}
 	};
@@ -185,10 +186,13 @@ angular.module( 'disputeResolution', [] )
 		$scope.vm.results = resultsMatchingStory;
 
 		// $filter('filter')(array, expression)
-		// $filter('filter')(resultsMatchingStory, 'resolution')
-		// ng-repeat="result in results | storyFilter:story | filter:{ resolution: resolution } | filter: documentTypeFilter | filter: { jurisdiction: storySituation.council }
-		angular.forEach( [ 'Self', 'Assisted', 'Formal' ], function( value ) {
+		angular.forEach([ 'Self', 'Assisted', 'Formal' ], function( value ) {
 			$scope.vm.count.pathway[ value ] = $filter( 'filter' )( resultsMatchingStory, { resolution: value }).length;
+		});
+
+		// how many results for each dispute type? (helps with on results)
+		angular.forEach( $scope.model.disputeType, function( value ) {
+			$scope.vm.count.disputeType[ value ] = $filter( 'storyFilter' )( $scope.results, angular.extend({}, $scope.story, { disputeType: value })).length;
 		});
 
 

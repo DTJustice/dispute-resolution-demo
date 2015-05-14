@@ -30,7 +30,7 @@
 
 		<form class="madlibs" method="get">
 			<p>
-				<label for="dispute-type">I have a</label>
+				<label for="dispute-type">I have {{ story.disputeType | aOrAn }}</label>
 				<select id="dispute-type" data-ng-model="story.disputeType">
 					<option data-ng-repeat="option in model.disputeType" value="{{ option }}">{{ option | lowercase }}</option>
 				</select>
@@ -73,22 +73,43 @@
 		</section>
 -->
 
+
+		<!-- NO RESULTS -->
+		<header class="results" data-ng-show="vm.storyComplete &amp;&amp; vm.results.length === 0">
+			<h2>No results found</h2>
+			<p>We do not have any results for <em>{{ story.disputeType | lowercase }}s</em> with {{ story.party | lowercase }} about {{ story.disputeSubject | lowercase }}.</p>
+			<p>Try phrasing your question another way.</p>
+		</header>
+
+
 		<!-- TODO: this looks nice, but is it too bold? is that an over-the-shoulder privacy issue? (for workplace or family disputes?) -->
-		<blockquote class="story" data-ng-show="story.disputeType.length > 0 &amp;&amp; story.party.length > 0 &amp;&amp; story.disputeSubject.length > 0">
-			<p>I have {{ story.disputeType | aOrAn }} <mark>{{ story.disputeType | lowercase }}</mark> with <mark>{{ story.party | lowercase }}</mark> about <mark>{{ story.disputeSubject | lowercase }}</mark>.</p>
+		<blockquote class="story" data-ng-show="vm.storyComplete">
+			<p>
+				<span class="story" data-ng-show="vm.results.length">I have {{ story.disputeType | aOrAn }} <mark>{{ story.disputeType | lowercase }}</mark></span>
+				<span class="story" data-ng-show="vm.results.length === 0">
+					<label for="dispute-type-redirect">I have {{ story.disputeType | aOrAn }}</label>
+					<select id="dispute-type-redirect" data-ng-model="story.disputeType">
+						<option data-ng-repeat="type in model.disputeType" data-ng-if="vm.count.disputeType[ type ]" value="{{ type }}">
+							{{ type | lowercase }} ({{ vm.count.disputeType[ type ] }})
+						</option>
+					</select>
+				</span>
+				with <mark>{{ story.party | lowercase }}</mark>
+				about <mark>{{ story.disputeSubject | lowercase }}</mark>.
+			</p>
 		</blockquote>
 
 <!--
-		<blockquote class="optional" ng-show="storySituation.outcome">
+		<blockquote class="optional" data-ng-show="storySituation.outcome">
 			<p>I want <mark>{{ storySituation.outcome }}</mark>.</p>
 		</blockquote>
 
-		<blockquote class="optional" ng-show="storySituation.blocker">
+		<blockquote class="optional" data-ng-show="storySituation.blocker">
 			<p>I don't know <mark>{{ storySituation.blocker }}</mark>.</p>
 		</blockquote>
 -->
 
-		<section class="optional" data-ng-show="model.councilSubject.indexOf( story.disputeSubject ) > -1">
+		<section class="optional" data-ng-if="vm.results.length" data-ng-show="model.councilSubject.indexOf( story.disputeSubject ) > -1">
 			<form class="madlibs">
 				<p>
 					Some {{ story.disputeType | lowercase }}s about {{ story.disputeSubject | lowercase }} are handled by your local council.
@@ -101,12 +122,12 @@
 			</form>
 		</section>
 
-		<blockquote class="optional" ng-show="storySituation.location.length > 2">
+		<blockquote class="optional" data-ng-if="vm.results.length" data-ng-show="storySituation.location.length > 2">
 			<p>I live in <mark>{{ storySituation.location }}</mark>.</p>
 		</blockquote>
 
 
-		<section class="optional" data-ng-show="story.disputeType.length > 0 &amp;&amp; story.party.length > 0 &amp;&amp; story.disputeSubject.length > 0">
+		<section class="optional" data-ng-if="vm.results.length" data-ng-show="vm.storyComplete">
 			<p>If this is a body corporate {{ story.disputeType | lowercase }} then you will need to pursue the matter through the appropriate channels.</p>
 			<blockquote class="question">
 				<input type="checkbox" id="body-corporate" data-ng-model="storySituation.bodyCorporate" data-ng-checked="story.party.indexOf( 'body corporate' ) > -1" data-ng-click="toggleBodyCorporate()">
@@ -116,13 +137,12 @@
 				<p>
 					Formal resolution of many disputes between neighbours in a body corporate can only be dealt with through the Office of the Commissioner for Body Corporate and Community Management.
 				</p>
-				<p>It is possible that there may be other avenues to resolve your dispute/issue/concern.  If you would like to explore other options please ‘untick’ the “I live in a body corporate” box.</p>
+				<p>It is possible that there may be other avenues to resolve your {{  story.disputeType | lowercase  }}.  If you would like to explore other options please ‘untick’ the “I live in a body corporate” box.</p>
 			</div>
 		</section>
 
 
-		<h2 class="results" data-ng-show="vm.storyComplete">Showing 1–{{ vm.results.length }} results.</h2>
-
+		<!-- RESULTS -->
 		<section class="results" data-ng-show="vm.storyComplete">
 			<section data-ng-repeat="resolution in ['Self', 'Assisted', 'Formal']" data-ng-class="{{ resolution }}">
 				<header data-ng-if="resolution === 'Self'">
@@ -152,7 +172,7 @@
 					</div>
 				</header>
 				<div class="resources" data-ng-show="vm.count.pathway[ resolution ] === 0">
-					<em>There are no results for {{ resolution | lowercase }}.</em>
+					<em>There are no results for {{ resolution | lowercase }} resolution.</em>
 				</div>
 				<ul data-ng-if="vm.count.pathway[ resolution ] > 0" data-ng-show="! storyHistory[ resolution ].tried" class="resources">
 	<!--
