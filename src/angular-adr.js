@@ -169,6 +169,7 @@ angular.module( 'disputeResolution', [] )
 		storyComplete: false,
 		results: [],
 		count: {
+			pathway: {},
 			documentType: {}
 		}
 	};
@@ -186,6 +187,9 @@ angular.module( 'disputeResolution', [] )
 		// $filter('filter')(array, expression)
 		// $filter('filter')(resultsMatchingStory, 'resolution')
 		// ng-repeat="result in results | storyFilter:story | filter:{ resolution: resolution } | filter: documentTypeFilter | filter: { jurisdiction: storySituation.council }
+		angular.forEach( [ 'Self', 'Assisted', 'Formal' ], function( value ) {
+			$scope.vm.count.pathway[ value ] = $filter( 'filter' )( resultsMatchingStory, { resolution: value }).length;
+		});
 
 
 		// results that match story, by document type

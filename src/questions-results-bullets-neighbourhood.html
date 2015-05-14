@@ -127,25 +127,34 @@
 			<section data-ng-repeat="resolution in ['Self', 'Assisted', 'Formal']" data-ng-class="{{ resolution }}">
 				<header data-ng-if="resolution === 'Self'">
 					<h2>Try resolving the {{ story.disputeType | lowercase }} yourself</h2>
-					<p>Self resolution can be the fastest and cheapest way to resolve a {{ story.disputeType | lowercase }}.</p>
-					<blockquote class="question">
-						<input type="checkbox" id="tried-self" data-ng-model="storyHistory[ resolution ].tried">
-						<label for="tried-self">I have already tried to resolve this {{ story.disputeType | lowercase }} myself</label>
-					</blockquote>
+					<div data-ng-if="vm.count.pathway[ resolution ] > 0">
+						<p>Self resolution can be the fastest and cheapest way to resolve a {{ story.disputeType | lowercase }}.</p>
+						<blockquote class="question">
+							<input type="checkbox" id="tried-self" data-ng-model="storyHistory[ resolution ].tried">
+							<label for="tried-self">I have already tried to resolve this {{ story.disputeType | lowercase }} myself</label>
+						</blockquote>
+					</div>
 				</header>
 				<header data-ng-if="resolution === 'Assisted'">
 					<h2>Assistance resolving your {{ story.disputeType | lowercase }}</h2>
-					<p>Mediation saves time, legal fees, and court costs for you and the community.</p>
-					<blockquote class="question">
-						<input type="checkbox" id="tried-assisted" data-ng-model="storyHistory[ resolution ].tried">
-						<label for="tried-assisted">We have tried assisted resolutions to this {{ story.disputeType | lowercase }}</label>
-					</blockquote>
+					<div data-ng-if="vm.count.pathway[ resolution ] > 0">
+						<p>Mediation saves time, legal fees, and court costs for you and the community.</p>
+						<blockquote class="question">
+							<input type="checkbox" id="tried-assisted" data-ng-model="storyHistory[ resolution ].tried">
+							<label for="tried-assisted">We have tried assisted resolutions to this {{ story.disputeType | lowercase }}</label>
+						</blockquote>
+					</div>
 				</header>
 				<header data-ng-if="resolution === 'Formal'">
 					<h2>Formal resolution to your {{ story.disputeType | lowercase }}</h2>
-					<p>When you need an official resolution. Costs time and money but will give you a result that can be enforced.</p>
+					<div data-ng-if="vm.count.pathway[ resolution ] > 0">
+						<p>When you need an official resolution. Costs time and money but will give you a result that can be enforced.</p>
+					</div>
 				</header>
-				<ul ng-show="! storyHistory[ resolution ].tried" class="resources">
+				<div class="resources" data-ng-show="vm.count.pathway[ resolution ] === 0">
+					<em>There are no results for {{ resolution | lowercase }}.</em>
+				</div>
+				<ul data-ng-if="vm.count.pathway[ resolution ] > 0" data-ng-show="! storyHistory[ resolution ].tried" class="resources">
 	<!--
 						<li data-ng-if="storySituation.location.indexOf( '4510' ) > -1 &amp;&amp; resolution === 'Self'">
 							<a href="https://www.moretonbay.qld.gov.au/general.aspx?id=13577">Barking dogs - Moreton Bay Regional Council</a>
