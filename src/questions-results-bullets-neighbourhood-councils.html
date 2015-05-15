@@ -177,7 +177,7 @@
 							<span class="description">All dogs bark, but some barking dogs become a real neighbourhood nuisance – greatly reducing the quality of life for their neighbours. Barking is the most common animal behaviour problem Council is asked to deal with.</span>
 						</li>
 	-->
-					<li data-ng-repeat="result in results | storyFilter:story | filter:{ resolution: resolution } | filter: documentTypeFilter | councilFilter:storySituation.council">
+					<li data-ng-repeat="result in results | storyFilter:story | filter:{ resolution: resolution } | filter: documentTypeFilter | councilFilter:storySituation.council" data-ng-class="{council: result.jurisdiction.indexOf( 'Council' ) > -1 }">
 						<a data-ng-href="{{ result.URL }}">{{ result.Title || result.filename }}</a>
 						<small>({{ result.jurisdiction }})</small>
 						<small data-ng-if="result.format === 'application/pdf'">(PDF)</small>

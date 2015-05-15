@@ -201,3 +201,7 @@ blockquote.question input:checked + label {
 		opacity 0.1s ease,
 		transform 0.12s ease-out;
 }
+
+.council {
+	font-weight: bold;
+}
