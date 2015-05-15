@@ -29,6 +29,20 @@ angular.module( 'disputeResolution', [] )
 })
 
 
+// custom filter to match councils
+// only show matching councils (pass-through non-council results)
+.filter( 'councilFilter', function() {
+
+	return function( records, council ) {
+		return records.filter(function( record ) {
+			// is this a council?
+			var isCouncil = /Council/i.test( record.jurisdiction );
+			return ! isCouncil || council.toLowerCase() === record.jurisdiction.toLowerCase();
+		});
+	};
+})
+
+
 // custom filter to match pathway and prevent duplicates
 .filter( 'resolutionFilter', function() {
 
@@ -124,25 +138,35 @@ angular.module( 'disputeResolution', [] )
 
 		// councils
 		// TODO create a service wrapper
-		// fetch from data portal
-		// https://data.qld.gov.au/dataset/local-government-contacts
-		// https://data.qld.gov.au/api/action/datastore_search?resource_id=e5eed270-880f-4226-b640-4fa5bae6ddb7&fields=Council,Generic%20council%20email%20address&limit=500
-		$http.jsonp( 'https://data.qld.gov.au/api/action/datastore_search', {
-			params: {
-				resource_id: 'e5eed270-880f-4226-b640-4fa5bae6ddb7',
-				fields: 'Council,Generic council email address',
-				limit: 500, // make sure we get them all!
-				callback: 'JSON_CALLBACK'
-			},
-			cache: true
-		}).success(function( data ) {
+		// NOTE: many councils operate a separate domain for their website!!
+		$http.get( 'council-domains.json' )
+		.success(function( data ) {
 			$scope.model.councils = {};
-			data.result.records.forEach(function( record ) {
-				$scope.model.councils[ record.Council ] = {
-					domain: record[ 'Generic council email address' ].replace( /^.*@/, '' )
+			angular.forEach( data, function( domain, council ) {
+				$scope.model.councils[ council ] = {
+					domain: domain
 				};
 			});
 		});
+		// fetch from data portal
+		// https://data.qld.gov.au/dataset/local-government-contacts
+		// https://data.qld.gov.au/api/action/datastore_search?resource_id=e5eed270-880f-4226-b640-4fa5bae6ddb7&fields=Council,Generic%20council%20email%20address&limit=500
+		// $http.jsonp( 'https://data.qld.gov.au/api/action/datastore_search', {
+		// 	params: {
+		// 		resource_id: 'e5eed270-880f-4226-b640-4fa5bae6ddb7',
+		// 		fields: 'Council,Generic council email address',
+		// 		limit: 500, // make sure we get them all!
+		// 		callback: 'JSON_CALLBACK'
+		// 	},
+		// 	cache: true
+		// }).success(function( data ) {
+		// 	$scope.model.councils = {};
+		// 	data.result.records.forEach(function( record ) {
+		// 		$scope.model.councils[ record.Council ] = {
+		// 			domain: record[ 'Generic council email address' ].replace( /^.*@/, '' )
+		// 		};
+		// 	});
+		// });
 	}
 
 	// TODO initial state!?

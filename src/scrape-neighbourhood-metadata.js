@@ -5,24 +5,7 @@ var records = JSON.parse( require( 'fs' ).read( filename ));
 var len = records.length;
 
 
-function getCouncilData() {
-	// fetch from data portal
-	// https://data.qld.gov.au/api/action/datastore_search?resource_id=e5eed270-880f-4226-b640-4fa5bae6ddb7&fields=Council,Generic%20council%20email%20address&limit=500
-	var data = JSON.parse( require( 'fs' ).read( 'src/council-data.json' ));
-	var council = {};
-
-	data.result.records.forEach(function( result ) {
-		// infer domain from email (ignore blanks)
-		// TODO regex test that a domain is present
-		if ( result[ 'Generic council email address' ].length > 3 ) {
-			council[ result.Council ] = result[ 'Generic council email address' ].replace( /^.*@/, '' );
-		}
-	});
-
-	return council;
-}
-var councils = getCouncilData();
-require( 'fs' ).write( 'src/council-domains.json', JSON.stringify( councils, '\t' ), 'w' );
+var councils = JSON.parse( require( 'fs' ).read( 'src/council-domains.json' ));
 
 
 function inferJurisdiction( host ) {
@@ -119,7 +102,7 @@ records.forEach(function( record, i ) {
 			// couldn't get a response
 			casper.echo( '-> NO RESPONSE! ' + record.URL, 'WARNING' );
 			// infer title from filename, replace -_ with spaces and remove file extension
-			record.Title = record.URL.replace( /^.*\//, '' ).replace( /[-_]+/g, ' ' ).replace( /\.[^.]*$/, '' );
+			record.Title = decodeURIComponent( record.URL.replace( /^.*\//, '' )).replace( /[-_]+/g, ' ' ).replace( /\.[^.]*$/, '' );
 			record.documentType = record.documentType || inferDocumentType( record, record );
 		}
 		record.format = inferFormat( record, response );

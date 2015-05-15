@@ -46,9 +46,15 @@ function appendData( disputeType, party, disputeSubject, resolution ) {
 
 // data cleanup
 function clean() {
-	records.forEach(function( record ) {
+	records = records.map(function( record ) {
+		// no URL?
+		if ( ! /\S/.test( record.URL )) {
+			console.log( 'ignoring record with no URL' );
+			return null;
+		}
+
 		[ 'disputeType', 'party', 'disputeSubject', 'resolution' ].forEach(function( key ) {
-			record[ key ] = record[ key ].replace( /;(\s*;)+/g, ';' );
+			record[ key ] = ( record[ key ] + ';' ).replace( /;(\s*;)+/g, ';' );
 		});
 		// trim leading/trailing whitespace
 		// serialise whitespace
@@ -57,19 +63,40 @@ function clean() {
 		});
 
 		// fix typo
-		record.resolution = record.resolution.replace( 'Assited', 'Assisted' );
+		if ( /^;*$/.test( record.resolution )) {
+			record.resolution = 'Self resolution;';
+		} else {
+			record.resolution = record.resolution.replace( 'Assited', 'Assisted' );
+		}
+
+
+
+		// missing party
+		if ( /^;*$/.test( record.party )) {
+			record.party = 'a neighbour;'
+		} else {
+			record.party = record.party.toLowerCase();
+			record.party = record.party.replace( /^neighbour/, 'a neighbour' );
+			record.party = record.party.replace( /;neighbour/g, ';a neighbour' );
+			record.party = record.party.replace( 'body corporate(!)', 'the body corporate' );
+			record.party = record.party.replace( 'an adjoining lot owners', 'an adjoining lot owner' );
+			record.party = record.party.replace( ';lot owner', ';another unit owner/lot owner' );
+			record.party = record.party.replace( /^lot owner/, 'another unit owner/lot owner' );
+		}
+
+		// missing subject
+		if ( /^;*$/.test( record.disputeSubject )) {
+			record.disputeSubject = 'Noise;Trees;Fences;Dogs and other pets;Children;Pools;Retaining walls;Overgrown gardens;Rubbish bins;Privacy;Lighting;Cameras;Security;Behaviours;Smells;Abuse;Threats;Drainage;Renovations;Parking;Objects;Easements;Access;By-law breaches (body corporate);Common property (body corporate);Harassment;Wildlife;'
+		} else {
+			record.disputeSubject = record.disputeSubject.replace( /Dogs;/, 'Dogs and other pets;' );
+			record.disputeSubject = record.disputeSubject.replace( /Dogs$/, 'Dogs and other pets' );
+			// fix stray 'Description:' in subject
+			record.disputeSubject = record.disputeSubject.replace( /Description\:;/i, '' );
+		}
 
 		// update old terms to new
-		record.party = record.party.toLowerCase();
-		record.party.replace( /^neighbour/, 'a neighbour' );
-		record.party.replace( /;neighbour/g, ';a neighbour' );
-		record.party.replace( 'body corporate(!)', 'the body corporate' );
-		record.party.replace( 'an adjoining lot owners', 'an adjoining lot owner' );
-		record.party.replace( ';lot owner', ';another unit owner/lot owner' );
-		record.party.replace( /^lot owner/, 'another unit owner/lot owner' );
-		record.disputeSubject.replace( /Dogs;/, 'Dogs and other pets;' );
-		record.disputeSubject.replace( /Dogs$/, 'Dogs and other pets' );
-	});
+		return record;
+	}).filter(function( data ) { return data; });
 }
 
 
