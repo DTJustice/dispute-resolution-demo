@@ -76,7 +76,7 @@
 
 
 		<!-- NO RESULTS -->
-		<header class="results" data-ng-show="vm.storyComplete &amp;&amp; vm.results.length === 0">
+		<header class="status warn" data-ng-show="vm.storyComplete &amp;&amp; vm.results.length === 0">
 			<h2>No results found</h2>
 			<p>We do not have any results for <em>{{ story.disputeType | lowercase }}s</em> with {{ story.party | lowercase }} about {{ story.disputeSubject | lowercase }}.</p>
 			<p>Try phrasing your question another way.</p>
