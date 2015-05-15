@@ -185,6 +185,8 @@ angular.module( 'disputeResolution', [] )
 		var resultsMatchingStory = $filter( 'storyFilter' )( $scope.results, $scope.story );
 		$scope.vm.results = resultsMatchingStory;
 
+		$scope.vm.resultsReady = $scope.vm.storyComplete && resultsMatchingStory.length > 0;
+
 		// $filter('filter')(array, expression)
 		angular.forEach([ 'Self', 'Assisted', 'Formal' ], function( value ) {
 			$scope.vm.count.pathway[ value ] = $filter( 'filter' )( resultsMatchingStory, { resolution: value }).length;

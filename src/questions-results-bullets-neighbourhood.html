@@ -128,7 +128,7 @@
 		</blockquote>
 
 
-		<section class="optional" data-ng-if="vm.results.length" data-ng-show="vm.storyComplete">
+		<section class="optional" data-ng-show="vm.storyComplete">
 			<p>If this is a body corporate {{ story.disputeType | lowercase }} then you will need to pursue the matter through the appropriate channels.</p>
 			<blockquote class="question">
 				<input type="checkbox" id="body-corporate" data-ng-model="storySituation.bodyCorporate" data-ng-checked="story.party.indexOf( 'body corporate' ) > -1" data-ng-click="toggleBodyCorporate()">
@@ -144,7 +144,7 @@
 
 
 		<!-- RESULTS -->
-		<section class="results" data-ng-show="vm.storyComplete">
+		<section class="results" data-ng-show="vm.resultsReady">
 			<section data-ng-repeat="resolution in ['Self', 'Assisted', 'Formal']" data-ng-class="{{ resolution }}">
 				<header data-ng-if="resolution === 'Self'">
 					<h2>Try resolving the {{ story.disputeType | lowercase }} yourself</h2>
