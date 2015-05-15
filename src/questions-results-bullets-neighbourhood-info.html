@@ -146,7 +146,7 @@
 		<!-- RESULTS -->
 		<section class="results" data-ng-show="vm.resultsReady">
 			<section data-ng-repeat="resolution in ['Self', 'Assisted', 'Formal']" data-ng-class="{{ resolution }}">
-				<header class="status" data-ng-class="{ success: vm.count.pathway[ resolution ] > 0, warn: vm.count.pathway[ resolution ] === 0 }">
+				<header class="status" data-ng-class="{ info: vm.count.pathway[ resolution ] > 0, warn: vm.count.pathway[ resolution ] === 0 }">
 					<h2 data-ng-if="resolution === 'Self'">Try resolving the {{ story.disputeType | lowercase }} yourself</h2>
 					<h2 data-ng-if="resolution === 'Assisted'">Assistance resolving your {{ story.disputeType | lowercase }}</h2>
 					<h2 data-ng-if="resolution === 'Formal'">Formal resolution to your {{ story.disputeType | lowercase }}</h2>
