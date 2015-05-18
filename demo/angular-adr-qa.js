@@ -67,8 +67,21 @@ angular.module( 'disputeResolutionQA', [] )
 		}
 	}
 
+	// counts
+	angular.forEach( $scope.permutations, function( record ) {
+		record.self = record.results.filter(function( result ) {
+			return result.resolution.indexOf( 'Self' ) !== -1;
+		}).length;
+		record.assisted = record.results.filter(function( result ) {
+			return result.resolution.indexOf( 'Assisted' ) !== -1;
+		}).length;
+		record.formal = record.results.filter(function( result ) {
+			return result.resolution.indexOf( 'Formal' ) !== -1;
+		}).length;
+	});
 
-	// check for permutatiosn with zero results
+
+	// check for permutations with zero results
 	for ( var j = 0, lenj = $scope.model.disputeType.length; j < lenj; j++ ) {
 		for ( var k = 0, lenk = $scope.model.party.length; k < lenk; k++ ) {
 			for ( var l = 0, lenl = $scope.model.disputeSubject.length; l < lenl; l++ ) {
@@ -78,7 +91,10 @@ angular.module( 'disputeResolutionQA', [] )
 						disputeType: $scope.model.disputeType[ j ],
 						party: $scope.model.party[ k ],
 						disputeSubject: $scope.model.disputeSubject[ l ],
-						results: []
+						results: [],
+						self: 0,
+						assisted: 0,
+						formal: 0
 					}
 				}
 			}

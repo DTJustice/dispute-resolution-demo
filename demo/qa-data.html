@@ -30,14 +30,20 @@
 					<th>with …</th>
 					<th>about …</th>
 					<th>#</th>
+					<th>Self</th>
+					<th>Assisted</th>
+					<th>Formal</th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr data-ng-repeat="(key, permutation) in permutations" data-ng-class="{ warning: permutation.results.length < 5, danger: permutation.results.length === 0 }">
+				<tr data-ng-repeat="(key, permutation) in permutations">
 					<td>{{ permutation.disputeType }}</td>
 					<td>{{ permutation.party }}</td>
 					<td>{{ permutation.disputeSubject }}</td>
-					<td>{{ permutation.results.length }}</td>
+					<td data-ng-class="{ warning: permutation.results.length < 5, danger: permutation.results.length === 0 }">{{ permutation.results.length }}</td>
+					<td data-ng-class="{ danger: permutation.self === 0 }">{{ permutation.self }}</td>
+					<td data-ng-class="{ danger: permutation.assisted === 0 }">{{ permutation.assisted }}</td>
+					<td data-ng-class="{ danger: permutation.formal === 0 }">{{ permutation.formal }}</td>
 				</tr>
 			</tbody>
 		</table>
