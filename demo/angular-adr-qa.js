@@ -31,7 +31,6 @@ angular.module( 'disputeResolutionQA', [] )
 
 	// init
 	for ( var i = 0, len = cachedData.length; i < len; i++ ) {
-		// ES6: let, exploder
 		var type = cachedData[ i ].disputeType.split( /\s*;\s*/ ).filter( lengthFilter );
 		var party = cachedData[ i ].party.split( /\s*;\s*/ ).filter( lengthFilter );
 		var subject = cachedData[ i ].disputeSubject.split( /\s*;\s*/ ).filter( lengthFilter );
@@ -55,13 +54,32 @@ angular.module( 'disputeResolutionQA', [] )
 		for ( var j = 0, lenj = type.length; j < lenj; j++ ) {
 			for ( var k = 0, lenk = party.length; k < lenk; k++ ) {
 				for ( var l = 0, lenl = subject.length; l < lenl; l++ ) {
-					$scope.permutations[ type[ j ] + '-' + party[ k ] + '-' + subject[ l ]] = $scope.permutations[ type[ j ] + '-' + party[ k ] + '-' + subject[ l ]] || {
+					var key = type[ j ] + '-' + party[ k ] + '-' + subject[ l ];
+					$scope.permutations[ key ] = $scope.permutations[ key ] || {
 						disputeType: type[ j ],
 						party: party[ k ],
 						disputeSubject: subject[ l ],
 						results: []
 					};
-					$scope.permutations[ type[ j ] + '-' + party[ k ] + '-' + subject[ l ]].results.push( cachedData[ i ] );
+					$scope.permutations[ key ].results.push( cachedData[ i ] );
+				}
+			}
+		}
+	}
+
+
+	// check for permutatiosn with zero results
+	for ( var j = 0, lenj = $scope.model.disputeType.length; j < lenj; j++ ) {
+		for ( var k = 0, lenk = $scope.model.party.length; k < lenk; k++ ) {
+			for ( var l = 0, lenl = $scope.model.disputeSubject.length; l < lenl; l++ ) {
+				var key = $scope.model.disputeType[ j ] + '-' + $scope.model.party[ k ] + '-' + $scope.model.disputeSubject[ l ];
+				if ( typeof $scope.permutations[ key ] === 'undefined' ) {
+					$scope.permutations[ key ] = {
+						disputeType: $scope.model.disputeType[ j ],
+						party: $scope.model.party[ k ],
+						disputeSubject: $scope.model.disputeSubject[ l ],
+						results: []
+					}
 				}
 			}
 		}

@@ -29,7 +29,7 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr data-ng-repeat="(key, permutation) in permutations" data-ng-class="{warning: permutation.results.length < 5}">
+				<tr data-ng-repeat="(key, permutation) in permutations" data-ng-class="{ warning: permutation.results.length < 5, danger: permutation.results.length === 0 }">
 					<td>{{ permutation.disputeType }}</td>
 					<td>{{ permutation.party }}</td>
 					<td>{{ permutation.disputeSubject }}</td>
