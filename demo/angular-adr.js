@@ -4,9 +4,6 @@ var getAlternativeDisputeResolutionData = function( data ) {
 	cachedData = data;
 };
 
-// TODO service for council data
-var URI_DATA_COUNCIL =
-
 
 // basic angular
 angular.module( 'disputeResolution', [] )
