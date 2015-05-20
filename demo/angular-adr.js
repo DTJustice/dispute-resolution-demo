@@ -65,8 +65,8 @@ angular.module( 'disputeResolution', [] )
 
 
 // controller
-.controller( 'resultsController', [ '$scope', '$http', '$filter',
-	                       function( $scope,   $http,   $filter ) {
+.controller( 'resultsController', [ '$scope', '$http', '$anchorScroll', '$filter',
+	                      function(  $scope ,  $http ,  $anchorScroll ,  $filter ) {
 	'use strict';
 
 	$scope.results = cachedData;
@@ -224,5 +224,17 @@ angular.module( 'disputeResolution', [] )
 			$scope.vm.count.documentType[ key ] = $filter( 'filter' )( resultsMatchingStory, { documentType: key }).length;
 		});
 	});
+
+	// for wizard interface, toggle 'show results'
+	$scope.vm.resultsView = false;
+
+	$scope.showResults = function() {
+		$scope.vm.resultsView = true;
+		$anchorScroll( 'results' );
+	};
+	$scope.showForm = function() {
+		$scope.vm.resultsView = false;
+		$anchorScroll( 'form' );
+	};
 
 }]);

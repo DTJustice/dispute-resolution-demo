@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+	<meta charset="UTF-8">
+	<title>Neighbourhood dispute resolution</title>
+	<link rel="stylesheet" href="https://static.qgov.net.au/assets/v2/style/qgov.css">
+	<link rel="stylesheet" href="adr.css">
+
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script> -->
+	<script src="../node_modules/angular/angular.min.js"></script>
+	<script src="../node_modules/angular-animate/angular-animate.min.js"></script>
+</head>
+<body data-ng-app="disputeResolution" data-ng-controller="resultsController">
+
+	<header>
+		<p>HEADER</p>
+		<p>logo, links and breacrumb go here</p>
+	</header>
+
+	<nav>
+		<h2>Menu</h2>
+		<p>website menu goes here</p>
+	</nav>
+
+	<main>
+		<header>
+			<h1>Neighbourhood dispute resolution</h1>
+			<p>Use this tool to discover the options available to you in order to resolve a dispute.</p>
+			<p>We provide general information on avoiding and resolving neighbourhood disputes. It is not legal advice and does not consider your exact circumstances. If you are unsure about your legal rights you should get <a href="http://www.qld.gov.au/law/legal-mediation-and-justice-of-the-peace/legal-advice-and-investment/legal-information-and-advice/">independent legal advice</a>.</p>
+		</header>
+		<div id="form" class="story" data-ng-show="! vm.resultsView">
+
+			<form class="madlibs" method="get">
+				<p>
+					<label for="dispute-type">I have {{ story.disputeType | aOrAn }}</label>
+					<select id="dispute-type" data-ng-model="story.disputeType">
+						<option data-ng-repeat="option in model.disputeType" value="{{ option }}">{{ option | lowercase }}</option>
+					</select>
+					<label for="party-type">with</label>
+					<select id="party-type" data-ng-model="story.party">
+						<option data-ng-repeat="option in model.party | orderBy:'+'" value="{{ option }}">{{ option | lowercase }}</option>
+					</select>
+					<label for="dispute-subject">about</label>
+					<select id="dispute-subject" data-ng-model="story.disputeSubject">
+						<option data-ng-repeat="option in model.disputeSubject | orderBy:'+'" value="{{ option }}">{{ option | lowercase }}</option>
+					</select>.
+				</p>
+			</form>
+
+			<section class="optional" data-ng-if="vm.results.length" data-ng-show="model.councilSubject.indexOf( story.disputeSubject ) > -1">
+				<form class="madlibs">
+					<p>
+						Some {{ story.disputeType | lowercase }}s about {{ story.disputeSubject | lowercase }} are handled by your local council.
+						We can help you find the right information if you <label for="council">tell us where you live:</label>
+						<select id="council" data-ng-model="storySituation.council">
+							<option data-ng-repeat="(org, data) in model.councils" value="{{ org }}">{{ org }}</option>
+						</select>.<br>
+						<small>Find your council in the <a href="http://growthsummit.premiers.qld.gov.au/local-government-directory.html" target="_blank">local government directory</a>.</small>
+					</p>
+				</form>
+			</section>
+
+
+			<ul class="optional actions" data-ng-show="vm.storyComplete">
+				<li><strong><button class="button" data-ng-click="showResults()">Show results</button></strong></li>
+			</ul>
+
+		</div>
+
+
+		<div id="results" class="story" data-ng-show="vm.resultsView">
+
+			<!-- NO RESULTS -->
+			<header class="status warn" data-ng-show="vm.storyComplete &amp;&amp; vm.results.length === 0">
+				<h2>No results found</h2>
+				<p>We do not have any results for <em>{{ story.disputeType | lowercase }}s</em> with {{ story.party | lowercase }} about {{ story.disputeSubject | lowercase }}.</p>
+				<p>Try <a href="#" data-ng-click="showForm()">phrasing your question another way</a>.</p>
+			</header>
+
+
+			<!-- TODO: this looks nice, but is it too bold? is that an over-the-shoulder privacy issue? (for workplace or family disputes?) -->
+			<blockquote class="story" data-ng-show="vm.storyComplete">
+				<p>
+					<span class="story" data-ng-show="vm.results.length">I have {{ story.disputeType | aOrAn }} <mark>{{ story.disputeType | lowercase }}</mark></span>
+					<span class="story" data-ng-show="vm.results.length === 0">
+						<label for="dispute-type-redirect">I have {{ story.disputeType | aOrAn }}</label>
+						<select id="dispute-type-redirect" data-ng-model="story.disputeType">
+							<option data-ng-repeat="type in model.disputeType" data-ng-if="vm.count.disputeType[ type ]" value="{{ type }}">
+								{{ type | lowercase }} ({{ vm.count.disputeType[ type ] }})
+							</option>
+						</select>
+					</span>
+					with <mark>{{ story.party | lowercase }}</mark>
+					about <mark>{{ story.disputeSubject | lowercase }}</mark>.
+				</p>
+			</blockquote>
+
+			<blockquote class="optional" data-ng-if="vm.results.length" data-ng-show="storySituation.location.length > 2">
+				<p>I live in <mark>{{ storySituation.location }}</mark>.</p>
+			</blockquote>
+
+
+			<section class="optional" data-ng-show="vm.storyComplete">
+				<p>If this is a body corporate {{ story.disputeType | lowercase }} then you will need to pursue the matter through the appropriate channels.</p>
+				<blockquote class="question">
+					<input type="checkbox" id="body-corporate" data-ng-model="storySituation.bodyCorporate" data-ng-checked="story.party.indexOf( 'body corporate' ) > -1" data-ng-click="toggleBodyCorporate()">
+					<label for="body-corporate">I live in a body corporate<br><small>(i.e. you share common property with other owners and occupiers)</small></label>
+				</blockquote>
+				<div class="optional" data-ng-show="storySituation.bodyCorporate">
+					<p>
+						Formal resolution of many disputes between neighbours in a body corporate can only be dealt with through the Office of the Commissioner for Body Corporate and Community Management.
+					</p>
+					<p>It is possible that there may be other avenues to resolve your {{  story.disputeType | lowercase  }}.  If you would like to explore other options please ‘untick’ the “I live in a body corporate” box.</p>
+				</div>
+			</section>
+
+
+			<!-- RESULTS -->
+			<section class="results" data-ng-show="vm.resultsReady">
+				<section data-ng-repeat="resolution in ['Self', 'Assisted', 'Formal']" data-ng-class="{{ resolution }}">
+					<header class="status" data-ng-class="{ success: vm.count.pathway[ resolution ] > 0, warn: vm.count.pathway[ resolution ] === 0 }">
+						<h2 data-ng-if="resolution === 'Self'">Try resolving the {{ story.disputeType | lowercase }} yourself</h2>
+						<h2 data-ng-if="resolution === 'Assisted'">Assistance resolving your {{ story.disputeType | lowercase }}</h2>
+						<h2 data-ng-if="resolution === 'Formal'">Formal resolution to your {{ story.disputeType | lowercase }}</h2>
+						<div data-ng-if="vm.count.pathway[ resolution ] > 0">
+							<p data-ng-if="resolution === 'Self'">Self resolution can be the fastest and cheapest way to resolve a {{ story.disputeType | lowercase }}.</p>
+							<p data-ng-if="resolution === 'Assisted'">Conciliation or mediation saves time, legal fees, and court/formal dispute resolution costs for you and the community.</p>
+							<p data-ng-if="resolution === 'Formal'">When you need an official resolution. Costs time and money but will give you a result that can be enforced.</p>
+						</div>
+						<p class="resources" data-ng-show="vm.count.pathway[ resolution ] === 0">
+							<em>There are no results for {{ resolution | lowercase }} resolution.</em>
+						</p>
+					</header>
+					<blockquote class="question" data-ng-if="resolution === 'Self' &amp;&amp; vm.count.pathway[ 'Self' ] > 0">
+						<input type="checkbox" id="tried-self" data-ng-model="storyHistory[ resolution ].tried">
+						<label for="tried-self">I have already tried to resolve this {{ story.disputeType | lowercase }} myself</label>
+					</blockquote>
+					<blockquote class="question" data-ng-if="resolution === 'Assisted' &amp;&amp; vm.count.pathway[ 'Assisted' ] > 0">
+						<input type="checkbox" id="tried-assisted" data-ng-model="storyHistory[ resolution ].tried">
+						<label for="tried-assisted">We have tried assisted resolutions to this {{ story.disputeType | lowercase }}</label>
+					</blockquote>
+					<ul data-ng-if="vm.count.pathway[ resolution ] > 0" data-ng-show="! storyHistory[ resolution ].tried" class="resources">
+		<!--
+							<li data-ng-if="storySituation.location.indexOf( '4510' ) > -1 &amp;&amp; resolution === 'Self'">
+								<a href="https://www.moretonbay.qld.gov.au/general.aspx?id=13577">Barking dogs - Moreton Bay Regional Council</a>
+								<small class="tag guidelines">guidelines</small>
+								<span class="description">All dogs bark, but some barking dogs become a real neighbourhood nuisance – greatly reducing the quality of life for their neighbours. Barking is the most common animal behaviour problem Council is asked to deal with.</span>
+							</li>
+		-->
+						<li data-ng-repeat="result in results | storyFilter:story | filter:{ resolution: resolution } | filter: documentTypeFilter | filter: { jurisdiction: storySituation.council }">
+							<a data-ng-href="{{ result.URL }}">{{ result.Title || result.filename }}</a>
+							<small>({{ result.jurisdiction }})</small>
+							<small data-ng-if="result.format === 'application/pdf'">(PDF)</small>
+							<small data-ng-if="result.documentType" class="tag" data-ng-class="result.documentType">{{ result.documentType }}</small>
+							<span class="description">{{ result.Description || result.Purpose || result.Comments }}</span>
+		<!--
+							<dl>
+								<dt>Subject</dt>
+								<dd>{{ result.disputeSubject }}</dd>
+								<dt>Party</dt>
+								<dd>{{ result.party }}</dd>
+								<dt>Actions</dt>
+								<dd>{{ result.resolution }}</dd>
+							</dl>
+		-->
+						</li>
+					</ul>
+				</section>
+			</section>
+
+			<ul class="actions">
+				<li><strong><button class="button" data-ng-click="showForm()">Ask a different question</button></strong></li>
+			</ul>
+
+		</div>
+	</main>
+
+
+	<aside class="optional" data-ng-show="vm.storyComplete">
+		<h2>I want to see</h2>
+		<ul class="filter checklist">
+			<li data-ng-repeat="(tag, value) in resultFilter.documentType"
+			    data-ng-if="tag !== 'legislation'"
+			    data-ng-class="{ disabled: vm.count.documentType[ tag ] === 0 }">
+				<input type="checkbox" data-ng-model="resultFilter.documentType[ tag ]"
+				 data-ng-checked="resultFilter.documentType[ tag ]" id="filter-{{ tag }}"
+				 data-ng-disabled="vm.count.documentType[ tag ] === 0"
+				><label class="tag" data-ng-class="tag" for="filter-{{ tag }}">{{ tag }}</label>
+				<span>({{ vm.count.documentType[ tag ] || 'none' }})</span>
+			</li>
+		</ul>
+	</aside>
+
+	<aside class="aside feedback">
+		<h2>Tell us what you think</h2>
+		<p><a href="#page-feedback">Fill in the feedback section</a> and let us know what you think of the tool so far and what you would like to see in the future.</p>
+	</aside>
+
+	<aside class="optional" data-ng-show="story.disputeSubject">
+		<h2>Check the law</h2>
+		<ul>
+			<li data-ng-repeat="result in results | filter:{ disputeSubject: story.disputeSubject } | filter:{ documentType: 'legislation' } : true">
+				<a data-ng-href="{{ result.URL }}">{{ result.Title }}</a>
+			</li>
+		</ul>
+	</aside>
+
+
+	<aside>
+		<h2>Legal information and advice</h2>
+		<p><a href="http://www.qld.gov.au/law/legal-mediation-and-justice-of-the-peace/legal-advice-and-investment/legal-information-and-advice/">Find a solicitor</a>, law firm, barrister or free legal services available to vulnerable and disadvantaged Queenslanders.</p>
+	</aside>
+
+	<aside>
+		<h2>Body corporate disputes</h2>
+		<p>Formal resolution of many disputes between neighbours in a body corporate can only be dealt with through the <a href="http://www.qld.gov.au/law/housing-and-neighbours/body-corporate/body-corporate-disputes/">Office of the Commissioner for Body Corporate and Community Management</a>.</p>
+	</aside>
+
+	<footer>
+		<p>page feedback and footer links go here</p>
+		<p>© The State of Queensland 1995–2015</p>
+		<p><a href="https://www.qld.gov.au">Queensland Government</a></p>
+	</footer>
+
+	<script src="angular-adr.js"></script>
+	<script src="neighbourhood-data-import-out.js"></script>
+
+</body>
+</html>
