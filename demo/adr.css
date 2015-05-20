@@ -67,6 +67,9 @@ blockquote {
 	quotes: "‘" "’";
 	margin: 0 .5em;
 }
+blockquote p {
+	margin: 1rem 0;
+}
 blockquote > p::before {
 	content: open-quote;
 }
@@ -200,6 +203,7 @@ blockquote.question input:checked + label {
 	speak: none;
 	opacity: 0;
 	height: 0;
+	padding: 0;
 	transform: scaleY(0);
 	transition:
 		opacity 0.1s ease,
