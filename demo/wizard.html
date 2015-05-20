@@ -47,7 +47,7 @@
 				</p>
 			</form>
 
-			<section class="optional" data-ng-if="vm.results.length" data-ng-show="model.councilSubject.indexOf( story.disputeSubject ) > -1">
+			<section class="optional" data-ng-show="vm.results.length &amp;&amp; model.councilSubject.indexOf( story.disputeSubject ) > -1">
 				<form class="madlibs">
 					<p>
 						Some {{ story.disputeType | lowercase }}s about {{ story.disputeSubject | lowercase }} are handled by your local council.
