@@ -25,6 +25,10 @@ body > aside {
 body > main {
 	width: 50%;
 }
+body > aside {
+	clear: right;
+	float: right;
+}
 
 
 
