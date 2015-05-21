@@ -83,17 +83,56 @@ angular.module( 'disputeResolution', [] )
 		]
 	};
 
+
+	// customer input
+	var oldParty;
+	function init() {
+		oldParty = '';
+
+		$scope.story = {
+			disputeType: '',
+			party: '',
+			disputeSubject: ''
+		};
+
+		$scope.storySituation = {
+			outcome: '',
+			blocker: '',
+			council: ''
+		};
+
+		$scope.storyHistory = {
+			Self: { tried: false },
+			Assisted: { tried: false },
+			Formal: { tried: false }
+		};
+
+
+		$scope.vm = {
+			storyComplete: false,
+			results: [],
+			count: {
+				pathway: {},
+				disputeType: {},
+				documentType: {}
+			}
+		};
+	}
+	// init customer data
+	init();
+
+
 	// filters
 	$scope.resultFilter = {
 		documentType: {}
 	};
+
 	$scope.documentTypeFilter = function( record ) {
 		return record.documentType !== 'legislation' && $scope.resultFilter.documentType[ record.documentType ] === true;
 	};
 
 
 	// turn body corporate results on/off
-	var oldParty = '';
 	$scope.toggleBodyCorporate = function() {
 		if ( ! oldParty ) {
 			oldParty = $scope.story.party;
@@ -173,29 +212,6 @@ angular.module( 'disputeResolution', [] )
 	// 	party: $scope.model.party[ 0 ]
 	// };
 
-	$scope.storySituation = {
-		outcome: '',
-		blocker: '',
-		council: ''
-	};
-
-	$scope.storyHistory = {
-		Self: { tried: false },
-		Assisted: { tried: false },
-		Formal: { tried: false }
-	};
-
-
-	$scope.vm = {
-		storyComplete: false,
-		results: [],
-		count: {
-			pathway: {},
-			disputeType: {},
-			documentType: {}
-		}
-	};
-
 	// calculate totals
 	$scope.$watchCollection( 'story', function() {
 
@@ -234,6 +250,7 @@ angular.module( 'disputeResolution', [] )
 	};
 	$scope.showForm = function() {
 		$scope.vm.resultsView = false;
+		init();
 		$anchorScroll( 'form' );
 	};
 
