@@ -1,11 +1,11 @@
 var casper = require( 'casper' ).create();
-var filename = 'src/neighbourhood-data-import.js';
+var filename = 'demo/neighbourhood-data-import.js';
 
 var records = JSON.parse( require( 'fs' ).read( filename ));
 var len = records.length;
 
 
-var councils = JSON.parse( require( 'fs' ).read( 'src/council-domains.json' ));
+var councils = JSON.parse( require( 'fs' ).read( 'demo/council-domains.json' ));
 
 
 function inferJurisdiction( host ) {

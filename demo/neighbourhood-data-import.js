@@ -39,7 +39,7 @@
         "URL": "http://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/resolving-tree-and-fence-disputes/step-by-step-guide-to-resolving-tree-and-fence-disputes/",
         "disputeType": "Concern;Problem;Disagreement;Complaint;Conflict;Dispute;",
         "party": "a neighbour;a neighbour next door;",
-        "disputeSubject": "Fences;Description:;",
+        "disputeSubject": "Fences;",
         "resolution": "Self Resolution;Assisted Resolution;Formal Resolution;",
         "documentType": "",
         "Comments": "Step by step guide to resolving tree and fence disputes"
@@ -237,9 +237,9 @@
         "URL": "http://www.legalaid.qld.gov.au/legalinformation/livinginthecommunity/Neighbourhood/Pages/Complaints-noisewatersmellsandfire.aspx",
         "disputeType": "Complaint;Dispute;",
         "party": "a neighbour;someone in my neighbourhood;someone in my neighbourhood;a neighbour next door;a neighbour in my building;",
-        "disputeSubject": "Rubbish bins;",
+        "disputeSubject": "Rubbish bins;Noise;Smells;Drainage;",
         "resolution": "Self Resolution;Assisted Resolution;",
-        "documentType": "",
+        "documentType": "guidelines",
         "Comments": "General nuisance, including smells created from rubbish"
     },
     {
@@ -248,7 +248,7 @@
         "party": "a neighbour;someone in my neighbourhood;a neighbour next door;a neighbour in my street;",
         "disputeSubject": "Rubbish bins;Smells;Objects;",
         "resolution": "Self Resolution;Assisted Resolution;Formal Resolution;",
-        "documentType": "",
+        "documentType": "guidelines",
         "Comments": "Could cover any dispute with neighbours. Includes a link to DRB."
     },
     {
@@ -257,7 +257,7 @@
         "party": "a neighbour;someone in my neighbourhood;a neighbour next door;a neighbour in my street;",
         "disputeSubject": "Rubbish bins;",
         "resolution": "Formal Resolution;",
-        "documentType": "",
+        "documentType": "procedure",
         "Comments": ""
     },
     {
@@ -266,8 +266,8 @@
         "party": "a neighbour;someone in my neighbourhood;a neighbour next door;a neighbour in my street;a neighbour in my building;",
         "disputeSubject": "Access;",
         "resolution": "Formal Resolution;",
-        "documentType": "",
-        "Comments": "NB Maybe 'neighbour in my complex' might be another possible party?"
+        "documentType": "guidelines",
+        "Comments": ""
     },
     {
         "URL": "http://www.qld.gov.au/law/housing-and-neighbours/noise-and-crime-in-the-neighbourhood/complain-about-noisy-neighbours/",
@@ -515,34 +515,34 @@
     {
         "URL": "http://www.communities.qld.gov.au/childsafety/protecting-children",
         "disputeType": "Dispute;Concern;Problem;Question;Complaint;",
-        "party": "someone in my neighbourhood;a neighbour next door;a neighbour in my building;a neighbour in my street;a neighbour;",
+        "party": "a neighbour;someone in my neighbourhood;",
         "disputeSubject": "Children;",
         "resolution": "Formal Resolution;",
         "documentType": "",
-        "Comments": "Child Safety information; main screen \"protecting children\" with links to definitions of preventing, reporting, and responding to child abuse; ongoing intervention; contacts and link to reports/publications."
+        "Comments": "Child Safety information for protecting children: information on preventing, reporting, and responding to child abuse; ongoing intervention; contacts and link to reports/publications."
     },
     {
         "URL": "http://www.legalaid.qld.gov.au/legalinformation/livinginthecommunity/Neighbourhood/Pages/Thingspeoplesay.aspx#What can I do if children are taunting me or my child, or making comments?",
         "disputeType": "Problem;Concern;Dispute;Conflict;Question;",
-        "party": "someone in my neighbourhood;a neighbour next door;a neighbour in my building;a neighbour in my street;a neighbour;",
+        "party": "a neighbour;someone in my neighbourhood;",
         "disputeSubject": "Children;",
-        "resolution": "Formal Resolution;",
+        "resolution": "Self Resolution;Assisted Resolution;",
         "documentType": "",
-        "Comments": "Brief information regarding rights/options in relation to unwanted children's behaviour (bullying/verbal abuse)."
+        "Comments": "Brief information regarding rights/options in relation to unwanted children's behaviour (verbal abuse/threats)."
     },
     {
-        "URL": "https://www.qld.gov.au/disability/children-young-people/bullying/facts.html",
+        "URL": "https://www.qld.gov.au/youth/family-social-support/being-bullied/",
         "disputeType": "Problem;Concern;Dispute;Conflict;Question;",
-        "party": "someone in my neighbourhood;a neighbour next door;a neighbour in my building;a neighbour in my street;a neighbour;",
+        "party": "a neighbour;someone in my neighbourhood;",
         "disputeSubject": "Children;",
-        "resolution": "Formal Resolution;",
+        "resolution": "Self Resolution;Assisted Resolution;",
         "documentType": "",
-        "Comments": "Definition and background of bullying and cyberbullying. Provides links to relevant reports, information and statistics as well as guidelines for parents to prevent and address cyberbullying and bullying."
+        "Comments": "Information on what to do if you are being bullied. Includes links to further information on bullying, cyberbullying and related statistics."
     },
     {
         "URL": "http://www.legalaid.qld.gov.au/legalinformation/livinginthecommunity/neighbourhood/pages/boundariesandeasements.aspx",
         "disputeType": "Concern;Problem;Complaint;Question;",
-        "party": "someone in my neighbourhood;a neighbour next door;a neighbour in my street;a neighbour;",
+        "party": "a neighbour next door;a neighbour;",
         "disputeSubject": "Easements;",
         "resolution": "Self Resolution;Assisted Resolution;",
         "documentType": "",
@@ -555,7 +555,7 @@
         "disputeSubject": "Easements;",
         "resolution": "Self Resolution;",
         "documentType": "",
-        "Comments": "PDF information about easments and its purpose"
+        "Comments": "Qld Dept of Agriculture and Mines: PDF document on Easements"
     },
     {
         "URL": "http://www.qldneighbourhoods.com/easements.html",
@@ -567,30 +567,30 @@
         "Comments": "Information about easements"
     },
     {
-        "URL": "http://www.statedevelopment.qld.gov.au/compulsory-land-acquisition/easements.html",
+        "URL": "http://www.qld.gov.au/environment/land/state/easements/",
         "disputeType": "Question;",
         "party": "a neighbour;someone in my neighbourhood;",
         "disputeSubject": "Easements;",
         "resolution": "Self Resolution;",
         "documentType": "",
-        "Comments": "general information"
+        "Comments": "general information about easements"
     },
     {
         "URL": "http://www.justice.qld.gov.au/fair-and-safe-work/industrial-relations/codes-of-practice-and-guidelines/queensland-code-of-practice-for-the-building-and-construction-industry",
         "disputeType": "Question;Concern;Conflict;Complaint;Issue;",
-        "party": "someone in my neighbourhood;a neighbour;a neighbour next door;a neighbour in my street;a neighbour in my building;",
+        "party": "a neighbour;someone in my neighbourhood;",
         "disputeSubject": "Renovations;",
-        "resolution": "Formal Resolution;",
+        "resolution": "Assisted Resolution;Formal Resolution;",
         "documentType": "",
         "Comments": "Information on the code of practice for the building and construction industry"
     },
     {
         "URL": "http://www.qld.gov.au/environment/land/state/easements/applying/",
         "disputeType": "Question;",
-        "party": "someone in my neighbourhood;a neighbour;",
+        "party": "a neighbour;someone in my neighbourhood;",
         "disputeSubject": "Easements;",
         "resolution": "Self Resolution;",
-        "documentType": "",
+        "documentType": "procedure",
         "Comments": "how to apply for an easement"
     },
     {
@@ -599,16 +599,16 @@
         "party": "someone in my neighbourhood;a neighbour;",
         "disputeSubject": "Easements;",
         "resolution": "Self Resolution;",
-        "documentType": "",
-        "Comments": "Easements - right of way - PDF doc"
+        "documentType": "fact sheet",
+        "Comments": "South Australia Government document on Easements - right of way - PDF doc"
     },
     {
         "URL": "http://www.renovate.com.au/rules/index.cfm",
         "disputeType": "Concern;Question;Issue;Dispute;Disagreement;Problem;",
         "party": "someone in my neighbourhood;a neighbour;a neighbour next door;a neighbour in my street;a neighbour in my building;",
         "disputeSubject": "Renovations;",
-        "resolution": "Self Resolution;",
-        "documentType": "",
+        "resolution": "Self Resolution;Assisted Resolution;",
+        "documentType": "guidelines",
         "Comments": "Outlines rules and regulations governing renovations in Australia. Contains links to other bodies with a governing role."
     },
     {
@@ -616,9 +616,9 @@
         "disputeType": "Question;Concern;Conflict;Complaint;Issue;",
         "party": "someone in my neighbourhood;a neighbour;a neighbour next door;a neighbour in my street;a neighbour in my building;",
         "disputeSubject": "Renovations;",
-        "resolution": "Self Resolution;Assisted Resolution;Formal Resolution;",
-        "documentType": "",
-        "Comments": "Provides information on neighbour's rights relating to use of own land and links to additional information. Promotes self-resolution as the first step."
+        "resolution": "Self Resolution;Assisted Resolution;",
+        "documentType": "guidelines",
+        "Comments": "Provides information on neighbour's rights relating to use of own land and links to Local government and legislative information."
     },
     {
         "URL": "http://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/avoiding-fence-tree-and-building-disputes/avoiding-building-disputes/",
@@ -626,7 +626,7 @@
         "party": "someone in my neighbourhood;a neighbour;a neighbour next door;a neighbour in my street;a neighbour in my building;",
         "disputeSubject": "Renovations;",
         "resolution": "Self Resolution;",
-        "documentType": "",
+        "documentType": "guidelines",
         "Comments": "Provides advice on how to avoid building disputes; includes some information on approaching neighbours"
     },
     {
@@ -635,7 +635,7 @@
         "party": "someone in my neighbourhood;a neighbour;a neighbour next door;a neighbour in my street;a neighbour in my building;",
         "disputeSubject": "Children;",
         "resolution": "Formal Resolution;",
-        "documentType": "",
+        "documentType": "procedure",
         "Comments": "Provides information regarding young people and the justice system. Includes links to related sites and services"
     },
     {
@@ -644,7 +644,7 @@
         "party": "someone in my neighbourhood;a neighbour;a neighbour next door;a neighbour in my street;a neighbour in my building;",
         "disputeSubject": "Children;",
         "resolution": "Formal Resolution;",
-        "documentType": "",
+        "documentType": "procedure",
         "Comments": "Information on the laws / police powers relating to youth justice."
     },
     {
@@ -734,7 +734,7 @@
         "party": "someone in my neighbourhood;a neighbour in my building;a neighbour next door;a neighbour in my street;a neighbour;",
         "disputeSubject": "Lighting;Noise;Smells;",
         "resolution": "Self Resolution;",
-        "documentType": "",
+        "documentType": "procedure",
         "Comments": "information on Dept of Environment website outlining legal responsibilities in relation to noise, light and odour issues"
     },
     {
@@ -742,7 +742,7 @@
         "disputeType": "Concern;Problem;Disagreement;Complaint;Dispute;",
         "party": "someone in my neighbourhood;a neighbour;a neighbour next door;a neighbour in my street;a neighbour in my building;",
         "disputeSubject": "Lighting;",
-        "resolution": "Self Resolution;Assisted Resolution;Formal Resolution;",
+        "resolution": "Self Resolution;Assisted Resolution;",
         "documentType": "",
         "Comments": "Fact sheet on nuisance lighting, encouraging self-resolution as first step and noting that local councils are responsible for investigating lighting disputes."
     },
@@ -1362,28 +1362,28 @@
         "URL": "http://www.qld.gov.au/law/housing-and-neighbours/body-corporate/body-corporate-disputes/types-of-dispute-resolution/self-resolution-for-disputes/",
         "disputeType": "Concern;Question;",
         "party": "a neighbour in my building;another unit owner/lot owner;a neighbour in my body corporate;the body corporate;",
-        "disputeSubject": "Noise;Trees;Fences;Dogs and other pets;Children;Pools;Retaining walls;Overgrown gardens;Rubbish bins;Privacy;Lighting;Cameras;Security;Behaviours;Smells;Abuse;Threats;Drainage;Renovations;Parking;Objects;Easements;Access;By-law breaches (body corporate);Common property (body corporate);Harassment;Wildlife;",
+        "disputeSubject": "Noise;Behaviours;Trees;Smells;Fences;Abuse;Dogs and other pets;Threats;Children;Drainage;Pools;Renovations;Retaining walls;Parking;Overgrown gardens;Objects;Rubbish bins;Easements;Lighting;By-law breaches (body corporate);Cameras;Common property (body corporate);Security;Harassment;Wildlife;",
         "resolution": "Self Resolution;",
-        "documentType": "",
-        "Comments": "Self resolution for body corporate disputes between neighbours, which could cover all of the dispute categories"
+        "documentType": "guidelines",
+        "Comments": "Self resolution for body corporate disputes between neighbours, which could cover all of the dispute categories. * Most important link for self resolution in bodies coprorate"
     },
     {
         "URL": "http://www.qld.gov.au/law/housing-and-neighbours/body-corporate/body-corporate-disputes/types-of-dispute-resolution/conciliation-for-body-corporate-disputes/",
         "disputeType": "Problem;Issue;",
         "party": "a neighbour in my building;another unit owner/lot owner;a neighbour in my body corporate;the body corporate;",
-        "disputeSubject": "Noise;Trees;Fences;Dogs and other pets;Children;Pools;Retaining walls;Overgrown gardens;Rubbish bins;Privacy;Lighting;Cameras;Security;Behaviours;Smells;Abuse;Threats;Drainage;Renovations;Parking;Objects;Easements;Access;By-law breaches (body corporate);Common property (body corporate);Harassment;Wildlife;",
+        "disputeSubject": "Noise;Behaviours;Trees;Smells;Fences;Abuse;Dogs and other pets;Threats;Children;Drainage;Pools;Renovations;Retaining walls;Parking;Overgrown gardens;Objects;Rubbish bins;Easements;Lighting;By-law breaches (body corporate);Cameras;Common property (body corporate);Security;Harassment;Wildlife;",
         "resolution": "Assisted Resolution;",
-        "documentType": "",
-        "Comments": "Conciliation for body corporate disputes between neighbours, which could cover all of the dispute categories"
+        "documentType": "procedure",
+        "Comments": "Conciliation for body corporate disputes between neighbours, which could cover all of the dispute categories * Most important link for assisted resolution in bodies coprorate"
     },
     {
         "URL": "http://www.qld.gov.au/law/housing-and-neighbours/body-corporate/body-corporate-disputes/types-of-dispute-resolution/adjudication-for-body-corporate-disputes/",
         "disputeType": "Disagreement;",
         "party": "a neighbour in my building;another unit owner/lot owner;a neighbour in my body corporate;the body corporate;",
-        "disputeSubject": "Noise;Trees;Fences;Dogs and other pets;Children;Pools;Retaining walls;Overgrown gardens;Rubbish bins;Privacy;Lighting;Cameras;Security;Behaviours;Smells;Abuse;Threats;Drainage;Renovations;Parking;Objects;Easements;Access;By-law breaches (body corporate);Common property (body corporate);Harassment;Wildlife;",
+        "disputeSubject": "Noise;Behaviours;Trees;Smells;Fences;Abuse;Dogs and other pets;Threats;Children;Drainage;Pools;Renovations;Retaining walls;Parking;Overgrown gardens;Objects;Rubbish bins;Easements;Lighting;By-law breaches (body corporate);Cameras;Common property (body corporate);Security;Harassment;Wildlife;",
         "resolution": "Formal Resolution;",
-        "documentType": "",
-        "Comments": "Adjudication body corporate disputes between neighbours, which could cover all of the dispute categories (but not debt disputes, which is now with QCAT)"
+        "documentType": "procedure",
+        "Comments": "Adjudication body corporate disputes between neighbours, which could cover all of the dispute categories. * Most important link for formal resolution in bodies coprorate"
     },
     {
         "URL": "https://www.dnrm.qld.gov.au/our-department/contact-us/titles-registry-contacts",
@@ -1420,5 +1420,14 @@
         "resolution": "Self Resolution;",
         "documentType": "",
         "Comments": "Dept of Energy & Water supply - Urban Drainage Manual"
+    },
+    {
+        "URL": "http://www.qld.gov.au/law/housing-and-neighbours/body-corporate/",
+        "disputeType": "Concern;Question;Problem;",
+        "party": "a neighbour;someone in my neighbourhood;a neighbour next door;a neighbour in my street;",
+        "disputeSubject": "Noise;Behaviours;Trees;Smells;Fences;Abuse;Dogs and other pets;Threats;Children;Drainage;Pools;Renovations;Retaining walls;Parking;Overgrown gardens;Objects;Rubbish bins;Easements;Lighting;By-law breaches (body corporate);Cameras;Common property (body corporate);Security;Harassment;Wildlife;",
+        "resolution": "Self Resolution;",
+        "documentType": "guidelines",
+        "Comments": "General information on body corporates. *Most important link for general information on bodies corporate"
     }
 ]

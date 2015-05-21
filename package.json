@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "push": "git push && git push github master:gh-pages",
-    "scrape": "casperjs src/scrape-neighbourhood-metadata.js"
+    "scrape": "casperjs demo/scrape-neighbourhood-metadata.js"
   },
   "repository": {
     "type": "git",

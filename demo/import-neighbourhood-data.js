@@ -158,13 +158,21 @@ for ( i = 1, len = tr.length; i < len; i++ ) {
 			rowData = Array.prototype.map.call( tr[ i + j ].querySelectorAll( 'td' ), tableText );
 			appendData( '', '', [ rowData[ 0 ], rowData[ 1 ]] );
 		}
-		// row 13 = description (sometimes omitted)
+
 		// look ahead
 		rowData = Array.prototype.map.call( tr[ i + 13 ].querySelectorAll( 'td' ), tableText );
+		// row 13 might be another row of subjects
+		if ( rowData.indexOf( 'Wildlife' ) > -1 ) {
+			appendData( '', '', [ 'Wildlife' ]);
+			i++;
+			rowData = Array.prototype.map.call( tr[ i + 13 ].querySelectorAll( 'td' ), tableText );
+		}
+		// row 13 = description (sometimes omitted)
 		if ( /^\s*Description:\s*$/.test( rowData[ 0 ] )) {
 			records.Description = rowData[ 1 ];
 			// skip this row on next pass
 			i += 13;
+
 		} else {
 			i += 12;
 		}
