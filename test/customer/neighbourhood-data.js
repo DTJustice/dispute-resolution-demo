@@ -6,7 +6,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "form",
 	"Comments": "Notice for urgent fencing contribution - option to link directly to form or to landing page on fence disputes. Not a lot of context for how this form is used despite its important role.",
-	"Title": "form 1 ndr",
+	"Title": "NOTICE TO CONTRIBUTE FOR URGENT FENCING WORK",
+	"Description": "If urgent work is required, you can carry out the work and give your neighbour a Notice to contribute as soon as possible after that.",
 	"format": "application/pdf",
 	"jurisdiction": "Queensland"
 }, {
@@ -17,7 +18,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "form",
 	"Comments": "Notice for fencing contribution - option to link directly to form or to landing page on fence disputes. Not a lot of context for how this form is used despite its important role.",
-	"Title": "form 2 ndr",
+	"Title": "NOTICE TO CONTRIBUTE FOR FENCING WORK",
+	"Description": "If you are going to build a fence between you and your neighbour’s property, you should give your neighbour a letter telling them about the fence, how it will be built and the estimated cost—including their contribution.",
 	"format": "application/pdf",
 	"jurisdiction": "Queensland"
 }, {
@@ -93,7 +95,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Assisted Resolution;Formal Resolution;",
 	"documentType": "legislation",
 	"Comments": "Direct link to NDR Act (Trees and Fences) - not sure if relevant - it is referenced in other pages",
-	"Title": "NeighDisputesDFTA11",
+	"Title": "Neighbourhood Disputes (Dividing Fences and Trees) Act 2011",
+	"Description": "The objects of this Act are—(a) to provide rules about each neighbour’s responsibility for dividing fences and for trees so that neighbours are generally able to resolve issues about fences or trees without a dispute arising; and (b) to facilitate the resolution of any disputes about dividing fences or trees that do arise between neighbours.",
 	"format": "application/pdf",
 	"jurisdiction": "Queensland"
 }, {
@@ -143,7 +146,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;Assisted Resolution;",
 	"documentType": "form",
 	"Comments": "QCAT form 53 - won't be in YRCL until late 2015",
-	"Title": "Form 53 Application for minor civil dispute dividing fences",
+	"Title": "Form 53 Application for minor civil dispute – dividing fences",
+	"Description": "A dividing fence dispute is a disagreement between neighbours about a fence, or a proposed fence, on the common boundary of adjoining lands. It can include a dispute about a dividing fence that forms, or will form in the future, part of a pool barrier. It does not include a dispute about a retaining wall or a wall that is part of a house or garage",
 	"format": "application/pdf",
 	"jurisdiction": "Queensland"
 }, {
@@ -154,7 +158,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;Assisted Resolution;",
 	"documentType": "form",
 	"Comments": "Checklist to support QCAT form 53 - unlikely to be needed once form 53 migrates to YRCL",
-	"Title": "checklist Form 53 Application for minor civil dispute dividing fences",
+	"Title": "Application checklist: – Minor civil dispute – dividing fences",
+	"Description": "Before applying to QCAT about your dividing fence dispute, check your application is within QCAT’s jurisdictio and you have completed and lodged your application correctly.",
 	"format": "application/pdf",
 	"jurisdiction": "Queensland"
 }, {
@@ -256,6 +261,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;Assisted Resolution;Formal Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "Caxton Legal Centre information kit - Dividing fences - A self-help kit about the law of building and maintaining fences between neighbours. Fees are out of date - limited value",
+	"Description": "A self-help kit about the law of building and maintaining fences between neighbours",
 	"Title": "Dividing Fences kit 2013",
 	"format": "application/pdf",
 	"jurisdiction": "Australia"
