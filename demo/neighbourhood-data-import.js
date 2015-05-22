@@ -5,7 +5,7 @@
         "party": "a neighbour next door;",
         "disputeSubject": "Fences;",
         "resolution": "Self Resolution;",
-        "documentType": "guidelines",
+        "documentType": "form",
         "Comments": "Notice for urgent fencing contribution - option to link directly to form or to landing page on fence disputes. Not a lot of context for how this form is used despite its important role."
     },
     {
@@ -14,7 +14,7 @@
         "party": "a neighbour;a neighbour next door;",
         "disputeSubject": "Fences;",
         "resolution": "Self Resolution;",
-        "documentType": "",
+        "documentType": "form",
         "Comments": "Notice for fencing contribution - option to link directly to form or to landing page on fence disputes. Not a lot of context for how this form is used despite its important role."
     },
     {
@@ -23,7 +23,7 @@
         "party": "a neighbour;a neighbour next door;",
         "disputeSubject": "Fences;",
         "resolution": "Self Resolution;",
-        "documentType": "",
+        "documentType": "guidelines",
         "Comments": "Your responsibility as a fence owner"
     },
     {
@@ -32,7 +32,7 @@
         "party": "a neighbour;a neighbour next door;",
         "disputeSubject": "Fences;",
         "resolution": "Self Resolution;Assisted Resolution;",
-        "documentType": "",
+        "documentType": "guidelines",
         "Comments": "Avoiding disputes about fences"
     },
     {
@@ -41,7 +41,7 @@
         "party": "a neighbour;a neighbour next door;",
         "disputeSubject": "Fences;",
         "resolution": "Self Resolution;Assisted Resolution;Formal Resolution;",
-        "documentType": "",
+        "documentType": "guidelines",
         "Comments": "Step by step guide to resolving tree and fence disputes"
     },
     {
@@ -50,7 +50,7 @@
         "party": "a neighbour;a neighbour next door;",
         "disputeSubject": "Fences;",
         "resolution": "Self Resolution;",
-        "documentType": "",
+        "documentType": "fact sheet",
         "Comments": "Ways to approach your neighbour"
     },
     {
@@ -59,7 +59,7 @@
         "party": "a neighbour;a neighbour next door;",
         "disputeSubject": "Fences;",
         "resolution": "Self Resolution;Assisted Resolution;",
-        "documentType": "",
+        "documentType": "guidelines",
         "Comments": "Neighbourhood mediation"
     },
     {
@@ -68,7 +68,7 @@
         "party": "a neighbour;a neighbour next door;",
         "disputeSubject": "Fences;",
         "resolution": "Assisted Resolution;Formal Resolution;",
-        "documentType": "",
+        "documentType": "legislation",
         "Comments": "Direct link to NDR Act (Trees and Fences) - not sure if relevant - it is referenced in other pages"
     },
     {
@@ -77,7 +77,7 @@
         "party": "a neighbour;a neighbour next door;",
         "disputeSubject": "Fences;",
         "resolution": "Assisted Resolution;Formal Resolution;",
-        "documentType": "",
+        "documentType": "fact sheet",
         "Comments": "Examples of dividing fence disputes"
     },
     {
@@ -86,7 +86,7 @@
         "party": "a neighbour;a neighbour next door;",
         "disputeSubject": "Fences;",
         "resolution": "Formal Resolution;Assisted Resolution;",
-        "documentType": "",
+        "documentType": "procedure",
         "Comments": "Resolving dividing fence disputes with QCAT"
     },
     {
@@ -95,7 +95,7 @@
         "party": "a neighbour;a neighbour next door;",
         "disputeSubject": "Fences;",
         "resolution": "Formal Resolution;Assisted Resolution;",
-        "documentType": "",
+        "documentType": "procedure",
         "Comments": "QCAT landing page for fences - need to shift to YRCL if any info not available through YRCL existing link"
     },
     {
@@ -104,7 +104,7 @@
         "party": "a neighbour;a neighbour next door;",
         "disputeSubject": "Fences;",
         "resolution": "Formal Resolution;Assisted Resolution;",
-        "documentType": "",
+        "documentType": "form",
         "Comments": "QCAT form 53 - won't be in YRCL until late 2015"
     },
     {
@@ -113,7 +113,7 @@
         "party": "a neighbour;a neighbour next door;",
         "disputeSubject": "Fences;",
         "resolution": "Formal Resolution;Assisted Resolution;",
-        "documentType": "",
+        "documentType": "form",
         "Comments": "Checklist to support QCAT form 53 - unlikely to be needed once form 53 migrates to YRCL"
     },
     {
@@ -122,7 +122,7 @@
         "party": "a neighbour;a neighbour next door;",
         "disputeSubject": "Fences;",
         "resolution": "Formal Resolution;",
-        "documentType": "",
+        "documentType": "procedure",
         "Comments": "QCAT info on general debt disputes - which covers some dividing fence disputes"
     },
     {
@@ -131,7 +131,7 @@
         "party": "a neighbour;a neighbour next door;",
         "disputeSubject": "Fences;",
         "resolution": "Self Resolution;Formal Resolution;",
-        "documentType": "",
+        "documentType": "procedure",
         "Comments": "HPW info on dividing fences which are pool fences - links to forms and fact sheets"
     },
     {
@@ -140,7 +140,7 @@
         "party": "a neighbour;a neighbour next door;",
         "disputeSubject": "Fences;",
         "resolution": "Self Resolution;Assisted Resolution;Formal Resolution;",
-        "documentType": "",
+        "documentType": "procedure",
         "Comments": "Non-government - page by Queensland Association of Independent Legal Services (QAILS)"
     },
     {
@@ -149,7 +149,7 @@
         "party": "a neighbour;a neighbour next door;",
         "disputeSubject": "Fences;",
         "resolution": "Self Resolution;",
-        "documentType": "",
+        "documentType": "fact sheet",
         "Comments": "QAILS page - Generic info on avoiding and resolving disputes - relevant across range of neighbour issues"
     },
     {
@@ -158,7 +158,7 @@
         "party": "a neighbour;a neighbour next door;",
         "disputeSubject": "Fences;",
         "resolution": "Self Resolution;",
-        "documentType": "",
+        "documentType": "fact sheet",
         "Comments": "QAILS page - how to respond to request for dividing fence"
     },
     {
@@ -167,7 +167,7 @@
         "party": "a neighbour;a neighbour next door;",
         "disputeSubject": "Fences;",
         "resolution": "Self Resolution;",
-        "documentType": "",
+        "documentType": "fact sheet",
         "Comments": "QAILS page - provides a template for writing to your neighbour about a fence (and other issues)"
     },
     {
@@ -176,16 +176,16 @@
         "party": "a neighbour;a neighbour next door;",
         "disputeSubject": "Fences;",
         "resolution": "Assisted Resolution;",
-        "documentType": "",
+        "documentType": "fact sheet",
         "Comments": "QAILS page - general information on mediation - provides DRB and YRCL links"
     },
     {
         "URL": "https://caxton.org.au/pdfs/Dividing%20Fences%20kit%202013.pdf",
         "disputeType": "Problem;Issue;Question;Dispute;Disagreement;",
         "party": "a neighbour;",
-        "disputeSubject": "Noise;Trees;Fences;Dogs and other pets;Children;Pools;Retaining walls;Overgrown gardens;Rubbish bins;Privacy;Lighting;Cameras;Security;Behaviours;Smells;Abuse;Threats;Drainage;Renovations;Parking;Objects;Easements;Access;By-law breaches (body corporate);Common property (body corporate);Harassment;Wildlife;",
-        "resolution": "Self resolution;",
-        "documentType": "",
+        "disputeSubject": "Fences;",
+        "resolution": "Self Resolution;Assisted Resolution;Formal Resolution;",
+        "documentType": "fact sheet",
         "Comments": "Caxton Legal Centre information kit - Dividing fences - A self-help kit about the law of building and maintaining fences between neighbours. Fees are out of date - limited value"
     },
     {
@@ -194,7 +194,7 @@
         "party": "a neighbour;a neighbour next door;",
         "disputeSubject": "Retaining walls;",
         "resolution": "Formal Resolution;",
-        "documentType": "",
+        "documentType": "guidelines",
         "Comments": "Retaining walls subheading in page - would require anchor"
     },
     {
@@ -203,7 +203,7 @@
         "party": "a neighbour;a neighbour next door;",
         "disputeSubject": "Retaining walls;",
         "resolution": "Self Resolution;",
-        "documentType": "",
+        "documentType": "fact sheet",
         "Comments": "Retaining walls subheading in page - would require anchor"
     },
     {
@@ -212,7 +212,7 @@
         "party": "a neighbour;a neighbour next door;",
         "disputeSubject": "Retaining walls;",
         "resolution": "Formal Resolution;",
-        "documentType": "",
+        "documentType": "guidelines",
         "Comments": "Legal Aid - no legal advice offered - but does contain reference to complex laws and getting independent legal advice"
     },
     {
@@ -221,8 +221,8 @@
         "party": "a neighbour;a neighbour next door;",
         "disputeSubject": "Retaining walls;",
         "resolution": "Formal Resolution;",
-        "documentType": "",
-        "Comments": ""
+        "documentType": "guidelines",
+        "Comments": "Non-government - page by Queensland Association of Independent Legal Services (QAILS)"
     },
     {
         "URL": "http://www.brisbane.qld.gov.au/traffic-transport/parking-permits/parking-rules/illegal-dangerous-parking",
@@ -1429,5 +1429,68 @@
         "resolution": "Self Resolution;",
         "documentType": "guidelines",
         "Comments": "General information on body corporates. *Most important link for general information on bodies corporate"
+    },
+    {
+        "URL": "http://www.hpw.qld.gov.au/construction/BuildingPlumbing/PoolSafety/PoolFencesSafetyBarriers/Pages/DividingFences.aspx",
+        "disputeType": "Concern;Question;Problem;",
+        "party": "a neighbour;a neighbour next door;someone in my neighbourhood;a neighbour next door;a neighbour in my street;a neighbour in my building;an adjoining landowners;another unit owner/lot owner;a neighbour in my body corporate;",
+        "disputeSubject": "Pools;",
+        "resolution": "Self Resolution;Formal Resolution;",
+        "documentType": "procedure",
+        "Comments": "HPW info on dividing fences which are pool fences - links to forms and fact sheets"
+    },
+    {
+        "URL": "http://www.hpw.qld.gov.au/SiteCollectionDocuments/QDCMP3.4SwimmingPoolBarriers.pdf",
+        "disputeType": "Concern;Question;Problem;Complaint;Conflict;Issue;",
+        "party": "a neighbour;a neighbour next door;someone in my neighbourhood;a neighbour next door;a neighbour in my street;a neighbour in my building;an adjoining landowners;another unit owner/lot owner;a neighbour in my body corporate;",
+        "disputeSubject": "Pools;",
+        "resolution": "Self Resolution;Formal Resolution;",
+        "documentType": "legislation",
+        "Comments": "Relevant?"
+    },
+    {
+        "URL": "http://www.hpw.qld.gov.au/SiteCollectionDocuments/GuidelinesForPoolOwnersAndPropertyAgents.pdf",
+        "disputeType": "Concern;Question;Problem;Disagreement;Issue;Dispute;",
+        "party": "a neighbour;a neighbour next door;someone in my neighbourhood;a neighbour next door;a neighbour in my street;a neighbour in my building;an adjoining landowners;another unit owner/lot owner;a neighbour in my body corporate;",
+        "disputeSubject": "Pools;",
+        "resolution": "Self Resolution;Formal Resolution;",
+        "documentType": "guidelines",
+        "Comments": ""
+    },
+    {
+        "URL": "https://www.smarteda.qld.gov.au/pools/properties/propertySearch.action;jsessionid=9CD93A5835C09059BFC9500E781EA223",
+        "disputeType": "Concern;Question;Problem;",
+        "party": "a neighbour;a neighbour next door;someone in my neighbourhood;a neighbour next door;a neighbour in my street;a neighbour in my building;an adjoining landowners;another unit owner/lot owner;a neighbour in my body corporate;",
+        "disputeSubject": "Pools;",
+        "resolution": "Self Resolution;",
+        "documentType": "procedure",
+        "Comments": "Pool register search"
+    },
+    {
+        "URL": "http://www.legalaid.qld.gov.au/legalinformation/livinginthecommunity/Neighbourhood/Pages/Complaints-noisewatersmellsandfire.aspx",
+        "disputeType": "Concern;Question;Problem;",
+        "party": "a neighbour;a neighbour next door;someone in my neighbourhood;a neighbour next door;a neighbour in my street;a neighbour in my building;an adjoining landowners;another unit owner/lot owner;a neighbour in my body corporate;",
+        "disputeSubject": "Pools;Noise;",
+        "resolution": "Self Resolution;",
+        "documentType": "procedure",
+        "Comments": "Info from Legal Aid on managing noise/smells issues including pool pumps"
+    },
+    {
+        "URL": "https://www.qld.gov.au/law/housing-and-neighbours/noise-and-crime-in-the-neighbourhood/complain-about-noisy-neighbours/",
+        "disputeType": "Concern;Question;Problem;Complaint;Dispute;Issue;",
+        "party": "a neighbour;a neighbour next door;someone in my neighbourhood;a neighbour next door;a neighbour in my street;a neighbour in my building;an adjoining landowners;another unit owner/lot owner;a neighbour in my body corporate;",
+        "disputeSubject": "Pools;Noise;",
+        "resolution": "Self Resolution;Formal Resolution;Assisted Resolution;",
+        "documentType": "procedure",
+        "Comments": "Guide to complaining about noisy neighbours"
+    },
+    {
+        "URL": "https://www.qld.gov.au/law/your-rights/legal-and-property-rights/laws-for-building-houses-and-pools/pool-fencing-and-safety-laws/",
+        "disputeType": "Concern;Question;Problem;Complaint;Dispute;Issue;",
+        "party": "a neighbour;a neighbour next door;someone in my neighbourhood;a neighbour next door;a neighbour in my street;a neighbour in my building;an adjoining landowners;another unit owner/lot owner;a neighbour in my body corporate;",
+        "disputeSubject": "Pools;",
+        "resolution": "Self Resolution;Formal Resolution;Assisted Resolution;",
+        "documentType": "procedure",
+        "Comments": "Laws about pool fences and safety"
     }
 ]
