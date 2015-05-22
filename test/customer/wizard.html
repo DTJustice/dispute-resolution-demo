@@ -2,7 +2,7 @@
 <html lang="en-AU">
 <head>
 	<meta charset="UTF-8">
-	<title>Neighbourhood dispute resolution</title>
+	<title></title>
 	<link rel="stylesheet" href="https://static.qgov.net.au/assets/v2/style/qgov.css">
 	<link rel="stylesheet" href="adr.css">
 
@@ -14,17 +14,17 @@
 
 	<header>
 		<p>HEADER</p>
-		<p>logo, links and breacrumb go here</p>
+		<p><!-- logo, links and breacrumb go here --></p>
 	</header>
 
 	<nav>
 		<h2>Menu</h2>
-		<p>website menu goes here</p>
+		<p><!-- website menu goes here --></p>
 	</nav>
 
 	<main>
 		<header>
-			<h1>Neighbourhood dispute resolution</h1>
+			<h1></h1>
 			<p>Use this tool to discover the options available to you in order to resolve a dispute.</p>
 			<p>We provide general information on avoiding and resolving neighbourhood disputes. It is not legal advice and does not consider your exact circumstances. If you are unsure about your legal rights you should get <a href="http://www.qld.gov.au/law/legal-mediation-and-justice-of-the-peace/legal-advice-and-investment/legal-information-and-advice/">independent legal advice</a>.</p>
 		</header>
@@ -140,29 +140,12 @@
 						<label for="tried-assisted">We have tried assisted resolutions to this {{ story.disputeType | lowercase }}</label>
 					</blockquote>
 					<ul data-ng-if="vm.count.pathway[ resolution ] > 0" data-ng-show="! storyHistory[ resolution ].tried" class="resources">
-		<!--
-							<li data-ng-if="storySituation.location.indexOf( '4510' ) > -1 &amp;&amp; resolution === 'Self'">
-								<a href="https://www.moretonbay.qld.gov.au/general.aspx?id=13577">Barking dogs - Moreton Bay Regional Council</a>
-								<small class="tag guidelines">guidelines</small>
-								<span class="description">All dogs bark, but some barking dogs become a real neighbourhood nuisance – greatly reducing the quality of life for their neighbours. Barking is the most common animal behaviour problem Council is asked to deal with.</span>
-							</li>
-		-->
 						<li data-ng-repeat="result in results | storyFilter:story | filter:{ resolution: resolution } | filter: documentTypeFilter | councilFilter:storySituation.council" data-ng-class="{council: result.jurisdiction.indexOf( 'Council' ) > -1 }">
 							<a data-ng-href="{{ result.URL }}">{{ result.Title || result.filename }}</a>
 							<small>({{ result.jurisdiction }})</small>
 							<small data-ng-if="result.format === 'application/pdf'">(PDF)</small>
 							<small data-ng-if="result.documentType" class="tag" data-ng-class="result.documentType">{{ result.documentType }}</small>
 							<span class="description">{{ result.Description || result.Purpose || result.Comments }}</span>
-		<!--
-							<dl>
-								<dt>Subject</dt>
-								<dd>{{ result.disputeSubject }}</dd>
-								<dt>Party</dt>
-								<dd>{{ result.party }}</dd>
-								<dt>Actions</dt>
-								<dd>{{ result.resolution }}</dd>
-							</dl>
-		-->
 						</li>
 					</ul>
 				</section>
@@ -217,7 +200,7 @@
 	</aside>
 
 	<footer>
-		<p>page feedback and footer links go here</p>
+		<p><!-- page feedback and footer links go here --></p>
 		<p>© The State of Queensland 1995–2015</p>
 		<p><a href="https://www.qld.gov.au">Queensland Government</a></p>
 	</footer>
