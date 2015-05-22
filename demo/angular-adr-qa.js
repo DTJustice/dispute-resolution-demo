@@ -10,7 +10,7 @@ angular.module( 'disputeResolutionQA', [] )
 
 // controller
 .controller( 'qaController', [ '$scope',
-	                      function(  $scope ) {
+	                 function(  $scope ) {
 	'use strict';
 
 	$scope.results = cachedData;
