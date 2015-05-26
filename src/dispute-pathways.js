@@ -4,15 +4,37 @@
 
 	// current page url
 	var story = $.url().param();
-
 	story.complete = story.have && story[ 'with' ] && story.about;
 
+	// route template
 	var template = Handlebars.compile( $( story.complete ? '#results-template' : '#form-template' ).html() );
 
+	// TODO get lists of options from data
+	var model = {
+		have: [ 'Question', 'Concern', 'Problem', 'Issue', 'Disagreement', 'Conflict', 'Complaint', 'Dispute' ],
+		'with': [ 'a neighbour', 'a neighbour in my body corporate', 'a neighbour in my building', 'a neighbour in my street', 'a neighbour next door', 'an adjoining landowners', 'another unit owner/lot owner', 'someone in my neighbourhood', 'the body corporate' ],
+		about: [ 'Abuse', 'Access', 'Behaviours', 'By-law breaches (body corporate)', 'Cameras', 'Children', 'Common property (body corporate)', 'Dogs and other pets', 'Drainage', 'Easements', 'Fences', 'Harassment', 'Lighting', 'Noise', 'Objects', 'Overgrown gardens', 'Parking', 'Pools', 'Privacy', 'Renovations', 'Retaining walls', 'Rubbish bins', 'Security', 'Smells', 'Threats', 'Trees', 'Wildlife' ]
+	};
+
+	// alphabetical order for with and about
+	model[ 'with' ].sort();
+	model.about.sort();
+
+	// map values: lower case for display
+	function mapToOption( s ) {
+		return { label: s.toLowerCase(), value: s };
+	}
+
+
+	// update view
 	if ( story.complete ) {
 		$( '#dispute-pathways-view' ).text( 'RESULTS' );
 	} else {
-		$( '#dispute-pathways-view' ).html( template() );
+		$( '#dispute-pathways-view' ).html(template({
+			haveOptions: $.map( model.have, mapToOption ),
+			withOptions: $.map( model[ 'with' ], mapToOption ),
+			aboutOptions: $.map( model.about, mapToOption )
+		}));
 	}
 
 
