@@ -65,7 +65,7 @@ module.exports = function( grunt ) {
 				tasks: [ 'jshint:app', 'copy:js', 'casper:acceptance' ]
 			},
 			templates: {
-				files: 'src/**.html',
+				files: 'src/**/*.html',
 				tasks: [ 'copy:templates', 'casper:acceptance' ]
 			},
 			tests: {
