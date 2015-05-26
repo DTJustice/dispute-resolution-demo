@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "jshint src/dispute-pathways.js",
     "pretest": "npm run lint",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "casperjs test test/dispute-pathways_test.js",
     "push": "git push && git push github master:gh-pages",
     "scrape": "casperjs demo/scrape-neighbourhood-metadata.js",
     "preview": "cp src/dispute-pathways.js ../swe_template/build/_htdocs/assets/law/dispute-pathways.js && cp -r src/neighbourhood/* ../swe_template/build/_htdocs/law/legal-mediation-and-justice-of-the-peace/setting-disputes-out-of-court/neighbourhood-mediation/neighbourhood-dispute-resolution/"
