@@ -1,12 +1,15 @@
 {
   "name": "online-dispute-resolution",
-  "version": "0.0.1-alpha.1",
+  "version": "0.0.2-alpha.1",
   "description": "an online tool to promote alternate pathways for customers seeking to resolve disputes in the Queensland justice system.",
   "main": "index.html",
   "scripts": {
+    "lint": "jshint src/dispute-pathways.js",
+    "pretest": "npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1",
     "push": "git push && git push github master:gh-pages",
-    "scrape": "casperjs demo/scrape-neighbourhood-metadata.js"
+    "scrape": "casperjs demo/scrape-neighbourhood-metadata.js",
+    "preview": "cp src/dispute-pathways.js ../swe_template/build/_htdocs/assets/law/dispute-pathways.js && cp -r src/neighbourhood/* ../swe_template/build/_htdocs/law/legal-mediation-and-justice-of-the-peace/setting-disputes-out-of-court/neighbourhood-mediation/neighbourhood-dispute-resolution/"
   },
   "repository": {
     "type": "git",
@@ -19,5 +22,11 @@
     "angular-animate": "^1.3.15",
     "angular-sanitize": "^1.3.15",
     "ng-csv": "^0.3.3"
+  },
+  "peerDependencies": {
+    "casperjs": "*"
+  },
+  "devDependencies": {
+    "jshint": "^2.7.0"
   }
 }
