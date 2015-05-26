@@ -4,10 +4,15 @@ var STORY1_QUERY = '?have=dispute&with=a%20neighbour&about=fences';
 // Given a customer visits the tool,
 // when they use the default web address
 // then they will see the default form asking for their story
-casper.test.begin( 'form state', 2, function suite( test ) {
+casper.test.begin( 'form state', 4, function suite( test ) {
 	casper.start( DEFAULT_URL, function() {
 		test.assertTitle( 'Neighbourhood dispute resolution | Your rights, crime and the law | Queensland Government', 'loaded neighbourhood dispute page' );
-		test.assertSelectorHasText( '#dispute-pathways-view', 'FORM', 'loaded form view' );
+
+		// questions for each story component are present
+		test.assertExists( 'select[name="have"]', 'question exists: I have a' );
+		test.assertExists( 'select[name="with"]', 'question exists: with' );
+		test.assertExists( 'select[name="about"]', 'question exists: about' );
+
 	});
 
 	casper.run(function() {

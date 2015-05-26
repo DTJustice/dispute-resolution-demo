@@ -23,10 +23,21 @@ module.exports = function( grunt ) {
 			templates: {
 				expand: true,
 				cwd: 'src/neighbourhood',
-				src: '*',
+				src: '**',
 				dest: HTDOCS + '/law/legal-mediation-and-justice-of-the-peace/setting-disputes-out-of-court/neighbourhood-mediation/neighbourhood-dispute-resolution/'
+			},
+			// TODO where do dependencies live?
+			// compile into one script or add to SWE template?
+			jsHandlebars: {
+				expand: true,
+				cwd: 'node_modules/handlebars/dist/',
+				src: 'handlebars.min.js',
+				dest: HTDOCS + '/assets/law/'
 			}
 		},
+
+		// combine and minify js
+
 
 		// code qa
 		jshint: {
