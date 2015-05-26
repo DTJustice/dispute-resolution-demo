@@ -1,4 +1,5 @@
 module.exports = function( grunt ) {
+	require( 'time-grunt' )( grunt );
 
 	var pkg = grunt.file.readJSON( 'package.json' );
 
@@ -49,7 +50,7 @@ module.exports = function( grunt ) {
 					failFast: true
 				},
 				files: {
-					'casper-acceptance.xml' : [ 'test/*.js' ]
+					'logs/casper-acceptance.xml' : [ 'test/*.js' ]
 				}
 			}
 		},
