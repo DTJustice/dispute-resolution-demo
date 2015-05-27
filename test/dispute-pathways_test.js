@@ -4,7 +4,8 @@ var STORY1_QUERY = '?have=dispute&with=a%20neighbour&about=fences';
 // Given a customer visits the tool,
 // when they use the default web address
 // then they will see the default form asking for their story
-casper.test.begin( 'form state', 8, function suite( test ) {
+// and the form is not prefilled
+casper.test.begin( 'form state', 11, function suite( test ) {
 	casper.start( DEFAULT_URL, function() {
 		var options;
 
@@ -13,18 +14,21 @@ casper.test.begin( 'form state', 8, function suite( test ) {
 		// questions for each story component are present
 		// test.assertFieldName( 'have', '', 'question exists: I have a', { formSelector: '#content form' });
 		test.assertExists( 'select[name="have"]', 'question exists: have' );
+		test.assertField( 'have', '', 'I have a ___ (is blank)' );
 		test.assertExists( 'select[name="with"]', 'question exists: with' );
+		test.assertField( 'with', '', 'with ___ (is blank)' );
 		test.assertExists( 'select[name="about"]', 'question exists: about' );
+		test.assertField( 'about', '', 'about ___ (is blank)' );
 
-		// have list is in priority order
-		test.assertSelectorHasText( 'select[name="have"] > option:first-child', 'question', 'first option is "question"' );
+		// have list is in priority order (ignore first blank option)
+		test.assertSelectorHasText( 'select[name="have"] > option:nth-child(2)', 'question', 'first option is "question"' );
 		test.assertSelectorHasText( 'select[name="have"] > option:last-child', 'dispute', 'last option is "dispute"' );
 
-		// with and about lists are in alphabetical order
+		// with and about lists are in alphabetical order (ignore first blank option)
 		options = casper.getElementsInfo( 'select[name="with"] > option' ).map(function( info ) { return info.text; });
-		test.assertEquals( options, options.slice().sort(), 'with options are in alphabetical order' );
+		test.assertEquals( options.slice( 1 ), options.slice( 1 ).sort(), 'with options are in alphabetical order' );
 		options = casper.getElementsInfo( 'select[name="about"] > option' ).map(function( info ) { return info.text; });
-		test.assertEquals( options, options.slice().sort(), 'about options are in alphabetical order' );
+		test.assertEquals( options.slice( 1 ), options.slice( 1 ).sort(), 'about options are in alphabetical order' );
 
 
 	});

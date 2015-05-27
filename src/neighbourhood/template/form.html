@@ -2,16 +2,24 @@
 	<p>
 		<label for="dispute-pathway-have">I have a</label>
 		<select id="dispute-pathway-have" name="have">
+			<option class="placeholder" value=""></option>
 			{{#each haveOptions}}<option value="{{ value }}">{{ label }}</option>{{/each}}
 		</select>
 		<label for="dispute-pathway-with">with</label>
 		<select id="dispute-pathway-with" name="with">
+			<option class="placeholder" value=""></option>
 			{{#each withOptions}}<option value="{{ value }}">{{ label }}</option>{{/each}}
 		</select>
 		<label for="dispute-pathway-about">about</label>
 		<select id="dispute-pathway-about" name="about">
+			<option class="placeholder" value=""></option>
 			{{#each aboutOptions}}<option value="{{ value }}">{{ label }}</option>{{/each}}
 		</select>
 		</select>.
 	</p>
+
+	<ul class="actions">
+		<li><strong><input type="submit" value="Show results" /></strong></li>
+	</ul>
+
 </form>
