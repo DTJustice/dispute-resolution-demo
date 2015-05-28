@@ -28,7 +28,7 @@
 
 	// update view
 	if ( story.complete ) {
-		$( '#dispute-pathways-view' ).text( 'RESULTS' );
+		$( '#dispute-pathways-view' ).html(template({ story: story }));
 	} else {
 		$( '#dispute-pathways-view' ).html(template({
 			haveOptions: $.map( model.have, mapToOption ),
