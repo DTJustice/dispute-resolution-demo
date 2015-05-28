@@ -21,7 +21,6 @@ casper.test.begin( 'form state', 11, function suite( test ) {
 		test.assertTitle( 'Neighbourhood dispute resolution | Your rights, crime and the law | Queensland Government', 'loaded neighbourhood dispute page' );
 
 		// questions for each story component are present
-		// test.assertFieldName( 'have', '', 'question exists: I have a', { formSelector: '#content form' });
 		test.assertExists( 'select[name="have"]', 'question exists: have' );
 		test.assertField( 'have', '', 'I have a ___ (is blank)' );
 		test.assertExists( 'select[name="with"]', 'question exists: with' );
@@ -51,7 +50,7 @@ casper.test.begin( 'form state', 11, function suite( test ) {
 // then they will see search results
 var states = [
 	{ have: 'dispute',      'with': 'a neighbour',                      about: 'fences' },
-	{ have: 'disagreement', 'with': 'a neighbour in my body corporate', about: 'common property (the body corporate)' }
+	{ have: 'disagreement', 'with': 'a neighbour in my body corporate', about: 'common property (body corporate)' }
 ];
 casper.each( states, function( self, state ) {
 	casper.test.begin( 'search results state', 3, function suite( test ) {
@@ -106,6 +105,45 @@ casper.test.begin( 'partial state prefills form', 21, function suite( test ) {
 		test.assertField( 'with', '', 'with ___ (is blank)' );
 		test.assertExists( 'select[name="about"]', 'question exists: about' );
 		test.assertField( 'about', 'fences', 'about fences (is prefilled)' );
+	});
+
+	casper.run(function() {
+		test.done();
+	});
+});
+
+
+// Given the customer visits the tool
+// when there are invalid values in the URL
+// then they are ignored (treated as blank/unsupplied)
+// and the customer is redirected to a valid URL
+casper.test.begin( 'invalid values in URL ignored', 16, function suite( test ) {
+	casper.start()
+	.thenOpen( DEFAULT_URL + queryFromObject({ have: 'foo', 'with': 'bar', about: 'baz' }), function() {
+		test.assertTitle( 'Neighbourhood dispute resolution | Your rights, crime and the law | Queensland Government', 'loaded neighbourhood dispute page' );
+
+		// questions for each story component are present
+		test.assertExists( 'select[name="have"]', 'question exists: have' );
+		test.assertField( 'have', '', 'I have ___ (is blank)' );
+		test.assertExists( 'select[name="with"]', 'question exists: with' );
+		test.assertField( 'with', '', 'with ___ (is blank)' );
+		test.assertExists( 'select[name="about"]', 'question exists: about' );
+		test.assertField( 'about', '', 'about ___ (is blank)' );
+
+		test.assertEquals( casper.page.url, DEFAULT_URL, 'redirected to default URL' );
+	})
+	.thenOpen( DEFAULT_URL + queryFromObject({ have: 'dispute', 'with': 'a neighbour', about: 'baz' }), function() {
+		test.assertTitle( 'Neighbourhood dispute resolution | Your rights, crime and the law | Queensland Government', 'loaded neighbourhood dispute page' );
+
+		// questions for each story component are present
+		test.assertExists( 'select[name="have"]', 'question exists: have' );
+		test.assertField( 'have', 'dispute', 'I have a dispute (is prefilled)' );
+		test.assertExists( 'select[name="with"]', 'question exists: with' );
+		test.assertField( 'with', 'a neighbour', 'with a neighbour (is prefilled)' );
+		test.assertExists( 'select[name="about"]', 'question exists: about' );
+		test.assertField( 'about', '', 'about ___ (is blank)' );
+
+		test.assertEquals( decodeURI( casper.page.url ), decodeURI( DEFAULT_URL + queryFromObject({ have: 'dispute', 'with': 'a neighbour' })), 'redirected to default URL' );
 	});
 
 	casper.run(function() {
