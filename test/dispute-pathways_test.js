@@ -68,3 +68,47 @@ casper.each( states, function( self, state ) {
 		});
 	});
 });
+
+// Given a custom visits the tool,
+// when the URL contains part of a story
+// then they will see the form with those values prefilled
+casper.test.begin( 'partial state prefills form', 21, function suite( test ) {
+	casper.start()
+	.thenOpen( DEFAULT_URL + queryFromObject({ have: 'dispute' }), function() {
+		test.assertTitle( 'Neighbourhood dispute resolution | Your rights, crime and the law | Queensland Government', 'loaded neighbourhood dispute page' );
+
+		// questions for each story component are present
+		test.assertExists( 'select[name="have"]', 'question exists: have' );
+		test.assertField( 'have', 'dispute', 'I have a dispute (is prefilled)' );
+		test.assertExists( 'select[name="with"]', 'question exists: with' );
+		test.assertField( 'with', '', 'with ___ (is blank)' );
+		test.assertExists( 'select[name="about"]', 'question exists: about' );
+		test.assertField( 'about', '', 'about ___ (is blank)' );
+	})
+	.thenOpen( DEFAULT_URL + queryFromObject({ have: 'dispute', 'with': 'a neighbour' }), function() {
+		test.assertTitle( 'Neighbourhood dispute resolution | Your rights, crime and the law | Queensland Government', 'loaded neighbourhood dispute page' );
+
+		// questions for each story component are present
+		test.assertExists( 'select[name="have"]', 'question exists: have' );
+		test.assertField( 'have', 'dispute', 'I have a dispute (is prefilled)' );
+		test.assertExists( 'select[name="with"]', 'question exists: with' );
+		test.assertField( 'with', 'a neighbour', 'with a neighbour (is prefilled)' );
+		test.assertExists( 'select[name="about"]', 'question exists: about' );
+		test.assertField( 'about', '', 'about ___ (is blank)' );
+	})
+	.thenOpen( DEFAULT_URL + queryFromObject({ about: 'fences' }), function() {
+		test.assertTitle( 'Neighbourhood dispute resolution | Your rights, crime and the law | Queensland Government', 'loaded neighbourhood dispute page' );
+
+		// questions for each story component are present
+		test.assertExists( 'select[name="have"]', 'question exists: have' );
+		test.assertField( 'have', '', 'I have a ___ (is blank)' );
+		test.assertExists( 'select[name="with"]', 'question exists: with' );
+		test.assertField( 'with', '', 'with ___ (is blank)' );
+		test.assertExists( 'select[name="about"]', 'question exists: about' );
+		test.assertField( 'about', 'fences', 'about fences (is prefilled)' );
+	});
+
+	casper.run(function() {
+		test.done();
+	});
+});

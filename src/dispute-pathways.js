@@ -2,6 +2,17 @@
 (function( $ ) {
 	'use strict';
 
+	// handlebars helpers
+
+	// set selected options
+	// http://stackoverflow.com/questions/13046401/how-to-set-selected-select-option-in-handlebars-template
+	Handlebars.registerHelper( 'select', function( value, options ) {
+		var $el = $( '<select />' ).html( options.fn( this ));
+		$el.find( '[value="' + value + '"]' ).attr({ 'selected' : 'selected' });
+		return $el.html();
+	});
+
+
 	// current page url
 	var story = $.url().param();
 	story.complete = story.have && story[ 'with' ] && story.about;
@@ -22,18 +33,24 @@
 
 	// map values: lower case for display
 	function mapToOption( s ) {
-		return { label: s.toLowerCase(), value: s };
+		return { label: s.toLowerCase(), value: s.toLowerCase() };
 	}
 
 
 	// update view
 	if ( story.complete ) {
+		// show results
 		$( '#dispute-pathways-view' ).html(template({ story: story }));
+
 	} else {
+		// show form
 		$( '#dispute-pathways-view' ).html(template({
-			haveOptions: $.map( model.have, mapToOption ),
-			withOptions: $.map( model[ 'with' ], mapToOption ),
-			aboutOptions: $.map( model.about, mapToOption )
+			story: story,
+			form: {
+				haveOptions: $.map( model.have, mapToOption ),
+				withOptions: $.map( model[ 'with' ], mapToOption ),
+				aboutOptions: $.map( model.about, mapToOption )
+			}
 		}));
 	}
 
