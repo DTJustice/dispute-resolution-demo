@@ -8,7 +8,7 @@ casper.test.begin( 'data error', 2, function suite( test ) {
 	.then(function() {
 		var options;
 
-		test.assertTitle( 'Simulate no data', 'loaded neighbourhood dispute page' );
+		test.assertTitle( 'Simulate no data', 'loaded test page' );
 		test.assertSelectorHasText( '#dispute-pathways-view', 'A server error has prevented the requested resource from being displayed', 'error message is shown' );
 	});
 

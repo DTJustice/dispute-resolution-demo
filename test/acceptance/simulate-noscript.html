@@ -2,25 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-AU" lang="en-AU">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>Simulate no data</title>
+	<title>Simulate noscript</title>
 
 <!--#set var="franchise" value="law"-->
 <!--#set var="title" value="Neighbourhood dispute resolution"-->
 <!--#set var="licence" value="http://creativecommons.org/licenses/by/3.0/au/"-->
 <!--#include virtual="/assets/includes/global/head-assets-styles.html"-->
 <!--#include virtual="/assets/includes/global/head-assets-scripts.html"-->
-<script src="../../node_modules/sinon/pkg/sinon.js"></script>
-<script>
-// fake JSONP error
-(function( jQuery ) {
-	var jQuery_ajax = jQuery.ajax;
-	sinon.stub( jQuery, 'ajax', function( url, settings ) {
-		// break the URL to simulate server down
-		url = url.replace( /(staging\.)?data\.qld\.gov\.au/, 'localhost:9999' );
-		return jQuery_ajax( url, settings );
-	});
-}( jQuery ));
-</script>
 
 	<meta name="description" content="DESCRIPTION" />
 	<meta name="keywords" content="KEYWORDS" />
@@ -162,8 +150,10 @@
 	</div></div><!-- end #page-container, .max-width -->
 
 <!--#include virtual="/assets/includes/global/footer-page.html"-->
+<!-- disable for this test
 <script src="../../node_modules/handlebars/dist/handlebars.min.js"></script>
 <script src="../../src/dispute-pathways.js"></script>
+-->
 <!--#include virtual="/assets/includes/global/footer-stats.html"-->
 
 </body>
