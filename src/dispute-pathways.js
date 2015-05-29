@@ -7,6 +7,7 @@
 		'with': [],
 		about: []
 	};
+	var mappedData, results;
 	var story = {};
 
 	// handlebars helpers
@@ -42,11 +43,11 @@
 
 	// build the app model from the data
 	function constructModel( data ) {
-		var mappedData = $.map( data, function( record ) {
+		mappedData = $.map( data, function( record ) {
 			var explode;
 
 			// convert { have: 'a;b;c;' } to { have: { a: true, b: true, c: true }}
-			$.each([ 'have', 'with', 'about' ], function( i, key ) {
+			$.each([ 'have', 'with', 'about', 'pathway' ], function( i, key ) {
 				explode = record[ key ].toLowerCase().split( /\s*;\s*/ );
 				record[ key ] = {};
 				$.each( explode, function( j, value ) {
@@ -56,7 +57,6 @@
 
 			return record;
 		});
-		console.log( 'mapped data', mappedData );
 
 		// TODO get lists of options from data
 		model = {
@@ -100,9 +100,33 @@
 	}
 
 
+	// find matches by pathway
+	function findMatchesByPathway() {
+		results = {
+			self: [],
+			assisted: [],
+			formal: []
+		};
+
+		$.each( mappedData, function( i, result ) {
+			if ( result.have[ story.have ] && result[ 'with' ][ story[ 'with' ]] && result.about[ story.about ]) {
+				if ( result.pathway[ 'self resolution' ]) {
+					results.self.push( result );
+				}
+				if ( result.pathway[ 'assisted resolution' ]) {
+					results.assisted.push( result );
+				}
+				if ( result.pathway[ 'formal resolution' ]) {
+					results.formal.push( result );
+				}
+			}
+		});
+	}
+
+
 	// show results
 	function renderResults() {
-		render( 'results', { story: story });
+		render( 'results', { story: story, results: results });
 	}
 
 	// show the form
@@ -124,6 +148,8 @@
 		var storyComplete = checkStoryIsComplete();
 
 		if ( storyComplete ) {
+			// organise results by pathway
+			findMatchesByPathway();
 			renderResults();
 		} else {
 			renderForm();

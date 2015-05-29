@@ -12,14 +12,21 @@
 <script src="../../node_modules/sinon/pkg/sinon.js"></script>
 <script>
 // fake JSONP error
-// (function( jQuery ) {
-// 	var jQuery_ajax = jQuery.ajax;
-// 	sinon.stub( jQuery, 'ajax', function( url, settings ) {
-// 		// break the URL to simulate server down
-// 		url = url.replace( /(staging\.)?data\.qld\.gov\.au/, 'localhost:9999' );
-// 		return jQuery_ajax( url, settings );
-// 	});
-// }( jQuery ));
+(function( jQuery ) {
+
+	var jQuery_ajax = jQuery.ajax;
+	sinon.stub( jQuery, 'ajax', function( url, settings ) {
+		// return fixture
+		if ( /(staging\.)?data\.qld\.gov\.au/.test( url )) {
+			settings.dataType = 'json'; // not jsonp
+			return jQuery_ajax( 'fixture/neighbourhood-sample.json', settings );
+
+		} else {
+			// pass-through
+			return jQuery_ajax( url, settings );
+		}
+	});
+}( jQuery ));
 </script>
 
 	<meta name="description" content="DESCRIPTION" />

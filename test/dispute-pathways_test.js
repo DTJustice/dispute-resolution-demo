@@ -77,6 +77,26 @@ casper.each( states, function( self, state ) {
 		});
 	});
 });
+// check results for fences
+casper.test.begin( 'search results for fences', 4, function suite( test ) {
+	casper.start( URL + queryFromObject({ have: 'dispute', 'with': 'a neighbour', about: 'fences' }))
+	.then(function() {
+		var options;
+
+		test.assertTitle( TITLE, 'loaded neighbourhood dispute page' );
+
+		// 1 result for self resolution present
+		test.assertElementCount( '.self li', 1, '1 result for self resolution' );
+		test.assertSelectorHasText( '.self li a', 'A', 'first result has correct title' );
+		test.assertEquals( casper.getElementAttribute( '.self li a', 'href' ), 'http://www.example.com/a', 'first result has correct URL' );
+
+	});
+
+	casper.run(function() {
+		test.done();
+	});
+});
+
 
 // Given a custom visits the tool,
 // when the URL contains part of a story

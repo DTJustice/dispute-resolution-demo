@@ -5,7 +5,7 @@
 <div class="section self">
 	<h2>Try resolving the {{ story.have }} yourself</h2>
 	<ul>
-		<li></li>
+		{{#each results.self}}<li><a href="#">{{ title }}</a></li>{{/each}}
 	</ul>
 </div>
 
