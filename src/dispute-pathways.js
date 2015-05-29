@@ -164,13 +164,28 @@
 
 
 	// get data
-	$.ajax( 'https://staging.data.qld.gov.au/api/action/datastore_search?resource_id=56ac21ba-3de3-421a-ac40-297713e37e9d', {
-		cache: true,
-		data: { limit: 500 }, // CKAN default limit is 100
-		datatype: 'jsonp'
-	})
-	.done( loadedData )
-	.error( handleDataError );
+	function init() {
+		// infer API uri from source metadata
+		var source = $( 'meta[name="DCTERMS.source"]' ).attr( 'content' );
+		// extract UUID
+		var uuid = source.replace( /^.*?([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}).*$/, '$1' );
+		var host = $.url( source );
+		host = host.attr( 'protocol' ) + '://' + host.attr( 'host' );
+
+		$.ajax( host + '/api/action/datastore_search', {
+			cache: true,
+			data: {
+				resource_id: uuid,
+				// CKAN default limit is 100
+				limit: 500
+			},
+			datatype: 'jsonp'
+		})
+		.done( loadedData )
+		.error( handleDataError );
+	}
+
+	init();
 
 
 }( jQuery ));

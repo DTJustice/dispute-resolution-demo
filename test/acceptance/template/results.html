@@ -12,13 +12,13 @@
 <div class="section assisted">
 	<h2>Assistance resolving your {{ story.have }}</h2>
 	<ul>
-		<li></li>
+		{{#each results.assisted}}<li><a href="{{ URL }}">{{ Title }}</a></li>{{/each}}
 	</ul>
 </div>
 
 <div class="section formal">
 	<h2>Formal resolution to your {{ story.have }}</h2>
 	<ul>
-		<li></li>
+		{{#each results.formal}}<li><a href="{{ URL }}">{{ Title }}</a></li>{{/each}}
 	</ul>
 </div>

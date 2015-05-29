@@ -5,20 +5,35 @@
 <div class="section self">
 	<h2>Try resolving the {{ story.have }} yourself</h2>
 	<ul>
-		{{#each results.self}}<li><a href="#">{{ title }}</a></li>{{/each}}
+		{{#each results.self}}
+		<li>
+			<a href="{{ url }}">{{ title }}</a>
+			<p>{{ description }}</p>
+		</li>
+		{{/each}}
 	</ul>
 </div>
 
 <div class="section assisted">
 	<h2>Assistance resolving your {{ story.have }}</h2>
 	<ul>
-		<li></li>
+		{{#each results.assisted}}
+		<li>
+			<a href="{{ url }}">{{ title }}</a>
+			<p>{{ description }}</p>
+		</li>
+		{{/each}}
 	</ul>
 </div>
 
 <div class="section formal">
 	<h2>Formal resolution to your {{ story.have }}</h2>
 	<ul>
-		<li></li>
+		{{#each results.formal}}
+		<li>
+			<a href="{{ url }}">{{ title }}</a>
+			<p>{{ description }}</p>
+		</li>
+		{{/each}}
 	</ul>
 </div>
