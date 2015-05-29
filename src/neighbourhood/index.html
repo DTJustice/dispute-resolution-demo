@@ -18,7 +18,7 @@
 	<meta name="DCTERMS.creator" scheme="AGLSTERMS.GOLD" content="c=AU; o=The State of Queensland; ou=DEPARTMENT NAME; ou=UNIT NAME" />
 	<meta name="DCTERMS.publisher" scheme="AGLSTERMS.AglsAgent" content="corporateName=The State of Queensland; jurisdiction=Queensland" />
 	<meta name="DCTERMS.created" content="2015-05-25" />
-	<meta name="DCTERMS.modified" content="2015-05-26" />
+	<meta name="DCTERMS.modified" content="2015-05-29" />
 	<meta name="DCTERMS.title" content="Neighbourhood dispute resolution | Your rights, crime and the law" />
 	<meta name="DCTERMS.description" content="DESCRIPTION" />
 	<meta name="DCTERMS.subject" scheme="AGLSTERMS.APAIS" content="Dispute resolution" />
@@ -58,13 +58,16 @@
 
 <!--#include virtual="/assets/includes/global/page-options-pre.html"-->
 
-					<p>Use this tool to discover the options available to you in order to resolve a dispute.</p>
-					<p>We provide general information on avoiding and resolving neighbourhood disputes. It is not legal advice and does not consider your exact circumstances. If you are unsure about your legal rights you should get <a href="http://www.qld.gov.au/law/legal-mediation-and-justice-of-the-peace/legal-advice-and-investment/legal-information-and-advice/">independent legal advice</a>.</p>
+					<p>Use this tool to discover how to resolve a neighbourhood dispute.</p>
+					<p>We provide general information which does not consider your individual circumstances.
+					If you are unsure about your legal rights you should get <a href="http://www.qld.gov.au/law/legal-mediation-and-justice-of-the-peace/legal-advice-and-investment/legal-information-and-advice/">independent legal advice</a>.</p>
 
-					<div id="dispute-pathways-view"></div>
-
+					<div id="dispute-pathways-view">
 <script id="form-template" type="text/x-handlebars-template"><!--#include virtual="template/form.html"--></script>
 <script id="results-template" type="text/x-handlebars-template"><!--#include virtual="template/results.html"--></script>
+<script id="error-template" type="text/x-handlebars-template"><!--#include virtual="template/error.html"--></script>
+					</div>
+
 
 
 					<div class="section" id="what-next"><div class="border">
@@ -84,19 +87,28 @@
 			<div id="asides"><div class="box-sizing"><div class="border">
 <!--#include virtual="/assets/includes/global/global-aside.html"-->
 
-				<div class="aside feedback">
-					<h2>Tell us what you think</h2>
-					<p><a href="#page-feedback">Fill in the feedback section</a> and let us know what you think of the pages so far and what you would like to see in the future.</p>
+				<div class="aside tip">
+					<h2>Ways to resolve your dispute</h2>
+					<ul>
+						<li><strong>Self resolution</strong> can be the fastest and cheapest way to resolve disputes.</li>
+						<li><strong>Assisted resolution</strong> may involve mean conciliation or mediation. It can save time and money for you and the community.</li>
+						<li><strong>Formal resolution</strong> may mean going to a court or tribunal. It costs time and money but will give you a result that can be enforced.</li>
+					</ul>
 				</div>
 
 				<div class="aside tip">
 					<h2>Legal information and advice</h2>
-					<p><a href="http://www.qld.gov.au/law/legal-mediation-and-justice-of-the-peace/legal-advice-and-investment/legal-information-and-advice/">Find a solicitor</a>, law firm, barrister or free legal services available to vulnerable and disadvantaged Queenslanders.</p>
+					<p><a href="http://www.qld.gov.au/law/legal-mediation-and-justice-of-the-peace/legal-advice-and-investment/legal-information-and-advice/">Find a solicitor</a>, law firm, barrister or free legal services.</p>
 				</div>
 
 				<div class="aside tip">
 					<h2>Body corporate disputes</h2>
 					<p>Formal resolution of many disputes between neighbours in a body corporate can only be dealt with through the <a href="http://www.qld.gov.au/law/housing-and-neighbours/body-corporate/body-corporate-disputes/">Office of the Commissioner for Body Corporate and Community Management</a>.</p>
+				</div>
+
+				<div class="aside feedback">
+					<h2>Tell us what you think</h2>
+					<p>Does this site help? <a href="#page-feedback">Fill in the feedback section</a> and let us know.</p>
 				</div>
 
 			</div></div></div><!-- end #asides, .box-sizing, .border -->
@@ -111,7 +123,7 @@
 						</dd>
 
 						<dt>Last updated</dt>
-						<dd>26 May 2015</dd>
+						<dd>29 May 2015</dd>
 					</dl>
 				</div></div>
 
