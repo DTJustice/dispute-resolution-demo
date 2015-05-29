@@ -3,12 +3,6 @@ module.exports = function( grunt ) {
 
 	var pkg = grunt.file.readJSON( 'package.json' );
 
-	// TODO local preview server
-	// in the interim, this is expected to be the local folder used with the swe_template repo
-	// with apache (XAMPP recommended) setup and running
-	// https://github.com/qld-gov-au/swe_template
-	var HTDOCS = '../swe_template/build/_htdocs';
-
 	// config
 	grunt.initConfig({
 
@@ -67,33 +61,6 @@ module.exports = function( grunt ) {
 			}
 		},
 
-		// move files for preview
-		copy: {
-			js: {
-				expand: true,
-				cwd: 'src',
-				src: '*.js',
-				dest: HTDOCS + '/assets/law/'
-			},
-			templates: {
-				expand: true,
-				cwd: 'src/neighbourhood',
-				src: '**',
-				dest: HTDOCS + '/law/legal-mediation-and-justice-of-the-peace/setting-disputes-out-of-court/neighbourhood-mediation/neighbourhood-dispute-resolution/'
-			},
-			// TODO where do dependencies live?
-			// compile into one script or add to SWE template?
-			jsHandlebars: {
-				expand: true,
-				cwd: 'node_modules/handlebars/dist/',
-				src: 'handlebars.min.js',
-				dest: HTDOCS + '/assets/law/'
-			}
-		},
-
-		// combine and minify js
-
-
 		// code qa
 		jshint: {
 			app: {
@@ -145,12 +112,11 @@ module.exports = function( grunt ) {
 	// plugins
 	grunt.loadNpmTasks( 'grunt-casper' );
 	grunt.loadNpmTasks( 'grunt-contrib-connect' );
-	grunt.loadNpmTasks( 'grunt-contrib-copy' );
 	grunt.loadNpmTasks( 'grunt-contrib-jshint' );
 	grunt.loadNpmTasks( 'grunt-contrib-watch' );
 
 
 	// helpers
 	grunt.registerTask( 'test', [ 'jshint', 'casper' ]);
-	grunt.registerTask( 'default', [ 'copy', 'connect:testserver', 'test', 'watch' ]);
+	grunt.registerTask( 'default', [ 'connect:testserver', 'test', 'watch' ]);
 };
