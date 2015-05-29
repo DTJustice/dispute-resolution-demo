@@ -12,6 +12,61 @@ module.exports = function( grunt ) {
 	// config
 	grunt.initConfig({
 
+		// local web server
+		connect: {
+			options: {
+				base: './',
+				// SSI support
+				middleware: function( connect, options, middlewares ) {
+					options = options || {};
+					options.index = options.index || 'index.html';
+					middlewares.unshift(function globalIncludes( req, res, next ) {
+						var fs = require( 'fs' );
+						var filename = require( 'url' ).parse( req.url ).pathname;
+						if ( /\/$/.test( filename )) {
+							filename += options.index;
+						}
+
+						if ( /\.html$/.test( filename )) {
+							fs.readFile( options.base + filename, 'utf-8', function( err, data ) {
+								var path = '';
+								if ( err ) {
+									next( err );
+								} else {
+									res.writeHead( 200, { 'Content-Type': 'text/html' });
+									// SWE global includes
+									data = data.split( '<!--#include virtual="' );
+									res.write( data.shift(), 'utf-8' );
+									data.forEach(function( chunk ) {
+										path = chunk.substring( 0, chunk.indexOf( '"-->' ));
+										// handle SWE global includes
+										if ( path.indexOf( '/assets' ) === 0 ) {
+											path = path.replace( '/assets/includes/global', options.base + '/lib/global' );
+										} else {
+											// local includes
+											path = options.base + require( 'url' ).parse( req.url ).pathname.replace( /[^\/]+$/, '' ) + path;
+										}
+										res.write( fs.readFileSync( path, 'utf-8' ), 'utf-8' );
+										res.write( chunk.substring( chunk.indexOf( '-->' ) + 3 ), 'utf-8' );
+									});
+									res.end();
+								}
+							});
+
+						} else {
+							next();
+						}
+					});
+					return middlewares;
+				}
+			},
+			testserver: {
+				options: {
+					port: 9999
+				}
+			}
+		},
+
 		// move files for preview
 		copy: {
 			js: {
@@ -89,6 +144,7 @@ module.exports = function( grunt ) {
 
 	// plugins
 	grunt.loadNpmTasks( 'grunt-casper' );
+	grunt.loadNpmTasks( 'grunt-contrib-connect' );
 	grunt.loadNpmTasks( 'grunt-contrib-copy' );
 	grunt.loadNpmTasks( 'grunt-contrib-jshint' );
 	grunt.loadNpmTasks( 'grunt-contrib-watch' );
@@ -96,5 +152,5 @@ module.exports = function( grunt ) {
 
 	// helpers
 	grunt.registerTask( 'test', [ 'jshint', 'casper' ]);
-	grunt.registerTask( 'default', [ 'copy', 'test', 'watch' ]);
+	grunt.registerTask( 'default', [ 'copy', 'connect:testserver', 'test', 'watch' ]);
 };

@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-AU" lang="en-AU">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Simulate no data</title>
+
+<!--#set var="franchise" value="law"-->
+<!--#set var="title" value="Neighbourhood dispute resolution"-->
+<!--#set var="licence" value="http://creativecommons.org/licenses/by/3.0/au/"-->
+<!--#include virtual="/assets/includes/global/head-assets-styles.html"-->
+<!--#include virtual="/assets/includes/global/head-assets-scripts.html"-->
+<script src="../../node_modules/sinon/pkg/sinon.js"></script>
+<script>
+// fake JSONP error
+(function( jQuery ) {
+	var jQuery_ajax = jQuery.ajax;
+	sinon.stub( jQuery, 'ajax', function( url, settings ) {
+		// break the URL to simulate server down
+		url = url.replace( /(staging\.)?data\.qld\.gov\.au/, 'localhost:9999' );
+		return jQuery_ajax( url, settings );
+	});
+}( jQuery ));
+</script>
+
+	<meta name="description" content="DESCRIPTION" />
+	<meta name="keywords" content="KEYWORDS" />
+
+	<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+	<link rel="schema.AGLSTERMS" href="http://www.agls.gov.au/agls/terms/" />
+
+	<meta name="DCTERMS.creator" scheme="AGLSTERMS.GOLD" content="c=AU; o=The State of Queensland; ou=DEPARTMENT NAME; ou=UNIT NAME" />
+	<meta name="DCTERMS.publisher" scheme="AGLSTERMS.AglsAgent" content="corporateName=The State of Queensland; jurisdiction=Queensland" />
+	<meta name="DCTERMS.created" content="2015-05-29" />
+	<meta name="DCTERMS.modified" content="2015-05-29" />
+	<meta name="DCTERMS.title" content="Neighbourhood dispute resolution | Your rights, crime and the law" />
+	<meta name="DCTERMS.description" content="DESCRIPTION" />
+	<meta name="DCTERMS.subject" scheme="AGLSTERMS.APAIS" content="Dispute resolution" />
+	<meta name="AGLSTERMS.function" scheme="AGLSTERMS.AGIFT" content="JUSTICE ADMINISTRATION - Civil Law - Dispute mediation programs" />
+<!--#include virtual="/assets/includes/global/head-meta-identifier.html"-->
+	<meta name="DCTERMS.type" scheme="DCTERMS.DCMIType" content="Text" />
+	<meta name="AGLSTERMS.documentType" scheme="AGLSTERMS.agls-document" content="index" />
+	<meta name="DCTERMS.audience" scheme="AGLSTERMS.agls-audience" content="Queensland" />
+	<meta name="DCTERMS.jurisdiction" scheme="AGLSTERMS.AglsJuri" content="Queensland" />
+	<meta name="DCTERMS.license" scheme="DCTERMS.URI" content="http://creativecommons.org/licenses/by/3.0/au/" />
+</head>
+
+<body id="qld-gov-au" class="residents">
+
+<!--#include virtual="/assets/includes/global/header.html"-->
+
+	<div id="page-container"><div class="max-width">
+		<div id="breadcrumbs">
+			<h2>You are here:</h2>
+			<ol>
+<!--#include virtual="/assets/includes/global/breadcrumb-citizen.html"-->
+				<li><a href="/law/">Your rights, crime and the law</a></li>
+				<li><a href="/law/legal-mediation-and-justice-of-the-peace/">Legal, mediation and justice of the peace</a></li>
+				<li><a href="/law/legal-mediation-and-justice-of-the-peace/setting-disputes-out-of-court/">Settling disputes out of court</a></li>
+				<li><a href="/law/legal-mediation-and-justice-of-the-peace/setting-disputes-out-of-court/neighbourhood-mediation/">Neighbourhood mediation</a></li>
+				<li class="last-child">Neighbourhood dispute resolution</li>
+			</ol>
+		</div>
+
+		<div id="content-container">
+			<div id="content">
+				<div class="article"><div class="box-sizing"><div class="border" id="article">
+
+<!--#include virtual="/assets/includes/global/global-alert.html"-->
+
+					<h1>Neighbourhood dispute resolution</h1>
+
+<!--#include virtual="/assets/includes/global/page-options-pre.html"-->
+
+					<p>Use this tool to discover how to resolve a neighbourhood dispute.</p>
+					<p>We provide general information which does not consider your individual circumstances.
+					If you are unsure about your legal rights you should get <a href="http://www.qld.gov.au/law/legal-mediation-and-justice-of-the-peace/legal-advice-and-investment/legal-information-and-advice/">independent legal advice</a>.</p>
+
+					<div id="dispute-pathways-view">
+<script id="form-template" type="text/x-handlebars-template"><!--#include virtual="template/form.html"--></script>
+<script id="results-template" type="text/x-handlebars-template"><!--#include virtual="template/results.html"--></script>
+<script id="error-template" type="text/x-handlebars-template"><!--#include virtual="template/error.html"--></script>
+					</div>
+
+
+
+					<div class="section" id="what-next"><div class="border">
+						<h2>What can I read or do next?</h2>
+						<ul>
+						  <li><a href="#">A cross-selling link</a></li>
+						  <li><a href="#">A second cross-selling link</a></li>
+						  <li><a href="#">A third cross-selling link</a></li>
+						</ul>
+					</div></div><!-- end #what-next, .border -->
+
+
+
+				</div></div></div><!-- end .article, .box-sizing, .border -->
+			</div><!-- end #content -->
+
+			<div id="asides"><div class="box-sizing"><div class="border">
+<!--#include virtual="/assets/includes/global/global-aside.html"-->
+
+				<div class="aside tip">
+					<h2>Ways to resolve your dispute</h2>
+					<ul>
+						<li><strong>Self resolution</strong> can be the fastest and cheapest way to resolve disputes.</li>
+						<li><strong>Assisted resolution</strong> may involve mean conciliation or mediation. It can save time and money for you and the community.</li>
+						<li><strong>Formal resolution</strong> may mean going to a court or tribunal. It costs time and money but will give you a result that can be enforced.</li>
+					</ul>
+				</div>
+
+				<div class="aside tip">
+					<h2>Legal information and advice</h2>
+					<p><a href="http://www.qld.gov.au/law/legal-mediation-and-justice-of-the-peace/legal-advice-and-investment/legal-information-and-advice/">Find a solicitor</a>, law firm, barrister or free legal services.</p>
+				</div>
+
+				<div class="aside tip">
+					<h2>Body corporate disputes</h2>
+					<p>Formal resolution of many disputes between neighbours in a body corporate can only be dealt with through the <a href="http://www.qld.gov.au/law/housing-and-neighbours/body-corporate/body-corporate-disputes/">Office of the Commissioner for Body Corporate and Community Management</a>.</p>
+				</div>
+
+				<div class="aside feedback">
+					<h2>Tell us what you think</h2>
+					<p>Does this site help? <a href="#page-feedback">Fill in the feedback section</a> and let us know.</p>
+				</div>
+
+			</div></div></div><!-- end #asides, .box-sizing, .border -->
+
+			<div id="meta-wrapper"><div class="meta-box-sizing"><div class="border">
+
+				<div id="document-properties"><div class="box-sizing">
+					<dl>
+						<dt class="visuallyhidden">Licence</dt>
+						<dd id="document-licence">
+							<a href="http://creativecommons.org/licenses/by/3.0/au/" rel="license" title="Text available under Creative Commons Attribution 3.0 Australia (CC BY 3.0) licence"><img src="http://static.qgov.net.au/assets/v2/images/licences/by-80x15.png" alt="Creative Commons Attribution 3.0 Australia (CC BY 3.0)"/></a>
+						</dd>
+
+						<dt>Last updated</dt>
+						<dd>29 May 2015</dd>
+					</dl>
+				</div></div>
+
+<!--#include virtual="/assets/includes/global/page-options-post.html"-->
+
+			</div></div></div><!-- end #meta-wrapper, .meta-box-sizing, .border -->
+
+		</div><!-- end #content-container -->
+
+		<div id="nav-section">
+			<div class="box-sizing">
+				<h2><a href="/law/legal-mediation-and-justice-of-the-peace/setting-disputes-out-of-court/neighbourhood-mediation/">Neighbourhood mediation</a></h2>
+				<ul>
+					<li><a href="/law/legal-mediation-and-justice-of-the-peace/setting-disputes-out-of-court/neighbourhood-mediation/neighbourhood-mediation/">Neighbourhood mediation</a></li>
+					<li><a href="/law/legal-mediation-and-justice-of-the-peace/setting-disputes-out-of-court/neighbourhood-mediation/how-neighbourhood-mediation-works/">How neighbourhood mediation works</a></li>
+					<li><a href="/law/legal-mediation-and-justice-of-the-peace/setting-disputes-out-of-court/neighbourhood-mediation/prepare-for-neighbourhood-mediation/">Prepare for neighbourhood mediation</a></li>
+					<li><a href="/law/legal-mediation-and-justice-of-the-peace/setting-disputes-out-of-court/neighbourhood-mediation/neighbourhood-dispute-resolution/">Neighbourhood dispute resolution</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div></div><!-- end #page-container, .max-width -->
+
+<!--#include virtual="/assets/includes/global/footer-page.html"-->
+<script src="../../node_modules/handlebars/dist/handlebars.min.js"></script>
+<script src="../../src/dispute-pathways.js"></script>
+<!--#include virtual="/assets/includes/global/footer-stats.html"-->
+
+</body>
+</html>
