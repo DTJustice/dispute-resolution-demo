@@ -40,7 +40,7 @@
 
 			// convert { have: 'a;b;c;' } to { have: { a: true, b: true, c: true }}
 			$.each([ 'have', 'with', 'about', 'pathway' ], function( i, key ) {
-				explode = record[ key ].toLowerCase().split( /\s*;\s*/ );
+				explode = record[ key ] ? record[ key ].toLowerCase().split( /\s*;\s*/ ) : [];
 				record[ key ] = {};
 				$.each( explode, function( j, value ) {
 					record[ key ][ value ] = true;
