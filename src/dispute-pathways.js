@@ -10,6 +10,7 @@
 	var mappedData, results;
 	var story = {};
 
+
 	// handlebars helpers
 
 	// set selected options
@@ -20,19 +21,10 @@
 		return $el.html();
 	});
 
-
 	// map values: lower case for display
 	function mapToOption( s ) {
 		return { label: s, value: s };
 	}
-	// create a query string from a hash
-	function queryFromObject( params ) {
-		var s = Object.keys( params ).map(function( key ) {
-			return params[ key ].length ? encodeURIComponent( key ) + '=' + encodeURIComponent( params[ key ]) : null;
-		}).join( '&' );
-		return s.length ? '?' + s : '';
-	}
-
 
 	// render view
 	function render( view, viewModel ) {
@@ -76,24 +68,11 @@
 		story = $.url().param();
 
 		// check against valid values
-		if ( story.have && model.have.indexOf( story.have ) === -1 ) {
-			delete story.have;
-		}
-		if ( story[ 'with' ] && model[ 'with' ].indexOf( story[ 'with' ] ) === -1 ) {
-			delete story[ 'with' ];
-		}
-		if ( story.about && model.about.indexOf( story.about ) === -1 ) {
-			delete story.about;
-		}
-		// redirect if parameter was invalid
-		var queryString = queryFromObject( story );
-		if ( window.location.search !== queryString ) {
-			if ( queryString.length > 0 ) {
-				window.location.search = queryString;
-			} else if ( window.location.search.length > 0 ) {
-				window.location.href = window.location.href.replace( /\?.*$/, '' );
+		$.each([ 'have', 'with', 'about' ], function( i, key ) {
+			if ( story[ key ] && model[ key ].indexOf( story[ key ]) === -1 ) {
+				delete story[ key ];
 			}
-		}
+		});
 
 		// do we have a complete story?
 		return story.have && story[ 'with' ] && story.about;
@@ -176,7 +155,7 @@
 	// when form is submitted
 	$( document ).on( 'submit', '#dispute-pathways-view form', function() {
 		// update history state
-		History.replaceState( getStateFromForm( this ));
+		History.pushState( getStateFromForm( this ));
 		// passthrough (do not prevent default)
 	});
 

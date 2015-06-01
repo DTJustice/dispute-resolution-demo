@@ -146,8 +146,7 @@ casper.test.begin( 'partial state prefills form', 21, function suite( test ) {
 // Given the customer visits the tool
 // when there are invalid values in the URL
 // then they are ignored (treated as blank/unsupplied)
-// and the customer is redirected to a valid URL
-casper.test.begin( 'invalid values in URL ignored', 16, function suite( test ) {
+casper.test.begin( 'invalid values in URL ignored', 14, function suite( test ) {
 	casper.start()
 	.thenOpen( URL + queryFromObject({ have: 'foo', 'with': 'bar', about: 'baz' }), function() {
 		test.assertTitle( TITLE, 'loaded neighbourhood dispute page' );
@@ -159,8 +158,6 @@ casper.test.begin( 'invalid values in URL ignored', 16, function suite( test ) {
 		test.assertField( 'with', '', 'with ___ (is blank)' );
 		test.assertExists( 'select[name="about"]', 'question exists: about' );
 		test.assertField( 'about', '', 'about ___ (is blank)' );
-
-		test.assertEquals( casper.getCurrentUrl(), URL, 'redirected to default URL' );
 	})
 	.thenOpen( URL + queryFromObject({ have: 'dispute', 'with': 'a neighbour', about: 'baz' }), function() {
 		test.assertTitle( TITLE, 'loaded neighbourhood dispute page' );
@@ -172,8 +169,6 @@ casper.test.begin( 'invalid values in URL ignored', 16, function suite( test ) {
 		test.assertField( 'with', 'a neighbour', 'with a neighbour (is prefilled)' );
 		test.assertExists( 'select[name="about"]', 'question exists: about' );
 		test.assertField( 'about', '', 'about ___ (is blank)' );
-
-		test.assertEquals( decodeURI( casper.getCurrentUrl() ), decodeURI( URL + queryFromObject({ have: 'dispute', 'with': 'a neighbour' })), 'redirected to default URL' );
 	});
 
 	casper.run(function() {
