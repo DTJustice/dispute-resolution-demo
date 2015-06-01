@@ -185,9 +185,28 @@ casper.test.begin( 'invalid values in URL ignored', 16, function suite( test ) {
 // Given a customer is viewing results,
 // when they select a result and return to tool,
 // then they should see the same results
-casper.test.begin( 'back button behaves as expected', 8, function suite( test ) {
+
+// Given a customer is viewing results,
+// when they go back to the form
+// then they should see the form prefilled
+casper.test.begin( 'back button behaves as expected', 19, function suite( test ) {
 	casper.start()
-	.thenOpen( URL + queryFromObject({ have: 'dispute', 'with': 'a neighbour', about: 'fences' }), function() {
+
+	.thenOpen( URL, function() {
+		test.assertTitle( TITLE, 'loaded neighbourhood dispute page' );
+		// questions for each story component are present
+		test.assertExists( 'select[name="have"]', 'question exists: have' );
+		test.assertExists( 'select[name="with"]', 'question exists: with' );
+		test.assertExists( 'select[name="about"]', 'question exists: about' );
+
+		casper.fill( '#content form', { have: 'dispute', 'with': 'a neighbour', about: 'fences' });
+		casper.click( '#content .actions strong input' );
+	})
+
+	// wait for querystring in URL
+	.waitForUrl( '?' )
+
+	.then(function() {
 		test.assertTitle( TITLE, 'loaded neighbourhood dispute page' );
 		// 1 result for self resolution present
 		test.assertElementCount( '.self li', 1, '1 result for self resolution' );
@@ -207,6 +226,21 @@ casper.test.begin( 'back button behaves as expected', 8, function suite( test ) 
 		test.assertElementCount( '.self li', 1, '1 result for self resolution' );
 		test.assertSelectorHasText( '.self li a', 'A', 'first result has correct title' );
 		test.assertEquals( casper.getElementAttribute( '.self li a', 'href' ), 'http://www.example.com/a', 'first result has correct URL' );
+	})
+
+	.back()
+	// no querystring
+	.waitForUrl( /html$/ )
+
+	.then(function() {
+		test.assertTitle( TITLE, 'loaded neighbourhood dispute page' );
+		// questions for each story component are present
+		test.assertExists( 'select[name="have"]', 'question exists: have' );
+		test.assertField( 'have', 'dispute', 'I have a dispute (is prefilled)' );
+		test.assertExists( 'select[name="with"]', 'question exists: with' );
+		test.assertField( 'with', 'a neighbour', 'with a neighbour (is prefilled)' );
+		test.assertExists( 'select[name="about"]', 'question exists: about' );
+		test.assertField( 'about', 'fences', 'about fences (is prefilled)' );
 	});
 
 	casper.run(function() {

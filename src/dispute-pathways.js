@@ -1,4 +1,4 @@
-/* global Handlebars */
+/* global Handlebars, History */
 (function( $ ) {
 	'use strict';
 
@@ -132,7 +132,7 @@
 	// show the form
 	function renderForm() {
 		render( 'form', {
-			story: story,
+			story: $.extend( story, History.getState().data ),
 			form: {
 				haveOptions: $.map( model.have, mapToOption ),
 				withOptions: $.map( model[ 'with' ], mapToOption ),
@@ -161,6 +161,24 @@
 	function handleDataError() {
 		render( 'error' );
 	}
+
+
+	// get state from form
+	function getStateFromForm( form ) {
+		form = $( form );
+		return {
+			have:   $( 'select[name="have"]', form ).val(),
+			'with': $( 'select[name="with"]', form ).val(),
+			about:  $( 'select[name="about"]', form ).val()
+		};
+	}
+
+	// when form is submitted
+	$( document ).on( 'submit', '#dispute-pathways-view form', function() {
+		// update history state
+		History.replaceState( getStateFromForm( this ));
+		// passthrough (do not prevent default)
+	});
 
 
 	// get data
