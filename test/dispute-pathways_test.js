@@ -160,7 +160,7 @@ casper.test.begin( 'invalid values in URL ignored', 16, function suite( test ) {
 		test.assertExists( 'select[name="about"]', 'question exists: about' );
 		test.assertField( 'about', '', 'about ___ (is blank)' );
 
-		test.assertEquals( casper.page.url, URL, 'redirected to default URL' );
+		test.assertEquals( casper.getCurrentUrl(), URL, 'redirected to default URL' );
 	})
 	.thenOpen( URL + queryFromObject({ have: 'dispute', 'with': 'a neighbour', about: 'baz' }), function() {
 		test.assertTitle( TITLE, 'loaded neighbourhood dispute page' );
@@ -173,7 +173,40 @@ casper.test.begin( 'invalid values in URL ignored', 16, function suite( test ) {
 		test.assertExists( 'select[name="about"]', 'question exists: about' );
 		test.assertField( 'about', '', 'about ___ (is blank)' );
 
-		test.assertEquals( decodeURI( casper.page.url ), decodeURI( URL + queryFromObject({ have: 'dispute', 'with': 'a neighbour' })), 'redirected to default URL' );
+		test.assertEquals( decodeURI( casper.getCurrentUrl() ), decodeURI( URL + queryFromObject({ have: 'dispute', 'with': 'a neighbour' })), 'redirected to default URL' );
+	});
+
+	casper.run(function() {
+		test.done();
+	});
+});
+
+
+// Given a customer is viewing results,
+// when they select a result and return to tool,
+// then they should see the same results
+casper.test.begin( 'back button behaves as expected', 8, function suite( test ) {
+	casper.start()
+	.thenOpen( URL + queryFromObject({ have: 'dispute', 'with': 'a neighbour', about: 'fences' }), function() {
+		test.assertTitle( TITLE, 'loaded neighbourhood dispute page' );
+		// 1 result for self resolution present
+		test.assertElementCount( '.self li', 1, '1 result for self resolution' );
+		test.assertSelectorHasText( '.self li a', 'A', 'first result has correct title' );
+		test.assertEquals( casper.getElementAttribute( '.self li a', 'href' ), 'http://www.example.com/a', 'first result has correct URL' );
+
+		casper.click( '.self li a' );
+	})
+
+	.waitForUrl( 'example.com' )
+	.back()
+	.waitForUrl( 'localhost' )
+
+	.then(function() {
+		test.assertTitle( TITLE, 'loaded neighbourhood dispute page' );
+		// 1 result for self resolution present
+		test.assertElementCount( '.self li', 1, '1 result for self resolution' );
+		test.assertSelectorHasText( '.self li a', 'A', 'first result has correct title' );
+		test.assertEquals( casper.getElementAttribute( '.self li a', 'href' ), 'http://www.example.com/a', 'first result has correct URL' );
 	});
 
 	casper.run(function() {
