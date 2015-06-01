@@ -29,7 +29,11 @@
 	// render view
 	function render( view, viewModel ) {
 		var template = Handlebars.compile( $( '#' + view + '-template' ).html() );
-		$( '#dispute-pathways-view' ).html( template( viewModel ));
+		$( '#dispute-pathways-view' )
+		.relevance( 'relevant', false )
+		.html( template( viewModel ))
+		.relevance( 'relevant', true )
+		.trigger( 'x-height-change' );
 	}
 
 
