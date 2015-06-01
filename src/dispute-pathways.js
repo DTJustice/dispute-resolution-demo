@@ -43,7 +43,9 @@
 				explode = record[ key ] ? record[ key ].toLowerCase().split( /\s*;\s*/ ) : [];
 				record[ key ] = {};
 				$.each( explode, function( j, value ) {
-					record[ key ][ value ] = true;
+					if ( value.length ) {
+						record[ key ][ value ] = true;
+					}
 				});
 			});
 
