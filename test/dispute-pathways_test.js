@@ -194,8 +194,8 @@ casper.test.begin( 'back button behaves as expected', 19, function suite( test )
 		test.assertExists( 'select[name="with"]', 'question exists: with' );
 		test.assertExists( 'select[name="about"]', 'question exists: about' );
 
-		casper.fill( '#content form', { have: 'dispute', 'with': 'a neighbour', about: 'fences' });
-		casper.click( '#content .actions strong input' );
+		casper.fill( '#dispute-pathways-view form', { have: 'dispute', 'with': 'a neighbour', about: 'fences' });
+		casper.click( '#dispute-pathways-view .actions strong input' );
 	})
 
 	// wait for querystring in URL
@@ -237,6 +237,34 @@ casper.test.begin( 'back button behaves as expected', 19, function suite( test )
 		test.assertExists( 'select[name="about"]', 'question exists: about' );
 		test.assertField( 'about', 'fences', 'about fences (is prefilled)' );
 	});
+
+	casper.run(function() {
+		test.done();
+	});
+});
+
+
+// Given the customer has not completed all form fields,
+// when they submit the form,
+// then the form status should be shown
+casper.test.begin( 'form validation integration', 6, function suite( test ) {
+	casper.start()
+
+	.thenOpen( URL, function() {
+		test.assertTitle( TITLE, 'loaded neighbourhood dispute page' );
+		// questions for each story component are present
+		test.assertExists( 'select[name="have"]', 'question exists: have' );
+		test.assertExists( 'select[name="with"]', 'question exists: with' );
+		test.assertExists( 'select[name="about"]', 'question exists: about' );
+
+		casper.fill( '#dispute-pathways-view form', { have: '', 'with': '', about: '' });
+		casper.click( '#dispute-pathways-view .actions strong input' );
+
+		// 1 result for self resolution present
+		test.assertExists( '.warn', 'form validation warning is shown' );
+		test.assertSelectorHasText( '.warn h2', 'Please check your answers', 'form validation warning is displayed' );
+	});
+
 
 	casper.run(function() {
 		test.done();

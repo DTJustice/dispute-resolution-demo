@@ -1,21 +1,21 @@
 <form class="madlibs" method="get">
 	<p>
-		<label for="dispute-pathway-have">I have a</label>
-		<select id="dispute-pathway-have" name="have">
+		<label for="dispute-pathway-have"><span class="label">I have a</span></label>
+		<select id="dispute-pathway-have" name="have" required="required">
 			{{#select story.have}}
 			<option class="placeholder" value=""></option>
 			{{#each form.haveOptions}}<option value="{{ value }}">{{ label }}</option>{{/each}}
 			{{/select}}
 		</select>
-		<label for="dispute-pathway-with">with</label>
-		<select id="dispute-pathway-with" name="with">
+		<label for="dispute-pathway-with"><span class="label">with</span></label>
+		<select id="dispute-pathway-with" name="with" required="required">
 			{{#select story.with}}
 			<option class="placeholder" value=""></option>
 			{{#each form.withOptions}}<option value="{{ value }}">{{ label }}</option>{{/each}}
 			{{/select}}
 		</select>
-		<label for="dispute-pathway-about">about</label>
-		<select id="dispute-pathway-about" name="about">
+		<label for="dispute-pathway-about"><span class="label">about</span></label>
+		<select id="dispute-pathway-about" name="about" required="required">
 			{{#select story.about}}
 			<option class="placeholder" value=""></option>
 			{{#each form.aboutOptions}}<option value="{{ value }}">{{ label }}</option>{{/each}}

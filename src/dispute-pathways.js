@@ -118,6 +118,11 @@
 				aboutOptions: $.map( model.about, mapToOption )
 			}
 		});
+
+		// enable form validation polyfill
+		// https://github.com/qld-gov-au/swe_template/blob/master/src/qgov/assets/v2/script/initialise-forms.js#L8
+		window.initConstraintValidationAPI();
+		$( 'form' ).formValidation( 'validate' );
 	}
 
 
