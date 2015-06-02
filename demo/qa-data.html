@@ -26,7 +26,7 @@
 		<table id="qa" class="table table-striped table-hover table-condensed">
 			<thead>
 				<tr>
-					<th>I have a …</th>
+					<!-- <th>I have a …</th> -->
 					<th>with …</th>
 					<th>about …</th>
 					<th>#</th>
@@ -37,7 +37,7 @@
 			</thead>
 			<tbody>
 				<tr data-ng-repeat="(key, permutation) in permutations">
-					<td>{{ permutation.disputeType }}</td>
+					<!-- <td>{{ permutation.disputeType }}</td> -->
 					<td>{{ permutation.party }}</td>
 					<td>{{ permutation.disputeSubject }}</td>
 					<td data-ng-class="{ warning: permutation.results.length < 5, danger: permutation.results.length === 0 }">{{ permutation.results.length }}</td>
