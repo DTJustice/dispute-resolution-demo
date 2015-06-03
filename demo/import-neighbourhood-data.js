@@ -118,14 +118,16 @@ for ( i = 1, len = tr.length; i < len; i++ ) {
 			rowData[ 0 ] = '';
 
 		} else {
-			console.log( '-> skip', i, len, rowData[ 0 ] );
+			if ( /\S/.test( tr[ i ].textContent )) {
+				console.log( '-> skip', i, len, tr[ i ].textContent.replace( /\s\s+/g, ' ' ), records[ records.length - 1 ].URL );
+			}
 			rowData = undefined;
 		}
 	}
 
 	if ( rowData ) {
 		// it is a new record
-		console.log( 'parsing', i, len, rowData[ 0 ] );
+		// console.log( 'parsing', i, len, rowData[ 0 ] );
 		records.push(newRecord( rowData ));
 
 		// extra data from rows i + 1..7
@@ -168,8 +170,13 @@ for ( i = 1, len = tr.length; i < len; i++ ) {
 			rowData = Array.prototype.map.call( tr[ i + 13 ].querySelectorAll( 'td' ), tableText );
 		}
 		// row 13 = description (sometimes omitted)
-		if ( /^\s*Description:\s*$/.test( rowData[ 0 ] )) {
-			records.Description = rowData[ 1 ];
+		if ( /^\s*Description:/.test( rowData[ 0 ] )) {
+			// but is the description in the column WITH the label or beside it?
+			if ( /^\s*Description:\s*$/.test( rowData[ 0 ] )) {
+				records[ records.length - 1 ].Description = rowData[ 1 ];
+			} else {
+				records[ records.length - 1 ].Description = rowData[ 0 ].replace( /^Description:\s*/, '' );
+			}
 			// skip this row on next pass
 			i += 13;
 

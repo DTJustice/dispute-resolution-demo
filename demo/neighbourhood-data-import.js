@@ -6,7 +6,8 @@
         "disputeSubject": "Fences;",
         "resolution": "Self Resolution;",
         "documentType": "form",
-        "Comments": "Notice for urgent fencing contribution - option to link directly to form or to landing page on fence disputes. Not a lot of context for how this form is used despite its important role."
+        "Comments": "Notice for urgent fencing contribution - option to link directly to form or to landing page on fence disputes. Not a lot of context for how this form is used despite its important role.",
+        "Description": "Use this notice to ask your neighbour to contribute to costs of dividing fencing work."
     },
     {
         "URL": "http://www.justice.qld.gov.au/__data/assets/pdf_file/0006/180483/form-2-ndr.pdf",
@@ -15,7 +16,8 @@
         "disputeSubject": "Fences;",
         "resolution": "Self Resolution;",
         "documentType": "form",
-        "Comments": "Notice for fencing contribution - option to link directly to form or to landing page on fence disputes. Not a lot of context for how this form is used despite its important role."
+        "Comments": "Notice for fencing contribution - option to link directly to form or to landing page on fence disputes. Not a lot of context for how this form is used despite its important role.",
+        "Description": "Use this notice to ask your neighbour to contribute to costs of dividing fencing work."
     },
     {
         "URL": "http://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/avoiding-fence-tree-and-building-disputes/your-responsibility-as-a-fence-owner/",
@@ -24,7 +26,8 @@
         "disputeSubject": "Fences;",
         "resolution": "Self Resolution;",
         "documentType": "guidelines",
-        "Comments": "Your responsibility as a fence owner"
+        "Comments": "Your responsibility as a fence owner",
+        "Description": "Guide to your responsibilities as a fence owner."
     },
     {
         "URL": "http://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/avoiding-fence-tree-and-building-disputes/avoiding-disputes-about-fences/",
@@ -33,7 +36,8 @@
         "disputeSubject": "Fences;",
         "resolution": "Self Resolution;Assisted Resolution;",
         "documentType": "guidelines",
-        "Comments": "Avoiding disputes about fences"
+        "Comments": "Avoiding disputes about fences",
+        "Description": "A guide to avoiding disputes about fences."
     },
     {
         "URL": "http://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/resolving-tree-and-fence-disputes/step-by-step-guide-to-resolving-tree-and-fence-disputes/",
@@ -51,7 +55,8 @@
         "disputeSubject": "Fences;",
         "resolution": "Self Resolution;",
         "documentType": "fact sheet",
-        "Comments": "Ways to approach your neighbour"
+        "Comments": "Ways to approach your neighbour",
+        "Description": "Guide to approaching your neighbour about a tree or fence problem."
     },
     {
         "URL": "http://www.qld.gov.au/law/legal-mediation-and-justice-of-the-peace/setting-disputes-out-of-court/neighbourhood-mediation",
@@ -60,7 +65,8 @@
         "disputeSubject": "Fences;",
         "resolution": "Self Resolution;Assisted Resolution;",
         "documentType": "guidelines",
-        "Comments": "Neighbourhood mediation"
+        "Comments": "Neighbourhood mediation",
+        "Description": "A guide to getting help to solve a problem with your neighbour."
     },
     {
         "URL": "https://www.legislation.qld.gov.au/LEGISLTN/CURRENT/N/NeighDisputesDFTA11.pdf",
@@ -69,7 +75,8 @@
         "disputeSubject": "Fences;",
         "resolution": "Assisted Resolution;Formal Resolution;",
         "documentType": "legislation",
-        "Comments": "Direct link to NDR Act (Trees and Fences) - not sure if relevant - it is referenced in other pages"
+        "Comments": "Direct link to NDR Act (Trees and Fences) - not sure if relevant - it is referenced in other pages",
+        "Description": "The law about trees and fences in Queensland."
     },
     {
         "URL": "http://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/resolving-tree-and-fence-disputes/examples-of-dividing-fence-disputes/",
@@ -78,7 +85,8 @@
         "disputeSubject": "Fences;",
         "resolution": "Assisted Resolution;Formal Resolution;",
         "documentType": "fact sheet",
-        "Comments": "Examples of dividing fence disputes"
+        "Comments": "Examples of dividing fence disputes",
+        "Description": "Common examples of dividing fence disputes."
     },
     {
         "URL": "http://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/resolving-tree-and-fence-disputes/resolving-dividing-fence-disputes-with-qcat/",
@@ -87,7 +95,8 @@
         "disputeSubject": "Fences;",
         "resolution": "Formal Resolution;Assisted Resolution;",
         "documentType": "procedure",
-        "Comments": "Resolving dividing fence disputes with QCAT"
+        "Comments": "Resolving dividing fence disputes with QCAT",
+        "Description": ""
     },
     {
         "URL": "http://www.qcat.qld.gov.au/matter-types/dividing-fence-disputes",
@@ -96,7 +105,8 @@
         "disputeSubject": "Fences;",
         "resolution": "Formal Resolution;Assisted Resolution;",
         "documentType": "procedure",
-        "Comments": "QCAT landing page for fences - need to shift to YRCL if any info not available through YRCL existing link"
+        "Comments": "QCAT landing page for fences - need to shift to YRCL if any info not available through YRCL existing link",
+        "Description": "How to make an application to QCAT about a dividing fence."
     },
     {
         "URL": "http://www.qcat.qld.gov.au/__data/assets/pdf_file/0004/129577/Form-53-Application-for-minor-civil-dispute-dividing-fences.pdf",
@@ -105,7 +115,8 @@
         "disputeSubject": "Fences;",
         "resolution": "Formal Resolution;Assisted Resolution;",
         "documentType": "form",
-        "Comments": "QCAT form 53 - won't be in YRCL until late 2015"
+        "Comments": "QCAT form 53 - won't be in YRCL until late 2015",
+        "Description": "Use this form to make an application to QCAT about recovering costs for a dividing fence."
     },
     {
         "URL": "http://www.qcat.qld.gov.au/__data/assets/pdf_file/0005/129578/checklist-Form-53-Application-for-minor-civil-dispute-dividing-fences.pdf",
@@ -114,7 +125,8 @@
         "disputeSubject": "Fences;",
         "resolution": "Formal Resolution;Assisted Resolution;",
         "documentType": "form",
-        "Comments": "Checklist to support QCAT form 53 - unlikely to be needed once form 53 migrates to YRCL"
+        "Comments": "Checklist to support QCAT form 53 - unlikely to be needed once form 53 migrates to YRCL",
+        "Description": "Use this checklist to help you make an application to QCAT about recoveting dividing fence costs."
     },
     {
         "URL": "http://www.qcat.qld.gov.au/matter-types/debt-disputes",
@@ -123,7 +135,8 @@
         "disputeSubject": "Fences;",
         "resolution": "Formal Resolution;",
         "documentType": "procedure",
-        "Comments": "QCAT info on general debt disputes - which covers some dividing fence disputes"
+        "Comments": "QCAT info on general debt disputes - which covers some dividing fence disputes",
+        "Description": "You can apply to QCAT to recover a debt related to diviidng fence costs or overhanigng branches."
     },
     {
         "URL": "http://www.hpw.qld.gov.au/construction/BuildingPlumbing/PoolSafety/PoolFencesSafetyBarriers/Pages/DividingFences.aspx",
@@ -132,7 +145,8 @@
         "disputeSubject": "Fences;",
         "resolution": "Self Resolution;Formal Resolution;",
         "documentType": "procedure",
-        "Comments": "HPW info on dividing fences which are pool fences - links to forms and fact sheets"
+        "Comments": "HPW info on dividing fences which are pool fences - links to forms and fact sheets",
+        "Description": "Information about dividing fences which are also pool fences."
     },
     {
         "URL": "http://www.qldneighbourhoods.com/fences.html",
@@ -141,7 +155,8 @@
         "disputeSubject": "Fences;",
         "resolution": "Self Resolution;Assisted Resolution;Formal Resolution;",
         "documentType": "procedure",
-        "Comments": "Non-government - page by Queensland Association of Independent Legal Services (QAILS)"
+        "Comments": "Non-government - page by Queensland Association of Independent Legal Services (QAILS)",
+        "Description": "Independent legal information on managing dividing fence disputes."
     },
     {
         "URL": "http://www.qldneighbourhoods.com/talk-to-your-neighbour.html",
@@ -150,7 +165,8 @@
         "disputeSubject": "Fences;",
         "resolution": "Self Resolution;",
         "documentType": "fact sheet",
-        "Comments": "QAILS page - Generic info on avoiding and resolving disputes - relevant across range of neighbour issues"
+        "Comments": "QAILS page - Generic info on avoiding and resolving disputes - relevant across range of neighbour issues",
+        "Description": "Independent legal information on avoiding and resolving neighbourhood issues."
     },
     {
         "URL": "http://www.qldneighbourhoods.com/what-do-i-do-if-my-neighbour-approaches-me-about-a-dividing-fence-issue.html",
@@ -159,7 +175,8 @@
         "disputeSubject": "Fences;",
         "resolution": "Self Resolution;",
         "documentType": "fact sheet",
-        "Comments": "QAILS page - how to respond to request for dividing fence"
+        "Comments": "QAILS page - how to respond to request for dividing fence",
+        "Description": "Independent legal information on how to respond if your neighbour asks about a dividing fence."
     },
     {
         "URL": "http://www.qldneighbourhoods.com/writing-to-your-neighbour.html",
@@ -168,7 +185,8 @@
         "disputeSubject": "Fences;",
         "resolution": "Self Resolution;",
         "documentType": "fact sheet",
-        "Comments": "QAILS page - provides a template for writing to your neighbour about a fence (and other issues)"
+        "Comments": "QAILS page - provides a template for writing to your neighbour about a fence (and other issues)",
+        "Description": "Independent legal information on how to write to your neighbour about an issue."
     },
     {
         "URL": "http://www.qldneighbourhoods.com/mediation.html",
@@ -177,7 +195,8 @@
         "disputeSubject": "Fences;",
         "resolution": "Assisted Resolution;",
         "documentType": "fact sheet",
-        "Comments": "QAILS page - general information on mediation - provides DRB and YRCL links"
+        "Comments": "QAILS page - general information on mediation - provides DRB and YRCL links",
+        "Description": "Independent legal information on mediation for fence issues."
     },
     {
         "URL": "https://caxton.org.au/pdfs/Dividing%20Fences%20kit%202013.pdf",
@@ -186,7 +205,8 @@
         "disputeSubject": "Fences;",
         "resolution": "Self Resolution;Assisted Resolution;Formal Resolution;",
         "documentType": "fact sheet",
-        "Comments": "Caxton Legal Centre information kit - Dividing fences - A self-help kit about the law of building and maintaining fences between neighbours. Fees are out of date - limited value"
+        "Comments": "Caxton Legal Centre information kit - Dividing fences - A self-help kit about the law of building and maintaining fences between neighbours. Fees are out of date - limited value",
+        "Description": "Self-help kit to managing dividing fences in Queensland."
     },
     {
         "URL": "https://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/avoiding-fence-tree-and-building-disputes/your-responsibility-as-a-fence-owner/",
@@ -195,7 +215,8 @@
         "disputeSubject": "Retaining walls;",
         "resolution": "Formal Resolution;",
         "documentType": "guidelines",
-        "Comments": "Retaining walls subheading in page - would require anchor"
+        "Comments": "Retaining walls subheading in page - would require anchor",
+        "Description": "Responsibilities for retaining walls."
     },
     {
         "URL": "http://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/avoiding-fence-tree-and-building-disputes/avoiding-building-disputes/",
@@ -204,7 +225,8 @@
         "disputeSubject": "Retaining walls;",
         "resolution": "Self Resolution;",
         "documentType": "fact sheet",
-        "Comments": "Retaining walls subheading in page - would require anchor"
+        "Comments": "Retaining walls subheading in page - would require anchor",
+        "Description": "Avoiding disputes about retaining walls."
     },
     {
         "URL": "http://www.legalaid.qld.gov.au/legalinformation/livinginthecommunity/Neighbourhood/Pages/Fencesandretainingwalls.aspx#Top",
@@ -213,7 +235,8 @@
         "disputeSubject": "Retaining walls;",
         "resolution": "Formal Resolution;",
         "documentType": "guidelines",
-        "Comments": "Legal Aid - no legal advice offered - but does contain reference to complex laws and getting independent legal advice"
+        "Comments": "Legal Aid - no legal advice offered - but does contain reference to complex laws and getting independent legal advice",
+        "Description": "Independent legal information on retaining walls."
     },
     {
         "URL": "http://www.qldneighbourhoods.com/a-retaining-wall-or-a-wall-that-is-part-of-a-house-garage-or-other-building.html",
@@ -222,7 +245,8 @@
         "disputeSubject": "Retaining walls;",
         "resolution": "Formal Resolution;",
         "documentType": "guidelines",
-        "Comments": "Non-government - page by Queensland Association of Independent Legal Services (QAILS)"
+        "Comments": "Non-government - page by Queensland Association of Independent Legal Services (QAILS)",
+        "Description": ""
     },
     {
         "URL": "http://www.brisbane.qld.gov.au/traffic-transport/parking-permits/parking-rules/illegal-dangerous-parking",
@@ -231,7 +255,8 @@
         "disputeSubject": "Parking;",
         "resolution": "Formal Resolution;",
         "documentType": "",
-        "Comments": "Gives neighbour an avenue to complain/report parking issues"
+        "Comments": "Gives neighbour an avenue to complain/report parking issues",
+        "Description": ""
     },
     {
         "URL": "http://www.legalaid.qld.gov.au/legalinformation/livinginthecommunity/Neighbourhood/Pages/Complaints-noisewatersmellsandfire.aspx",
@@ -240,7 +265,8 @@
         "disputeSubject": "Rubbish bins;Noise;Smells;Drainage;",
         "resolution": "Self Resolution;Assisted Resolution;",
         "documentType": "guidelines",
-        "Comments": "General nuisance, including smells created from rubbish"
+        "Comments": "General nuisance, including smells created from rubbish",
+        "Description": ""
     },
     {
         "URL": "http://www.brisbane.qld.gov.au/laws-permits/local-laws/information-about-local-laws/neighbourhood-complaints",
@@ -249,7 +275,8 @@
         "disputeSubject": "Rubbish bins;Smells;Objects;",
         "resolution": "Self Resolution;Assisted Resolution;Formal Resolution;",
         "documentType": "guidelines",
-        "Comments": "Could cover any dispute with neighbours. Includes a link to DRB."
+        "Comments": "Could cover any dispute with neighbours. Includes a link to DRB.",
+        "Description": ""
     },
     {
         "URL": "http://www.brisbane.qld.gov.au/environment-waste/rubbish-tips-bins/rubbish-collections/bin-collections",
@@ -258,7 +285,8 @@
         "disputeSubject": "Rubbish bins;",
         "resolution": "Formal Resolution;",
         "documentType": "procedure",
-        "Comments": ""
+        "Comments": "",
+        "Description": ""
     },
     {
         "URL": "http://www.brisbane.qld.gov.au/traffic-transport/parking-permits/parking-rules/residential-parking",
@@ -267,7 +295,8 @@
         "disputeSubject": "Access;",
         "resolution": "Formal Resolution;",
         "documentType": "guidelines",
-        "Comments": ""
+        "Comments": "",
+        "Description": ""
     },
     {
         "URL": "http://www.qld.gov.au/law/housing-and-neighbours/noise-and-crime-in-the-neighbourhood/complain-about-noisy-neighbours/",
@@ -276,7 +305,8 @@
         "disputeSubject": "Noise;",
         "resolution": "Formal Resolution;",
         "documentType": "form",
-        "Comments": "Online Complaint tool for loud music, parties, street racing and burnouts. Referres to Police, DRC, Dpt. Transport and Main Roads, and Liquor and Gaming"
+        "Comments": "Online Complaint tool for loud music, parties, street racing and burnouts. Referres to Police, DRC, Dpt. Transport and Main Roads, and Liquor and Gaming",
+        "Description": ""
     },
     {
         "URL": "http://www.qld.gov.au/environment/pollution/pollution-management/noise/",
@@ -285,7 +315,8 @@
         "disputeSubject": "Noise;",
         "resolution": "Self Resolution;",
         "documentType": "guidelines",
-        "Comments": "Explains noise restrictions, complaints, Noise exemptions"
+        "Comments": "Explains noise restrictions, complaints, Noise exemptions",
+        "Description": ""
     },
     {
         "URL": "http://www.legalaid.qld.gov.au/legalinformation/livinginthecommunity/Neighbourhood/Pages/Complaints-noisewatersmellsandfire.aspx#What is a nuisance?",
@@ -294,7 +325,8 @@
         "disputeSubject": "Noise;Dogs and other pets;Smells;",
         "resolution": "Assisted Resolution;",
         "documentType": "guidelines",
-        "Comments": "Complaints about noise, water, smells and fire. General information"
+        "Comments": "Complaints about noise, water, smells and fire. General information",
+        "Description": ""
     },
     {
         "URL": "https://www.police.qld.gov.au/apps/reports/noiseComplaint",
@@ -303,7 +335,8 @@
         "disputeSubject": "Noise;",
         "resolution": "Formal Resolution;",
         "documentType": "form",
-        "Comments": "Online Noise/Party Complaint Online form for QPS"
+        "Comments": "Online Noise/Party Complaint Online form for QPS",
+        "Description": ""
     },
     {
         "URL": "https://www.police.qld.gov.au/apps/reports/noiseComplaint",
@@ -312,7 +345,8 @@
         "disputeSubject": "Noise;",
         "resolution": "Assisted Resolution;",
         "documentType": "guidelines",
-        "Comments": "QPS Noisy Parties: What you need to know and Template for notifying your neighbours of parties."
+        "Comments": "QPS Noisy Parties: What you need to know and Template for notifying your neighbours of parties.",
+        "Description": ""
     },
     {
         "URL": "http://www.dlg.qld.gov.au/local-government/laws/local-laws-database.html",
@@ -321,7 +355,8 @@
         "disputeSubject": "Noise;Dogs and other pets;Overgrown gardens;",
         "resolution": "Self Resolution;",
         "documentType": "legislation",
-        "Comments": "Local laws database"
+        "Comments": "Local laws database",
+        "Description": ""
     },
     {
         "URL": "https://www.qld.gov.au/families/government/pets/",
@@ -330,7 +365,8 @@
         "disputeSubject": "Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "guidelines",
-        "Comments": "General information about dog/pet ownership: Choosing and caring for your pet, restricted dogs, laws for pet owners in Qld"
+        "Comments": "General information about dog/pet ownership: Choosing and caring for your pet, restricted dogs, laws for pet owners in Qld",
+        "Description": ""
     },
     {
         "URL": "https://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/resolving-tree-and-fence-disputes/step-by-step-guide-to-resolving-tree-and-fence-disputes/",
@@ -339,7 +375,8 @@
         "disputeSubject": "Trees;",
         "resolution": "Self Resolution;",
         "documentType": "procedure",
-        "Comments": "Step by step guide to resolving tree and fence disputes"
+        "Comments": "Step by step guide to resolving tree and fence disputes",
+        "Description": ""
     },
     {
         "URL": "https://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/resolving-tree-and-fence-disputes/what-to-do-if-a-neighbours-tree-is-affecting-you/",
@@ -348,7 +385,8 @@
         "disputeSubject": "Trees;",
         "resolution": "Self Resolution;",
         "documentType": "guidelines",
-        "Comments": "What to do if a neighbour's tree is affecting you"
+        "Comments": "What to do if a neighbour's tree is affecting you",
+        "Description": ""
     },
     {
         "URL": "https://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/avoiding-fence-tree-and-building-disputes/avoiding-disputes-about-trees/",
@@ -357,7 +395,8 @@
         "disputeSubject": "Trees;",
         "resolution": "Self Resolution;",
         "documentType": "guidelines",
-        "Comments": "Avoiding disputes about trees"
+        "Comments": "Avoiding disputes about trees",
+        "Description": ""
     },
     {
         "URL": "https://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/avoiding-fence-tree-and-building-disputes/your-responsibilities-as-a-tree-keeper/",
@@ -366,7 +405,8 @@
         "disputeSubject": "Trees;",
         "resolution": "Self Resolution;",
         "documentType": "legislation",
-        "Comments": "The responsibilities of a tree keeper"
+        "Comments": "The responsibilities of a tree keeper",
+        "Description": ""
     },
     {
         "URL": "http://www.legalaid.qld.gov.au/legalinformation/livinginthecommunity/Neighbourhood/Pages/Treesandplants.aspx",
@@ -375,7 +415,8 @@
         "disputeSubject": "Trees;",
         "resolution": "Assisted Resolution;Self Resolution;",
         "documentType": "guidelines",
-        "Comments": "Some basic legal information, rights, etc, from the legal aid website"
+        "Comments": "Some basic legal information, rights, etc, from the legal aid website",
+        "Description": ""
     },
     {
         "URL": "http://www.qld.gov.au/law/housing-and-neighbours/noise-and-crime-in-the-neighbourhood/barking-dogs-in-the-neighbourhood/",
@@ -384,7 +425,8 @@
         "disputeSubject": "Dogs and other pets;",
         "resolution": "Formal Resolution;",
         "documentType": "guidelines",
-        "Comments": "Complaints about dogs - link to council websites"
+        "Comments": "Complaints about dogs - link to council websites",
+        "Description": ""
     },
     {
         "URL": "http://www.legalaid.qld.gov.au/legalinformation/livinginthecommunity/Neighbourhood/Pages/Animals-controllingtreatingandowning.aspx",
@@ -393,7 +435,8 @@
         "disputeSubject": "Dogs and other pets;",
         "resolution": "Assisted Resolution;",
         "documentType": "legislation",
-        "Comments": "Controlling, treating and owning animals from legal aid."
+        "Comments": "Controlling, treating and owning animals from legal aid.",
+        "Description": ""
     },
     {
         "URL": "http://www.justice.qld.gov.au/__data/assets/pdf_file/0010/134893/resolving-neighbourhood-disputes-trees.pdf",
@@ -402,7 +445,8 @@
         "disputeSubject": "Trees;",
         "resolution": "Assisted Resolution;",
         "documentType": "fact sheet",
-        "Comments": "Resolve a neighbourhood dispute about trees - brochure"
+        "Comments": "Resolve a neighbourhood dispute about trees - brochure",
+        "Description": ""
     },
     {
         "URL": "http://www.qldneighbourhoods.com/animals.html",
@@ -411,7 +455,8 @@
         "disputeSubject": "Dogs and other pets;",
         "resolution": "Assisted Resolution;",
         "documentType": "guidelines",
-        "Comments": "General page about animal noise, wandering pets, number of pets, dangerous pets, prohibited ptes, registration of pets."
+        "Comments": "General page about animal noise, wandering pets, number of pets, dangerous pets, prohibited ptes, registration of pets.",
+        "Description": ""
     },
     {
         "URL": "https://caxton.org.au/pdfs/Tree%20Disputes%20Self%20Help%20Kit%20-%20nov%202013.pdf",
@@ -420,7 +465,8 @@
         "disputeSubject": "Trees;",
         "resolution": "Self Resolution;Assisted Resolution;",
         "documentType": "procedure",
-        "Comments": "Caxton Legal self help tree dispute kit"
+        "Comments": "Caxton Legal self help tree dispute kit",
+        "Description": ""
     },
     {
         "URL": "http://www.qldneighbourhoods.com/what-if-a-complaint-is-made-against-your-animal.html",
@@ -429,7 +475,8 @@
         "disputeSubject": "Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "",
-        "Comments": "Information about what to do if a complaint is recevied against your animal."
+        "Comments": "Information about what to do if a complaint is recevied against your animal.",
+        "Description": ""
     },
     {
         "URL": "http://www.qcat.qld.gov.au/matter-types/tree-disputes",
@@ -438,7 +485,8 @@
         "disputeSubject": "Trees;",
         "resolution": "Self Resolution;Assisted Resolution;Formal Resolution;",
         "documentType": "",
-        "Comments": "QCAT website - information on tree disputes"
+        "Comments": "QCAT website - information on tree disputes",
+        "Description": ""
     },
     {
         "URL": "http://www.courts.qld.gov.au/about/fact-sheets",
@@ -447,7 +495,8 @@
         "disputeSubject": "Behaviours;Abuse;Threats;Harassment;",
         "resolution": "Formal Resolution;",
         "documentType": "",
-        "Comments": "Fact sheet relating to Peace and Good Behaviour Complaints"
+        "Comments": "Fact sheet relating to Peace and Good Behaviour Complaints",
+        "Description": ""
     },
     {
         "URL": "https://caxton.org.au/self_help_kits.html",
@@ -1410,7 +1459,8 @@
         "disputeSubject": "Pools;",
         "resolution": "Self Resolution;Formal Resolution;",
         "documentType": "procedure",
-        "Comments": "HPW info on dividing fences which are pool fences - links to forms and fact sheets"
+        "Comments": "HPW info on dividing fences which are pool fences - links to forms and fact sheets",
+        "Description": "Information about dividing fences which are also pool fences."
     },
     {
         "URL": "http://www.hpw.qld.gov.au/SiteCollectionDocuments/QDCMP3.4SwimmingPoolBarriers.pdf",
@@ -1419,7 +1469,8 @@
         "disputeSubject": "Pools;",
         "resolution": "Self Resolution;Formal Resolution;",
         "documentType": "legislation",
-        "Comments": "Relevant?"
+        "Comments": "Relevant?",
+        "Description": "Queensland Development Code on swimming pool barriers."
     },
     {
         "URL": "http://www.hpw.qld.gov.au/SiteCollectionDocuments/GuidelinesForPoolOwnersAndPropertyAgents.pdf",
@@ -1428,7 +1479,8 @@
         "disputeSubject": "Pools;",
         "resolution": "Self Resolution;Formal Resolution;",
         "documentType": "guidelines",
-        "Comments": ""
+        "Comments": "",
+        "Description": "Guideline for pool owners and property agents on pool owner responsibilities."
     },
     {
         "URL": "https://www.smarteda.qld.gov.au/pools/properties/propertySearch.action;jsessionid=9CD93A5835C09059BFC9500E781EA223",
@@ -1437,7 +1489,8 @@
         "disputeSubject": "Pools;",
         "resolution": "Self Resolution;",
         "documentType": "procedure",
-        "Comments": "Pool register search"
+        "Comments": "Pool register search",
+        "Description": "Search a property to check if a pool is registered."
     },
     {
         "URL": "http://www.legalaid.qld.gov.au/legalinformation/livinginthecommunity/Neighbourhood/Pages/Complaints-noisewatersmellsandfire.aspx",
@@ -1446,7 +1499,8 @@
         "disputeSubject": "Pools;Noise;",
         "resolution": "Self Resolution;",
         "documentType": "procedure",
-        "Comments": "Info from Legal Aid on managing noise/smells issues including pool pumps"
+        "Comments": "Info from Legal Aid on managing noise/smells issues including pool pumps",
+        "Description": "Advice from Legal Aid on managing pool or spa noise issues."
     },
     {
         "URL": "https://www.qld.gov.au/law/housing-and-neighbours/noise-and-crime-in-the-neighbourhood/complain-about-noisy-neighbours/",
@@ -1455,7 +1509,8 @@
         "disputeSubject": "Pools;Noise;",
         "resolution": "Self Resolution;Formal Resolution;Assisted Resolution;",
         "documentType": "procedure",
-        "Comments": "Guide to complaining about noisy neighbours"
+        "Comments": "Guide to complaining about noisy neighbours",
+        "Description": "How to manage an issue with your neighbour about pool noise."
     },
     {
         "URL": "https://www.qld.gov.au/law/your-rights/legal-and-property-rights/laws-for-building-houses-and-pools/pool-fencing-and-safety-laws/",
@@ -1464,6 +1519,7 @@
         "disputeSubject": "Pools;",
         "resolution": "Self Resolution;Formal Resolution;Assisted Resolution;",
         "documentType": "procedure",
-        "Comments": "Laws about pool fences and safety"
+        "Comments": "Laws about pool fences and safety",
+        "Description": "Guide to pool fencing and safety laws in Queensland."
     }
 ]
