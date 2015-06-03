@@ -6,6 +6,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "form",
 	"Comments": "Notice for urgent fencing contribution - option to link directly to form or to landing page on fence disputes. Not a lot of context for how this form is used despite its important role.",
+	"Description": "Use this notice to ask your neighbour to contribute to costs of dividing fencing work.",
 	"Title": "form 1 ndr",
 	"format": "application/pdf",
 	"jurisdiction": "Queensland"
@@ -17,6 +18,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "form",
 	"Comments": "Notice for fencing contribution - option to link directly to form or to landing page on fence disputes. Not a lot of context for how this form is used despite its important role.",
+	"Description": "Use this notice to ask your neighbour to contribute to costs of dividing fencing work.",
 	"Title": "form 2 ndr",
 	"format": "application/pdf",
 	"jurisdiction": "Queensland"
@@ -28,8 +30,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Your responsibility as a fence owner",
-	"Title": "Your responsibility as a fence owner",
 	"Description": "Your rights and responsibilities over a dividing fence between yours and your neighbour’s property.",
+	"Title": "Your responsibility as a fence owner",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -41,8 +43,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;Assisted Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Avoiding disputes about fences",
-	"Title": "Avoiding disputes about fences",
 	"Description": "Use these tips to avoid a dispute with your neighbours over the fence that divides your properties.",
+	"Title": "Avoiding disputes about fences",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -67,8 +69,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "Ways to approach your neighbour",
-	"Title": "Ways to approach your neighbour",
 	"Description": "Tips on how to approach your neighbour to resolve an issue.",
+	"Title": "Ways to approach your neighbour",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -80,8 +82,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;Assisted Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Neighbourhood mediation",
-	"Title": "Neighbourhood mediation",
 	"Description": "Free dispute resolution for neighbours, including how this type of mediation works and how to arrange mediation for neighbours",
+	"Title": "Neighbourhood mediation",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -93,6 +95,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Assisted Resolution;Formal Resolution;",
 	"documentType": "legislation",
 	"Comments": "Direct link to NDR Act (Trees and Fences) - not sure if relevant - it is referenced in other pages",
+	"Description": "The law about trees and fences in Queensland.",
 	"Title": "NeighDisputesDFTA11",
 	"format": "application/pdf",
 	"jurisdiction": "Queensland"
@@ -104,8 +107,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Assisted Resolution;Formal Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "Examples of dividing fence disputes",
-	"Title": "Examples of dividing fence disputes",
 	"Description": "Learn where to find details of past dividing fence disputes that may help you resolve your own issue.",
+	"Title": "Examples of dividing fence disputes",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -117,8 +120,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;Assisted Resolution;",
 	"documentType": "procedure",
 	"Comments": "Resolving dividing fence disputes with QCAT",
-	"Title": "Resolving dividing fence disputes with QCAT",
 	"Description": "Find out when, how and where to make an application to QCAT to resolve your dividing fence dispute.",
+	"Title": "Resolving dividing fence disputes with QCAT",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -130,8 +133,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;Assisted Resolution;",
 	"documentType": "procedure",
 	"Comments": "QCAT landing page for fences - need to shift to YRCL if any info not available through YRCL existing link",
-	"Title": "Dividing fence disputes - QCAT Queensland Civil and Administrative Tribunal",
 	"Description": null,
+	"Title": "Dividing fence disputes - QCAT Queensland Civil and Administrative Tribunal",
 	"Publisher": "Queensland Department of Justice and Attorney-General",
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -143,6 +146,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;Assisted Resolution;",
 	"documentType": "form",
 	"Comments": "QCAT form 53 - won't be in YRCL until late 2015",
+	"Description": "Use this form to make an application to QCAT about recovering costs for a dividing fence.",
 	"Title": "Form 53 Application for minor civil dispute dividing fences",
 	"format": "application/pdf",
 	"jurisdiction": "Queensland"
@@ -154,6 +158,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;Assisted Resolution;",
 	"documentType": "form",
 	"Comments": "Checklist to support QCAT form 53 - unlikely to be needed once form 53 migrates to YRCL",
+	"Description": "Use this checklist to help you make an application to QCAT about recoveting dividing fence costs.",
 	"Title": "checklist Form 53 Application for minor civil dispute dividing fences",
 	"format": "application/pdf",
 	"jurisdiction": "Queensland"
@@ -165,8 +170,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "procedure",
 	"Comments": "QCAT info on general debt disputes - which covers some dividing fence disputes",
-	"Title": "Debt disputes - QCAT Queensland Civil and Administrative Tribunal",
 	"Description": null,
+	"Title": "Debt disputes - QCAT Queensland Civil and Administrative Tribunal",
 	"Publisher": "Queensland Civil and Administrative Tribunal",
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -178,8 +183,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;Formal Resolution;",
 	"documentType": "procedure",
 	"Comments": "HPW info on dividing fences which are pool fences - links to forms and fact sheets",
-	"Title": "Department of Housing and Public Works | Dividing fences",
 	"Description": null,
+	"Title": "Department of Housing and Public Works | Dividing fences",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -191,8 +196,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;Assisted Resolution;Formal Resolution;",
 	"documentType": "procedure",
 	"Comments": "Non-government - page by Queensland Association of Independent Legal Services (QAILS)",
-	"Title": "Fences - Queensland Neighbourhood Disputes",
 	"Description": null,
+	"Title": "Fences - Queensland Neighbourhood Disputes",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -204,8 +209,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "QAILS page - Generic info on avoiding and resolving disputes - relevant across range of neighbour issues",
-	"Title": "Talk to Your Neighbour - Queensland Neighbourhood Disputes",
 	"Description": null,
+	"Title": "Talk to Your Neighbour - Queensland Neighbourhood Disputes",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -217,8 +222,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "QAILS page - how to respond to request for dividing fence",
-	"Title": "What do I do if my neighbour approaches me about a dividing fence issue? - Queensland Neighbourhood Disputes",
 	"Description": null,
+	"Title": "What do I do if my neighbour approaches me about a dividing fence issue? - Queensland Neighbourhood Disputes",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -230,8 +235,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "QAILS page - provides a template for writing to your neighbour about a fence (and other issues)",
-	"Title": "Writing to Your Neighbour - Queensland Neighbourhood Disputes",
 	"Description": null,
+	"Title": "Writing to Your Neighbour - Queensland Neighbourhood Disputes",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -243,8 +248,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Assisted Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "QAILS page - general information on mediation - provides DRB and YRCL links",
-	"Title": "Mediation - Queensland Neighbourhood Disputes",
 	"Description": null,
+	"Title": "Mediation - Queensland Neighbourhood Disputes",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -256,6 +261,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;Assisted Resolution;Formal Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "Caxton Legal Centre information kit - Dividing fences - A self-help kit about the law of building and maintaining fences between neighbours. Fees are out of date - limited value",
+	"Description": "Self-help kit to managing dividing fences in Queensland.",
 	"Title": "Dividing Fences kit 2013",
 	"format": "application/pdf",
 	"jurisdiction": "Australia"
@@ -267,8 +273,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Retaining walls subheading in page - would require anchor",
-	"Title": "Your responsibility as a fence owner",
 	"Description": "Your rights and responsibilities over a dividing fence between yours and your neighbour’s property.",
+	"Title": "Your responsibility as a fence owner",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -280,8 +286,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "Retaining walls subheading in page - would require anchor",
-	"Title": "Avoiding building disputes",
 	"Description": "To avoid building disputes it is important to work out all details before the building work begins.",
+	"Title": "Avoiding building disputes",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -293,8 +299,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Legal Aid - no legal advice offered - but does contain reference to complex laws and getting independent legal advice",
-	"Title": "Fences and retaining walls",
 	"Description": null,
+	"Title": "Fences and retaining walls",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -306,8 +312,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Non-government - page by Queensland Association of Independent Legal Services (QAILS)",
-	"Title": "A retaining wall or a wall that is part of a house, garage or other building - Queensland Neighbourhood Disputes",
 	"Description": null,
+	"Title": "A retaining wall or a wall that is part of a house, garage or other building - Queensland Neighbourhood Disputes",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -319,8 +325,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Gives neighbour an avenue to complain/report parking issues",
-	"Title": "Illegal and dangerous parking | Brisbane City Council",
 	"Description": "Parking rules and regulations are used throughout Brisbane to maintain the safety of all road users and pedestrians and also to ensure that street parking is available for all to use.\nAn illegally or dangerously parked vehicle, is any vehicle parked outside of Brisbane City Council's parking rules and regulations or any vehicle that maybe creating a public safety problem.",
+	"Title": "Illegal and dangerous parking | Brisbane City Council",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Brisbane City Council"
@@ -332,8 +338,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;Assisted Resolution;",
 	"documentType": "guidelines",
 	"Comments": "General nuisance, including smells created from rubbish",
-	"Title": "Complaints - noise, water, smells and fire",
 	"Description": null,
+	"Title": "Complaints - noise, water, smells and fire",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -345,8 +351,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;Assisted Resolution;Formal Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Could cover any dispute with neighbours. Includes a link to DRB.",
-	"Title": "Neighbourhood complaints | Brisbane City Council",
 	"Description": "This section has information about common neighbourhood complaints, including actions you can take as a good neighbour to avoid disturbing surrounding residents.",
+	"Title": "Neighbourhood complaints | Brisbane City Council",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Brisbane City Council"
@@ -358,8 +364,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "procedure",
 	"Comments": "",
-	"Title": "Bin collections | Brisbane City Council",
 	"Description": "Your home has wheelie bins for separating general rubbish from green waste and recyclables. Check your bin collection day with the bin collection calendar. \nTo make sure your bin is collected:",
+	"Title": "Bin collections | Brisbane City Council",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Brisbane City Council"
@@ -371,8 +377,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "guidelines",
 	"Comments": "",
-	"Title": "Residential parking | Brisbane City Council",
 	"Description": "Brisbane residential areas have parking rules in place to ensure parked or stopped vehicles do not affect local access or traffic flow. Parking illegally can be frustrating for neighbours and the community. Residents are often prevented from accessing their home or local area. If vehicles are illegally parked, Council can help.\nThere are two courses of action you can take to deal with parking problems in your area.",
+	"Title": "Residential parking | Brisbane City Council",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Brisbane City Council"
@@ -384,8 +390,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "form",
 	"Comments": "Online Complaint tool for loud music, parties, street racing and burnouts. Referres to Police, DRC, Dpt. Transport and Main Roads, and Liquor and Gaming",
-	"Title": "Complain about noisy neighbours",
 	"Description": "How to resolve problems with noisy neighbours, loud dogs and noisy vehicles, pubs and clubs.",
+	"Title": "Complain about noisy neighbours",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -397,8 +403,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Explains noise restrictions, complaints, Noise exemptions",
-	"Title": "Noise",
 	"Description": "Information about noise exemptions and how to report noise pollution.",
+	"Title": "Noise",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -410,8 +416,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Assisted Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Complaints about noise, water, smells and fire. General information",
-	"Title": "Complaints - noise, water, smells and fire",
 	"Description": null,
+	"Title": "Complaints - noise, water, smells and fire",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -423,8 +429,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "form",
 	"Comments": "Online Noise/Party Complaint Online form for QPS",
-	"Title": "Noise/Party Complaint Online Form",
 	"Description": "",
+	"Title": "Noise/Party Complaint Online Form",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -436,8 +442,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Assisted Resolution;",
 	"documentType": "guidelines",
 	"Comments": "QPS Noisy Parties: What you need to know and Template for notifying your neighbours of parties.",
-	"Title": "Noise/Party Complaint Online Form",
 	"Description": "",
+	"Title": "Noise/Party Complaint Online Form",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -449,8 +455,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "legislation",
 	"Comments": "Local laws database",
-	"Title": "Local laws database",
 	"Description": "Queensland local governments have adopted a diverse range of local laws to assist them to govern their respective areas. The department maintains a database of local laws enacted by councils across Queensland. You must accept the",
+	"Title": "Local laws database",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -462,8 +468,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "General information about dog/pet ownership: Choosing and caring for your pet, restricted dogs, laws for pet owners in Qld",
-	"Title": "Pets and animals",
 	"Description": "See what you should consider when choosing a pet. You can also find information on your responsibilities, including pet registratin in Queensland.",
+	"Title": "Pets and animals",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -475,8 +481,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "procedure",
 	"Comments": "Step by step guide to resolving tree and fence disputes",
-	"Title": "Step-by-step guide to resolving tree and fence disputes",
 	"Description": "A step-by-step guide to resolving tree or fence disputes with your neighbour.",
+	"Title": "Step-by-step guide to resolving tree and fence disputes",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -488,8 +494,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "What to do if a neighbour's tree is affecting you",
-	"Title": "What to do if a neighbour's tree is affecting you",
 	"Description": "Your rights and responsibilities over nuisance trees on yours and your neighbour’s property.",
+	"Title": "What to do if a neighbour's tree is affecting you",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -501,8 +507,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Avoiding disputes about trees",
-	"Title": "Avoiding disputes about trees",
 	"Description": "Use these tips to avoid a dispute with your neighbours over trees.",
+	"Title": "Avoiding disputes about trees",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -514,8 +520,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "legislation",
 	"Comments": "The responsibilities of a tree keeper",
-	"Title": "Your responsibilities as a tree-keeper",
 	"Description": "Know your legal rights and responsibilities as tree-keeper.",
+	"Title": "Your responsibilities as a tree-keeper",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -527,8 +533,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Assisted Resolution;Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Some basic legal information, rights, etc, from the legal aid website",
-	"Title": "Trees and plants",
 	"Description": null,
+	"Title": "Trees and plants",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -540,8 +546,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Complaints about dogs - link to council websites",
-	"Title": "Barking dogs in the neighbourhood",
 	"Description": "Find out what you can do about a barking dog in your neighbourhood.",
+	"Title": "Barking dogs in the neighbourhood",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -553,8 +559,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Assisted Resolution;",
 	"documentType": "legislation",
 	"Comments": "Controlling, treating and owning animals from legal aid.",
-	"Title": "Animals - controlling, treating and owning",
 	"Description": null,
+	"Title": "Animals - controlling, treating and owning",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -566,6 +572,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Assisted Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "Resolve a neighbourhood dispute about trees - brochure",
+	"Description": "",
 	"Title": "resolving neighbourhood disputes trees",
 	"format": "application/pdf",
 	"jurisdiction": "Queensland"
@@ -577,8 +584,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Assisted Resolution;",
 	"documentType": "guidelines",
 	"Comments": "General page about animal noise, wandering pets, number of pets, dangerous pets, prohibited ptes, registration of pets.",
-	"Title": "Animals - Queensland Neighbourhood Disputes",
 	"Description": null,
+	"Title": "Animals - Queensland Neighbourhood Disputes",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -590,6 +597,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;Assisted Resolution;",
 	"documentType": "procedure",
 	"Comments": "Caxton Legal self help tree dispute kit",
+	"Description": "",
 	"Title": "Tree Disputes Self Help Kit   nov 2013",
 	"format": "application/pdf",
 	"jurisdiction": "Australia"
@@ -601,8 +609,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Information about what to do if a complaint is recevied against your animal.",
-	"Title": "What if a complaint is made against your animal? - Queensland Neighbourhood Disputes",
 	"Description": null,
+	"Title": "What if a complaint is made against your animal? - Queensland Neighbourhood Disputes",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -614,8 +622,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;Assisted Resolution;Formal Resolution;",
 	"documentType": "guidelines",
 	"Comments": "QCAT website - information on tree disputes",
-	"Title": "Tree disputes - QCAT Queensland Civil and Administrative Tribunal",
 	"Description": null,
+	"Title": "Tree disputes - QCAT Queensland Civil and Administrative Tribunal",
 	"Publisher": "Queensland Civil and Administrative Tribunal",
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -627,8 +635,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Fact sheet relating to Peace and Good Behaviour Complaints",
-	"Title": "Fact sheets - Queensland Courts",
 	"Description": null,
+	"Title": "Fact sheets - Queensland Courts",
 	"Publisher": "Queensland Courts",
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -1986,8 +1994,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;Formal Resolution;",
 	"documentType": "procedure",
 	"Comments": "HPW info on dividing fences which are pool fences - links to forms and fact sheets",
-	"Title": "Department of Housing and Public Works | Dividing fences",
 	"Description": null,
+	"Title": "Department of Housing and Public Works | Dividing fences",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -1999,6 +2007,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;Formal Resolution;",
 	"documentType": "legislation",
 	"Comments": "Relevant?",
+	"Description": "Queensland Development Code on swimming pool barriers.",
 	"Title": "QDCMP3.4SwimmingPoolBarriers",
 	"format": "application/pdf",
 	"jurisdiction": "Queensland"
@@ -2010,6 +2019,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;Formal Resolution;",
 	"documentType": "guidelines",
 	"Comments": "",
+	"Description": "Guideline for pool owners and property agents on pool owner responsibilities.",
 	"Title": "GuidelinesForPoolOwnersAndPropertyAgents",
 	"format": "application/pdf",
 	"jurisdiction": "Queensland"
@@ -2021,6 +2031,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "procedure",
 	"Comments": "Pool register search",
+	"Description": "Search a property to check if a pool is registered.",
 	"Title": "propertySearch",
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -2032,8 +2043,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "procedure",
 	"Comments": "Info from Legal Aid on managing noise/smells issues including pool pumps",
-	"Title": "Complaints - noise, water, smells and fire",
 	"Description": null,
+	"Title": "Complaints - noise, water, smells and fire",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -2045,8 +2056,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;Formal Resolution;Assisted Resolution;",
 	"documentType": "procedure",
 	"Comments": "Guide to complaining about noisy neighbours",
-	"Title": "Complain about noisy neighbours",
 	"Description": "How to resolve problems with noisy neighbours, loud dogs and noisy vehicles, pubs and clubs.",
+	"Title": "Complain about noisy neighbours",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -2058,8 +2069,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;Formal Resolution;Assisted Resolution;",
 	"documentType": "procedure",
 	"Comments": "Laws about pool fences and safety",
-	"Title": "Pool fencing and safety laws",
 	"Description": "Laws for building pools and spas, including portable spas, and possible exemptions.",
+	"Title": "Pool fencing and safety laws",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
