@@ -94,7 +94,7 @@
 		};
 
 		$.each( mappedData, function( i, result ) {
-			if ( result.have[ story.have ] && result[ 'with' ][ story[ 'with' ]] && result.about[ story.about ]) {
+			if ( result[ 'with' ][ story[ 'with' ]] && result.about[ story.about ]) {
 				if ( result.pathway[ 'self resolution' ]) {
 					results.self.push( result );
 				}
