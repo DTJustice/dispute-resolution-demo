@@ -68,7 +68,13 @@
 	<script src="neighbourhood-data-import-out.js"></script>
 	<script>
 	$( document) .ready(function() {
-	    $( '#qa' ).DataTable();
+		$( '#qa' ).DataTable({
+			aLengthMenu: [
+				[ 10, 20, 50, 100, -1 ],
+				[ 10, 20, 50, 100, "All" ]
+			],
+			iDisplayLength: 20
+		});
 	});
 	</script>
 
