@@ -731,7 +731,7 @@ getAlternativeDisputeResolutionData([{
 }, {
 	"URL": "http://www.legalaid.qld.gov.au/legalinformation/livinginthecommunity/Neighbourhood/Pages/Thingspeoplesay.aspx#What can I do if children are taunting me or my child, or making comments?",
 	"disputeType": "Problem;Concern;Dispute;Conflict;Question;",
-	"party": "a neighbour;someone in my neighbourhood;",
+	"party": "a neighbour;someone in my neighbourhood;a neighbour in my street;a neighbour next door;a neighbour in my building;",
 	"disputeSubject": "Children;",
 	"resolution": "Self Resolution;Assisted Resolution;",
 	"documentType": "guidelines",
@@ -744,7 +744,7 @@ getAlternativeDisputeResolutionData([{
 }, {
 	"URL": "https://www.qld.gov.au/youth/family-social-support/being-bullied/",
 	"disputeType": "Problem;Concern;Dispute;Conflict;Question;",
-	"party": "a neighbour;someone in my neighbourhood;",
+	"party": "a neighbour;someone in my neighbourhood;a neighbour in my street;a neighbour next door;a neighbour in my building;",
 	"disputeSubject": "Children;",
 	"resolution": "Self Resolution;Assisted Resolution;",
 	"documentType": "guidelines",
@@ -756,8 +756,8 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.legalaid.qld.gov.au/legalinformation/livinginthecommunity/neighbourhood/pages/boundariesandeasements.aspx",
-	"disputeType": "Concern;Problem;Complaint;Question;",
-	"party": "a neighbour next door;a neighbour;",
+	"disputeType": "Problem;Concern;Dispute;Conflict;Question;",
+	"party": "a neighbour;someone in my neighbourhood;a neighbour in my street;a neighbour next door;a neighbour in my building;",
 	"disputeSubject": "Easements;",
 	"resolution": "Self Resolution;Assisted Resolution;",
 	"documentType": "guidelines",
@@ -769,8 +769,8 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://pan.search.qld.gov.au/search/click.cgi?rank=4&collection=qld-gov&url=https%3A%2F%2Fwww.dnrm.qld.gov.au%2F%3Fa%3D109113%3Apolicy_registry%2Feasement.pdf&index_url=https%3A%2F%2Fwww.dnrm.qld.gov.au%2F%3Fa%3D109113%3Apolicy_registry%2Feasement.pdf&auth=AGl9LU383MAOeg4hm4%2Fe7Q&search_referer=&query=easements&profile=dnrm&identifier=1430176784.7555",
-	"disputeType": "Question;",
-	"party": "a neighbour;someone in my neighbourhood;",
+	"disputeType": "Problem;Concern;Dispute;Conflict;Question;",
+	"party": "a neighbour;someone in my neighbourhood;a neighbour in my street;a neighbour next door;",
 	"disputeSubject": "Easements;",
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
@@ -782,8 +782,8 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.qldneighbourhoods.com/easements.html",
-	"disputeType": "Question;",
-	"party": "a neighbour;someone in my neighbourhood;",
+	"disputeType": "Problem;Concern;Dispute;Conflict;Question;",
+	"party": "a neighbour;someone in my neighbourhood;a neighbour in my street;a neighbour next door;",
 	"disputeSubject": "Easements;",
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
@@ -795,8 +795,8 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.qld.gov.au/environment/land/state/easements/",
-	"disputeType": "Question;",
-	"party": "a neighbour;someone in my neighbourhood;",
+	"disputeType": "Problem;Concern;Dispute;Conflict;Question;",
+	"party": "a neighbour;someone in my neighbourhood;a neighbour in my street;a neighbour next door;",
 	"disputeSubject": "Easements;",
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
@@ -808,8 +808,8 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.justice.qld.gov.au/fair-and-safe-work/industrial-relations/codes-of-practice-and-guidelines/queensland-code-of-practice-for-the-building-and-construction-industry",
-	"disputeType": "Question;Concern;Conflict;Complaint;Issue;",
-	"party": "a neighbour;someone in my neighbourhood;",
+	"disputeType": "Problem;Concern;Dispute;Conflict;Question;",
+	"party": "a neighbour;someone in my neighbourhood;a neighbour in my street;a neighbour next door;a neighbour in my building;",
 	"disputeSubject": "Renovations;",
 	"resolution": "Assisted Resolution;Formal Resolution;",
 	"documentType": "guidelines",
@@ -821,8 +821,8 @@ getAlternativeDisputeResolutionData([{
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.qld.gov.au/environment/land/state/easements/applying/",
-	"disputeType": "Question;",
-	"party": "a neighbour;someone in my neighbourhood;",
+	"disputeType": "Problem;Concern;Dispute;Conflict;Question;",
+	"party": "a neighbour;someone in my neighbourhood;a neighbour in my street;a neighbour next door;",
 	"disputeSubject": "Easements;",
 	"resolution": "Self Resolution;",
 	"documentType": "procedure",
@@ -946,45 +946,6 @@ getAlternativeDisputeResolutionData([{
 	"format": "text/html",
 	"jurisdiction": "Queensland"
 }, {
-	"URL": "http://www.legalanswers.sl.nsw.gov.au/guides/neighbours/animals.html",
-	"disputeType": "Concern;Problem;Complaint;Question;Issue;",
-	"party": "a neighbour;someone in my neighbourhood;a neighbour next door;a neighbour in my street;a neighbour in my building;",
-	"disputeSubject": "Wildlife;",
-	"resolution": "Self Resolution;Assisted Resolution;Formal Resolution;",
-	"documentType": "guidelines",
-	"Comments": "NSW Government - Neighbours and the law > Animals",
-	"Title": "Animals | Neighbours and the law",
-	"Description": "Companion Animals Act 1998 - animals",
-	"Publisher": "State Library of New South Wales",
-	"format": "text/html",
-	"jurisdiction": "Australia"
-}, {
-	"URL": "http://www.disputes.vic.gov.au/know-your-rights-0",
-	"disputeType": "Concern;Problem;Complaint;Question;Issue;",
-	"party": "a neighbour;someone in my neighbourhood;a neighbour next door;a neighbour in my street;a neighbour in my building;",
-	"disputeSubject": "Wildlife;",
-	"resolution": "Self Resolution;Assisted Resolution;",
-	"documentType": "guidelines",
-	"Comments": "VIC Government - Resolving your own dispute > Know your rights > Animals",
-	"Title": "Know Your Rights | Dispute Settlement Centre of Victoria",
-	"Description": null,
-	"Publisher": null,
-	"format": "text/html",
-	"jurisdiction": "Australia"
-}, {
-	"URL": "http://www.crs.org.au/html/neighbourhood_disputes.htm#animal",
-	"disputeType": "Concern;Problem;Complaint;Question;Issue;",
-	"party": "a neighbour;someone in my neighbourhood;a neighbour next door;a neighbour in my street;a neighbour in my building;",
-	"disputeSubject": "Wildlife;",
-	"resolution": "Self Resolution;",
-	"documentType": "guidelines",
-	"Comments": "ACT Government - Conflict Resolution Service - Common Neighbourhood Issues > Animal nuisance > Danger to health of animal or a person",
-	"Title": "Neighbourhood disputes",
-	"Description": null,
-	"Publisher": null,
-	"format": "text/html",
-	"jurisdiction": "Australia"
-}, {
 	"URL": "http://www.goldcoast.qld.gov.au/community/animal-complaints-18356.html",
 	"disputeType": "Concern;Complaint;Question;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;a neighbour next door;a neighbour in my street;a neighbour in my building;",
@@ -1067,7 +1028,7 @@ getAlternativeDisputeResolutionData([{
 	"disputeType": "Question;",
 	"party": "someone in my neighbourhood;",
 	"disputeSubject": "Children;",
-	"resolution": "Formal Resolution;",
+	"resolution": "Self Resolution;Assisted Resolution;Formal Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Website designed for young people. Provides information on legal rights with links to detailed information listed under topic names e.g. cyberbullying.",
 	"Title": "Lawstuff Australia - Know Your Rights - - - Topics",
@@ -1268,7 +1229,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "procedure",
 	"Comments": "Banana Shire Council Animal Complaints - Making a Complaint",
-	"Title": "Noisy and nuisance animals - Scenic Rim Regional Council",
+	"Title": "Animals - Complaints & Pound - Banana Shire Council",
 	"Description": null,
 	"Publisher": null,
 	"format": "text/html",
@@ -1948,7 +1909,7 @@ getAlternativeDisputeResolutionData([{
 	"documentType": "procedure",
 	"Comments": "Adjudication body corporate disputes between neighbours, which could cover all of the dispute categories. * Most important link for formal resolution in bodies coprorate",
 	"Title": "Adjudication for body corporate disputes",
-	"Description": "If you can’t resolve your body corporate dispute through self resolution, you may have to apply for adjudication. See what steps you need to take.",
+	"Description": "If you can’t resolve your body corporate dispute through self resolution and conciliation, you may have to apply for adjudication. See what steps you need to take.",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"

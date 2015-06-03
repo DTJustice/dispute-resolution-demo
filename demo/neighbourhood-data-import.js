@@ -524,7 +524,7 @@
     {
         "URL": "http://www.legalaid.qld.gov.au/legalinformation/livinginthecommunity/Neighbourhood/Pages/Thingspeoplesay.aspx#What can I do if children are taunting me or my child, or making comments?",
         "disputeType": "Problem;Concern;Dispute;Conflict;Question;",
-        "party": "a neighbour;someone in my neighbourhood;",
+        "party": "a neighbour;someone in my neighbourhood;a neighbour in my street;a neighbour next door;a neighbour in my building;",
         "disputeSubject": "Children;",
         "resolution": "Self Resolution;Assisted Resolution;",
         "documentType": "",
@@ -533,7 +533,7 @@
     {
         "URL": "https://www.qld.gov.au/youth/family-social-support/being-bullied/",
         "disputeType": "Problem;Concern;Dispute;Conflict;Question;",
-        "party": "a neighbour;someone in my neighbourhood;",
+        "party": "a neighbour;someone in my neighbourhood;a neighbour in my street;a neighbour next door;a neighbour in my building;",
         "disputeSubject": "Children;",
         "resolution": "Self Resolution;Assisted Resolution;",
         "documentType": "",
@@ -541,8 +541,8 @@
     },
     {
         "URL": "http://www.legalaid.qld.gov.au/legalinformation/livinginthecommunity/neighbourhood/pages/boundariesandeasements.aspx",
-        "disputeType": "Concern;Problem;Complaint;Question;",
-        "party": "a neighbour next door;a neighbour;",
+        "disputeType": "Problem;Concern;Dispute;Conflict;Question;",
+        "party": "a neighbour;someone in my neighbourhood;a neighbour in my street;a neighbour next door;a neighbour in my building;",
         "disputeSubject": "Easements;",
         "resolution": "Self Resolution;Assisted Resolution;",
         "documentType": "",
@@ -550,8 +550,8 @@
     },
     {
         "URL": "http://pan.search.qld.gov.au/search/click.cgi?rank=4&collection=qld-gov&url=https%3A%2F%2Fwww.dnrm.qld.gov.au%2F%3Fa%3D109113%3Apolicy_registry%2Feasement.pdf&index_url=https%3A%2F%2Fwww.dnrm.qld.gov.au%2F%3Fa%3D109113%3Apolicy_registry%2Feasement.pdf&auth=AGl9LU383MAOeg4hm4%2Fe7Q&search_referer=&query=easements&profile=dnrm&identifier=1430176784.7555",
-        "disputeType": "Question;",
-        "party": "a neighbour;someone in my neighbourhood;",
+        "disputeType": "Problem;Concern;Dispute;Conflict;Question;",
+        "party": "a neighbour;someone in my neighbourhood;a neighbour in my street;a neighbour next door;",
         "disputeSubject": "Easements;",
         "resolution": "Self Resolution;",
         "documentType": "",
@@ -559,8 +559,8 @@
     },
     {
         "URL": "http://www.qldneighbourhoods.com/easements.html",
-        "disputeType": "Question;",
-        "party": "a neighbour;someone in my neighbourhood;",
+        "disputeType": "Problem;Concern;Dispute;Conflict;Question;",
+        "party": "a neighbour;someone in my neighbourhood;a neighbour in my street;a neighbour next door;",
         "disputeSubject": "Easements;",
         "resolution": "Self Resolution;",
         "documentType": "",
@@ -568,8 +568,8 @@
     },
     {
         "URL": "http://www.qld.gov.au/environment/land/state/easements/",
-        "disputeType": "Question;",
-        "party": "a neighbour;someone in my neighbourhood;",
+        "disputeType": "Problem;Concern;Dispute;Conflict;Question;",
+        "party": "a neighbour;someone in my neighbourhood;a neighbour in my street;a neighbour next door;",
         "disputeSubject": "Easements;",
         "resolution": "Self Resolution;",
         "documentType": "",
@@ -577,8 +577,8 @@
     },
     {
         "URL": "http://www.justice.qld.gov.au/fair-and-safe-work/industrial-relations/codes-of-practice-and-guidelines/queensland-code-of-practice-for-the-building-and-construction-industry",
-        "disputeType": "Question;Concern;Conflict;Complaint;Issue;",
-        "party": "a neighbour;someone in my neighbourhood;",
+        "disputeType": "Problem;Concern;Dispute;Conflict;Question;",
+        "party": "a neighbour;someone in my neighbourhood;a neighbour in my street;a neighbour next door;a neighbour in my building;",
         "disputeSubject": "Renovations;",
         "resolution": "Assisted Resolution;Formal Resolution;",
         "documentType": "",
@@ -586,8 +586,8 @@
     },
     {
         "URL": "http://www.qld.gov.au/environment/land/state/easements/applying/",
-        "disputeType": "Question;",
-        "party": "a neighbour;someone in my neighbourhood;",
+        "disputeType": "Problem;Concern;Dispute;Conflict;Question;",
+        "party": "a neighbour;someone in my neighbourhood;a neighbour in my street;a neighbour next door;",
         "disputeSubject": "Easements;",
         "resolution": "Self Resolution;",
         "documentType": "procedure",
@@ -653,7 +653,7 @@
         "party": "a neighbour;someone in my neighbourhood;a neighbour in my street;",
         "disputeSubject": "Drainage;",
         "resolution": "Self Resolution;",
-        "documentType": "",
+        "documentType": "guidelines",
         "Comments": "Council information about stormwater drainage"
     },
     {
@@ -673,33 +673,6 @@
         "resolution": "Self Resolution;Assisted Resolution;",
         "documentType": "",
         "Comments": "QAILS - Qld Neighbourhood Disputes > Animals"
-    },
-    {
-        "URL": "http://www.legalanswers.sl.nsw.gov.au/guides/neighbours/animals.html",
-        "disputeType": "Concern;Problem;Complaint;Question;Issue;",
-        "party": "a neighbour;someone in my neighbourhood;a neighbour next door;a neighbour in my street;a neighbour in my building;",
-        "disputeSubject": "Wildlife;",
-        "resolution": "Self Resolution;Assisted Resolution;Formal Resolution;",
-        "documentType": "",
-        "Comments": "NSW Government - Neighbours and the law > Animals"
-    },
-    {
-        "URL": "http://www.disputes.vic.gov.au/know-your-rights-0",
-        "disputeType": "Concern;Problem;Complaint;Question;Issue;",
-        "party": "a neighbour;someone in my neighbourhood;a neighbour next door;a neighbour in my street;a neighbour in my building;",
-        "disputeSubject": "Wildlife;",
-        "resolution": "Self Resolution;Assisted Resolution;",
-        "documentType": "",
-        "Comments": "VIC Government - Resolving your own dispute > Know your rights > Animals"
-    },
-    {
-        "URL": "http://www.crs.org.au/html/neighbourhood_disputes.htm#animal",
-        "disputeType": "Concern;Problem;Complaint;Question;Issue;",
-        "party": "a neighbour;someone in my neighbourhood;a neighbour next door;a neighbour in my street;a neighbour in my building;",
-        "disputeSubject": "Wildlife;",
-        "resolution": "Self Resolution;",
-        "documentType": "",
-        "Comments": "ACT Government - Conflict Resolution Service - Common Neighbourhood Issues > Animal nuisance > Danger to health of animal or a person"
     },
     {
         "URL": "http://www.goldcoast.qld.gov.au/community/animal-complaints-18356.html",
@@ -752,7 +725,7 @@
         "party": "someone in my neighbourhood;a neighbour in my building;a neighbour next door;a neighbour in my street;a neighbour;",
         "disputeSubject": "Lighting;Noise;",
         "resolution": "Self Resolution;Assisted Resolution;Formal Resolution;",
-        "documentType": "",
+        "documentType": "guidelines",
         "Comments": "Information on light and noise nuisance that clarifies where local council has responsibility to investigate, and when the issue is outside of their control. Includes links to fact sheets and related information."
     },
     {
@@ -760,7 +733,7 @@
         "disputeType": "Question;",
         "party": "someone in my neighbourhood;",
         "disputeSubject": "Children;",
-        "resolution": "Formal Resolution;",
+        "resolution": "Self Resolution;Assisted Resolution;Formal Resolution;",
         "documentType": "",
         "Comments": "Website designed for young people. Provides information on legal rights with links to detailed information listed under topic names e.g. cyberbullying."
     },
