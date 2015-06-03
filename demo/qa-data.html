@@ -40,7 +40,9 @@
 					<!-- <td>{{ permutation.disputeType }}</td> -->
 					<td>{{ permutation.party }}</td>
 					<td>{{ permutation.disputeSubject }}</td>
-					<td data-ng-class="{ warning: permutation.results.length < 5, danger: permutation.results.length === 0 }">{{ permutation.results.length }}</td>
+					<td data-ng-class="{ warning: permutation.results.length < 5, danger: permutation.results.length === 0 }">
+						<a data-ng-href="snapshot-20150601/index.html?have=dispute&amp;with={{ permutation.party | encodeURIComponent | lowercase }}&amp;about={{ permutation.disputeSubject | encodeURIComponent | lowercase }}">{{ permutation.results.length }}</a>
+					</td>
 					<td data-ng-class="{ danger: permutation.self === 0 }">{{ permutation.self }}</td>
 					<td data-ng-class="{ danger: permutation.assisted === 0 }">{{ permutation.assisted }}</td>
 					<td data-ng-class="{ danger: permutation.formal === 0 }">{{ permutation.formal }}</td>
@@ -50,7 +52,7 @@
 	</main>
 
 	<footer>
-		<p>Last updated Friday 22 May 2015</p>
+		<p>Last updated Wednesday 3 June 2015</p>
 		<p>© The State of Queensland 1995–2015</p>
 		<p><a href="https://www.qld.gov.au">Queensland Government</a></p>
 	</footer>

@@ -8,6 +8,12 @@ var getAlternativeDisputeResolutionData = function( data ) {
 angular.module( 'disputeResolutionQA', [] )
 
 
+// http://stackoverflow.com/questions/14512583/how-to-generate-url-encoded-anchor-links-with-angularjs
+.filter( 'encodeURIComponent', function() {
+	return window.encodeURIComponent;
+})
+
+
 // controller
 .controller( 'qaController', [ '$scope',
 	                 function(  $scope ) {
