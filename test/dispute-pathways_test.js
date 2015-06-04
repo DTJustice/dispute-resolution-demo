@@ -38,10 +38,9 @@ casper.test.begin( 'form state', 11, function suite( test ) {
 		test.assertEquals( options.slice( 1 ), options.slice( 1 ).sort(), 'with options are in alphabetical order' );
 		options = casper.getElementsInfo( 'select[name="about"] > option' ).map(function( info ) { return info.text; });
 		test.assertEquals( options.slice( 1 ), options.slice( 1 ).sort(), 'about options are in alphabetical order' );
+	})
 
-	});
-
-	casper.run(function() {
+	.run(function() {
 		test.done();
 	});
 });
@@ -70,9 +69,9 @@ casper.each( states, function( self, state ) {
 
 			test.assertExists( '.section.formal', 'Formal resolution section exists' );
 			test.assertSelectorHasText( '.section.formal h2', 'Formal resolution to your ' + state.have, 'formal resolution heading is correct' );
-		});
+		})
 
-		self.run(function() {
+		.run(function() {
 			test.done();
 		});
 	});
@@ -106,9 +105,9 @@ casper.test.begin( 'search results for fences', 12, function suite( test ) {
 		test.assertElementCount( '.success li', 1, 'one list item' );
 		test.assertSelectorHasText( '.success li', 'We found 2 resources that offer assistance with your dispute', 'status text for assisted resolution' );
 
-	});
+	})
 
-	casper.run(function() {
+	.run(function() {
 		test.done();
 	});
 });
@@ -151,9 +150,9 @@ casper.test.begin( 'partial state prefills form', 21, function suite( test ) {
 		test.assertField( 'with', '', 'with ___ (is blank)' );
 		test.assertExists( 'select[name="about"]', 'question exists: about' );
 		test.assertField( 'about', 'fences', 'about fences (is prefilled)' );
-	});
+	})
 
-	casper.run(function() {
+	.run(function() {
 		test.done();
 	});
 });
@@ -185,9 +184,9 @@ casper.test.begin( 'invalid values in URL ignored', 14, function suite( test ) {
 		test.assertField( 'with', 'a neighbour', 'with a neighbour (is prefilled)' );
 		test.assertExists( 'select[name="about"]', 'question exists: about' );
 		test.assertField( 'about', '', 'about ___ (is blank)' );
-	});
+	})
 
-	casper.run(function() {
+	.run(function() {
 		test.done();
 	});
 });
@@ -252,9 +251,9 @@ casper.test.begin( 'back button behaves as expected', 19, function suite( test )
 		test.assertField( 'with', 'a neighbour', 'with a neighbour (is prefilled)' );
 		test.assertExists( 'select[name="about"]', 'question exists: about' );
 		test.assertField( 'about', 'fences', 'about fences (is prefilled)' );
-	});
+	})
 
-	casper.run(function() {
+	.run(function() {
 		test.done();
 	});
 });
@@ -279,10 +278,10 @@ casper.test.begin( 'form validation integration', 6, function suite( test ) {
 		// 1 result for self resolution present
 		test.assertExists( '.warn', 'form validation warning is shown' );
 		test.assertSelectorHasText( '.warn h2', 'Please check your answers', 'form validation warning is displayed' );
-	});
+	})
 
 
-	casper.run(function() {
+	.run(function() {
 		test.done();
 	});
 });

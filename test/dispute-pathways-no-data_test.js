@@ -10,9 +10,9 @@ casper.test.begin( 'data error', 2, function suite( test ) {
 
 		test.assertTitle( 'Simulate no data', 'loaded test page' );
 		test.assertSelectorHasText( '#dispute-pathways-view', 'An internal error has prevented the requested resource from being displayed', 'error message is shown' );
-	});
+	})
 
-	casper.run(function() {
+	.run(function() {
 		test.done();
 	});
 });

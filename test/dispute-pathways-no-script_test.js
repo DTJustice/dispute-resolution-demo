@@ -11,9 +11,9 @@ casper.test.begin( 'test noscript experience (js disabled)', 2, function suite( 
 		// these methods are reliable when testing title and page content with js disabled
 		test.assertEquals( casper.page.title, 'Simulate noscript', 'loaded test page' );
 		test.assertMatch( casper.page.plainText, /We can still help with resolving your neighbourhood dispute/, 'noscript message is shown with js disabled' );
-	});
+	})
 
-	casper.run(function() {
+	.run(function() {
 		test.done();
 		// reset js
 		casper.options.pageSettings.javascriptEnabled = true;
