@@ -78,7 +78,7 @@ casper.each( states, function( self, state ) {
 	});
 });
 // check results for fences
-casper.test.begin( 'search results for fences', 8, function suite( test ) {
+casper.test.begin( 'search results for fences', 12, function suite( test ) {
 	casper.start( URL + queryFromObject({ have: 'dispute', 'with': 'a neighbour', about: 'fences' }))
 	.then(function() {
 		var options;
@@ -88,6 +88,8 @@ casper.test.begin( 'search results for fences', 8, function suite( test ) {
 		// success message shown
 		test.assertExists( '.status.success', 'success message is shown' );
 		test.assertSelectorHasText( '.status.success h2', 'We have found 1 result', 'heading displays: 1 result' );
+		test.assertElementCount( '.success li', 1, 'one list item' );
+		test.assertSelectorHasText( '.success li', 'We found 1 resource to help you resolve this dispute yourself', 'status text for self resolution' );
 
 		// 1 result for self resolution present
 		test.assertElementCount( '.self li', 1, '1 result for self resolution' );
@@ -101,6 +103,8 @@ casper.test.begin( 'search results for fences', 8, function suite( test ) {
 		// success message shown
 		test.assertExists( '.status.success', 'success message is shown' );
 		test.assertSelectorHasText( '.status.success h2', 'We have found 2 results', 'heading displays: 2 results' );
+		test.assertElementCount( '.success li', 1, 'one list item' );
+		test.assertSelectorHasText( '.success li', 'We found 2 resources that offer assistance with your dispute', 'status text for assisted resolution' );
 
 	});
 

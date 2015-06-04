@@ -4,6 +4,10 @@
 
 <div class="status success">
 	<h2>We have found {{ results.totalMatches }} {{ pluralize results.totalMatches 'result' 'results' }}</h2>
+	<ul>
+		{{#if results.self.length}}<li>We found {{ results.self.length }} {{ pluralize results.self.length 'resource' 'resources' }} to help you resolve this {{ story.have }} yourself</li>{{/if}}
+		{{#if results.assisted.length}}<li>We found {{ results.assisted.length }} {{ pluralize results.assisted.length 'resource' 'resources' }} that offer assistance with your {{ story.have }}</li>{{/if}}
+	</ul>
 </div>
 
 <div class="section self">
