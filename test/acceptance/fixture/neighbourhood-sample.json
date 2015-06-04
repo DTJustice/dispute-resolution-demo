@@ -20,6 +20,16 @@
 				"Title": "B",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, dicta, eos.",
 				"documentType": "guidelines"
+			},
+			{
+				"URL": "http://www.example.com/c",
+				"have": "dispute",
+				"with": "a neighbour",
+				"about": "dogs and other pets",
+				"pathway": "Assisted resolution;",
+				"Title": "C",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, dicta, eos.",
+				"documentType": "guidelines"
 			}
 		]
 	}

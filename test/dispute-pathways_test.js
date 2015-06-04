@@ -78,17 +78,29 @@ casper.each( states, function( self, state ) {
 	});
 });
 // check results for fences
-casper.test.begin( 'search results for fences', 4, function suite( test ) {
+casper.test.begin( 'search results for fences', 8, function suite( test ) {
 	casper.start( URL + queryFromObject({ have: 'dispute', 'with': 'a neighbour', about: 'fences' }))
 	.then(function() {
 		var options;
 
 		test.assertTitle( TITLE, 'loaded neighbourhood dispute page' );
 
+		// success message shown
+		test.assertExists( '.status.success', 'success message is shown' );
+		test.assertSelectorHasText( '.status.success h2', 'We have found 1 result', 'heading displays: 1 result' );
+
 		// 1 result for self resolution present
 		test.assertElementCount( '.self li', 1, '1 result for self resolution' );
 		test.assertSelectorHasText( '.self li a', 'A', 'first result has correct title' );
 		test.assertEquals( casper.getElementAttribute( '.self li a', 'href' ), 'http://www.example.com/a', 'first result has correct URL' );
+
+	})
+
+	.thenOpen( URL + queryFromObject({ have: 'dispute', 'with': 'a neighbour', about: 'dogs and other pets' }))
+	.then(function() {
+		// success message shown
+		test.assertExists( '.status.success', 'success message is shown' );
+		test.assertSelectorHasText( '.status.success h2', 'We have found 2 results', 'heading displays: 2 results' );
 
 	});
 

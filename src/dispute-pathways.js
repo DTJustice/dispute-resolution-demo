@@ -21,6 +21,17 @@
 		return $el.html();
 	});
 
+	// pluralise
+	// https://github.com/wycats/handlebars.js/issues/249
+	Handlebars.registerHelper( 'pluralize', function( number, single, plural ) {
+		if ( number === 1 ) {
+			return single;
+		} else {
+			return plural;
+		}
+	});
+
+
 	// map values: lower case for display
 	function mapToOption( s ) {
 		return { label: s, value: s };
@@ -90,11 +101,13 @@
 		results = {
 			self: [],
 			assisted: [],
-			formal: []
+			formal: [],
+			totalMatches: 0
 		};
 
 		$.each( mappedData, function( i, result ) {
 			if ( result[ 'with' ][ story[ 'with' ]] && result.about[ story.about ]) {
+				results.totalMatches++;
 				if ( result.pathway[ 'self resolution' ]) {
 					results.self.push( result );
 				}

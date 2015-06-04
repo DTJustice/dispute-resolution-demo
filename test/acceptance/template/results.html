@@ -2,6 +2,10 @@
 	<p>I have a <strong>{{ story.have }}</strong> with <strong>{{ story.with }}</strong> about <strong>{{ story.about }}</strong>.</p>
 </blockquote>
 
+<div class="status success">
+	<h2>We have found {{ results.totalMatches }} {{ pluralize results.totalMatches 'result' 'results' }}</h2>
+</div>
+
 <div class="section self">
 	<h2>Try resolving the {{ story.have }} yourself</h2>
 	<ul>
