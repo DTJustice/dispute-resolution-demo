@@ -209,7 +209,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 </form>
 </script>
-<script id="results-template" type="text/x-handlebars-template"><blockquote class="story">
+<script id="results-template" type="text/x-handlebars-template">
 <blockquote class="story">
 	<p>I have a <strong>{{ story.have }}</strong> with <strong>{{ story.with }}</strong> about <strong>{{ story.about }}</strong>.</p>
 </blockquote>
@@ -226,21 +226,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="section self">
 	<h2>Try resolving the {{ story.have }} yourself</h2>
 	<ul>
-		{{#each results.self}}<li><a href="{{ URL }}">{{ Title }}</a></li>{{/each}}
+		{{#each results.self}}<li><a href="{{ URL }}">{{ title }}</a></li>{{/each}}
 	</ul>
 </div>
 
 <div class="section assisted">
 	<h2>Assistance resolving your {{ story.have }}</h2>
 	<ul>
-		{{#each results.assisted}}<li><a href="{{ URL }}">{{ Title }}</a></li>{{/each}}
+		{{#each results.assisted}}<li><a href="{{ URL }}">{{ title }}</a></li>{{/each}}
 	</ul>
 </div>
 
 <div class="section formal">
 	<h2>Formal resolution to your {{ story.have }}</h2>
 	<ul>
-		{{#each results.formal}}<li><a href="{{ URL }}">{{ Title }}</a></li>{{/each}}
+		{{#each results.formal}}<li><a href="{{ URL }}">{{ title }}</a></li>{{/each}}
 	</ul>
 </div>
 
