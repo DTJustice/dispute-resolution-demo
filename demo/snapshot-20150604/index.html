@@ -177,6 +177,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </noscript>
 
 <script id="form-template" type="text/x-handlebars-template"><form class="madlibs" method="get">
+<form class="madlibs" method="get">
 	<p>
 		<label for="dispute-pathway-have"><span class="label">I have a</span></label>
 		<select id="dispute-pathway-have" name="have" required="required">
@@ -209,44 +210,40 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </form>
 </script>
 <script id="results-template" type="text/x-handlebars-template"><blockquote class="story">
+<blockquote class="story">
 	<p>I have a <strong>{{ story.have }}</strong> with <strong>{{ story.with }}</strong> about <strong>{{ story.about }}</strong>.</p>
 </blockquote>
+
+<div class="status success">
+	<h2>We have found {{ results.totalMatches }} {{ pluralize results.totalMatches 'result' 'results' }}</h2>
+	<ul>
+		{{#if results.self.length}}<li>We found {{ results.self.length }} {{ pluralize results.self.length 'resource' 'resources' }} to help you resolve this {{ story.have }} yourself</li>{{/if}}
+		{{#if results.assisted.length}}<li>We found {{ results.assisted.length }} {{ pluralize results.assisted.length 'resource' 'resources' }} that offer assistance with this {{ story.have }}</li>{{/if}}
+		{{#if results.formal.length}}<li>We found {{ results.formal.length }} {{ pluralize results.formal.length 'resource' 'resources' }} that offer formal resolution</li>{{/if}}
+	</ul>
+</div>
 
 <div class="section self">
 	<h2>Try resolving the {{ story.have }} yourself</h2>
 	<ul>
-		{{#each results.self}}
-		<li>
-			<a href="{{ url }}">{{ title }}</a>
-			<p>{{ description }}</p>
-		</li>
-		{{/each}}
+		{{#each results.self}}<li><a href="{{ URL }}">{{ Title }}</a></li>{{/each}}
 	</ul>
 </div>
 
 <div class="section assisted">
 	<h2>Assistance resolving your {{ story.have }}</h2>
 	<ul>
-		{{#each results.assisted}}
-		<li>
-			<a href="{{ url }}">{{ title }}</a>
-			<p>{{ description }}</p>
-		</li>
-		{{/each}}
+		{{#each results.assisted}}<li><a href="{{ URL }}">{{ Title }}</a></li>{{/each}}
 	</ul>
 </div>
 
 <div class="section formal">
 	<h2>Formal resolution to your {{ story.have }}</h2>
 	<ul>
-		{{#each results.formal}}
-		<li>
-			<a href="{{ url }}">{{ title }}</a>
-			<p>{{ description }}</p>
-		</li>
-		{{/each}}
+		{{#each results.formal}}<li><a href="{{ URL }}">{{ Title }}</a></li>{{/each}}
 	</ul>
 </div>
+
 </script>
 <script id="error-template" type="text/x-handlebars-template"><div class="status warn">
 	<h2>An internal error has prevented the requested resource from being displayed</h2>
