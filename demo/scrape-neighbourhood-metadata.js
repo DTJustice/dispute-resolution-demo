@@ -85,6 +85,23 @@ filename = filename.replace( /.js$/, '-out.js' );
 require( 'fs' ).write( filename, 'getAlternativeDisputeResolutionData([', 'w' );
 
 
+function handleSpecialCharacters( s ) {
+	return s ? s
+		// known special characters
+		.replace( /’/g, '\'' )
+		.replace( /»/g, '-' )
+		// unknown special characters become spaces
+		.replace( /[^\x00-\x7F]+/g, ' ' )
+		// normalise whitespace
+		.replace( /\n/g, ' ' )
+		.replace( /\s\s+/g, ' ' )
+		// trim
+		.replace( /^\s+/, '' )
+		.replace( /\s+$/, '' )
+	: s;
+}
+
+
 casper.start();
 records.forEach(function( record, i ) {
 	// open the page
@@ -98,6 +115,11 @@ records.forEach(function( record, i ) {
 			record.Description = this.getElementAttribute( 'meta[name="DCTERMS.description"]', 'content' ) || this.getElementAttribute( 'meta[name="DC.description"]', 'content' ) || this.getElementAttribute( 'meta[name="description"]', 'content' );
 			record.Publisher = parsePublisher( this.getElementAttribute( 'meta[name="DCTERMS.Publisher"]', 'content' ) || this.getElementAttribute( 'meta[name="DC.Publisher"]', 'content' ));
 			record.documentType = record.documentType || this.getElementAttribute( 'meta[name="AGLSTERMS.documentType"]', 'content' ) || inferDocumentType( record, response );
+
+			// normalise characters and whitespace
+			record.Description = handleSpecialCharacters( record.Description );
+			record.Title = handleSpecialCharacters( record.Title );
+
 		} else {
 			// couldn't get a response
 			casper.echo( '-> NO RESPONSE! ' + record.URL, 'WARNING' );

@@ -49,7 +49,7 @@ function clean() {
 	records = records.map(function( record ) {
 		// no URL?
 		if ( ! /\S/.test( record.URL )) {
-			console.log( 'ignoring record with no URL' );
+			console.log( 'ignoring record with no URL', record );
 			return null;
 		}
 
@@ -68,8 +68,6 @@ function clean() {
 		} else {
 			record.resolution = record.resolution.replace( 'Assited', 'Assisted' );
 		}
-
-
 
 		// missing party
 		if ( /^;*$/.test( record.party )) {
@@ -116,6 +114,7 @@ for ( i = 1, len = tr.length; i < len; i++ ) {
 		} else if ( ! /\S/.test( rowData[ 0 ] ) && /\S/.test( rowData[ 1 ] )) {
 			// missing URL
 			rowData[ 0 ] = '';
+			console.log( '-> blank URL?', tr[ i ].textContent.replace( /\s\s+/g, ' ' ), i );
 
 		} else {
 			if ( /\S/.test( tr[ i ].textContent )) {

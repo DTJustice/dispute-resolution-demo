@@ -30,7 +30,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Your responsibility as a fence owner",
-	"Description": "Your rights and responsibilities over a dividing fence between yours and your neighbour’s property.",
+	"Description": "Your rights and responsibilities over a dividing fence between yours and your neighbour's property.",
 	"Title": "Your responsibility as a fence owner",
 	"Publisher": null,
 	"format": "text/html",
@@ -56,8 +56,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;Assisted Resolution;Formal Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Step by step guide to resolving tree and fence disputes",
-	"Title": "Step-by-step guide to resolving tree and fence disputes",
 	"Description": "A step-by-step guide to resolving tree or fence disputes with your neighbour.",
+	"Title": "Step-by-step guide to resolving tree and fence disputes",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -273,7 +273,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Retaining walls subheading in page - would require anchor",
-	"Description": "Your rights and responsibilities over a dividing fence between yours and your neighbour’s property.",
+	"Description": "Your rights and responsibilities over a dividing fence between yours and your neighbour's property.",
 	"Title": "Your responsibility as a fence owner",
 	"Publisher": null,
 	"format": "text/html",
@@ -325,7 +325,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Gives neighbour an avenue to complain/report parking issues",
-	"Description": "Parking rules and regulations are used throughout Brisbane to maintain the safety of all road users and pedestrians and also to ensure that street parking is available for all to use.\nAn illegally or dangerously parked vehicle, is any vehicle parked outside of Brisbane City Council's parking rules and regulations or any vehicle that maybe creating a public safety problem.",
+	"Description": "Parking rules and regulations are used throughout Brisbane to maintain the safety of all road users and pedestrians and also to ensure that street parking is available for all to use. An illegally or dangerously parked vehicle, is any vehicle parked outside of Brisbane City Council's parking rules and regulations or any vehicle that maybe creating a public safety problem.",
 	"Title": "Illegal and dangerous parking | Brisbane City Council",
 	"Publisher": null,
 	"format": "text/html",
@@ -351,7 +351,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;Assisted Resolution;Formal Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Could cover any dispute with neighbours. Includes a link to DRB.",
-	"Description": "This section has information about common neighbourhood complaints, including actions you can take as a good neighbour to avoid disturbing surrounding residents.",
+	"Description": "This section has information about common neighbourhood complaints, including actions you can take as a good neighbour to avoid disturbing surrounding residents.",
 	"Title": "Neighbourhood complaints | Brisbane City Council",
 	"Publisher": null,
 	"format": "text/html",
@@ -364,7 +364,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "procedure",
 	"Comments": "",
-	"Description": "Your home has wheelie bins for separating general rubbish from green waste and recyclables. Check your bin collection day with the bin collection calendar. \nTo make sure your bin is collected:",
+	"Description": "Your home has wheelie bins for separating general rubbish from green waste and recyclables. Check your bin collection day with the bin collection calendar. To make sure your bin is collected:",
 	"Title": "Bin collections | Brisbane City Council",
 	"Publisher": null,
 	"format": "text/html",
@@ -377,7 +377,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "guidelines",
 	"Comments": "",
-	"Description": "Brisbane residential areas have parking rules in place to ensure parked or stopped vehicles do not affect local access or traffic flow. Parking illegally can be frustrating for neighbours and the community. Residents are often prevented from accessing their home or local area. If vehicles are illegally parked, Council can help.\nThere are two courses of action you can take to deal with parking problems in your area.",
+	"Description": "Brisbane residential areas have parking rules in place to ensure parked or stopped vehicles do not affect local access or traffic flow. Parking illegally can be frustrating for neighbours and the community. Residents are often prevented from accessing their home or local area. If vehicles are illegally parked, Council can help. There are two courses of action you can take to deal with parking problems in your area.",
 	"Title": "Residential parking | Brisbane City Council",
 	"Publisher": null,
 	"format": "text/html",
@@ -494,7 +494,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "What to do if a neighbour's tree is affecting you",
-	"Description": "Your rights and responsibilities over nuisance trees on yours and your neighbour’s property.",
+	"Description": "Your rights and responsibilities over nuisance trees on yours and your neighbour's property.",
 	"Title": "What to do if a neighbour's tree is affecting you",
 	"Publisher": null,
 	"format": "text/html",
@@ -648,8 +648,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Legal Self Help Kit from Caxton Legal Service",
-	"Title": "Legal self help kits from the Caxton Legal Centre Inc",
 	"Description": "Caxton Legal Centre publishes a number of self-help kits to practically assist people if they face certain legal issues",
+	"Title": "Legal self help kits from the Caxton Legal Centre Inc",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Australia"
@@ -661,8 +661,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Frequently asked questions in relation to tree disputes before QCAT",
-	"Title": "Frequently asked questions - tree disputes - QCAT Queensland Civil and Administrative Tribunal",
 	"Description": null,
+	"Title": "Frequently asked questions - tree disputes - QCAT Queensland Civil and Administrative Tribunal",
 	"Publisher": "Queensland Department of Justice and Attorney-General",
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -674,8 +674,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Information regarding minor debt disputes before QCAT about overhanging branches",
-	"Title": "Overhanging branches and debt disputes - QCAT Queensland Civil and Administrative Tribunal",
 	"Description": null,
+	"Title": "Overhanging branches and debt disputes - QCAT Queensland Civil and Administrative Tribunal",
 	"Publisher": "Queensland Department of Justice and Attorney-General",
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -687,8 +687,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "guidelines",
 	"Comments": "How to lodge a tree dispute application with QCAT",
-	"Title": "Tree dispute application - QCAT Queensland Civil and Administrative Tribunal",
 	"Description": null,
+	"Title": "Tree dispute application - QCAT Queensland Civil and Administrative Tribunal",
 	"Publisher": "Queensland Department of Justice and Attorney-General",
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -700,6 +700,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Check list to use before lodging an application with QCAT",
+	"Description": "",
 	"Title": "Application checklist Tree dispute resolution",
 	"format": "application/pdf",
 	"jurisdiction": "Queensland"
@@ -711,6 +712,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "form",
 	"Comments": "Formal application for a tree dispute - QCAT",
+	"Description": "",
 	"Title": "Form 51 application for a tree dispute v2",
 	"format": "application/pdf",
 	"jurisdiction": "Queensland"
@@ -722,6 +724,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "form",
 	"Comments": "Formal response form to an application for a tree dispute. To be used by the tree keeper.",
+	"Description": "",
 	"Title": "Form 52 Response to application for a tree dispute v2",
 	"format": "application/pdf",
 	"jurisdiction": "Queensland"
@@ -733,6 +736,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Child Safety information for protecting children: information on preventing, reporting, and responding to child abuse; ongoing intervention; contacts and link to reports/publications.",
+	"Description": "",
 	"Title": "protecting children",
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -744,8 +748,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;Assisted Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Brief information regarding rights/options in relation to unwanted children's behaviour (verbal abuse/threats).",
-	"Title": "Things people say",
 	"Description": null,
+	"Title": "Things people say",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -757,8 +761,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;Assisted Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Information on what to do if you are being bullied. Includes links to further information on bullying, cyberbullying and related statistics.",
-	"Title": "If you are being bullied",
 	"Description": "Information about what to do if you are being bullied, where to get support, and some helpful resources.",
+	"Title": "If you are being bullied",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -770,8 +774,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;Assisted Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Information from legal aid about boundaries and easements",
-	"Title": "Boundaries and easements",
 	"Description": null,
+	"Title": "Boundaries and easements",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -783,8 +787,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Qld Dept of Agriculture and Mines: PDF document on Easements",
-	"Title": "Boundaries and easements",
 	"Description": null,
+	"Title": "Boundaries and easements",
 	"Publisher": null,
 	"format": "application/pdf",
 	"jurisdiction": "Queensland"
@@ -796,8 +800,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Information about easements",
-	"Title": "Easements - Queensland Neighbourhood Disputes",
 	"Description": null,
+	"Title": "Easements - Queensland Neighbourhood Disputes",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -809,8 +813,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "general information about easements",
-	"Title": "Easements",
 	"Description": "How to apply for an easement over state land or the continuation of a public utility easement.",
+	"Title": "Easements",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -822,8 +826,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Assisted Resolution;Formal Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Information on the code of practice for the building and construction industry",
-	"Title": "Queensland Code of Practice for the Building and Construction Industry - Department of Justice and Attorney-General",
 	"Description": null,
+	"Title": "Queensland Code of Practice for the Building and Construction Industry - Department of Justice and Attorney-General",
 	"Publisher": "Queensland Department of Justice and Attorney-General",
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -835,8 +839,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "procedure",
 	"Comments": "how to apply for an easement",
+	"Description": "Easements over land may be granted for a specific purpose, including access, drainage, sewerage, or supply of water or gas.",
 	"Title": "Easements",
-	"Description": "Easements over land may be granted for a specific purpose, including access, drainage, sewerage, or supply of water or gas.\n",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -848,6 +852,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "South Australia Government document on Easements - right of way - PDF doc",
+	"Description": "",
 	"Title": "03 Easements",
 	"format": "application/pdf",
 	"jurisdiction": "Australia"
@@ -859,8 +864,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;Assisted Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Outlines rules and regulations governing renovations in Australia. Contains links to other bodies with a governing role.",
-	"Title": "Renovation information free from renovate.com.au",
 	"Description": "Comprehensive renovation information and services for the Australian home renovator",
+	"Title": "Renovation information free from renovate.com.au",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Australia"
@@ -872,8 +877,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;Assisted Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Provides information on neighbour's rights relating to use of own land and links to Local government and legislative information.",
-	"Title": "Development Permits and Approvals - Queensland Neighbourhood Disputes",
 	"Description": null,
+	"Title": "Development Permits and Approvals - Queensland Neighbourhood Disputes",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -885,8 +890,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Provides advice on how to avoid building disputes; includes some information on approaching neighbours",
-	"Title": "Avoiding building disputes",
 	"Description": "To avoid building disputes it is important to work out all details before the building work begins.",
+	"Title": "Avoiding building disputes",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -898,8 +903,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "procedure",
 	"Comments": "Provides information regarding young people and the justice system. Includes links to related sites and services",
-	"Title": "Young people and the justice system",
 	"Description": null,
+	"Title": "Young people and the justice system",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -911,8 +916,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "procedure",
 	"Comments": "Information on the laws / police powers relating to youth justice.",
-	"Title": "Youth justice - Department of Justice and Attorney-General",
 	"Description": null,
+	"Title": "Youth justice - Department of Justice and Attorney-General",
 	"Publisher": "Queensland Department of Justice and Attorney-General",
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -924,6 +929,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Council information about stormwater drainage",
+	"Description": "",
 	"Title": "stormwater factsheet",
 	"format": "application/pdf",
 	"jurisdiction": "Logan City Council"
@@ -935,8 +941,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;Assisted Resolution;",
 	"documentType": "procedure",
 	"Comments": "how to make a complaint to the council about drainage and stormwater pollution",
+	"Description": "As a result of Brisbane's climate and topography, pollution, flooding and nuisance issues from stormwater runoff can be a common problem for many Brisbane residents resulting in environmental harm, damage to property and distress to residents.",
 	"Title": "Stormwater pollution, runoff and drainage complaints | Brisbane City Council",
-	"Description": "As a result of Brisbane’s climate and topography, pollution, flooding and nuisance issues from stormwater runoff can be a common problem for many Brisbane residents resulting in environmental harm, damage to property and distress to residents.",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Brisbane City Council"
@@ -948,8 +954,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;Assisted Resolution;",
 	"documentType": "guidelines",
 	"Comments": "QAILS - Qld Neighbourhood Disputes > Animals",
-	"Title": "Animals - Queensland Neighbourhood Disputes",
 	"Description": null,
+	"Title": "Animals - Queensland Neighbourhood Disputes",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -961,8 +967,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;Assisted Resolution;",
 	"documentType": "guidelines",
 	"Comments": "City of Gold Coast - Animal Complaints (concerns about the welfare of an animal, excess animals)",
-	"Title": "City of Gold Coast | Animal complaints",
 	"Description": "Information on how to report an animal complaint.",
+	"Title": "City of Gold Coast | Animal complaints",
 	"Publisher": "corporateName=City of Gold Coast",
 	"format": "text/html",
 	"jurisdiction": "Gold Coast City Council"
@@ -974,8 +980,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;Assisted Resolution;",
 	"documentType": "guidelines",
 	"Comments": "LAQ - no legal advice offered - Animals - Controlling, treating, owning > complain about mistreatment",
-	"Title": "Animals - controlling, treating and owning",
 	"Description": null,
+	"Title": "Animals - controlling, treating and owning",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -987,8 +993,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;Assisted Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Office of the Australian Information Commissioner - What can I do about my neighbours security camera? > Refers to state community mediation centres [This is the only relevant resource available - only in English]",
-	"Title": "What can I do about my neighbour’s security camera?| Office of the Australian Information Commissioner - OAIC",
 	"Description": null,
+	"Title": "What can I do about my neighbour's security camera?| Office of the Australian Information Commissioner - OAIC",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Australia"
@@ -1000,8 +1006,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "procedure",
 	"Comments": "information on Dept of Environment website outlining legal responsibilities in relation to noise, light and odour issues",
-	"Title": "Noise, light and odour issues (Department of Environment and Heritage Protection)",
 	"Description": "Any environmental nuisance issues arising out of Coal Seam Gas operations, such as noise, light and odour, are covered by environmental authority conditions.",
+	"Title": "Noise, light and odour issues (Department of Environment and Heritage Protection)",
 	"Publisher": "jurisdiction=Queensland; sector=government; corporateName=Department of Environment and Heritage Protection",
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -1013,8 +1019,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;Assisted Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Fact sheet on nuisance lighting, encouraging self-resolution as first step and noting that local councils are responsible for investigating lighting disputes.",
-	"Title": "",
 	"Description": null,
+	"Title": "",
 	"Publisher": null,
 	"format": "application/pdf",
 	"jurisdiction": "Townsville City Council"
@@ -1026,8 +1032,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;Assisted Resolution;Formal Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Information on light and noise nuisance that clarifies where local council has responsibility to investigate, and when the issue is outside of their control. Includes links to fact sheets and related information.",
-	"Title": "Noise and Light - Sunshine Coast Council",
 	"Description": "",
+	"Title": "Noise and Light - Sunshine Coast Council",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Sunshine Coast Regional Council"
@@ -1039,8 +1045,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;Assisted Resolution;Formal Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Website designed for young people. Provides information on legal rights with links to detailed information listed under topic names e.g. cyberbullying.",
-	"Title": "Lawstuff Australia - Know Your Rights - - - Topics",
 	"Description": null,
+	"Title": "Lawstuff Australia - Know Your Rights - - - Topics",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -1052,6 +1058,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "Brisbane City Council Information for neighbours about stormwater lawful points of discharge.",
+	"Description": "",
 	"Title": "lawful point discharge neighbours",
 	"format": "application/pdf",
 	"jurisdiction": "Brisbane City Council"
@@ -1063,8 +1070,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Brisbane City Council Barking Dog Information",
-	"Title": "Barking dogs | Brisbane City Council",
 	"Description": "Excessive dog barking can be annoying for neighbours and the community. In Brisbane, a dog is considered a nuisance:",
+	"Title": "Barking dogs | Brisbane City Council",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Brisbane City Council"
@@ -1076,8 +1083,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "Gold Coast City Council Barking Dog Page - Dog owner",
-	"Title": "City of Gold Coast | Barking dogs",
 	"Description": "Nearly all dogs bark - it is a natural response, but excessive barking can be annoying for neighbours.",
+	"Title": "City of Gold Coast | Barking dogs",
 	"Publisher": "corporateName=City of Gold Coast",
 	"format": "text/html",
 	"jurisdiction": "Gold Coast City Council"
@@ -1089,8 +1096,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "procedure",
 	"Comments": "Gold Coast City Council Barking Dog Page - Make a complaint",
-	"Title": "City of Gold Coast | Report a problem - Animals",
 	"Description": "Find out how to report a found animal or a problem with barking or dangerous dogs, excess animals on a property, plus how to find your lost pet, or have a dead animal removed from City land.",
+	"Title": "City of Gold Coast | Report a problem - Animals",
 	"Publisher": "corporateName=City of Gold Coast",
 	"format": "text/html",
 	"jurisdiction": "Gold Coast City Council"
@@ -1102,8 +1109,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;Assisted Resolution;",
 	"documentType": "procedure",
 	"Comments": "Ipswich City Council Nuisance Dogs - Mediation and/or complaint",
-	"Title": "Dogs : Ipswich City Council",
 	"Description": "",
+	"Title": "Dogs : Ipswich City Council",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Ipswich City Council"
@@ -1115,8 +1122,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "Lockyer Valley Council Barking Dogs - information",
-	"Title": "Barking dogs - Lockyer Valley Regional Council",
 	"Description": "Lockyer Valley Regional Council",
+	"Title": "Barking dogs - Lockyer Valley Regional Council",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Lockyer Valley Regional Council"
@@ -1128,8 +1135,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Assisted Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Logan City Council Dogs - Proactive - Animal Seminars",
-	"Title": "Animal Seminars - Logan City Council",
 	"Description": null,
+	"Title": "Animal Seminars - Logan City Council",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Logan City Council"
@@ -1141,8 +1148,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "Logan City Council Barking Dogs - Information",
-	"Title": "Barking Dogs - Logan City Council",
 	"Description": null,
+	"Title": "Barking Dogs - Logan City Council",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Logan City Council"
@@ -1154,8 +1161,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "Moreton Bay Regional Council Barking Dogs - Information",
-	"Title": "Barking dogs - Moreton Bay Regional Council",
 	"Description": null,
+	"Title": "Barking dogs - Moreton Bay Regional Council",
 	"Publisher": "Moreton Bay Regional Council",
 	"format": "text/html",
 	"jurisdiction": "Moreton Bay Regional Council"
@@ -1167,8 +1174,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;Formal Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "Redland City Council Barking Dogs - Information",
-	"Title": "Barking dogs",
 	"Description": null,
+	"Title": "Barking dogs",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Redland City Council"
@@ -1180,8 +1187,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;Assisted Resolution;",
 	"documentType": "procedure",
 	"Comments": "Scenic Rim Council Noisy and Nuisance Animals",
-	"Title": "Noisy and nuisance animals - Scenic Rim Regional Council",
 	"Description": null,
+	"Title": "Noisy and nuisance animals - Scenic Rim Regional Council",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Scenic Rim Regional Council"
@@ -1193,6 +1200,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "Somerset Regional Council Barking Dogs - A Dog Owner's View Fact Sheet",
+	"Description": "",
 	"Title": "Fact Sheet   Barking Dogs   A Dog Owners View",
 	"format": "application/pdf",
 	"jurisdiction": "Somerset Regional Council"
@@ -1204,6 +1212,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "Somerset Regional Council Barking Dogs - A Neighbour's View Fact Sheet",
+	"Description": "",
 	"Title": "Fact Sheet   Barking Dogs   A Neighbours View",
 	"format": "application/pdf",
 	"jurisdiction": "Somerset Regional Council"
@@ -1215,6 +1224,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "procedure",
 	"Comments": "Sunshine Coast Council Barking and Roaming Dogs - Fact Sheet for Complainant",
+	"Description": "",
 	"Title": "barking complainant",
 	"format": "application/pdf",
 	"jurisdiction": "Sunshine Coast Regional Council"
@@ -1226,6 +1236,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "Sunshine Coast Council Barking and Roaming Dogs - Fact Sheet for Owner",
+	"Description": "",
 	"Title": "barking owner",
 	"format": "application/pdf",
 	"jurisdiction": "Sunshine Coast Regional Council"
@@ -1237,8 +1248,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "procedure",
 	"Comments": "Banana Shire Council Animal Complaints - Making a Complaint",
-	"Title": "Animals - Complaints & Pound - Banana Shire Council",
 	"Description": null,
+	"Title": "Animals - Complaints & Pound - Banana Shire Council",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Banana Shire Council"
@@ -1250,8 +1261,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "Bundaberg Regional Council Animal Management - PDF found by clicking on 'Caring for your Cat or Dog' image",
-	"Title": "Animal Management | Bundaberg Regional Council",
 	"Description": null,
+	"Title": "Animal Management | Bundaberg Regional Council",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Bundaberg Regional Council"
@@ -1263,8 +1274,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "Fraser Coast Regional Council Animal Management - information",
-	"Title": "Animal management - Fraser Coast Regional Council",
 	"Description": null,
+	"Title": "Animal management - Fraser Coast Regional Council",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Fraser Coast Regional Council"
@@ -1276,8 +1287,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "Gympie Regional Council Animal Management - Information under 'Neighbourhood Concerns'",
-	"Title": "Animal management - Gympie Regional Council - Gympie Regional Council",
 	"Description": null,
+	"Title": "Animal management - Gympie Regional Council - Gympie Regional Council",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Gympie Regional Council"
@@ -1289,8 +1300,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "North Burnett Regional Council Barking Dogs - Information",
-	"Title": "North Burnett Regional Council - Barking Dogs",
 	"Description": null,
+	"Title": "North Burnett Regional Council - Barking Dogs",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "North Burnett Regional Council"
@@ -1302,8 +1313,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "South Burnett Regional Council Responsible Pet Ownership - information under 'Barking Dogs'",
-	"Title": "",
 	"Description": null,
+	"Title": "",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "South Burnett Regional Council"
@@ -1315,8 +1326,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "procedure",
 	"Comments": "South Burnett Regional Council Request for Service- Barking dogs is a request for service NOT a complaint",
-	"Title": "",
 	"Description": null,
+	"Title": "",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "South Burnett Regional Council"
@@ -1328,6 +1339,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "Goondiwindi Regional Council - Managing Marking in Our Community Fact Sheet",
+	"Description": "",
 	"Title": "Managing barking in our community",
 	"format": "application/pdf",
 	"jurisdiction": "Goondiwindi Regional Council"
@@ -1339,6 +1351,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "Goondiwindi Regional Council - Barking Dog Nusiance Complaint Information",
+	"Description": "",
 	"Title": "Neighbours Dog Barking Excessively Brochure",
 	"format": "application/pdf",
 	"jurisdiction": "Goondiwindi Regional Council"
@@ -1350,8 +1363,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "Toowoomba Regional Council - Barking Dogs",
-	"Title": "Barking dogs",
 	"Description": "Local government information for the beautiful areas between Yarraman and Clifton, Millmerran and Toowoomba.",
+	"Title": "Barking dogs",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Toowoomba Regional Council"
@@ -1363,8 +1376,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "Central Highlands Regional Council Barking Dogs",
-	"Title": "Barking Dogs - Central Highlands Regional Council",
 	"Description": "",
+	"Title": "Barking Dogs - Central Highlands Regional Council",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Central Highlands Regional Council"
@@ -1376,8 +1389,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "procedure",
 	"Comments": "Gladstone Regional Council - Nuisance/ Complaints",
-	"Title": "Nuisances/Complaints - Gladstone Regional Council",
 	"Description": null,
+	"Title": "Nuisances/Complaints - Gladstone Regional Council",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Gladstone Regional Council"
@@ -1389,8 +1402,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "procedure",
 	"Comments": "Isaac Regional Council - Nuisance Animal Reporting a Nuisance Animal",
-	"Title": "Nuisance Animals - Isaac Regional Council",
 	"Description": null,
+	"Title": "Nuisance Animals - Isaac Regional Council",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Isaac Regional Council"
@@ -1402,8 +1415,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "Mackay Regional Council Barking Dogs",
-	"Title": "Barking dogs",
 	"Description": null,
+	"Title": "Barking dogs",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Mackay Regional Council"
@@ -1415,8 +1428,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "Rockhampton Regional Council Barking Dogs",
-	"Title": "Barking Dogs",
 	"Description": null,
+	"Title": "Barking Dogs",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Rockhampton Regional Council"
@@ -1428,8 +1441,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;Formal Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "Burdekin Regional Council Barking Dogs",
-	"Title": "Barking Dogs - Burdekin Shire Council",
 	"Description": "All dogs bark, but some barking dogs become a real neighbourhood nuisance.",
+	"Title": "Barking Dogs - Burdekin Shire Council",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Burdekin Shire Council"
@@ -1441,6 +1454,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "Charters Towers Regional Council Barking Dog Fact Sheet",
+	"Description": "",
 	"Title": "Fact Sheet Barking Dogs",
 	"format": "application/pdf",
 	"jurisdiction": "Charters Towers Regional Council"
@@ -1452,8 +1466,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "Hinchinbrook Shire Council Barking Dogs",
-	"Title": "",
 	"Description": null,
+	"Title": "",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Hinchinbrook Shire Council"
@@ -1465,6 +1479,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "Townsville City Council Barking Dogs Fact Sheet",
+	"Description": "",
 	"Title": "Barking Dogs",
 	"format": "application/pdf",
 	"jurisdiction": "Townsville City Council"
@@ -1476,8 +1491,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "Whitsunday Regional Council Barking Dogs",
-	"Title": "Whitsunday Regional Council - Animals - Barking Dogs",
 	"Description": "",
+	"Title": "Whitsunday Regional Council - Animals - Barking Dogs",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Whitsunday Regional Council"
@@ -1489,8 +1504,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "Cairns Regional Council Barking Dogs with additional pdf links on page",
-	"Title": "Barking dog - Cairns Regional Council",
 	"Description": "Council investigates all reports of nuisance barking but we need your help before we can take action. Please remember not all barking is a nuisance under Local Laws- even if it is annoying.",
+	"Title": "Barking dog - Cairns Regional Council",
 	"Publisher": "Cairns Regional Council",
 	"format": "text/html",
 	"jurisdiction": "Cairns Regional Council"
@@ -1502,8 +1517,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;Formal Resolution;",
 	"documentType": "procedure",
 	"Comments": "Cassowary Coast Regional Council Barking Dog Issues - Process",
-	"Title": "Barking dog issue - Cassowary Coast Regional Council",
 	"Description": null,
+	"Title": "Barking dog issue - Cassowary Coast Regional Council",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Cassowary Coast Regional Council"
@@ -1515,8 +1530,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "procedure",
 	"Comments": "Cook Shire Council - Complaints Process",
-	"Title": "Home - cook",
 	"Description": "",
+	"Title": "Home - cook",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Cook Shire Council"
@@ -1528,8 +1543,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;Formal Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Lockhart River Aboriginal Shire - Animal Management",
-	"Title": "Lockhart River Aboriginal Shire Council » Animal Management",
 	"Description": null,
+	"Title": "Lockhart River Aboriginal Shire Council - Animal Management",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Lockhart River Aboriginal Shire Council"
@@ -1541,8 +1556,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Napranum Aboriginal Shire - Information about Rangers and local wildlife",
-	"Title": "Rangers",
 	"Description": null,
+	"Title": "Rangers",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Napranum Aboriginal Shire Council"
@@ -1554,8 +1569,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "legislation",
 	"Comments": "Northern Peninsula Area Region Council - Animal Control Information",
-	"Title": "Animal Control - Northern Peninsula Area Regional Council",
 	"Description": null,
+	"Title": "Animal Control - Northern Peninsula Area Regional Council",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Northern Peninsula Area Regional Council"
@@ -1567,8 +1582,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "legislation",
 	"Comments": "Tablelands Regional Council - Animal Services links to laws and resources",
-	"Title": "Animal Services - TRC - Tablelands Regional Council",
 	"Description": null,
+	"Title": "Animal Services - TRC - Tablelands Regional Council",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Tablelands Regional Council"
@@ -1580,8 +1595,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Assisted Resolution;",
 	"documentType": "legislation",
 	"Comments": "Torres Shire Council - Dog registration",
-	"Title": "Animal Control - torres",
 	"Description": "",
+	"Title": "Animal Control - torres",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Torres Shire Council"
@@ -1593,8 +1608,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Assisted Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Weipa Town Authority - Pet and Animal Management",
-	"Title": "Weipa Town Authority",
 	"Description": null,
+	"Title": "Weipa Town Authority",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Other"
@@ -1606,8 +1621,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Burke Shire Council - Pet Registration",
-	"Title": "Pet Registration - Burke Shire Council",
 	"Description": null,
+	"Title": "Pet Registration - Burke Shire Council",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Burke Shire Council"
@@ -1619,8 +1634,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Carpentaria Shire Council - Information about registering pets",
-	"Title": "Pets and Animals - Carpentaria Shire Council",
 	"Description": null,
+	"Title": "Pets and Animals - Carpentaria Shire Council",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Carpentaria Shire Council"
@@ -1632,8 +1647,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Cloncurry Shire Council - Responsible Animal Ownership",
-	"Title": "Ranger - Cloncurry Shire Council",
 	"Description": null,
+	"Title": "Ranger - Cloncurry Shire Council",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Cloncurry Shire Council"
@@ -1645,8 +1660,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "legislation",
 	"Comments": "Cloncurry Shire Council - Local Law Keeping and Control of Animals",
-	"Title": "Ranger - Cloncurry Shire Council",
 	"Description": null,
+	"Title": "Ranger - Cloncurry Shire Council",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Cloncurry Shire Council"
@@ -1658,8 +1673,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Croydon Shire Council - Animal Management and Registration information",
-	"Title": "Domestic Animals - croydon",
 	"Description": "",
+	"Title": "Domestic Animals - croydon",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Croydon Shire Council"
@@ -1671,8 +1686,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Etheridege Shire Council - Information about keeping domestic animals and responsiblity of pet owners",
-	"Title": "Domestic Animals - etheridge",
 	"Description": "",
+	"Title": "Domestic Animals - etheridge",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Etheridge Shire Council"
@@ -1684,8 +1699,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "form",
 	"Comments": "Flinders Shire Council - Online complaints form about barking dogs",
-	"Title": "",
 	"Description": null,
+	"Title": "",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Flinders Shire Council"
@@ -1697,8 +1712,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "McKinlay Shire Council - Animal registration and information page",
-	"Title": "Animals - mckinlay",
 	"Description": "",
+	"Title": "Animals - mckinlay",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "McKinlay Shire Council"
@@ -1710,8 +1725,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Mount Isa City Council - Animal Ownership Information including registration and barking dogs",
-	"Title": "Animal Ownership - Mount Isa City Council",
 	"Description": null,
+	"Title": "Animal Ownership - Mount Isa City Council",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Mount Isa City Council"
@@ -1723,8 +1738,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Richmond Shire Council - Animal control information and registration forms",
-	"Title": "Animal Control - richmond",
 	"Description": "",
+	"Title": "Animal Control - richmond",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Richmond Shire Council"
@@ -1736,8 +1751,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Assisted Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "Barcaldine Regional Council - Barking Dogs Nuisance Pack",
-	"Title": "Animal Control - richmond",
 	"Description": "",
+	"Title": "Animal Control - richmond",
 	"Publisher": null,
 	"format": "application/pdf",
 	"jurisdiction": "Barcaldine Regional Council"
@@ -1749,8 +1764,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Barcoo Shire Council - Animal registration information including responsiblities of dog owner and contact information for coucil land protection officer",
-	"Title": "Animal Registration - Barcoo Shire Council",
 	"Description": "Registration of your dog and/or cat is compulsory.",
+	"Title": "Animal Registration - Barcoo Shire Council",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Barcoo Shire Council"
@@ -1762,8 +1777,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Blackall-Tambo Regional Council - Responsible pet owner page includes information about barking dogs and council contac information.",
-	"Title": "blackall-tambo -Responsible Pet Owner",
 	"Description": "",
+	"Title": "blackall-tambo -Responsible Pet Owner",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Blackall-Tambo Regional Council"
@@ -1775,8 +1790,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "procedure",
 	"Comments": "Diamantina Shire Council - Information about dog registration and complaints process for barking dogs",
-	"Title": "",
 	"Description": null,
+	"Title": "",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Diamantina Shire Council"
@@ -1788,8 +1803,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Longreach Regional Council - General information about animal control and registration",
-	"Title": "Animal Control & Registration - Longreach Regional Council",
 	"Description": null,
+	"Title": "Animal Control & Registration - Longreach Regional Council",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Longreach Regional Council"
@@ -1801,8 +1816,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Winton Shire Council - Animal Control information",
-	"Title": "winton -Animal Control",
 	"Description": "",
+	"Title": "winton -Animal Control",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Winton Shire Council"
@@ -1814,8 +1829,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Balonne Shire Council - Dog registration",
-	"Title": "Home - Balonne Shire Council",
 	"Description": null,
+	"Title": "Home - Balonne Shire Council",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Balonne Shire Council"
@@ -1827,8 +1842,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Bulloo Shire Council - Registration of domestic animals",
-	"Title": "Bulloo Shire Council - Domestic Animals",
 	"Description": null,
+	"Title": "Bulloo Shire Council - Domestic Animals",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Bulloo Shire Council"
@@ -1840,8 +1855,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Maranoa Regional Council - Barking Dog Information",
-	"Title": "Barking Dogs - Maranoa Regional Council",
 	"Description": null,
+	"Title": "Barking Dogs - Maranoa Regional Council",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Maranoa Regional Council"
@@ -1853,8 +1868,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Assisted Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Murweh Shire Council - Animal registration and information. Barking collars available through council.",
-	"Title": "Murweh Shire Council - Animals Agistment",
 	"Description": null,
+	"Title": "Murweh Shire Council - Animals Agistment",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Murweh Shire Council"
@@ -1866,6 +1881,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "Paroo Shire Council - Responsible dog ownership factsheet including some information about barking",
+	"Description": "",
 	"Title": "get file?uuid=19d2355f 23b9 48fa a79a b52ef3cc1908&groupId=597641",
 	"format": "text/html",
 	"jurisdiction": "Paroo Shire Council"
@@ -1877,8 +1893,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Quilpie Shire Council - Pet ownership inforamtion",
-	"Title": "Pet Ownership | Quilpie Shire Council",
 	"Description": null,
+	"Title": "Pet Ownership | Quilpie Shire Council",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Quilpie Shire Council"
@@ -1890,8 +1906,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Self resolution for body corporate disputes between neighbours, which could cover all of the dispute categories. * Most important link for self resolution in bodies coprorate",
-	"Title": "Self resolution for disputes",
 	"Description": "If you live in a unit and have a dispute with your neighbour, you should try to work it out between yourselves before making a formal dispute resolution application.",
+	"Title": "Self resolution for disputes",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -1903,8 +1919,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Assisted Resolution;",
 	"documentType": "procedure",
 	"Comments": "Conciliation for body corporate disputes between neighbours, which could cover all of the dispute categories * Most important link for assisted resolution in bodies coprorate",
-	"Title": "Conciliation for body corporate disputes",
 	"Description": "Conciliation could be a good way to resolve your body corporate dispute if you find self resolution is not working. It could save you money.",
+	"Title": "Conciliation for body corporate disputes",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -1916,8 +1932,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "procedure",
 	"Comments": "Adjudication body corporate disputes between neighbours, which could cover all of the dispute categories. * Most important link for formal resolution in bodies coprorate",
+	"Description": "If you can't resolve your body corporate dispute through self resolution and conciliation, you may have to apply for adjudication. See what steps you need to take.",
 	"Title": "Adjudication for body corporate disputes",
-	"Description": "If you can’t resolve your body corporate dispute through self resolution and conciliation, you may have to apply for adjudication. See what steps you need to take.",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -1929,8 +1945,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Titles registry will be able to assist with questions like - \"the property next door is rented. Who is the owner?\"",
-	"Title": "Titles Registry contacts - Department of Natural Resources and Mines",
 	"Description": "Details for Titles Registry enquiries",
+	"Title": "Titles Registry contacts - Department of Natural Resources and Mines",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -1942,8 +1958,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Supreme Court library - will have all published decisions regarding QCAT matters, including NDR - Tree disputes",
-	"Title": "Supreme Court Library Queensland |",
 	"Description": "",
+	"Title": "Supreme Court Library Queensland |",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -1955,8 +1971,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "QCAT website - what type of decisions have been made regarding tree disputes before QCAT?",
-	"Title": "Tree orders register - QCAT Queensland Civil and Administrative Tribunal",
 	"Description": null,
+	"Title": "Tree orders register - QCAT Queensland Civil and Administrative Tribunal",
 	"Publisher": "Queensland Department of Justice and Attorney-General",
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -1968,8 +1984,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "standard",
 	"Comments": "Dept of Energy & Water supply - Urban Drainage Manual",
-	"Title": "Urban drainage manual - Department of Energy and Water Supply",
 	"Description": "The Queensland urban drainage manual provides local governments and stormwater professionals with a standardised approach for planning and designing urban stormwater drainage.",
+	"Title": "Urban drainage manual - Department of Energy and Water Supply",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
@@ -1981,8 +1997,8 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "General information on body corporates. *Most important link for general information on bodies corporate",
-	"Title": "Body corporate",
 	"Description": "Body corporate law in Queensland, including the main legislation, covenants, bylaws, and recent changes.",
+	"Title": "Body corporate",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"

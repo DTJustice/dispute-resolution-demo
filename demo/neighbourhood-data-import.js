@@ -46,7 +46,8 @@
         "disputeSubject": "Fences;",
         "resolution": "Self Resolution;Assisted Resolution;Formal Resolution;",
         "documentType": "guidelines",
-        "Comments": "Step by step guide to resolving tree and fence disputes"
+        "Comments": "Step by step guide to resolving tree and fence disputes",
+        "Description": ""
     },
     {
         "URL": "http://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/ways-to-approach-your-neighbour/",
@@ -505,7 +506,8 @@
         "disputeSubject": "Behaviours;Abuse;Threats;Harassment;",
         "resolution": "Formal Resolution;",
         "documentType": "",
-        "Comments": "Legal Self Help Kit from Caxton Legal Service"
+        "Comments": "Legal Self Help Kit from Caxton Legal Service",
+        "Description": ""
     },
     {
         "URL": "http://www.qcat.qld.gov.au/matter-types/tree-disputes/faq-tree-disputes",
@@ -514,7 +516,8 @@
         "disputeSubject": "Trees;",
         "resolution": "Formal Resolution;",
         "documentType": "",
-        "Comments": "Frequently asked questions in relation to tree disputes before QCAT"
+        "Comments": "Frequently asked questions in relation to tree disputes before QCAT",
+        "Description": ""
     },
     {
         "URL": "http://www.qcat.qld.gov.au/matter-types/tree-disputes/overhanging-branches",
@@ -523,7 +526,8 @@
         "disputeSubject": "Trees;",
         "resolution": "Formal Resolution;",
         "documentType": "",
-        "Comments": "Information regarding minor debt disputes before QCAT about overhanging branches"
+        "Comments": "Information regarding minor debt disputes before QCAT about overhanging branches",
+        "Description": ""
     },
     {
         "URL": "http://www.qcat.qld.gov.au/matter-types/tree-disputes/tree-dispute-application",
@@ -532,7 +536,8 @@
         "disputeSubject": "Trees;",
         "resolution": "Formal Resolution;",
         "documentType": "",
-        "Comments": "How to lodge a tree dispute application with QCAT"
+        "Comments": "How to lodge a tree dispute application with QCAT",
+        "Description": ""
     },
     {
         "URL": "http://www.qcat.qld.gov.au/__data/assets/pdf_file/0014/205403/Application-checklist-Tree-dispute-resolution.pdf",
@@ -541,7 +546,8 @@
         "disputeSubject": "Trees;",
         "resolution": "Formal Resolution;",
         "documentType": "",
-        "Comments": "Check list to use before lodging an application with QCAT"
+        "Comments": "Check list to use before lodging an application with QCAT",
+        "Description": ""
     },
     {
         "URL": "http://www.qcat.qld.gov.au/__data/assets/pdf_file/0011/129683/Form-51-application-for-a-tree-dispute-v2.pdf",
@@ -550,7 +556,8 @@
         "disputeSubject": "Trees;",
         "resolution": "Formal Resolution;",
         "documentType": "",
-        "Comments": "Formal application for a tree dispute - QCAT"
+        "Comments": "Formal application for a tree dispute - QCAT",
+        "Description": ""
     },
     {
         "URL": "http://www.qcat.qld.gov.au/__data/assets/pdf_file/0003/129684/Form-52-Response-to-application-for-a-tree-dispute-v2.pdf",
@@ -559,7 +566,8 @@
         "disputeSubject": "Trees;",
         "resolution": "Formal Resolution;",
         "documentType": "",
-        "Comments": "Formal response form to an application for a tree dispute. To be used by the tree keeper."
+        "Comments": "Formal response form to an application for a tree dispute. To be used by the tree keeper.",
+        "Description": ""
     },
     {
         "URL": "http://www.communities.qld.gov.au/childsafety/protecting-children",
@@ -568,7 +576,8 @@
         "disputeSubject": "Children;",
         "resolution": "Formal Resolution;",
         "documentType": "",
-        "Comments": "Child Safety information for protecting children: information on preventing, reporting, and responding to child abuse; ongoing intervention; contacts and link to reports/publications."
+        "Comments": "Child Safety information for protecting children: information on preventing, reporting, and responding to child abuse; ongoing intervention; contacts and link to reports/publications.",
+        "Description": ""
     },
     {
         "URL": "http://www.legalaid.qld.gov.au/legalinformation/livinginthecommunity/Neighbourhood/Pages/Thingspeoplesay.aspx#What can I do if children are taunting me or my child, or making comments?",
@@ -577,7 +586,8 @@
         "disputeSubject": "Children;",
         "resolution": "Self Resolution;Assisted Resolution;",
         "documentType": "",
-        "Comments": "Brief information regarding rights/options in relation to unwanted children's behaviour (verbal abuse/threats)."
+        "Comments": "Brief information regarding rights/options in relation to unwanted children's behaviour (verbal abuse/threats).",
+        "Description": ""
     },
     {
         "URL": "https://www.qld.gov.au/youth/family-social-support/being-bullied/",
@@ -586,7 +596,8 @@
         "disputeSubject": "Children;",
         "resolution": "Self Resolution;Assisted Resolution;",
         "documentType": "",
-        "Comments": "Information on what to do if you are being bullied. Includes links to further information on bullying, cyberbullying and related statistics."
+        "Comments": "Information on what to do if you are being bullied. Includes links to further information on bullying, cyberbullying and related statistics.",
+        "Description": ""
     },
     {
         "URL": "http://www.legalaid.qld.gov.au/legalinformation/livinginthecommunity/neighbourhood/pages/boundariesandeasements.aspx",
@@ -595,7 +606,8 @@
         "disputeSubject": "Easements;",
         "resolution": "Self Resolution;Assisted Resolution;",
         "documentType": "",
-        "Comments": "Information from legal aid about boundaries and easements"
+        "Comments": "Information from legal aid about boundaries and easements",
+        "Description": ""
     },
     {
         "URL": "http://pan.search.qld.gov.au/search/click.cgi?rank=4&collection=qld-gov&url=https%3A%2F%2Fwww.dnrm.qld.gov.au%2F%3Fa%3D109113%3Apolicy_registry%2Feasement.pdf&index_url=https%3A%2F%2Fwww.dnrm.qld.gov.au%2F%3Fa%3D109113%3Apolicy_registry%2Feasement.pdf&auth=AGl9LU383MAOeg4hm4%2Fe7Q&search_referer=&query=easements&profile=dnrm&identifier=1430176784.7555",
@@ -604,7 +616,8 @@
         "disputeSubject": "Easements;",
         "resolution": "Self Resolution;",
         "documentType": "",
-        "Comments": "Qld Dept of Agriculture and Mines: PDF document on Easements"
+        "Comments": "Qld Dept of Agriculture and Mines: PDF document on Easements",
+        "Description": ""
     },
     {
         "URL": "http://www.qldneighbourhoods.com/easements.html",
@@ -613,7 +626,8 @@
         "disputeSubject": "Easements;",
         "resolution": "Self Resolution;",
         "documentType": "",
-        "Comments": "Information about easements"
+        "Comments": "Information about easements",
+        "Description": ""
     },
     {
         "URL": "http://www.qld.gov.au/environment/land/state/easements/",
@@ -622,7 +636,8 @@
         "disputeSubject": "Easements;",
         "resolution": "Self Resolution;",
         "documentType": "",
-        "Comments": "general information about easements"
+        "Comments": "general information about easements",
+        "Description": ""
     },
     {
         "URL": "http://www.justice.qld.gov.au/fair-and-safe-work/industrial-relations/codes-of-practice-and-guidelines/queensland-code-of-practice-for-the-building-and-construction-industry",
@@ -631,7 +646,8 @@
         "disputeSubject": "Renovations;",
         "resolution": "Assisted Resolution;Formal Resolution;",
         "documentType": "",
-        "Comments": "Information on the code of practice for the building and construction industry"
+        "Comments": "Information on the code of practice for the building and construction industry",
+        "Description": ""
     },
     {
         "URL": "http://www.qld.gov.au/environment/land/state/easements/applying/",
@@ -640,7 +656,8 @@
         "disputeSubject": "Easements;",
         "resolution": "Self Resolution;",
         "documentType": "procedure",
-        "Comments": "how to apply for an easement"
+        "Comments": "how to apply for an easement",
+        "Description": ""
     },
     {
         "URL": "http://www.landservices.sa.gov.au/5Publications/Brochures_and_Fact_Sheets/_files/_Fact_Sheets/03_Easements.pdf",
@@ -649,7 +666,8 @@
         "disputeSubject": "Easements;",
         "resolution": "Self Resolution;",
         "documentType": "fact sheet",
-        "Comments": "South Australia Government document on Easements - right of way - PDF doc"
+        "Comments": "South Australia Government document on Easements - right of way - PDF doc",
+        "Description": ""
     },
     {
         "URL": "http://www.renovate.com.au/rules/index.cfm",
@@ -658,7 +676,8 @@
         "disputeSubject": "Renovations;",
         "resolution": "Self Resolution;Assisted Resolution;",
         "documentType": "guidelines",
-        "Comments": "Outlines rules and regulations governing renovations in Australia. Contains links to other bodies with a governing role."
+        "Comments": "Outlines rules and regulations governing renovations in Australia. Contains links to other bodies with a governing role.",
+        "Description": ""
     },
     {
         "URL": "http://www.qldneighbourhoods.com/development-permits-and-approvals.html",
@@ -667,7 +686,8 @@
         "disputeSubject": "Renovations;",
         "resolution": "Self Resolution;Assisted Resolution;",
         "documentType": "guidelines",
-        "Comments": "Provides information on neighbour's rights relating to use of own land and links to Local government and legislative information."
+        "Comments": "Provides information on neighbour's rights relating to use of own land and links to Local government and legislative information.",
+        "Description": ""
     },
     {
         "URL": "http://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/avoiding-fence-tree-and-building-disputes/avoiding-building-disputes/",
@@ -676,7 +696,8 @@
         "disputeSubject": "Renovations;",
         "resolution": "Self Resolution;",
         "documentType": "guidelines",
-        "Comments": "Provides advice on how to avoid building disputes; includes some information on approaching neighbours"
+        "Comments": "Provides advice on how to avoid building disputes; includes some information on approaching neighbours",
+        "Description": ""
     },
     {
         "URL": "http://www.legalaid.qld.gov.au/legalinformation/youngpeople/Pages/Youngpeopleandthejusticesystem.aspx",
@@ -685,7 +706,8 @@
         "disputeSubject": "Children;",
         "resolution": "Formal Resolution;",
         "documentType": "procedure",
-        "Comments": "Provides information regarding young people and the justice system. Includes links to related sites and services"
+        "Comments": "Provides information regarding young people and the justice system. Includes links to related sites and services",
+        "Description": ""
     },
     {
         "URL": "http://www.justice.qld.gov.au/youth-justice",
@@ -694,7 +716,8 @@
         "disputeSubject": "Children;",
         "resolution": "Formal Resolution;",
         "documentType": "procedure",
-        "Comments": "Information on the laws / police powers relating to youth justice."
+        "Comments": "Information on the laws / police powers relating to youth justice.",
+        "Description": ""
     },
     {
         "URL": "http://www.logan.qld.gov.au/__data/assets/pdf_file/0007/49093/stormwater-factsheet.pdf",
@@ -703,7 +726,8 @@
         "disputeSubject": "Drainage;",
         "resolution": "Self Resolution;",
         "documentType": "guidelines",
-        "Comments": "Council information about stormwater drainage"
+        "Comments": "Council information about stormwater drainage",
+        "Description": ""
     },
     {
         "URL": "http://www.brisbane.qld.gov.au/laws-permits/complaints-fines/noise-air-light-water-complaints/stormwater-pollution-runoff-drainage-complaints",
@@ -712,7 +736,8 @@
         "disputeSubject": "Drainage;",
         "resolution": "Self Resolution;Assisted Resolution;",
         "documentType": "procedure",
-        "Comments": "how to make a complaint to the council about drainage and stormwater pollution"
+        "Comments": "how to make a complaint to the council about drainage and stormwater pollution",
+        "Description": ""
     },
     {
         "URL": "http://www.qldneighbourhoods.com/animals.html",
@@ -721,7 +746,8 @@
         "disputeSubject": "Wildlife;",
         "resolution": "Self Resolution;Assisted Resolution;",
         "documentType": "",
-        "Comments": "QAILS - Qld Neighbourhood Disputes > Animals"
+        "Comments": "QAILS - Qld Neighbourhood Disputes > Animals",
+        "Description": ""
     },
     {
         "URL": "http://www.goldcoast.qld.gov.au/community/animal-complaints-18356.html",
@@ -730,7 +756,8 @@
         "disputeSubject": "Wildlife;",
         "resolution": "Self Resolution;Assisted Resolution;",
         "documentType": "",
-        "Comments": "City of Gold Coast - Animal Complaints (concerns about the welfare of an animal, excess animals)"
+        "Comments": "City of Gold Coast - Animal Complaints (concerns about the welfare of an animal, excess animals)",
+        "Description": ""
     },
     {
         "URL": "http://www.legalaid.qld.gov.au/LEGALINFORMATION/LIVINGINTHECOMMUNITY/NEIGHBOURHOOD/Pages/Animals-controllingtreatingandowning.aspx",
@@ -739,7 +766,8 @@
         "disputeSubject": "Wildlife;Dogs and other pets;",
         "resolution": "Self Resolution;Assisted Resolution;",
         "documentType": "",
-        "Comments": "LAQ - no legal advice offered - Animals - Controlling, treating, owning > complain about mistreatment"
+        "Comments": "LAQ - no legal advice offered - Animals - Controlling, treating, owning > complain about mistreatment",
+        "Description": ""
     },
     {
         "URL": "http://www.oaic.gov.au/privacy/privacy-topics/photos-and-surveillance/what-can-i-do-about-my-neighbour-s-security-camera",
@@ -748,7 +776,8 @@
         "disputeSubject": "Cameras;",
         "resolution": "Self Resolution;Assisted Resolution;",
         "documentType": "",
-        "Comments": "Office of the Australian Information Commissioner - What can I do about my neighbours security camera? > Refers to state community mediation centres [This is the only relevant resource available - only in English]"
+        "Comments": "Office of the Australian Information Commissioner - What can I do about my neighbours security camera? > Refers to state community mediation centres [This is the only relevant resource available - only in English]",
+        "Description": ""
     },
     {
         "URL": "http://www.ehp.qld.gov.au/management/non-mining/noise-light-odour.html",
@@ -757,7 +786,8 @@
         "disputeSubject": "Lighting;Noise;Smells;",
         "resolution": "Self Resolution;",
         "documentType": "procedure",
-        "Comments": "information on Dept of Environment website outlining legal responsibilities in relation to noise, light and odour issues"
+        "Comments": "information on Dept of Environment website outlining legal responsibilities in relation to noise, light and odour issues",
+        "Description": ""
     },
     {
         "URL": "http://www.townsville.qld.gov.au/.../Documents/Light Nuisance-final.pdf",
@@ -766,7 +796,8 @@
         "disputeSubject": "Lighting;",
         "resolution": "Self Resolution;Assisted Resolution;",
         "documentType": "",
-        "Comments": "Fact sheet on nuisance lighting, encouraging self-resolution as first step and noting that local councils are responsible for investigating lighting disputes."
+        "Comments": "Fact sheet on nuisance lighting, encouraging self-resolution as first step and noting that local councils are responsible for investigating lighting disputes.",
+        "Description": ""
     },
     {
         "URL": "http://www.sunshinecoast.qld.gov.au/sitePage.cfm?code=noise-light",
@@ -775,7 +806,8 @@
         "disputeSubject": "Lighting;Noise;",
         "resolution": "Self Resolution;Assisted Resolution;Formal Resolution;",
         "documentType": "guidelines",
-        "Comments": "Information on light and noise nuisance that clarifies where local council has responsibility to investigate, and when the issue is outside of their control. Includes links to fact sheets and related information."
+        "Comments": "Information on light and noise nuisance that clarifies where local council has responsibility to investigate, and when the issue is outside of their control. Includes links to fact sheets and related information.",
+        "Description": ""
     },
     {
         "URL": "http://www.lawstuff.org.au/qld_law/topics/",
@@ -784,7 +816,8 @@
         "disputeSubject": "Children;",
         "resolution": "Self Resolution;Assisted Resolution;Formal Resolution;",
         "documentType": "",
-        "Comments": "Website designed for young people. Provides information on legal rights with links to detailed information listed under topic names e.g. cyberbullying."
+        "Comments": "Website designed for young people. Provides information on legal rights with links to detailed information listed under topic names e.g. cyberbullying.",
+        "Description": ""
     },
     {
         "URL": "http://www.brisbane.qld.gov.au/sites/default/files/lawful_point_discharge_neighbours.pdf",
@@ -793,7 +826,8 @@
         "disputeSubject": "Drainage;",
         "resolution": "Self Resolution;",
         "documentType": "fact sheet",
-        "Comments": "Brisbane City Council Information for neighbours about stormwater lawful points of discharge."
+        "Comments": "Brisbane City Council Information for neighbours about stormwater lawful points of discharge.",
+        "Description": ""
     },
     {
         "URL": "http://www.brisbane.qld.gov.au/laws-permits/laws-permits-residents/animals-pets/cats-dogs/barking-dogs",
@@ -802,7 +836,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "guidelines",
-        "Comments": "Brisbane City Council Barking Dog Information"
+        "Comments": "Brisbane City Council Barking Dog Information",
+        "Description": ""
     },
     {
         "URL": "http://www.goldcoast.qld.gov.au/community/barking-dogs-3498.html",
@@ -811,7 +846,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "fact sheet",
-        "Comments": "Gold Coast City Council Barking Dog Page - Dog owner"
+        "Comments": "Gold Coast City Council Barking Dog Page - Dog owner",
+        "Description": ""
     },
     {
         "URL": "http://www.goldcoast.qld.gov.au/report-a-problem-animals-24148.html",
@@ -820,7 +856,8 @@
         "disputeSubject": "Trees;Dogs and other pets;",
         "resolution": "Formal Resolution;",
         "documentType": "procedure",
-        "Comments": "Gold Coast City Council Barking Dog Page - Make a complaint"
+        "Comments": "Gold Coast City Council Barking Dog Page - Make a complaint",
+        "Description": ""
     },
     {
         "URL": "http://www.ipswich.qld.gov.au/residents/animals/dogs",
@@ -829,7 +866,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Self Resolution;Assisted Resolution;",
         "documentType": "procedure",
-        "Comments": "Ipswich City Council Nuisance Dogs - Mediation and/or complaint"
+        "Comments": "Ipswich City Council Nuisance Dogs - Mediation and/or complaint",
+        "Description": ""
     },
     {
         "URL": "http://www.lockyervalley.qld.gov.au/community/animal-control/barking-dogs",
@@ -838,7 +876,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "fact sheet",
-        "Comments": "Lockyer Valley Council Barking Dogs - information"
+        "Comments": "Lockyer Valley Council Barking Dogs - information",
+        "Description": ""
     },
     {
         "URL": "http://www.logan.qld.gov.au/facilities-and-recreation/animals/pet-care/animal-seminars",
@@ -847,7 +886,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Assisted Resolution;",
         "documentType": "guidelines",
-        "Comments": "Logan City Council Dogs - Proactive - Animal Seminars"
+        "Comments": "Logan City Council Dogs - Proactive - Animal Seminars",
+        "Description": ""
     },
     {
         "URL": "http://www.logan.qld.gov.au/facilities-and-recreation/animals/pet-care/barking-dogs",
@@ -856,7 +896,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "fact sheet",
-        "Comments": "Logan City Council Barking Dogs - Information"
+        "Comments": "Logan City Council Barking Dogs - Information",
+        "Description": ""
     },
     {
         "URL": "https://www.moretonbay.qld.gov.au/general.aspx?id=13577",
@@ -865,7 +906,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "fact sheet",
-        "Comments": "Moreton Bay Regional Council Barking Dogs - Information"
+        "Comments": "Moreton Bay Regional Council Barking Dogs - Information",
+        "Description": ""
     },
     {
         "URL": "http://www.redland.qld.gov.au/FormsPermits/PetManagement/Dog/Pages/BarkingDogs.aspx",
@@ -874,7 +916,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Self Resolution;Formal Resolution;",
         "documentType": "fact sheet",
-        "Comments": "Redland City Council Barking Dogs - Information"
+        "Comments": "Redland City Council Barking Dogs - Information",
+        "Description": ""
     },
     {
         "URL": "http://www.scenicrim.qld.gov.au/environment/animalnoise.shtml",
@@ -883,7 +926,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Self Resolution;Assisted Resolution;",
         "documentType": "procedure",
-        "Comments": "Scenic Rim Council Noisy and Nuisance Animals"
+        "Comments": "Scenic Rim Council Noisy and Nuisance Animals",
+        "Description": ""
     },
     {
         "URL": "http://www.somerset.qld.gov.au/documents/611941/4483953/Fact%20Sheet%20-%20Barking%20Dogs%20-%20A%20Dog%20Owners%20View.pdf",
@@ -892,7 +936,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "fact sheet",
-        "Comments": "Somerset Regional Council Barking Dogs - A Dog Owner's View Fact Sheet"
+        "Comments": "Somerset Regional Council Barking Dogs - A Dog Owner's View Fact Sheet",
+        "Description": ""
     },
     {
         "URL": "http://www.somerset.qld.gov.au/documents/611941/4483953/Fact%20Sheet%20-%20Barking%20Dogs%20-%20A%20Neighbours%20View.pdf",
@@ -901,7 +946,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "fact sheet",
-        "Comments": "Somerset Regional Council Barking Dogs - A Neighbour's View Fact Sheet"
+        "Comments": "Somerset Regional Council Barking Dogs - A Neighbour's View Fact Sheet",
+        "Description": ""
     },
     {
         "URL": "http://www.sunshinecoast.qld.gov.au/addfiles/documents/animals/barking_complainant.pdf",
@@ -910,7 +956,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "procedure",
-        "Comments": "Sunshine Coast Council Barking and Roaming Dogs - Fact Sheet for Complainant"
+        "Comments": "Sunshine Coast Council Barking and Roaming Dogs - Fact Sheet for Complainant",
+        "Description": ""
     },
     {
         "URL": "http://www.sunshinecoast.qld.gov.au/addfiles/documents/animals/barking_owner.pdf",
@@ -919,7 +966,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "fact sheet",
-        "Comments": "Sunshine Coast Council Barking and Roaming Dogs - Fact Sheet for Owner"
+        "Comments": "Sunshine Coast Council Barking and Roaming Dogs - Fact Sheet for Owner",
+        "Description": ""
     },
     {
         "URL": "http://www.banana.qld.gov.au/animals-complaints-pound",
@@ -928,7 +976,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Formal Resolution;",
         "documentType": "procedure",
-        "Comments": "Banana Shire Council Animal Complaints - Making a Complaint"
+        "Comments": "Banana Shire Council Animal Complaints - Making a Complaint",
+        "Description": ""
     },
     {
         "URL": "http://www.bundaberg.qld.gov.au/environment/animals",
@@ -937,7 +986,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "fact sheet",
-        "Comments": "Bundaberg Regional Council Animal Management - PDF found by clicking on 'Caring for your Cat or Dog' image"
+        "Comments": "Bundaberg Regional Council Animal Management - PDF found by clicking on 'Caring for your Cat or Dog' image",
+        "Description": ""
     },
     {
         "URL": "http://www.frasercoast.qld.gov.au/animal-management",
@@ -946,7 +996,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "fact sheet",
-        "Comments": "Fraser Coast Regional Council Animal Management - information"
+        "Comments": "Fraser Coast Regional Council Animal Management - information",
+        "Description": ""
     },
     {
         "URL": "https://www.gympie.qld.gov.au/animal-management",
@@ -955,7 +1006,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "fact sheet",
-        "Comments": "Gympie Regional Council Animal Management - Information under 'Neighbourhood Concerns'"
+        "Comments": "Gympie Regional Council Animal Management - Information under 'Neighbourhood Concerns'",
+        "Description": ""
     },
     {
         "URL": "http://www.northburnett.qld.gov.au/?id=155",
@@ -964,7 +1016,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "fact sheet",
-        "Comments": "North Burnett Regional Council Barking Dogs - Information"
+        "Comments": "North Burnett Regional Council Barking Dogs - Information",
+        "Description": ""
     },
     {
         "URL": "http://www.southburnett.qld.gov.au/animal-control#Barking",
@@ -973,7 +1026,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "fact sheet",
-        "Comments": "South Burnett Regional Council Responsible Pet Ownership - information under 'Barking Dogs'"
+        "Comments": "South Burnett Regional Council Responsible Pet Ownership - information under 'Barking Dogs'",
+        "Description": ""
     },
     {
         "URL": "http://www.southburnett.qld.gov.au/contact-us",
@@ -982,7 +1036,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Formal Resolution;",
         "documentType": "procedure",
-        "Comments": "South Burnett Regional Council Request for Service- Barking dogs is a request for service NOT a complaint"
+        "Comments": "South Burnett Regional Council Request for Service- Barking dogs is a request for service NOT a complaint",
+        "Description": ""
     },
     {
         "URL": "http://www.goondiwindirc.qld.gov.au/documents/17518/211487/Managing%20barking%20in%20our%20community.pdf",
@@ -991,7 +1046,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "fact sheet",
-        "Comments": "Goondiwindi Regional Council - Managing Marking in Our Community Fact Sheet"
+        "Comments": "Goondiwindi Regional Council - Managing Marking in Our Community Fact Sheet",
+        "Description": ""
     },
     {
         "URL": "http://www.goondiwindirc.qld.gov.au/documents/17518/211487/Neighbours%20Dog%20Barking%20Excessively%20Brochure.pdf",
@@ -1000,7 +1056,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "fact sheet",
-        "Comments": "Goondiwindi Regional Council - Barking Dog Nusiance Complaint Information"
+        "Comments": "Goondiwindi Regional Council - Barking Dog Nusiance Complaint Information",
+        "Description": ""
     },
     {
         "URL": "http://www.toowoombarc.qld.gov.au/laws-and-permits/animal-regulations/2792-barking-dogs",
@@ -1009,7 +1066,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "fact sheet",
-        "Comments": "Toowoomba Regional Council - Barking Dogs"
+        "Comments": "Toowoomba Regional Council - Barking Dogs",
+        "Description": ""
     },
     {
         "URL": "http://www.centralhighlands.qld.gov.au/barking-dogs",
@@ -1018,7 +1076,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "fact sheet",
-        "Comments": "Central Highlands Regional Council Barking Dogs"
+        "Comments": "Central Highlands Regional Council Barking Dogs",
+        "Description": ""
     },
     {
         "URL": "http://www.gladstone.qld.gov.au/nuisances/complaints",
@@ -1027,7 +1086,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "procedure",
-        "Comments": "Gladstone Regional Council - Nuisance/ Complaints"
+        "Comments": "Gladstone Regional Council - Nuisance/ Complaints",
+        "Description": ""
     },
     {
         "URL": "http://www.isaac.qld.gov.au/nuisance-animals",
@@ -1036,7 +1096,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Formal Resolution;",
         "documentType": "procedure",
-        "Comments": "Isaac Regional Council - Nuisance Animal Reporting a Nuisance Animal"
+        "Comments": "Isaac Regional Council - Nuisance Animal Reporting a Nuisance Animal",
+        "Description": ""
     },
     {
         "URL": "http://www.mackay.qld.gov.au/residents/local_laws/animal_management/responsible_dog_ownership/barking_dogs",
@@ -1045,7 +1106,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "fact sheet",
-        "Comments": "Mackay Regional Council Barking Dogs"
+        "Comments": "Mackay Regional Council Barking Dogs",
+        "Description": ""
     },
     {
         "URL": "http://www.rockhamptonregion.qld.gov.au/Council_Services/Animal_Management/Helpful_information_for_pet_owners/Barking_Dogs",
@@ -1054,7 +1116,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "fact sheet",
-        "Comments": "Rockhampton Regional Council Barking Dogs"
+        "Comments": "Rockhampton Regional Council Barking Dogs",
+        "Description": ""
     },
     {
         "URL": "http://www.burdekin.qld.gov.au/regulations-laws-and-forms/animal-management/dogs/barking-dogs/",
@@ -1063,7 +1126,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Self Resolution;Formal Resolution;",
         "documentType": "fact sheet",
-        "Comments": "Burdekin Regional Council Barking Dogs"
+        "Comments": "Burdekin Regional Council Barking Dogs",
+        "Description": ""
     },
     {
         "URL": "http://www.charterstowers.qld.gov.au/documents/41682213/41699791/Fact%20Sheet%20Barking%20Dogs.pdf",
@@ -1072,7 +1136,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "fact sheet",
-        "Comments": "Charters Towers Regional Council Barking Dog Fact Sheet"
+        "Comments": "Charters Towers Regional Council Barking Dog Fact Sheet",
+        "Description": ""
     },
     {
         "URL": "http://www.hinchinbrook.qld.gov.au/barking-dogs",
@@ -1081,7 +1146,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "fact sheet",
-        "Comments": "Hinchinbrook Shire Council Barking Dogs"
+        "Comments": "Hinchinbrook Shire Council Barking Dogs",
+        "Description": ""
     },
     {
         "URL": "http://www.townsville.qld.gov.au/resident/animals/Documents/Barking%20Dogs.pdf",
@@ -1090,7 +1156,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "fact sheet",
-        "Comments": "Townsville City Council Barking Dogs Fact Sheet"
+        "Comments": "Townsville City Council Barking Dogs Fact Sheet",
+        "Description": ""
     },
     {
         "URL": "http://www.whitsunday.qld.gov.au/barking-dogs",
@@ -1099,7 +1166,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "fact sheet",
-        "Comments": "Whitsunday Regional Council Barking Dogs"
+        "Comments": "Whitsunday Regional Council Barking Dogs",
+        "Description": ""
     },
     {
         "URL": "http://www.cairns.qld.gov.au/community-environment/pets-and-domestic-animals/complaints/barking-dog",
@@ -1108,7 +1176,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "fact sheet",
-        "Comments": "Cairns Regional Council Barking Dogs with additional pdf links on page"
+        "Comments": "Cairns Regional Council Barking Dogs with additional pdf links on page",
+        "Description": ""
     },
     {
         "URL": "http://www.cassowarycoast.qld.gov.au/barking-dog-issue",
@@ -1117,7 +1186,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Self Resolution;Formal Resolution;",
         "documentType": "procedure",
-        "Comments": "Cassowary Coast Regional Council Barking Dog Issues - Process"
+        "Comments": "Cassowary Coast Regional Council Barking Dog Issues - Process",
+        "Description": ""
     },
     {
         "URL": "http://www.cook.qld.gov.au/",
@@ -1126,7 +1196,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Formal Resolution;",
         "documentType": "procedure",
-        "Comments": "Cook Shire Council - Complaints Process"
+        "Comments": "Cook Shire Council - Complaints Process",
+        "Description": ""
     },
     {
         "URL": "http://lockhart.qld.gov.au/environment/animal-management/",
@@ -1135,7 +1206,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Self Resolution;Formal Resolution;",
         "documentType": "guidelines",
-        "Comments": "Lockhart River Aboriginal Shire - Animal Management"
+        "Comments": "Lockhart River Aboriginal Shire - Animal Management",
+        "Description": ""
     },
     {
         "URL": "http://napranum.qld.gov.au/council-departments/rangers",
@@ -1144,7 +1216,8 @@
         "disputeSubject": "Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "guidelines",
-        "Comments": "Napranum Aboriginal Shire - Information about Rangers and local wildlife"
+        "Comments": "Napranum Aboriginal Shire - Information about Rangers and local wildlife",
+        "Description": ""
     },
     {
         "URL": "http://www.nparc.qld.gov.au/animal-control",
@@ -1153,7 +1226,8 @@
         "disputeSubject": "Dogs and other pets;",
         "resolution": "Formal Resolution;",
         "documentType": "legislation",
-        "Comments": "Northern Peninsula Area Region Council - Animal Control Information"
+        "Comments": "Northern Peninsula Area Region Council - Animal Control Information",
+        "Description": ""
     },
     {
         "URL": "http://www.trc.qld.gov.au/animal-services/",
@@ -1162,7 +1236,8 @@
         "disputeSubject": "Dogs and other pets;Noise;",
         "resolution": "Self Resolution;",
         "documentType": "legislation",
-        "Comments": "Tablelands Regional Council - Animal Services links to laws and resources"
+        "Comments": "Tablelands Regional Council - Animal Services links to laws and resources",
+        "Description": ""
     },
     {
         "URL": "http://www.torres.qld.gov.au/animal-control",
@@ -1171,7 +1246,8 @@
         "disputeSubject": "Dogs and other pets;",
         "resolution": "Assisted Resolution;",
         "documentType": "legislation",
-        "Comments": "Torres Shire Council - Dog registration"
+        "Comments": "Torres Shire Council - Dog registration",
+        "Description": ""
     },
     {
         "URL": "http://www.weipatownoffice.com/55.html",
@@ -1180,7 +1256,8 @@
         "disputeSubject": "Dogs and other pets;",
         "resolution": "Assisted Resolution;",
         "documentType": "guidelines",
-        "Comments": "Weipa Town Authority - Pet and Animal Management"
+        "Comments": "Weipa Town Authority - Pet and Animal Management",
+        "Description": ""
     },
     {
         "URL": "http://www.burke.qld.gov.au/pet-registration",
@@ -1189,7 +1266,8 @@
         "disputeSubject": "Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "guidelines",
-        "Comments": "Burke Shire Council - Pet Registration"
+        "Comments": "Burke Shire Council - Pet Registration",
+        "Description": ""
     },
     {
         "URL": "http://www.carpentaria.qld.gov.au/pets-and-animals",
@@ -1198,7 +1276,8 @@
         "disputeSubject": "Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "guidelines",
-        "Comments": "Carpentaria Shire Council - Information about registering pets"
+        "Comments": "Carpentaria Shire Council - Information about registering pets",
+        "Description": ""
     },
     {
         "URL": "http://www.cloncurry.qld.gov.au/ranger/-/journal_content/56/674573/6050901?p_p_auth=SUfox2iy&_56_showArticlTitleInPortlet=true",
@@ -1207,7 +1286,8 @@
         "disputeSubject": "Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "guidelines",
-        "Comments": "Cloncurry Shire Council - Responsible Animal Ownership"
+        "Comments": "Cloncurry Shire Council - Responsible Animal Ownership",
+        "Description": ""
     },
     {
         "URL": "http://www.cloncurry.qld.gov.au/ranger?p_p_auth=aWyN00mH&p_p_id=101&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_101_struts_action=%2Fasset_publisher%2Fview_content&_101_assetEntryId=685970&_101_type=document&redirect=http%3A%2F%2Fwww.cloncurry.qld.gov.au%2Franger%3Fp_p_id%3D3%26p_p_lifecycle%3D0%26p_p_state%3Dmaximized%26p_p_mode%3Dview%26_3_groupId%3D0%26_3_keywords%3Dbarking%26_3_struts_action%3D%252Fsearch%252Fsearch%26_3_redirect%3D%252Franger%253Fp_p_id%253D3%2526p_p_lifecycle%253D0%2526p_p_state%253Dmaximized%2526p_p_mode%253Dview%2526_3_struts_action%253D%25252Fsearch%25252Fsearch%2526_3_redirect%253D%25252Franger%25252F-%25252Fjournal_content%25252F56%25252F674573%25252F6050901%25253Fp_p_auth%25253DSUfox2iy%252526_56_showArticlTitleInPortlet%25253Dtrue%2526_3_keywords%253Dnoise%2526_3_groupId%253D0",
@@ -1216,7 +1296,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "legislation",
-        "Comments": "Cloncurry Shire Council - Local Law Keeping and Control of Animals"
+        "Comments": "Cloncurry Shire Council - Local Law Keeping and Control of Animals",
+        "Description": ""
     },
     {
         "URL": "http://www.croydon.qld.gov.au/domestic-animals",
@@ -1225,7 +1306,8 @@
         "disputeSubject": "Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "guidelines",
-        "Comments": "Croydon Shire Council - Animal Management and Registration information"
+        "Comments": "Croydon Shire Council - Animal Management and Registration information",
+        "Description": ""
     },
     {
         "URL": "http://www.etheridge.qld.gov.au/domestic-animals",
@@ -1234,7 +1316,8 @@
         "disputeSubject": "Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "guidelines",
-        "Comments": "Etheridege Shire Council - Information about keeping domestic animals and responsiblity of pet owners"
+        "Comments": "Etheridege Shire Council - Information about keeping domestic animals and responsiblity of pet owners",
+        "Description": ""
     },
     {
         "URL": "http://www.flinders.qld.gov.au/request-for-service",
@@ -1243,7 +1326,8 @@
         "disputeSubject": "Dogs and other pets;Noise;",
         "resolution": "Formal Resolution;",
         "documentType": "form",
-        "Comments": "Flinders Shire Council - Online complaints form about barking dogs"
+        "Comments": "Flinders Shire Council - Online complaints form about barking dogs",
+        "Description": ""
     },
     {
         "URL": "http://www.mckinlay.qld.gov.au/councilservices/animals.shtml/-/journal_content/56_INSTANCE_0000/17564/310F2ED26835C089F81D0635240BF2C0?p_p_state_rcv=1",
@@ -1252,7 +1336,8 @@
         "disputeSubject": "Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "guidelines",
-        "Comments": "McKinlay Shire Council - Animal registration and information page"
+        "Comments": "McKinlay Shire Council - Animal registration and information page",
+        "Description": ""
     },
     {
         "URL": "http://www.mountisa.qld.gov.au/animal-ownership1#Barking",
@@ -1261,7 +1346,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "guidelines",
-        "Comments": "Mount Isa City Council - Animal Ownership Information including registration and barking dogs"
+        "Comments": "Mount Isa City Council - Animal Ownership Information including registration and barking dogs",
+        "Description": ""
     },
     {
         "URL": "http://www.richmond.qld.gov.au/animal-control",
@@ -1270,7 +1356,8 @@
         "disputeSubject": "Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "guidelines",
-        "Comments": "Richmond Shire Council - Animal control information and registration forms"
+        "Comments": "Richmond Shire Council - Animal control information and registration forms",
+        "Description": ""
     },
     {
         "URL": "http://www.barcaldinerc.qld.gov.au/documents/311418/9733156/Barking%20Dog%20Nuisance%20Pack.pdf",
@@ -1279,7 +1366,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Assisted Resolution;",
         "documentType": "fact sheet",
-        "Comments": "Barcaldine Regional Council - Barking Dogs Nuisance Pack"
+        "Comments": "Barcaldine Regional Council - Barking Dogs Nuisance Pack",
+        "Description": ""
     },
     {
         "URL": "http://www.barcoo.qld.gov.au/about-council/animal-registration",
@@ -1288,7 +1376,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "guidelines",
-        "Comments": "Barcoo Shire Council - Animal registration information including responsiblities of dog owner and contact information for coucil land protection officer"
+        "Comments": "Barcoo Shire Council - Animal registration information including responsiblities of dog owner and contact information for coucil land protection officer",
+        "Description": ""
     },
     {
         "URL": "http://www.btrc.qld.gov.au/responsible-pet-owner",
@@ -1297,7 +1386,8 @@
         "disputeSubject": "Dogs and other pets;Noise;",
         "resolution": "Self Resolution;",
         "documentType": "guidelines",
-        "Comments": "Blackall-Tambo Regional Council - Responsible pet owner page includes information about barking dogs and council contac information."
+        "Comments": "Blackall-Tambo Regional Council - Responsible pet owner page includes information about barking dogs and council contac information.",
+        "Description": ""
     },
     {
         "URL": "http://www.diamantina.qld.gov.au/dog-registration",
@@ -1306,7 +1396,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Formal Resolution;",
         "documentType": "procedure",
-        "Comments": "Diamantina Shire Council - Information about dog registration and complaints process for barking dogs"
+        "Comments": "Diamantina Shire Council - Information about dog registration and complaints process for barking dogs",
+        "Description": ""
     },
     {
         "URL": "http://www.longreach.qld.gov.au/animal-control-registration#dogscats",
@@ -1315,7 +1406,8 @@
         "disputeSubject": "Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "guidelines",
-        "Comments": "Longreach Regional Council - General information about animal control and registration"
+        "Comments": "Longreach Regional Council - General information about animal control and registration",
+        "Description": ""
     },
     {
         "URL": "http://www.winton.qld.gov.au/animal-control",
@@ -1324,7 +1416,8 @@
         "disputeSubject": "Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "guidelines",
-        "Comments": "Winton Shire Council - Animal Control information"
+        "Comments": "Winton Shire Council - Animal Control information",
+        "Description": ""
     },
     {
         "URL": "http://www.balonne.qld.gov.au/index.shtml/-/journal_content/56/722471/B41CFE72600AF432E56120DCA134FC93?p_p_auth=2DJqNgcS&_56_showArticlTitleInPortlet=true",
@@ -1333,7 +1426,8 @@
         "disputeSubject": "Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "guidelines",
-        "Comments": "Balonne Shire Council - Dog registration"
+        "Comments": "Balonne Shire Council - Dog registration",
+        "Description": ""
     },
     {
         "URL": "http://www.bulloo.qld.gov.au/domestic-animals1",
@@ -1342,7 +1436,8 @@
         "disputeSubject": "Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "guidelines",
-        "Comments": "Bulloo Shire Council - Registration of domestic animals"
+        "Comments": "Bulloo Shire Council - Registration of domestic animals",
+        "Description": ""
     },
     {
         "URL": "http://www.maranoa.qld.gov.au/barking-dogs",
@@ -1351,7 +1446,8 @@
         "disputeSubject": "Dogs and other pets;Noise;",
         "resolution": "Self Resolution;",
         "documentType": "guidelines",
-        "Comments": "Maranoa Regional Council - Barking Dog Information"
+        "Comments": "Maranoa Regional Council - Barking Dog Information",
+        "Description": ""
     },
     {
         "URL": "http://www.murweh.qld.gov.au/animals-agistment",
@@ -1360,7 +1456,8 @@
         "disputeSubject": "Dogs and other pets;Noise;",
         "resolution": "Assisted Resolution;",
         "documentType": "guidelines",
-        "Comments": "Murweh Shire Council - Animal registration and information. Barking collars available through council."
+        "Comments": "Murweh Shire Council - Animal registration and information. Barking collars available through council.",
+        "Description": ""
     },
     {
         "URL": "http://www.paroo.qld.gov.au/c/document_library/get_file?uuid=19d2355f-23b9-48fa-a79a-b52ef3cc1908&groupId=597641",
@@ -1369,7 +1466,8 @@
         "disputeSubject": "Noise;Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "fact sheet",
-        "Comments": "Paroo Shire Council - Responsible dog ownership factsheet including some information about barking"
+        "Comments": "Paroo Shire Council - Responsible dog ownership factsheet including some information about barking",
+        "Description": ""
     },
     {
         "URL": "http://quilpie.qld.gov.au/about/community/pet-ownership/",
@@ -1378,7 +1476,8 @@
         "disputeSubject": "Dogs and other pets;",
         "resolution": "Self Resolution;",
         "documentType": "guidelines",
-        "Comments": "Quilpie Shire Council - Pet ownership inforamtion"
+        "Comments": "Quilpie Shire Council - Pet ownership inforamtion",
+        "Description": ""
     },
     {
         "URL": "http://www.qld.gov.au/law/housing-and-neighbours/body-corporate/body-corporate-disputes/types-of-dispute-resolution/self-resolution-for-disputes/",
@@ -1387,7 +1486,8 @@
         "disputeSubject": "Noise;Behaviours;Trees;Smells;Fences;Abuse;Dogs and other pets;Threats;Children;Drainage;Pools;Renovations;Retaining walls;Parking;Overgrown gardens;Objects;Rubbish bins;Easements;Lighting;By-law breaches (body corporate);Cameras;Common property (body corporate);Security;Harassment;Wildlife;",
         "resolution": "Self Resolution;",
         "documentType": "guidelines",
-        "Comments": "Self resolution for body corporate disputes between neighbours, which could cover all of the dispute categories. * Most important link for self resolution in bodies coprorate"
+        "Comments": "Self resolution for body corporate disputes between neighbours, which could cover all of the dispute categories. * Most important link for self resolution in bodies coprorate",
+        "Description": ""
     },
     {
         "URL": "http://www.qld.gov.au/law/housing-and-neighbours/body-corporate/body-corporate-disputes/types-of-dispute-resolution/conciliation-for-body-corporate-disputes/",
@@ -1396,7 +1496,8 @@
         "disputeSubject": "Noise;Behaviours;Trees;Smells;Fences;Abuse;Dogs and other pets;Threats;Children;Drainage;Pools;Renovations;Retaining walls;Parking;Overgrown gardens;Objects;Rubbish bins;Easements;Lighting;By-law breaches (body corporate);Cameras;Common property (body corporate);Security;Harassment;Wildlife;",
         "resolution": "Assisted Resolution;",
         "documentType": "procedure",
-        "Comments": "Conciliation for body corporate disputes between neighbours, which could cover all of the dispute categories * Most important link for assisted resolution in bodies coprorate"
+        "Comments": "Conciliation for body corporate disputes between neighbours, which could cover all of the dispute categories * Most important link for assisted resolution in bodies coprorate",
+        "Description": ""
     },
     {
         "URL": "http://www.qld.gov.au/law/housing-and-neighbours/body-corporate/body-corporate-disputes/types-of-dispute-resolution/adjudication-for-body-corporate-disputes/",
@@ -1405,7 +1506,8 @@
         "disputeSubject": "Noise;Behaviours;Trees;Smells;Fences;Abuse;Dogs and other pets;Threats;Children;Drainage;Pools;Renovations;Retaining walls;Parking;Overgrown gardens;Objects;Rubbish bins;Easements;Lighting;By-law breaches (body corporate);Cameras;Common property (body corporate);Security;Harassment;Wildlife;",
         "resolution": "Formal Resolution;",
         "documentType": "procedure",
-        "Comments": "Adjudication body corporate disputes between neighbours, which could cover all of the dispute categories. * Most important link for formal resolution in bodies coprorate"
+        "Comments": "Adjudication body corporate disputes between neighbours, which could cover all of the dispute categories. * Most important link for formal resolution in bodies coprorate",
+        "Description": ""
     },
     {
         "URL": "https://www.dnrm.qld.gov.au/our-department/contact-us/titles-registry-contacts",
@@ -1414,7 +1516,8 @@
         "disputeSubject": "Noise;Trees;Fences;Dogs and other pets;Children;Pools;Retaining walls;Overgrown gardens;Rubbish bins;Privacy;Lighting;Cameras;Security;Behaviours;Smells;Abuse;Threats;Drainage;Renovations;Parking;Objects;Easements;Access;By-law breaches (body corporate);Common property (body corporate);Harassment;Wildlife;",
         "resolution": "Self Resolution;",
         "documentType": "",
-        "Comments": "Titles registry will be able to assist with questions like - \"the property next door is rented. Who is the owner?\""
+        "Comments": "Titles registry will be able to assist with questions like - \"the property next door is rented. Who is the owner?\"",
+        "Description": ""
     },
     {
         "URL": "http://www.sclqld.org.au/caselaw/",
@@ -1423,7 +1526,8 @@
         "disputeSubject": "Trees;Fences;",
         "resolution": "Self Resolution;",
         "documentType": "",
-        "Comments": "Supreme Court library - will have all published decisions regarding QCAT matters, including NDR - Tree disputes"
+        "Comments": "Supreme Court library - will have all published decisions regarding QCAT matters, including NDR - Tree disputes",
+        "Description": ""
     },
     {
         "URL": "http://www.qcat.qld.gov.au/matter-types/tree-disputes/tree-order-register",
@@ -1432,7 +1536,8 @@
         "disputeSubject": "Trees;",
         "resolution": "Self Resolution;",
         "documentType": "",
-        "Comments": "QCAT website - what type of decisions have been made regarding tree disputes before QCAT?"
+        "Comments": "QCAT website - what type of decisions have been made regarding tree disputes before QCAT?",
+        "Description": ""
     },
     {
         "URL": "https://www.dews.qld.gov.au/water-supply-regulations/urban-drainage",
@@ -1441,7 +1546,8 @@
         "disputeSubject": "Drainage;",
         "resolution": "Self Resolution;",
         "documentType": "",
-        "Comments": "Dept of Energy & Water supply - Urban Drainage Manual"
+        "Comments": "Dept of Energy & Water supply - Urban Drainage Manual",
+        "Description": ""
     },
     {
         "URL": "http://www.qld.gov.au/law/housing-and-neighbours/body-corporate/",
@@ -1450,7 +1556,8 @@
         "disputeSubject": "Noise;Behaviours;Trees;Smells;Fences;Abuse;Dogs and other pets;Threats;Children;Drainage;Pools;Renovations;Retaining walls;Parking;Overgrown gardens;Objects;Rubbish bins;Easements;Lighting;By-law breaches (body corporate);Cameras;Common property (body corporate);Security;Harassment;Wildlife;",
         "resolution": "Self Resolution;",
         "documentType": "guidelines",
-        "Comments": "General information on body corporates. *Most important link for general information on bodies corporate"
+        "Comments": "General information on body corporates. *Most important link for general information on bodies corporate",
+        "Description": ""
     },
     {
         "URL": "http://www.hpw.qld.gov.au/construction/BuildingPlumbing/PoolSafety/PoolFencesSafetyBarriers/Pages/DividingFences.aspx",
