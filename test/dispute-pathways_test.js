@@ -77,34 +77,40 @@ casper.each( states, function( self, state ) {
 	});
 });
 // check results for fences
-casper.test.begin( 'search results for fences', 12, function suite( test ) {
+casper.test.begin( 'search results for fences', 18, function suite( test ) {
 	casper.start( URL + queryFromObject({ have: 'dispute', 'with': 'a neighbour', about: 'fences' }))
 	.then(function() {
 		var options;
 
 		test.assertTitle( TITLE, 'loaded neighbourhood dispute page' );
 
-		// success message shown
-		test.assertExists( '.status.success', 'success message is shown' );
+		test.assertExists( '.status.success', 'success message is shown (fences)' );
 		test.assertSelectorHasText( '.status.success h2', 'We have found 1 result', 'heading displays: 1 result' );
-		test.assertElementCount( '.success li', 1, 'one list item' );
-		test.assertSelectorHasText( '.success li', 'We found 1 resource to help you resolve this dispute yourself', 'status text for self resolution' );
+		test.assertElementCount( '.success li', 1, 'one list item (fences)' );
+		test.assertSelectorHasText( '.success li', 'We found 1 resource to help you resolve this dispute yourself', 'status text for self resolution (fences)' );
 
 		// 1 result for self resolution present
 		test.assertElementCount( '.self li', 1, '1 result for self resolution' );
 		test.assertSelectorHasText( '.self li a', 'A', 'first result has correct title' );
 		test.assertEquals( casper.getElementAttribute( '.self li a', 'href' ), 'http://www.example.com/a', 'first result has correct URL' );
-
 	})
 
 	.thenOpen( URL + queryFromObject({ have: 'dispute', 'with': 'a neighbour', about: 'dogs and other pets' }))
 	.then(function() {
-		// success message shown
-		test.assertExists( '.status.success', 'success message is shown' );
+		test.assertExists( '.status.success', 'success message is shown (dogs)' );
 		test.assertSelectorHasText( '.status.success h2', 'We have found 2 results', 'heading displays: 2 results' );
-		test.assertElementCount( '.success li', 1, 'one list item' );
-		test.assertSelectorHasText( '.success li', 'We found 2 resources that offer assistance with your dispute', 'status text for assisted resolution' );
+		test.assertElementCount( '.success li', 1, 'one list item (dogs)' );
+		test.assertSelectorHasText( '.success li', 'We found 2 resources that offer assistance with this dispute', 'status text for assisted resolution (dogs)' );
+	})
 
+	.thenOpen( URL + queryFromObject({ have: 'disagreement', 'with': 'a neighbour', about: 'noise' }))
+	.then(function() {
+		test.assertExists( '.status.success', 'success message is shown (noise)' );
+		test.assertSelectorHasText( '.status.success h2', 'We have found 8 results', 'heading displays: 8 results' );
+		test.assertElementCount( '.success li', 3, '3 list items (noise)' );
+		test.assertSelectorHasText( '.success li:nth-child(1)', 'We found 3 resources to help you resolve this disagreement yourself', 'status text for self resolution (noise)' );
+		test.assertSelectorHasText( '.success li:nth-child(2)', 'We found 5 resources that offer assistance with this disagreement', 'status text for assisted resolution (noise)' );
+		test.assertSelectorHasText( '.success li:nth-child(3)', 'We found 2 resources that offer formal resolution', 'status text for formal resolution (noise)' );
 	})
 
 	.run(function() {
