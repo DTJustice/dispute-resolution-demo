@@ -46,6 +46,7 @@
 		return { label: s, value: s };
 	}
 
+
 	// render view
 	function render( view, viewModel ) {
 		var template = Handlebars.compile( $( '#' + view + '-template' ).html() );
@@ -68,6 +69,17 @@
 		viewContainer
 		// show view
 		.relevance( 'relevant', true )
+		// SWE template reflow
+		.trigger( 'x-height-change' );
+	}
+
+
+	// replace template with rendered content
+	function renderInPlace( view, viewModel ) {
+		var templateElement = $( '#' + view + '-template' );
+		var template = Handlebars.compile( templateElement.html() );
+
+		templateElement.replaceWith( template( viewModel ))
 		// SWE template reflow
 		.trigger( 'x-height-change' );
 	}
@@ -127,21 +139,26 @@
 			self: [],
 			assisted: [],
 			formal: [],
+			legislation: [],
 			totalMatches: 0,
 			many: false
 		};
 
 		$.each( mappedData, function( i, result ) {
 			if ( result[ 'with' ][ story[ 'with' ]] && result.about[ story.about ]) {
-				results.totalMatches++;
-				if ( result.pathway[ 'self resolution' ]) {
-					results.self.push( result );
-				}
-				if ( result.pathway[ 'assisted resolution' ]) {
-					results.assisted.push( result );
-				}
-				if ( result.pathway[ 'formal resolution' ]) {
-					results.formal.push( result );
+				if ( result.documentType === 'legislation' ) {
+					results.legislation.push( result );
+				} else {
+					results.totalMatches++;
+					if ( result.pathway[ 'self resolution' ]) {
+						results.self.push( result );
+					}
+					if ( result.pathway[ 'assisted resolution' ]) {
+						results.assisted.push( result );
+					}
+					if ( result.pathway[ 'formal resolution' ]) {
+						results.formal.push( result );
+					}
 				}
 			}
 		});
@@ -152,6 +169,10 @@
 
 	// show results
 	function renderResults() {
+		if ( results.legislation ) {
+			// create asides
+			renderInPlace( 'aside-legislation', { results: results });
+		}
 		render( 'results', { story: story, results: results });
 	}
 

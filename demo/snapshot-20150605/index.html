@@ -345,6 +345,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					</ul>
 				</div>
 
+<script id="aside-legislation-template" type="text/x-handlebars-template">
+<div class="aside tip">
+	<h2>Check the law</h2>
+	<ul>
+		{{#each results.legislation}}<li><a href="{{ url }}">{{ title }}</a></li>{{/each}}
+	</ul>
+</div>
+</script>
+
 				<div class="aside tip">
 					<h2>Legal information and advice</h2>
 					<p><a href="http://www.qld.gov.au/law/legal-mediation-and-justice-of-the-peace/legal-advice-and-investment/legal-information-and-advice/">Find a solicitor</a>, law firm, barrister or free legal services.</p>
