@@ -62,8 +62,13 @@
 		var dataTables = $( '.data-table', viewContainer );
 		$( '.even, .odd', dataTables ).removeClass( 'even odd' );
 		dataTables.dataTable({
-			asStripeClasses: [ 'even', 'odd' ],
-			order: [[ 2, 'desc' ]]
+			lengthChange: false,
+			pageLength: 3,
+			pagingType: 'simple_numbers',
+			order: [[ 2, 'desc' ]],
+			searching: false,
+			saveState: true,
+			stripeClasses: [ 'even', 'odd' ]
 		});
 
 		viewContainer

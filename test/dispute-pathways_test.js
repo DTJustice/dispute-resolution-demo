@@ -49,7 +49,7 @@ casper.test.begin( 'form state', 11, function suite( test ) {
 // Given a customer visits the tool,
 // when the URL contains a complete story
 // then they will see search results
-casper.test.begin( 'search results for fences', 38, function suite( test ) {
+casper.test.begin( 'search results behaviour', 44, function suite( test ) {
 
 	casper.start( URL + queryFromObject({ have: 'dispute', 'with': 'a neighbour', about: 'fences' }))
 	.then(function() {
@@ -105,7 +105,29 @@ casper.test.begin( 'search results for fences', 38, function suite( test ) {
 		test.assertSelectorHasText( '.aside.tip:nth-child(2) li', 'J', 'legislation link is present in aside' );
 
 		// check initial state of datatable
-		test.assertSelectorHasText( '#assisted-resolution tr:last-child', 'form', 'form result is placed last' );
+		test.assertSelectorHasText( '#assisted-resolution tr:last-child', 'form', 'form result is last' );
+		test.assertSelectorHasText( '#assisted-resolution tbody tr:last-child a:first-child', 'F', 'F is last' );
+		// click to sort by title
+		casper.click( '#assisted-resolution thead th:first-child' );
+		test.assertSelectorHasText( '#assisted-resolution tbody tr:last-child a:first-child', 'H', 'table was sorted' );
+		// click to second page in datatable
+		casper.click( '#assisted-resolution .next' );
+		test.assertElementCount( '#assisted-resolution tbody tr', 1, '1 row shown on second page' );
+		test.assertSelectorHasText( '#assisted-resolution tbody tr a', 'I', '1 row shown on second page' );
+
+		// follow link
+		casper.click( '#assisted-resolution tbody tr:last-child td:first-child a' );
+	})
+
+	// navigate away then back
+	.waitForUrl( 'example.com' )
+	.back()
+	.waitForUrl( 'localhost' )
+
+	.then(function() {
+		// datatable should remember sort order and page
+		test.assertDoesntExist( '#assisted-resolution .next', 'datatable remembers second page' );
+		test.assertSelectorHasText( '#assisted-resolution tbody tr a', 'I', 'datatable remembers state' );
 	})
 
 	.run(function() {

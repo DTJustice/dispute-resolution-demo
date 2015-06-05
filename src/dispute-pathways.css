@@ -28,3 +28,23 @@ blockquote strong {
 	color: #000;
 	font-weight: normal;
 }
+
+
+/* datatables */
+.dataTables_info,
+.paginate_button {
+	font-size: 80%;
+}
+.dataTables_info {
+	padding: 0 1em;
+}
+.paginate_button {
+	margin-left: .7em;
+}
+.paginate_button.disabled {
+	display: none;
+}
+.paginate_button.current {
+	color: inherit;
+	text-decoration: none;
+}
