@@ -178,6 +178,10 @@ for ( i = 1, len = tr.length; i < len; i++ ) {
 			}
 			// skip this row on next pass
 			i += 13;
+		} else if ( rowData[ 0 ].length && ! /^http/.test( rowData[ 0 ])) {
+			// probably a description
+			records[ records.length - 1 ].Description = rowData[ 0 ];
+			i += 13;
 
 		} else {
 			i += 12;
