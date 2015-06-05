@@ -45,6 +45,7 @@ casper.test.begin( 'form state', 11, function suite( test ) {
 	});
 });
 
+
 // Given a customer visits the tool,
 // when the URL contains a complete story
 // then they will see search results
@@ -68,9 +69,9 @@ casper.test.begin( 'search results for fences', 33, function suite( test ) {
 		test.assertDoesntExist( '#formal-resolution', 'Formal resolution section is NOT present (fences)' );
 
 		// 1 result for self resolution present
-		test.assertElementCount( '.self li', 1, '1 result for self resolution' );
-		test.assertSelectorHasText( '.self li a', 'A', 'first result has correct title' );
-		test.assertEquals( casper.getElementAttribute( '.self li a', 'href' ), 'http://www.example.com/a', 'first result has correct URL' );
+		test.assertElementCount( '.self tbody tr', 1, '1 result for self resolution' );
+		test.assertSelectorHasText( '.self a', 'A', 'first result has correct title' );
+		test.assertEquals( casper.getElementAttribute( '.self a', 'href' ), 'http://www.example.com/a', 'first result has correct URL' );
 	})
 
 	.thenOpen( URL + queryFromObject({ have: 'dispute', 'with': 'a neighbour', about: 'dogs and other pets' }))
@@ -213,11 +214,11 @@ casper.test.begin( 'back button behaves as expected', 19, function suite( test )
 	.then(function() {
 		test.assertTitle( TITLE, 'loaded neighbourhood dispute page' );
 		// 1 result for self resolution present
-		test.assertElementCount( '.self li', 1, '1 result for self resolution' );
-		test.assertSelectorHasText( '.self li a', 'A', 'first result has correct title' );
-		test.assertEquals( casper.getElementAttribute( '.self li a', 'href' ), 'http://www.example.com/a', 'first result has correct URL' );
+		test.assertElementCount( '.self tbody tr', 1, '1 result for self resolution' );
+		test.assertSelectorHasText( '.self a', 'A', 'first result has correct title' );
+		test.assertEquals( casper.getElementAttribute( '.self a', 'href' ), 'http://www.example.com/a', 'first result has correct URL' );
 
-		casper.click( '.self li a' );
+		casper.click( '.self a' );
 	})
 
 	.waitForUrl( 'example.com' )
@@ -227,9 +228,9 @@ casper.test.begin( 'back button behaves as expected', 19, function suite( test )
 	.then(function() {
 		test.assertTitle( TITLE, 'loaded neighbourhood dispute page' );
 		// 1 result for self resolution present
-		test.assertElementCount( '.self li', 1, '1 result for self resolution' );
-		test.assertSelectorHasText( '.self li a', 'A', 'first result has correct title' );
-		test.assertEquals( casper.getElementAttribute( '.self li a', 'href' ), 'http://www.example.com/a', 'first result has correct URL' );
+		test.assertElementCount( '.self tbody tr', 1, '1 result for self resolution' );
+		test.assertSelectorHasText( '.self a', 'A', 'first result has correct title' );
+		test.assertEquals( casper.getElementAttribute( '.self a', 'href' ), 'http://www.example.com/a', 'first result has correct URL' );
 	})
 
 	.back()
@@ -273,7 +274,6 @@ casper.test.begin( 'form validation integration', 6, function suite( test ) {
 		test.assertExists( '.warn', 'form validation warning is shown' );
 		test.assertSelectorHasText( '.warn h2', 'Please check your answers', 'form validation warning is displayed' );
 	})
-
 
 	.run(function() {
 		test.done();

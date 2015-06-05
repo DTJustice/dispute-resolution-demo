@@ -250,23 +250,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 {{#if results.self}}<div id="self-resolution" class="section self">
 	<h2>Try resolving the {{ story.have }} yourself</h2>
-	<ul>
-		{{#each results.self}}<li><a href="{{ url }}">{{ title }}</a></li>{{/each}}
-	</ul>
+	<table class="data-table">
+		<thead>
+			<tr>
+				<th>Option</th>
+				<th>Organisation</th>
+				<th>Type</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each results.self}}<tr>
+				<td><a href="{{ url }}">{{ title }}</a><br /><small>{{ description }}</small></td>
+				<td>{{ publisher }}</td>
+				<td>{{ documentType }}</td>
+			</tr>{{/each}}
+		</tbody>
+	</table>
 </div>{{/if}}
 
 {{#if results.assisted}}<div id="assisted-resolution" class="section assisted">
 	<h2>Assistance resolving your {{ story.have }}</h2>
-	<ul>
-		{{#each results.assisted}}<li><a href="{{ url }}">{{ title }}</a></li>{{/each}}
-	</ul>
+	<table class="data-table">
+		<thead>
+			<tr>
+				<th>Option</th>
+				<th>Organisation</th>
+				<th>Type</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each results.assisted}}<tr>
+				<td><a href="{{ url }}">{{ title }}</a><br /><small>{{ description }}</small></td>
+				<td>{{ publisher }}</td>
+				<td>{{ documentType }}</td>
+			</tr>{{/each}}
+		</tbody>
+	</table>
 </div>{{/if}}
 
 {{#if results.formal}}<div id="formal-resolution" class="section formal">
 	<h2>Formal resolution to your {{ story.have }}</h2>
-	<ul>
-		{{#each results.formal}}<li><a href="{{ url }}">{{ title }}</a></li>{{/each}}
-	</ul>
+	<table class="data-table">
+		<thead>
+			<tr>
+				<th>Option</th>
+				<th>Organisation</th>
+				<th>Type</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each results.formal}}<tr>
+				<td><a href="{{ url }}">{{ title }}</a><br /><small>{{ description }}</small></td>
+				<td>{{ publisher }}</td>
+				<td>{{ documentType }}</td>
+			</tr>{{/each}}
+		</tbody>
+	</table>
 </div>{{/if}}
 </script>
 
@@ -560,6 +599,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/history.js/1.8/bundled-uncompressed/html4+html5/jquery.history.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.7/js/jquery.dataTables.min.js"></script>
 <script src="../../src/dispute-pathways.js"></script>
 
 

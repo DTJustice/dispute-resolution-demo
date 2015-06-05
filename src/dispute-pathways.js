@@ -49,10 +49,25 @@
 	// render view
 	function render( view, viewModel ) {
 		var template = Handlebars.compile( $( '#' + view + '-template' ).html() );
-		$( '#dispute-pathways-view' )
+		var viewContainer = $( '#dispute-pathways-view' );
+
+		viewContainer
+		// hide it
 		.relevance( 'relevant', false )
-		.html( template( viewModel ))
+		// update it
+		.html( template( viewModel ));
+
+		// datatables init
+		var dataTables = $( '.data-table', viewContainer );
+		$( '.even, .odd', dataTables ).removeClass( 'even odd' );
+		dataTables.dataTable({
+			asStripeClasses: ['even', 'odd']
+		});
+
+		viewContainer
+		// show view
 		.relevance( 'relevant', true )
+		// SWE template reflow
 		.trigger( 'x-height-change' );
 	}
 
