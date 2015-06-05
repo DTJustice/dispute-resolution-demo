@@ -140,8 +140,7 @@
 			assisted: [],
 			formal: [],
 			legislation: [],
-			totalMatches: 0,
-			many: false
+			totalMatches: 0
 		};
 
 		$.each( mappedData, function( i, result ) {
@@ -162,8 +161,6 @@
 				}
 			}
 		});
-
-		results.many = results.totalMatches >= 5;
 	}
 
 

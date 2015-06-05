@@ -49,8 +49,7 @@ casper.test.begin( 'form state', 11, function suite( test ) {
 // Given a customer visits the tool,
 // when the URL contains a complete story
 // then they will see search results
-casper.test.begin( 'search results for fences', 36, function suite( test ) {
-	var MANY_RESULTS_TEXT = 'Resolving disputes takes time, patience and, depending on the approach you choose, can be expensive. Below are the options most relevant';
+casper.test.begin( 'search results for fences', 38, function suite( test ) {
 
 	casper.start( URL + queryFromObject({ have: 'dispute', 'with': 'a neighbour', about: 'fences' }))
 	.then(function() {
@@ -58,10 +57,11 @@ casper.test.begin( 'search results for fences', 36, function suite( test ) {
 		test.assertSelectorHasText( '.story', 'I have a dispute with a neighbour about fences', 'story is correct (fences)' );
 
 		test.assertExists( '.status.success', 'success message is shown (fences)' );
-		test.assertSelectorHasText( '.status.success h2', 'We have found 1 option', 'heading displays: 1 result' );
+		test.assertSelectorHasText( '.status.success h2', 'We have found 1 option about fences', 'heading displays: 1 result' );
 		test.assertElementCount( '.success li', 1, 'one list item (fences)' );
-		test.assertSelectorHasText( '.success li a', 'Check out 1 way you can do that', 'status text for self resolution (fences)' );
-		test.assertSelectorDoesntHaveText( '.success', MANY_RESULTS_TEXT, 'many results text not shown for 1 result' );
+		test.assertSelectorHasText( '.success li a', '1 resource for resolving the dispute yourself', 'status text for self resolution (fences)' );
+		test.assertSelectorDoesntHaveText( '.success', 'for getting help to resolve your', 'assisted resolution status not present (fences)' );
+		test.assertSelectorDoesntHaveText( '.success', 'about formal resolution of your', 'formal resolution status not present (fences)' );
 
 		// only self resolution section is shown
 		test.assertExists( '#self-resolution', 'Self resolution section is present (fences)' );
@@ -78,35 +78,34 @@ casper.test.begin( 'search results for fences', 36, function suite( test ) {
 	.then(function() {
 		test.assertSelectorHasText( '.story', 'I have a dispute with a neighbour about dogs and other pets', 'story is correct (dogs)' );
 		test.assertExists( '.status.success', 'success message is shown (dogs)' );
-		test.assertSelectorHasText( '.status.success h2', 'We have found 2 options', 'heading displays: 2 results' );
+		test.assertSelectorHasText( '.status.success h2', 'We have found 2 options about dogs and other pets', 'heading displays: 2 results' );
 		test.assertExists( '#assisted-resolution', 'Assisted resolution section is present (dogs)' );
 		test.assertDoesntExist( '#self-resolution', 'Self resolution section is NOT present (dogs)' );
+		test.assertSelectorDoesntHaveText( '.success', 'yourself', 'self resolution status not present (dogs)' );
+		test.assertSelectorDoesntHaveText( '.success', 'about formal resolution of your', 'formal resolution status not present (dogs)' );
 		test.assertDoesntExist( '#formal-resolution', 'Formal resolution section is NOT present (dogs)' );
 		test.assertElementCount( '.success li', 1, 'one list item (dogs)' );
-		test.assertSelectorHasText( '.success li a', '2 resources offering assistance with disputes about dogs and other pets', 'status text for assisted resolution (dogs)' );
-		test.assertSelectorDoesntHaveText( '.success', MANY_RESULTS_TEXT, 'many results text not shown for 2 results' );
+		test.assertSelectorHasText( '.success li a', '2 resources for getting help to resolve your dispute', 'status text for assisted resolution (dogs)' );
 	})
 
 	.thenOpen( URL + queryFromObject({ have: 'issue', 'with': 'a neighbour', about: 'noise' }))
 	.then(function() {
 		test.assertSelectorHasText( '.story', 'I have an issue with a neighbour about noise', 'story is correct (noise)' );
 		test.assertExists( '.status.success', 'success message is shown (noise)' );
-		test.assertSelectorHasText( '.status.success h2', 'We have found 7 options', 'heading displays: 7 results' );
+		test.assertSelectorHasText( '.status.success h2', 'We have found 7 options about noise', 'heading displays: 7 results' );
 		test.assertElementCount( '#dispute-pathways-view .section', 3, 'three sections (noise)' );
 		test.assertExists( '#self-resolution', 'Self resolution section is present (noise)' );
 		test.assertExists( '#assisted-resolution', 'Assisted resolution section is present (noise)' );
 		test.assertExists( '#formal-resolution', 'Formal resolution section is present (noise)' );
-		test.assertSelectorHasText( '.success li:nth-child(1)', 'Check out 3 ways you can do that', 'status text for self resolution (noise)' );
-		test.assertSelectorHasText( '.success li:nth-child(2)', '4 resources offering assistance with issues about noise', 'status text for assisted resolution (noise)' );
-		test.assertSelectorHasText( '.success li:nth-child(3)', 'Find out how to approach formal resolution with these 1 resource', 'status text for formal resolution (noise)' );
-		test.assertSelectorHasText( '.success', MANY_RESULTS_TEXT, 'many results text is shown for 7 results' );
+		test.assertSelectorHasText( '.success li:nth-child(1)', '3 resources for resolving the issue yourself', 'status text for self resolution (noise)' );
+		test.assertSelectorHasText( '.success li:nth-child(2)', '4 resources for getting help to resolve your issue', 'status text for assisted resolution (noise)' );
+		test.assertSelectorHasText( '.success li:nth-child(3)', '1 resource about formal resolution of your issue', 'status text for formal resolution (noise)' );
 		test.assertSelectorDoesntHaveText( '#dispute-pathways-view tbody', 'legislation', 'no legislation results shown in tables' );
 		test.assertSelectorHasText( '.aside.tip:nth-child(2) h2', 'Check the law', 'legislation aside is present' );
-		test.assertSelectorHasText( '.aside.tip:nth-child(2) a', 'J', 'legislation link is present in aside' );
+		test.assertSelectorHasText( '.aside.tip:nth-child(2) li', 'J', 'legislation link is present in aside' );
 
 		// check initial state of datatable
 		test.assertSelectorHasText( '#assisted-resolution tr:last-child', 'form', 'form result is placed last' );
-		// test.assertSelectorDoesntHaveText( '#dispute-pathways-view', 'legislation', 'legislation result is not present' );
 	})
 
 	.run(function() {
