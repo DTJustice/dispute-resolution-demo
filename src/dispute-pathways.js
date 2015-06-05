@@ -111,7 +111,8 @@
 			self: [],
 			assisted: [],
 			formal: [],
-			totalMatches: 0
+			totalMatches: 0,
+			many: false
 		};
 
 		$.each( mappedData, function( i, result ) {
@@ -128,6 +129,8 @@
 				}
 			}
 		});
+
+		results.many = results.totalMatches >= 5;
 	}
 
 

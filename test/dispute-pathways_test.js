@@ -77,7 +77,9 @@ casper.each( states, function( self, state ) {
 	});
 });
 // check results for fences
-casper.test.begin( 'search results for fences', 21, function suite( test ) {
+casper.test.begin( 'search results for fences', 24, function suite( test ) {
+	var MANY_RESULTS_TEXT = 'Resolving disputes takes time, patience and, depending on the approach you choose, can be expensive. Below are the options most relevant';
+
 	casper.start( URL + queryFromObject({ have: 'dispute', 'with': 'a neighbour', about: 'fences' }))
 	.then(function() {
 		test.assertTitle( TITLE, 'loaded neighbourhood dispute page' );
@@ -87,6 +89,7 @@ casper.test.begin( 'search results for fences', 21, function suite( test ) {
 		test.assertSelectorHasText( '.status.success h2', 'We have found 1 option', 'heading displays: 1 result' );
 		test.assertElementCount( '.success li', 1, 'one list item (fences)' );
 		test.assertSelectorHasText( '.success li a', 'Check out 1 way you can do that', 'status text for self resolution (fences)' );
+		test.assertSelectorDoesntHaveText( '.success', MANY_RESULTS_TEXT, 'many results text not shown for 1 result' );
 
 		// 1 result for self resolution present
 		test.assertElementCount( '.self li', 1, '1 result for self resolution' );
@@ -101,6 +104,7 @@ casper.test.begin( 'search results for fences', 21, function suite( test ) {
 		test.assertSelectorHasText( '.status.success h2', 'We have found 2 options', 'heading displays: 2 results' );
 		test.assertElementCount( '.success li', 1, 'one list item (dogs)' );
 		test.assertSelectorHasText( '.success li a', '2 resources offering assistance with disputes about dogs and other pets', 'status text for assisted resolution (dogs)' );
+		test.assertSelectorDoesntHaveText( '.success', MANY_RESULTS_TEXT, 'many results text not shown for 2 results' );
 	})
 
 	.thenOpen( URL + queryFromObject({ have: 'issue', 'with': 'a neighbour', about: 'noise' }))
@@ -112,6 +116,7 @@ casper.test.begin( 'search results for fences', 21, function suite( test ) {
 		test.assertSelectorHasText( '.success li:nth-child(1)', 'Check out 3 ways you can do that', 'status text for self resolution (noise)' );
 		test.assertSelectorHasText( '.success li:nth-child(2)', '5 resources offering assistance with issues about noise', 'status text for assisted resolution (noise)' );
 		test.assertSelectorHasText( '.success li:nth-child(3)', 'Find out how to approach formal resolution with these 2 resources', 'status text for formal resolution (noise)' );
+		test.assertSelectorHasText( '.success', MANY_RESULTS_TEXT, 'many results text is shown for 8 results' );
 	})
 
 	.run(function() {
