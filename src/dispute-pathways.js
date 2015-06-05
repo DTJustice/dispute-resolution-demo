@@ -31,6 +31,15 @@
 		}
 	});
 
+	// handle a/an
+	Handlebars.registerHelper( 'vowelSound', function( phrase, vowelPhrase, consonantPhrase ) {
+		if ( /^[aeiou]/.test( phrase )) {
+			return vowelPhrase;
+		} else {
+			return consonantPhrase;
+		}
+	});
+
 
 	// map values: lower case for display
 	function mapToOption( s ) {

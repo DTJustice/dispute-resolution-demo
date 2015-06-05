@@ -77,12 +77,11 @@ casper.each( states, function( self, state ) {
 	});
 });
 // check results for fences
-casper.test.begin( 'search results for fences', 18, function suite( test ) {
+casper.test.begin( 'search results for fences', 21, function suite( test ) {
 	casper.start( URL + queryFromObject({ have: 'dispute', 'with': 'a neighbour', about: 'fences' }))
 	.then(function() {
-		var options;
-
 		test.assertTitle( TITLE, 'loaded neighbourhood dispute page' );
+		test.assertSelectorHasText( '.story', 'I have a dispute with a neighbour about fences', 'story is correct (fences)' );
 
 		test.assertExists( '.status.success', 'success message is shown (fences)' );
 		test.assertSelectorHasText( '.status.success h2', 'We have found 1 option', 'heading displays: 1 result' );
@@ -97,6 +96,7 @@ casper.test.begin( 'search results for fences', 18, function suite( test ) {
 
 	.thenOpen( URL + queryFromObject({ have: 'dispute', 'with': 'a neighbour', about: 'dogs and other pets' }))
 	.then(function() {
+		test.assertSelectorHasText( '.story', 'I have a dispute with a neighbour about dogs and other pets', 'story is correct (dogs)' );
 		test.assertExists( '.status.success', 'success message is shown (dogs)' );
 		test.assertSelectorHasText( '.status.success h2', 'We have found 2 options', 'heading displays: 2 results' );
 		test.assertElementCount( '.success li', 1, 'one list item (dogs)' );
@@ -105,6 +105,7 @@ casper.test.begin( 'search results for fences', 18, function suite( test ) {
 
 	.thenOpen( URL + queryFromObject({ have: 'issue', 'with': 'a neighbour', about: 'noise' }))
 	.then(function() {
+		test.assertSelectorHasText( '.story', 'I have an issue with a neighbour about noise', 'story is correct (noise)' );
 		test.assertExists( '.status.success', 'success message is shown (noise)' );
 		test.assertSelectorHasText( '.status.success h2', 'We have found 8 options', 'heading displays: 8 results' );
 		test.assertElementCount( '.success li', 3, '3 list items (noise)' );
