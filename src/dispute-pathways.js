@@ -61,7 +61,8 @@
 		var dataTables = $( '.data-table', viewContainer );
 		$( '.even, .odd', dataTables ).removeClass( 'even odd' );
 		dataTables.dataTable({
-			asStripeClasses: ['even', 'odd']
+			asStripeClasses: [ 'even', 'odd' ],
+			order: [[ 2, 'desc' ]]
 		});
 
 		viewContainer

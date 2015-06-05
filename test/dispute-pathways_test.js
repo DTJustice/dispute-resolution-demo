@@ -49,7 +49,7 @@ casper.test.begin( 'form state', 11, function suite( test ) {
 // Given a customer visits the tool,
 // when the URL contains a complete story
 // then they will see search results
-casper.test.begin( 'search results for fences', 33, function suite( test ) {
+casper.test.begin( 'search results for fences', 34, function suite( test ) {
 	var MANY_RESULTS_TEXT = 'Resolving disputes takes time, patience and, depending on the approach you choose, can be expensive. Below are the options most relevant';
 
 	casper.start( URL + queryFromObject({ have: 'dispute', 'with': 'a neighbour', about: 'fences' }))
@@ -100,6 +100,10 @@ casper.test.begin( 'search results for fences', 33, function suite( test ) {
 		test.assertSelectorHasText( '.success li:nth-child(2)', '5 resources offering assistance with issues about noise', 'status text for assisted resolution (noise)' );
 		test.assertSelectorHasText( '.success li:nth-child(3)', 'Find out how to approach formal resolution with these 2 resources', 'status text for formal resolution (noise)' );
 		test.assertSelectorHasText( '.success', MANY_RESULTS_TEXT, 'many results text is shown for 8 results' );
+
+		// check initial state of datatable
+		test.assertSelectorHasText( '#assisted-resolution tr:last-child', 'form', 'form result is placed last' );
+		// test.assertSelectorDoesntHaveText( '#dispute-pathways-view', 'legislation', 'legislation result is not present' );
 	})
 
 	.run(function() {

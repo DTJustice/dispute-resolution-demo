@@ -79,7 +79,7 @@
 				"pathway": "Assisted resolution;",
 				"title": "H",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, dicta, eos.",
-				"documentType": "guidelines"
+				"documentType": "form"
 			},
 			{
 				"url": "http://www.example.com/i",
@@ -99,7 +99,7 @@
 				"pathway": "Assisted resolution;Formal resolution;",
 				"title": "J",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, dicta, eos.",
-				"documentType": "guidelines"
+				"documentType": "legislation"
 			},
 			{
 				"url": "http://www.example.com/k",
