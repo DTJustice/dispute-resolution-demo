@@ -48,36 +48,7 @@ casper.test.begin( 'form state', 11, function suite( test ) {
 // Given a customer visits the tool,
 // when the URL contains a complete story
 // then they will see search results
-var states = [
-	{ have: 'dispute',      'with': 'a neighbour',                      about: 'fences' },
-	{ have: 'disagreement', 'with': 'a neighbour in my body corporate', about: 'common property (body corporate)' }
-];
-casper.each( states, function( self, state ) {
-	casper.test.begin( 'search results state', 9, function suite( test ) {
-		self.start( URL + queryFromObject( state ))
-		.then(function() {
-			test.assertTitle( TITLE, 'loaded neighbourhood dispute page' );
-			// story is displayed
-			test.assertExists( '.story', 'story is present' );
-			test.assertSelectorHasText( '.story', 'I have a ' + state.have + ' with ' + state[ 'with' ] + ' about ' + state.about + '.' );
-
-			test.assertExists( '.section.self', 'Self resolution section exists' );
-			test.assertSelectorHasText( '.section.self h2', 'Try resolving the ' + state.have + ' yourself', 'self resolution heading is correct' );
-
-			test.assertExists( '.section.assisted', 'Assisted resolution section exists' );
-			test.assertSelectorHasText( '.section.assisted h2', 'Assistance resolving your ' + state.have, 'assisted resolution heading is correct' );
-
-			test.assertExists( '.section.formal', 'Formal resolution section exists' );
-			test.assertSelectorHasText( '.section.formal h2', 'Formal resolution to your ' + state.have, 'formal resolution heading is correct' );
-		})
-
-		.run(function() {
-			test.done();
-		});
-	});
-});
-// check results for fences
-casper.test.begin( 'search results for fences', 24, function suite( test ) {
+casper.test.begin( 'search results for fences', 33, function suite( test ) {
 	var MANY_RESULTS_TEXT = 'Resolving disputes takes time, patience and, depending on the approach you choose, can be expensive. Below are the options most relevant';
 
 	casper.start( URL + queryFromObject({ have: 'dispute', 'with': 'a neighbour', about: 'fences' }))
@@ -91,6 +62,11 @@ casper.test.begin( 'search results for fences', 24, function suite( test ) {
 		test.assertSelectorHasText( '.success li a', 'Check out 1 way you can do that', 'status text for self resolution (fences)' );
 		test.assertSelectorDoesntHaveText( '.success', MANY_RESULTS_TEXT, 'many results text not shown for 1 result' );
 
+		// only self resolution section is shown
+		test.assertExists( '#self-resolution', 'Self resolution section is present (fences)' );
+		test.assertDoesntExist( '#assisted-resolution', 'Assisted resolution section is NOT present (fences)' );
+		test.assertDoesntExist( '#formal-resolution', 'Formal resolution section is NOT present (fences)' );
+
 		// 1 result for self resolution present
 		test.assertElementCount( '.self li', 1, '1 result for self resolution' );
 		test.assertSelectorHasText( '.self li a', 'A', 'first result has correct title' );
@@ -102,6 +78,9 @@ casper.test.begin( 'search results for fences', 24, function suite( test ) {
 		test.assertSelectorHasText( '.story', 'I have a dispute with a neighbour about dogs and other pets', 'story is correct (dogs)' );
 		test.assertExists( '.status.success', 'success message is shown (dogs)' );
 		test.assertSelectorHasText( '.status.success h2', 'We have found 2 options', 'heading displays: 2 results' );
+		test.assertExists( '#assisted-resolution', 'Assisted resolution section is present (dogs)' );
+		test.assertDoesntExist( '#self-resolution', 'Self resolution section is NOT present (dogs)' );
+		test.assertDoesntExist( '#formal-resolution', 'Formal resolution section is NOT present (dogs)' );
 		test.assertElementCount( '.success li', 1, 'one list item (dogs)' );
 		test.assertSelectorHasText( '.success li a', '2 resources offering assistance with disputes about dogs and other pets', 'status text for assisted resolution (dogs)' );
 		test.assertSelectorDoesntHaveText( '.success', MANY_RESULTS_TEXT, 'many results text not shown for 2 results' );
@@ -112,7 +91,10 @@ casper.test.begin( 'search results for fences', 24, function suite( test ) {
 		test.assertSelectorHasText( '.story', 'I have an issue with a neighbour about noise', 'story is correct (noise)' );
 		test.assertExists( '.status.success', 'success message is shown (noise)' );
 		test.assertSelectorHasText( '.status.success h2', 'We have found 8 options', 'heading displays: 8 results' );
-		test.assertElementCount( '.success li', 3, '3 list items (noise)' );
+		test.assertElementCount( '#dispute-pathways-view .section', 3, 'three sections (noise)' );
+		test.assertExists( '#self-resolution', 'Self resolution section is present (noise)' );
+		test.assertExists( '#assisted-resolution', 'Assisted resolution section is present (noise)' );
+		test.assertExists( '#formal-resolution', 'Formal resolution section is present (noise)' );
 		test.assertSelectorHasText( '.success li:nth-child(1)', 'Check out 3 ways you can do that', 'status text for self resolution (noise)' );
 		test.assertSelectorHasText( '.success li:nth-child(2)', '5 resources offering assistance with issues about noise', 'status text for assisted resolution (noise)' );
 		test.assertSelectorHasText( '.success li:nth-child(3)', 'Find out how to approach formal resolution with these 2 resources', 'status text for formal resolution (noise)' );
