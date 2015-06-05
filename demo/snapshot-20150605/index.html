@@ -157,13 +157,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 					<h1>Neighbourhood dispute resolution</h1>
-
-
-
-					<p>Use this tool to discover how to resolve a neighbourhood dispute.</p>
-					<p>We provide general information which does not consider your individual circumstances.
-					If you are unsure about your legal rights you should get <a href="http://www.qld.gov.au/law/legal-mediation-and-justice-of-the-peace/legal-advice-and-investment/legal-information-and-advice/">independent legal advice</a>.</p>
-
 					<div id="dispute-pathways-view">
 <noscript>
 <div class="status info">
@@ -177,7 +170,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </noscript>
 
 <script id="form-template" type="text/x-handlebars-template">
-<form method="get" class="form">
+<div class="preamble">
+	<p>Use this tool to discover how to resolve a neighbourhood dispute.</p>
+
+	<p>We provide general information which does not consider your individual circumstances.
+	If you are unsure about your legal rights you should get <a href="http://www.qld.gov.au/law/legal-mediation-and-justice-of-the-peace/legal-advice-and-investment/legal-information-and-advice/">independent legal advice</a>.</p>
+</div>
+
+
+<form class="form" method="get">
 	<ol class="questions">
 		<li>
 			<label for="dispute-pathway-have">
@@ -215,53 +216,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				{{/select}}
 			</select>
 		</li>
-		<li class="footer">
+
+		<li class="actions">
 			<ul class="actions">
 				<li><strong><input type="submit" value="Find options" /></strong></li>
 			</ul>
 		</li>
-	</p>
-
-
+	</ol>
 </form>
 </script>
+
+
 <script id="results-template" type="text/x-handlebars-template">
 <blockquote class="story">
-	<p>I have a <strong>{{ story.have }}</strong> with <strong>{{ story.with }}</strong> about <strong>{{ story.about }}</strong>.</p>
+	<p>I have {{ vowelSound story.have 'an' 'a' }} <strong>{{ story.have }}</strong> with <strong>{{ story.with }}</strong> about <strong>{{ story.about }}</strong>.</p>
 </blockquote>
 
 <div class="status success">
-	<h2>We have found {{ results.totalMatches }} {{ pluralize results.totalMatches 'result' 'results' }}</h2>
+	<h2>We have found {{ results.totalMatches }} {{ pluralize results.totalMatches 'option' 'options' }}</h2>
+
+	{{#if results.many}}<p>Resolving disputes takes time, patience and, depending on the approach you choose, can be expensive. Below are the options most relevant to {{ story.have }}s about {{ story.about }}.</p>{{/if}}
+
+	<p>We provide general information which does not consider your individual circumstances.
+	If you are unsure about your legal rights you should get <a href="http://www.qld.gov.au/law/legal-mediation-and-justice-of-the-peace/legal-advice-and-investment/legal-information-and-advice/">independent legal advice</a>.</p>
+
 	<ul>
-		{{#if results.self.length}}<li>We found {{ results.self.length }} {{ pluralize results.self.length 'resource' 'resources' }} to help you resolve this {{ story.have }} yourself</li>{{/if}}
-		{{#if results.assisted.length}}<li>We found {{ results.assisted.length }} {{ pluralize results.assisted.length 'resource' 'resources' }} that offer assistance with this {{ story.have }}</li>{{/if}}
-		{{#if results.formal.length}}<li>We found {{ results.formal.length }} {{ pluralize results.formal.length 'resource' 'resources' }} that offer formal resolution</li>{{/if}}
+		{{#if results.self.length}}<li>The fasted and cheapest way to resolve a {{ story.have }} is by yourself.
+		<a href="#self-resolution">Check out {{ results.self.length }} {{ pluralize results.self.length 'way' 'ways' }} you can do that</a>.</li>{{/if}}
+		{{#if results.assisted.length}}<li>Conciliation or mediation saves time, legal fees, and court/formal dispute resolution costs for you and the community. We have found <a href="#assisted-resolution">{{ results.assisted.length }} {{ pluralize results.assisted.length 'resource' 'resources' }} offering assistance with {{ story.have }}s about {{ story.about }}</a>.</li>{{/if}}
+		{{#if results.formal.length}}<li>Formal resolution can be enforced, though it is the most expensive and time consuming option. <a href="formal-resolution">Find out how to approach formal resolution with these {{ results.formal.length }} {{ pluralize results.formal.length 'resource' 'resources' }}</a>.</li>{{/if}}
 	</ul>
 </div>
 
-<div class="section self">
+<div id="self-resolution" class="section self">
 	<h2>Try resolving the {{ story.have }} yourself</h2>
 	<ul>
-		{{#each results.self}}<li><a href="{{ URL }}">{{ title }}</a></li>{{/each}}
+		{{#each results.self}}<li><a href="{{ url }}">{{ title }}</a></li>{{/each}}
 	</ul>
 </div>
 
-<div class="section assisted">
+<div id="assisted-resolution" class="section assisted">
 	<h2>Assistance resolving your {{ story.have }}</h2>
 	<ul>
-		{{#each results.assisted}}<li><a href="{{ URL }}">{{ title }}</a></li>{{/each}}
+		{{#each results.assisted}}<li><a href="{{ url }}">{{ title }}</a></li>{{/each}}
 	</ul>
 </div>
 
-<div class="section formal">
+<div id="formal-resolution" class="section formal">
 	<h2>Formal resolution to your {{ story.have }}</h2>
 	<ul>
-		{{#each results.formal}}<li><a href="{{ URL }}">{{ title }}</a></li>{{/each}}
+		{{#each results.formal}}<li><a href="{{ url }}">{{ title }}</a></li>{{/each}}
 	</ul>
 </div>
-
 </script>
-<script id="error-template" type="text/x-handlebars-template"><div class="status warn">
+
+<script id="error-template" type="text/x-handlebars-template">
+<div class="status warn">
 	<h2>An internal error has prevented the requested resource from being displayed</h2>
 	<p>Please try to access this address again in 30 minutes.</p>
 </div>
