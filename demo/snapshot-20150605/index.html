@@ -213,13 +213,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<option class="placeholder" value=""></option>
 				{{#each form.aboutOptions}}<option value="{{ value }}">{{ label }}</option>{{/each}}
 				{{/select}}
-			</select>.
+			</select>
+		</li>
+		<li class="footer">
+			<ul class="actions">
+				<li><strong><input type="submit" value="Find options" /></strong></li>
+			</ul>
 		</li>
 	</p>
 
-	<ul class="actions">
-		<li><strong><input type="submit" value="Show results" /></strong></li>
-	</ul>
 
 </form>
 </script>

@@ -85,9 +85,9 @@ casper.test.begin( 'search results for fences', 18, function suite( test ) {
 		test.assertTitle( TITLE, 'loaded neighbourhood dispute page' );
 
 		test.assertExists( '.status.success', 'success message is shown (fences)' );
-		test.assertSelectorHasText( '.status.success h2', 'We have found 1 result', 'heading displays: 1 result' );
+		test.assertSelectorHasText( '.status.success h2', 'We have found 1 option', 'heading displays: 1 result' );
 		test.assertElementCount( '.success li', 1, 'one list item (fences)' );
-		test.assertSelectorHasText( '.success li', 'We found 1 resource to help you resolve this dispute yourself', 'status text for self resolution (fences)' );
+		test.assertSelectorHasText( '.success li a', 'Check out 1 way you can do that', 'status text for self resolution (fences)' );
 
 		// 1 result for self resolution present
 		test.assertElementCount( '.self li', 1, '1 result for self resolution' );
@@ -98,19 +98,19 @@ casper.test.begin( 'search results for fences', 18, function suite( test ) {
 	.thenOpen( URL + queryFromObject({ have: 'dispute', 'with': 'a neighbour', about: 'dogs and other pets' }))
 	.then(function() {
 		test.assertExists( '.status.success', 'success message is shown (dogs)' );
-		test.assertSelectorHasText( '.status.success h2', 'We have found 2 results', 'heading displays: 2 results' );
+		test.assertSelectorHasText( '.status.success h2', 'We have found 2 options', 'heading displays: 2 results' );
 		test.assertElementCount( '.success li', 1, 'one list item (dogs)' );
-		test.assertSelectorHasText( '.success li', 'We found 2 resources that offer assistance with this dispute', 'status text for assisted resolution (dogs)' );
+		test.assertSelectorHasText( '.success li a', '2 resources offering assistance with disputes about dogs and other pets', 'status text for assisted resolution (dogs)' );
 	})
 
-	.thenOpen( URL + queryFromObject({ have: 'disagreement', 'with': 'a neighbour', about: 'noise' }))
+	.thenOpen( URL + queryFromObject({ have: 'issue', 'with': 'a neighbour', about: 'noise' }))
 	.then(function() {
 		test.assertExists( '.status.success', 'success message is shown (noise)' );
-		test.assertSelectorHasText( '.status.success h2', 'We have found 8 results', 'heading displays: 8 results' );
+		test.assertSelectorHasText( '.status.success h2', 'We have found 8 options', 'heading displays: 8 results' );
 		test.assertElementCount( '.success li', 3, '3 list items (noise)' );
-		test.assertSelectorHasText( '.success li:nth-child(1)', 'We found 3 resources to help you resolve this disagreement yourself', 'status text for self resolution (noise)' );
-		test.assertSelectorHasText( '.success li:nth-child(2)', 'We found 5 resources that offer assistance with this disagreement', 'status text for assisted resolution (noise)' );
-		test.assertSelectorHasText( '.success li:nth-child(3)', 'We found 2 resources that offer formal resolution', 'status text for formal resolution (noise)' );
+		test.assertSelectorHasText( '.success li:nth-child(1)', 'Check out 3 ways you can do that', 'status text for self resolution (noise)' );
+		test.assertSelectorHasText( '.success li:nth-child(2)', '5 resources offering assistance with issues about noise', 'status text for assisted resolution (noise)' );
+		test.assertSelectorHasText( '.success li:nth-child(3)', 'Find out how to approach formal resolution with these 2 resources', 'status text for formal resolution (noise)' );
 	})
 
 	.run(function() {
