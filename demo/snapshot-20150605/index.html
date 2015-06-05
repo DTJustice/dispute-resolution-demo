@@ -55,7 +55,7 @@
 	<meta name="DCTERMS.creator" scheme="AGLSTERMS.GOLD" content="c=AU; o=The State of Queensland; ou=DEPARTMENT NAME; ou=UNIT NAME" />
 	<meta name="DCTERMS.publisher" scheme="AGLSTERMS.AglsAgent" content="corporateName=The State of Queensland; jurisdiction=Queensland" />
 	<meta name="DCTERMS.created" content="2015-05-25" />
-	<meta name="DCTERMS.modified" content="2015-06-04" />
+	<meta name="DCTERMS.modified" content="2015-06-05" />
 	<meta name="DCTERMS.title" content="Neighbourhood dispute resolution | Your rights, crime and the law" />
 	<meta name="DCTERMS.description" content="DESCRIPTION" />
 	<meta name="DCTERMS.subject" scheme="AGLSTERMS.APAIS" content="Dispute resolution" />
@@ -176,30 +176,45 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 </noscript>
 
-<script id="form-template" type="text/x-handlebars-template"><form class="madlibs" method="get">
-<form class="madlibs" method="get">
-	<p>
-		<label for="dispute-pathway-have"><span class="label">I have a</span></label>
-		<select id="dispute-pathway-have" name="have" required="required">
-			{{#select story.have}}
-			<option class="placeholder" value=""></option>
-			{{#each form.haveOptions}}<option value="{{ value }}">{{ label }}</option>{{/each}}
-			{{/select}}
-		</select>
-		<label for="dispute-pathway-with"><span class="label">with</span></label>
-		<select id="dispute-pathway-with" name="with" required="required">
-			{{#select story.with}}
-			<option class="placeholder" value=""></option>
-			{{#each form.withOptions}}<option value="{{ value }}">{{ label }}</option>{{/each}}
-			{{/select}}
-		</select>
-		<label for="dispute-pathway-about"><span class="label">about</span></label>
-		<select id="dispute-pathway-about" name="about" required="required">
-			{{#select story.about}}
-			<option class="placeholder" value=""></option>
-			{{#each form.aboutOptions}}<option value="{{ value }}">{{ label }}</option>{{/each}}
-			{{/select}}
-		</select>.
+<script id="form-template" type="text/x-handlebars-template">
+<form method="get" class="form">
+	<ol class="questions">
+		<li>
+			<label for="dispute-pathway-have">
+				<span class="label">I have a</span>
+				<abbr class="required" title="(required)">*</abbr>
+			</label>
+			<select id="dispute-pathway-have" name="have" required="required">
+				{{#select story.have}}
+				<option class="placeholder" value=""></option>
+				{{#each form.haveOptions}}<option value="{{ value }}">{{ label }}</option>{{/each}}
+				{{/select}}
+			</select>
+		</li>
+		<li>
+			<label for="dispute-pathway-with">
+				<span class="label">with</span>
+				<abbr class="required" title="(required)">*</abbr>
+			</label>
+			<select id="dispute-pathway-with" name="with" required="required">
+				{{#select story.with}}
+				<option class="placeholder" value=""></option>
+				{{#each form.withOptions}}<option value="{{ value }}">{{ label }}</option>{{/each}}
+				{{/select}}
+			</select>
+		</li>
+		<li>
+			<label for="dispute-pathway-about">
+				<span class="label">about</span>
+				<abbr class="required" title="(required)">*</abbr>
+			</label>
+			<select id="dispute-pathway-about" name="about" required="required">
+				{{#select story.about}}
+				<option class="placeholder" value=""></option>
+				{{#each form.aboutOptions}}<option value="{{ value }}">{{ label }}</option>{{/each}}
+				{{/select}}
+			</select>.
+		</li>
 	</p>
 
 	<ul class="actions">
@@ -256,9 +271,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<div class="section" id="what-next"><div class="border">
 						<h2>What can I read or do next?</h2>
 						<ul>
-						  <li><a href="#">A cross-selling link</a></li>
-						  <li><a href="#">A second cross-selling link</a></li>
-						  <li><a href="#">A third cross-selling link</a></li>
+						  <li><a href="#page-feedback">Let us know if this site helped you</a></li>
 						</ul>
 					</div></div><!-- end #what-next, .border -->
 
@@ -274,9 +287,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<div class="aside tip">
 					<h2>Ways to resolve your dispute</h2>
 					<ul>
-						<li><strong>Self resolution</strong> can be the fastest and cheapest way to resolve disputes.</li>
-						<li><strong>Assisted resolution</strong> may involve mean conciliation or mediation. It can save time and money for you and the community.</li>
-						<li><strong>Formal resolution</strong> may mean going to a court or tribunal. It costs time and money but will give you a result that can be enforced.</li>
+						<li>Solving a dispute yourself can be the fastest and cheapest option.</li>
+						<li>Getting help to solve a dispute may involve mediation or conciliation. It can save time and money for you and the community.</li>
+						<li>You may need to go to a court or a tribunal for more formal resolution. It costs time and money but gives you a result which can be enforced.</li>
 					</ul>
 				</div>
 
@@ -307,7 +320,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						</dd>
 
 						<dt>Last updated</dt>
-						<dd>4 June 2015</dd>
+						<dd>5 June 2015</dd>
 					</dl>
 				</div></div>
 
