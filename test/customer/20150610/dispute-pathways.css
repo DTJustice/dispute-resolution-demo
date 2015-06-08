@@ -1,0 +1,50 @@
+/* madlibs forms */
+.madlibs .label {
+	display: inline;
+}
+.madlibs .alert {
+	display: none;
+}
+
+
+/* blockquote for customer story */
+blockquote {
+	font: 3em/1.3 Georgia, Times, 'Times New Roman', serif;
+	color: #777;
+	quotes: "‘" "’";
+	margin: 0;
+	padding: 0;
+}
+blockquote p {
+	margin: 1em 0;
+}
+blockquote > p::before {
+	content: open-quote;
+}
+blockquote > p::after {
+	content: close-quote;
+}
+blockquote strong {
+	color: #000;
+	font-weight: normal;
+}
+
+
+/* datatables */
+.dataTables_info,
+.paginate_button {
+	font-size: 80%;
+}
+.dataTables_info {
+	margin-left: 1em;
+}
+.paginate_button {
+	margin-left: .7em;
+}
+.paginate_button.disabled {
+	display: none;
+}
+.paginate_button.current {
+	color: inherit;
+	text-decoration: none;
+}
