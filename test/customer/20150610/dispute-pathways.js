@@ -169,6 +169,35 @@
 	}
 
 
+	// choose which results are relevant
+	function relevantResults( id ) {
+		id = $( id );
+
+		$( '.section', '#dispute-pathways-view' ).not( id )
+		.addClass( 'irrelevant' )
+		.find( '.data-table, .search-results' ).hide();
+
+		id.removeClass( 'irrelevant' )
+		.find( '.data-table, .search-results' ).show();
+
+		$( 'html, body' ).animate({
+  			scrollTop: id.offset().top
+		}, 200 );
+	}
+
+
+	// behaviour of links in summary
+	$( document ).on( 'click', '.success a', function() {
+		relevantResults( this.href.replace( /^[^#]*/, '' ));
+	});
+
+
+	// toggle section by clicking h2
+	$( document ).on( 'click', '.section h2', function() {
+		relevantResults( '#' + $( this ).closest( '.section' ).attr( 'id' ));
+	});
+
+
 	// show results
 	function renderResults() {
 		if ( results.legislation ) {
@@ -176,6 +205,9 @@
 			renderInPlace( 'aside-legislation', { results: results });
 		}
 		render( 'results', { story: story, results: results });
+
+		// hide sections
+		relevantResults( '#self-resolution' );
 	}
 
 	// show the form

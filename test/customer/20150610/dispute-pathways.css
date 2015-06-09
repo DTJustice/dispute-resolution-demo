@@ -48,3 +48,24 @@ blockquote strong {
 	color: inherit;
 	text-decoration: none;
 }
+
+/* show/hide affordance */
+.irrelevant h2 {
+	cursor: default;
+}
+.irrelevant h2:after {
+	content: " (show)";
+	font-weight: normal;
+	font-size: 80%;
+	color: #13578b;
+	cursor: pointer;
+}
+.irrelevant h2:hover:after {
+	color: #06c;
+}
+.irrelevant h2:active:after {
+	color: #c00;
+}
+.irrelevant .dataTables_wrapper {
+	display: none;
+}

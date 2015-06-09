@@ -250,9 +250,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<ol class="search-results">
 		{{#each results.self}}
 		<li>
-			<h3><a href="{{ url }}">{{ title }}</a> ({{ publisher }})</h3>
+			<h3><a href="{{ url }}">{{ title }}</a></h3>
 			<p class="search-description">{{ description }}</p>
-			<p class="meta">{{ documentType }}</p>
+			<p class="meta">{{ documentType }} - {{ publisher }}</p>
 		</li>
 		{{/each}}
 	</ol>
@@ -263,9 +263,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<ol class="search-results">
 		{{#each results.assisted}}
 		<li>
-			<h3><a href="{{ url }}">{{ title }}</a> ({{ publisher }})</h3>
+			<h3><a href="{{ url }}">{{ title }}</a></h3>
 			<p class="search-description">{{ description }}</p>
-			<p class="meta">{{ documentType }}</p>
+			<p class="meta">{{ documentType }} - {{ publisher }}</p>
 		</li>
 		{{/each}}
 	</ol>
@@ -276,9 +276,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<ol class="search-results">
 		{{#each results.formal}}
 		<li>
-			<h3><a href="{{ url }}">{{ title }}</a> ({{ publisher }})</h3>
+			<h3><a href="{{ url }}">{{ title }}</a></h3>
 			<p class="search-description">{{ description }}</p>
-			<p class="meta">{{ documentType }}</p>
+			<p class="meta">{{ documentType }} - {{ publisher }}</p>
 		</li>
 		{{/each}}
 	</ol>
