@@ -22,6 +22,28 @@
 	<link rel="shortcut icon" href="https://static.qgov.net.au/assets/v2/images/skin/favicon.ico" />
 	<meta prefix="og:http://ogp.me/ns#" property="og:image" content="https://static.qgov.net.au/assets/v2/images/skin/qg-coa-ogp.png" />
 <link rel="stylesheet" href="../dispute-pathways.css" />
+<style>
+	table, thead, tbody, tr {
+		background: transparent !important;
+	}
+	thead {
+		display: none;
+	}
+	th, td {
+		display: block;
+		font-size: 100%;
+		background: transparent !important;
+		padding: 0;
+	}
+	tr > td:last-child {
+		margin: 0 0 1em;
+	}
+	td .tag {
+		width: auto;
+	}
+</style>
+
+
 	<!-- Grab Google CDN's jQuery. Fall back to local copy if necessary -->
 	<!--[if gt IE 8]><!-->
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -247,41 +269,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 {{#if results.self}}<div id="self-resolution" class="section self">
 	<h2>Try resolving the {{ story.have }} yourself</h2>
-	<ol class="search-results">
-		{{#each results.self}}
-		<li>
-			<h3><a href="{{ url }}">{{ title }}</a></h3>
-			<p class="search-description">{{ description }}</p>
-			<p class="meta">{{ documentType }} - {{ publisher }}</p>
-		</li>
-		{{/each}}
-	</ol>
+	<table class="data-table">
+		<thead>
+			<tr>
+				<th>Option</th>
+				<th>Organisation</th>
+				<th>Type</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each results.self}}<tr>
+				<td><a href="{{ url }}">{{ title }}</a><br />{{ description }}</td>
+				<td>{{ publisher }}</td>
+				<td><span class="tag {{ documentType }}">{{ documentType }}</span></td>
+			</tr>{{/each}}
+		</tbody>
+	</table>
 </div>{{/if}}
 
 {{#if results.assisted}}<div id="assisted-resolution" class="section assisted">
 	<h2>Get help resolving your {{ story.have }}</h2>
-	<ol class="search-results">
-		{{#each results.assisted}}
-		<li>
-			<h3><a href="{{ url }}">{{ title }}</a></h3>
-			<p class="search-description">{{ description }}</p>
-			<p class="meta">{{ documentType }} - {{ publisher }}</p>
-		</li>
-		{{/each}}
-	</ol>
+	<table class="data-table">
+		<thead>
+			<tr>
+				<th>Option</th>
+				<th>Organisation</th>
+				<th>Type</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each results.assisted}}<tr>
+				<td><a href="{{ url }}">{{ title }}</a><br />{{ description }}</td>
+				<td>{{ publisher }}</td>
+				<td><span class="tag {{ documentType }}">{{ documentType }}</span></td>
+			</tr>{{/each}}
+		</tbody>
+	</table>
 </div>{{/if}}
 
 {{#if results.formal}}<div id="formal-resolution" class="section formal">
 	<h2>Formal resolution to your {{ story.have }}</h2>
-	<ol class="search-results">
-		{{#each results.formal}}
-		<li>
-			<h3><a href="{{ url }}">{{ title }}</a></h3>
-			<p class="search-description">{{ description }}</p>
-			<p class="meta">{{ documentType }} - {{ publisher }}</p>
-		</li>
-		{{/each}}
-	</ol>
+	<table class="data-table">
+		<thead>
+			<tr>
+				<th>Option</th>
+				<th>Organisation</th>
+				<th>Type</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each results.formal}}<tr>
+				<td><a href="{{ url }}">{{ title }}</a><br />{{ description }}</td>
+				<td>{{ publisher }}</td>
+				<td><span class="tag {{ documentType }}">{{ documentType }}</span></td>
+			</tr>{{/each}}
+		</tbody>
+	</table>
 </div>{{/if}}
 
 
@@ -592,6 +635,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="https://cdnjs.cloudflare.com/ajax/libs/history.js/1.8/bundled-uncompressed/html4+html5/jquery.history.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.7/js/jquery.dataTables.min.js"></script>
+
 <script src="../dispute-pathways.js"></script>
 
 

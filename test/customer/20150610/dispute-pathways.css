@@ -49,6 +49,7 @@ blockquote strong {
 	text-decoration: none;
 }
 
+
 /* show/hide affordance */
 .irrelevant h2 {
 	cursor: default;
@@ -68,4 +69,43 @@ blockquote strong {
 }
 .irrelevant .dataTables_wrapper {
 	display: none;
+}
+
+
+/* tags */
+.tag {
+	font-size: .9rem;
+	display: inline-block;
+	border-radius: 3px;
+	background: #aaa;
+	color: #fafafa;
+	padding: .2em 1em;
+	box-sizing: border-box;
+	white-space: nowrap;
+	text-align: center;
+}
+td .tag {
+	width: 100%;
+}
+.tag.guidelines {
+	background: #fafafa;
+	color: #aaa;
+	border: 1px solid #aaa;
+}
+.tag.procedure {
+	color: #fafafa;
+	background: green;
+}
+.tag.act {
+	background: #fafafa;
+	color: #333;
+	border: 1px solid #333;
+}
+.tag.form {
+	color: #fafafa;
+	background: #333;
+}
+.tag.fact.sheet {
+	color: #fafafa;
+	background: #09c;
 }
