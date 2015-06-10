@@ -13,7 +13,8 @@ The justice system is traditionally viewed as complex, with a plethora of differ
 
 ## Publishing a new service page
 
-There are 2 pages: search form and results. You may use a single HTML file for both, or use separate files to alter the static content and metadata.
+There are 2 pages: search form and results.
+You may use a single HTML file for both, or use separate files to alter the static content and metadata.
 
 ### A note on search engine optimisation (SEO)
 
@@ -35,8 +36,36 @@ There is no server-side support for rendering the search result content into the
 - [history.js][history.js]: a polyfill for managing browser state with support for old IE
 - [handlebars][handlebars]: a light-weight template library for creating views with data
 - [DataTables][datatables]: jquery plugin for sorting, filtering and pagination of tables
-- source dataset (published on [data.qld.gov.au][data])
+- source dataset (published on [data.qld.gov.au][data]) and specified in the metadata
 - custom script. The script for this tool is published on www under `/assets/law/dispute-pathways.js`
+
+## Page structure
+
+1. follow the standard SWE template page structure
+2. metadata: specify the dataset in the 'source', example:
+
+   ```html
+   <meta name="DCTERMS.source" scheme="DCTERMS.URI" content="https://staging.data.qld.gov.au/dataset/dispute-resolution-datasets/resource/56ac21ba-3de3-421a-ac40-297713e37e9d" />
+   ```
+3. embed custom styles: if any custom styles are required for the UI, embed them in a `<style>` tag
+4. add a container for the main view:
+
+   ```html
+   <div id="dispute-pathways-view"></div>
+   ```
+5. add view templates (see below)
+6. link to dependencies:
+
+   ```html
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/history.js/1.8/bundled-uncompressed/html4+html5/jquery.history.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.7/js/jquery.dataTables.min.js"></script>
+   ```
+7. link to the pathway tool script:
+
+   ```html
+   <script src="/assets/law/dispute-pathways.js"></script>
+   ```
 
 ## Views
 
