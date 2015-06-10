@@ -36,10 +36,15 @@ blockquote strong {
 	font-size: 80%;
 }
 .dataTables_info {
-	margin-left: 1em;
+	margin: .5em 1em;
+	padding: .5em 0;
 }
 .paginate_button {
 	margin-left: .7em;
+	cursor: pointer;
+}
+.paginate_button.current {
+	cursor: text;
 }
 .paginate_button.disabled {
 	display: none;
@@ -85,7 +90,7 @@ blockquote strong {
 	text-align: center;
 }
 td .tag {
-	width: 100%;
+	width: 99%;
 }
 .tag.guidelines {
 	background: #fafafa;
