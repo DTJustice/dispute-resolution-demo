@@ -66,6 +66,14 @@ Some minor sections cannot be customised without updating the script.
    ```
 5. add view templates (see below)
 
+   Templates must use the ID values specified in order for the script to locate them.
+
+   ```html
+   <script id="form-template" type="text/x-handlebars-template"><!--#include virtual="template/form.html"--></script>
+   <script id="results-template" type="text/x-handlebars-template"><!--#include virtual="template/results.html"--></script>
+   <script id="error-template" type="text/x-handlebars-template"><!--#include virtual="template/error.html"--></script>
+   ```
+
    ![Diagram of HTML source views](/docs/html-content.png)
 
 6. link to dependencies:
