@@ -24,6 +24,14 @@ There is no server-side support for rendering the search result content into the
 - dataset (hosted on Queensland Government's [open data portal][data])
 - views: form, results, noresults, noscript.
 
+### Customising page content
+
+Most content can be updated by editing the HTML directly, in either the page or handlebars templates (views, see below).
+It is possible to update data in the data portal, including adding new fields and rendering those values in the templates.
+Some minor sections cannot be customised without updating the script.
+
+![Diagram of results page](/docs/page-results.png)
+
 ### Dependencies
 
 - [SWE template][SWE]: integration with Queensland Government online channel including:
@@ -47,6 +55,9 @@ There is no server-side support for rendering the search result content into the
    ```html
    <meta name="DCTERMS.source" scheme="DCTERMS.URI" content="https://staging.data.qld.gov.au/dataset/dispute-resolution-datasets/resource/56ac21ba-3de3-421a-ac40-297713e37e9d" />
    ```
+
+   ![Diagram of HTML source META tag](/docs/html-meta.png)
+
 3. embed custom styles: if any custom styles are required for the UI, embed them in a `<style>` tag
 4. add a container for the main view:
 
@@ -54,6 +65,9 @@ There is no server-side support for rendering the search result content into the
    <div id="dispute-pathways-view"></div>
    ```
 5. add view templates (see below)
+
+   ![Diagram of HTML source views](/docs/html-content.png)
+
 6. link to dependencies:
 
    ```html
@@ -61,6 +75,9 @@ There is no server-side support for rendering the search result content into the
    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.7/js/jquery.dataTables.min.js"></script>
    ```
+
+   ![Diagram of HTML source footer](/docs/html-footer.png)
+
 7. link to the pathway tool script:
 
    ```html
@@ -95,7 +112,6 @@ This handles history state as customers move back and forward between results an
 ```json
 {
 	"form": {
-		"haveOptions": [],
 		"withOptions": [],
 		"aboutOptions": []
 	},
@@ -110,6 +126,11 @@ This handles history state as customers move back and forward between results an
 - `story` values are retrieved from the history state.
 - `form` contains arrays of options to populate the select lists
 - each item in the option arrays follows the simple format: `{ label: text, value: text }`
+- `have` options should be hardcoded in the view template in order to control the ranking
+
+![Diagram of form options for 'have' question](/docs/form-q1-have.png)
+![Diagram of form options for 'with' question](/docs/form-q2-with.png)
+![Diagram of form options for 'about' question](/docs/form-q3-about.png)
 
 ### Results
 
@@ -152,6 +173,8 @@ This template is rendered in place when there are 1 or more matching results wit
 Uses the `results` viewmodel described above (`story` property is not provided).
 
 Sample template: [aside-legislation.html](test/acceptance/template/aside-legislation.html)
+
+![Diagram of legislation aside HTML source](/docs/html-asides.png)
 
 #### No results
 
