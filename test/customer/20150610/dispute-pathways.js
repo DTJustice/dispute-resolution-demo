@@ -170,7 +170,8 @@
 
 
 	// choose which results are relevant
-	function relevantResults( id ) {
+	function relevantResults( id, scroll ) {
+		scroll = scroll !== false;
 		id = $( id );
 
 		$( '.section', '#dispute-pathways-view' ).not( id )
@@ -180,9 +181,11 @@
 		id.removeClass( 'irrelevant' )
 		.find( '.data-table, .search-results' ).show();
 
-		$( 'html, body' ).animate({
-  			scrollTop: id.offset().top
-		}, 200 );
+		if ( scroll ) {
+			$( 'html, body' ).animate({
+				scrollTop: id.offset().top
+			}, 200 );
+		}
 	}
 
 
@@ -207,7 +210,7 @@
 		render( 'results', { story: story, results: results });
 
 		// hide sections
-		relevantResults( '#self-resolution' );
+		relevantResults( '#self-resolution', false );
 	}
 
 	// show the form
