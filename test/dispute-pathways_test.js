@@ -49,7 +49,7 @@ casper.test.begin( 'form state', 11, function suite( test ) {
 // Given a customer visits the tool,
 // when the URL contains a complete story
 // then they will see search results
-casper.test.begin( 'search results behaviour', 44, function suite( test ) {
+casper.test.begin( 'search results behaviour', 45, function suite( test ) {
 
 	casper.start( URL + queryFromObject({ have: 'dispute', 'with': 'a neighbour', about: 'fences' }))
 	.then(function() {
@@ -62,6 +62,7 @@ casper.test.begin( 'search results behaviour', 44, function suite( test ) {
 		test.assertSelectorHasText( '.success li a', '1 resource for resolving the dispute yourself', 'status text for self resolution (fences)' );
 		test.assertSelectorDoesntHaveText( '.success', 'for getting help to resolve your', 'assisted resolution status not present (fences)' );
 		test.assertSelectorDoesntHaveText( '.success', 'about formal resolution of your', 'formal resolution status not present (fences)' );
+		test.assertSelectorDoesntHaveText( '#asides', 'Check the law', 'Check the law aside is not present' );
 
 		// only self resolution section is shown
 		test.assertExists( '#self-resolution', 'Self resolution section is present (fences)' );

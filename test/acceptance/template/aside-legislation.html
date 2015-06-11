@@ -1,6 +1,6 @@
-<div class="aside tip">
+{{#if results.legislation}}<div class="aside tip">
 	<h2>Check the law</h2>
 	<ul>
 		{{#each results.legislation}}<li><a href="{{ url }}">{{ title }}</a></li>{{/each}}
 	</ul>
-</div>
+</div>{{/if}}
