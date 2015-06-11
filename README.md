@@ -181,7 +181,7 @@ Sample template: [results.html](test/acceptance/template/results.html)
 - `totalMatches`: (integer) accurate count of the total number of results. Results that are repeated in more than one pathway are only counted once.
 - `story` provides access to the customer input values (read from the URL)
 - additional boolean values in `story` are provided to assist with conditionals in handlebars templates. For example, if the URL contains `with=a neighbour" then these 2 properties will be present: `{ "with": "a neighbour", "with_a_neighbour": true }`
-- The structure of each item in the result arrays mirrors the [CSV format](#CSV format)
+- The structure of each item in the result arrays mirrors the [CSV format](#csv-format)
   Review the [data.qld.gov.au][data] API documentation for more information.
 - `with`, `about` and `pathways` values for each result are exploded like so: `{ "with": { "a neighbour": true, "the body corporate": true }}`.
   Each value (separated by semicolons) becomes a property with the value `true` recorded.
