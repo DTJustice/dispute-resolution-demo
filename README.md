@@ -237,14 +237,13 @@ Data is to be hosted on [data.qld.gov.au][data] and will be loaded and cached in
 | description  | recommended | Used for search results               | Can be customised in results view template                                                       |
 | documentType | required    | Used to tag results for sorting       | Use a single value from [AGLS document](AGLS.document) scheme. `legislation` results are shown only an aside      |
 | format       | optional    | Indicate PDF/doc/other results        | Can be customised in results view template                                                       |
-| publisher    | TBD         | May be used for Councils              | TBA                                                                                              |
-| jurisdiction | TBD         | May be used for Councils              | TBA                                                                                              |
+| publisher    | optional    | Used to identify Council resources    | Any result containing the word 'Council' will be filtered from the results.                        |
 | comments     | optional    | Internal use only                     |                                                                                                  |
 
 - Most columns may be renamed or ignored (changes must be reflected in the template)
 - Additional columns may be added (and then used in templates)
 - `with` and `about` columns must separate multiple values with a semicolon
-- `about` column must used only the listed values
+- `pathways` column must used only the listed values
 
 ---
 
