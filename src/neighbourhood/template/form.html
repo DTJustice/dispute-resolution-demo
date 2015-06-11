@@ -1,31 +1,54 @@
-<form class="madlibs" method="get">
-	<p>
-		<label for="dispute-pathway-have"><span class="label">I have a</span></label>
-		<select id="dispute-pathway-have" name="have" required="required">
-			{{#select story.have}}
-			<option class="placeholder" value=""></option>
-			{{#each form.haveOptions}}<option value="{{ value }}">{{ label }}</option>{{/each}}
-			{{/select}}
-		</select>
-		<label for="dispute-pathway-with"><span class="label">with</span></label>
-		<select id="dispute-pathway-with" name="with" required="required">
-			{{#select story.with}}
-			<option class="placeholder" value=""></option>
-			{{#each form.withOptions}}<option value="{{ value }}">{{ label }}</option>{{/each}}
-			{{/select}}
-		</select>
-		<label for="dispute-pathway-about"><span class="label">about</span></label>
-		<select id="dispute-pathway-about" name="about" required="required">
-			{{#select story.about}}
-			<option class="placeholder" value=""></option>
-			{{#each form.aboutOptions}}<option value="{{ value }}">{{ label }}</option>{{/each}}
-			{{/select}}
-		</select>
-		</select>.
-	</p>
+<div class="preamble">
+	<p>Use this tool to discover how to resolve a neighbourhood dispute.</p>
 
-	<ul class="actions">
-		<li><strong><input type="submit" value="Show results" /></strong></li>
-	</ul>
+	<p>We provide general information which does not consider your individual circumstances.
+	If you are unsure about your legal rights you should get <a href="http://www.qld.gov.au/law/legal-mediation-and-justice-of-the-peace/legal-advice-and-investment/legal-information-and-advice/">independent legal advice</a>.</p>
+</div>
 
+
+<form class="form" method="get">
+	<ol class="questions">
+		<li>
+			<label for="dispute-pathway-have">
+				<span class="label">I have a</span>
+				<abbr class="required" title="(required)">*</abbr>
+			</label>
+			<select id="dispute-pathway-have" name="have" required="required">
+				{{#select story.have}}
+				<option class="placeholder" value=""></option>
+				{{#each form.haveOptions}}<option value="{{ value }}">{{ label }}</option>{{/each}}
+				{{/select}}
+			</select>
+		</li>
+		<li>
+			<label for="dispute-pathway-with">
+				<span class="label">with</span>
+				<abbr class="required" title="(required)">*</abbr>
+			</label>
+			<select id="dispute-pathway-with" name="with" required="required">
+				{{#select story.with}}
+				<option class="placeholder" value=""></option>
+				{{#each form.withOptions}}<option value="{{ value }}">{{ label }}</option>{{/each}}
+				{{/select}}
+			</select>
+		</li>
+		<li>
+			<label for="dispute-pathway-about">
+				<span class="label">about</span>
+				<abbr class="required" title="(required)">*</abbr>
+			</label>
+			<select id="dispute-pathway-about" name="about" required="required">
+				{{#select story.about}}
+				<option class="placeholder" value=""></option>
+				{{#each form.aboutOptions}}<option value="{{ value }}">{{ label }}</option>{{/each}}
+				{{/select}}
+			</select>
+		</li>
+
+		<li class="actions">
+			<ul class="actions">
+				<li><strong><input type="submit" value="Find options" /></strong></li>
+			</ul>
+		</li>
+	</ol>
 </form>

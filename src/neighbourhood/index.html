@@ -8,31 +8,12 @@
 <!--#set var="title" value="Neighbourhood dispute resolution"-->
 <!--#set var="licence" value="http://creativecommons.org/licenses/by/3.0/au/"-->
 <!--#include virtual="/assets/includes/global/head-assets-styles.html"-->
-<style>
-/* blockquote for customer story */
-blockquote {
-	font: 3em/1.3 Georgia, Times, 'Times New Roman', serif;
-	color: #777;
-	quotes: "‘" "’";
-	margin: 0;
-	padding: 0;
-}
-blockquote p {
-	margin: 1rem 0;
-}
-blockquote > p::before {
-	content: open-quote;
-}
-blockquote > p::after {
-	content: close-quote;
-}
-blockquote strong {
-	color: #000;
-	font-weight: normal;
-}
-</style>
+
+<link rel="stylesheet" href="../dispute-pathways.css" />
+
 <!--#include virtual="/assets/includes/global/head-assets-scripts.html"-->
 <script>qg.swe.load.formValidation = true;</script>
+
 
 	<meta name="description" content="DESCRIPTION" />
 	<meta name="keywords" content="KEYWORDS" />
@@ -123,6 +104,8 @@ blockquote strong {
 					</ul>
 				</div>
 
+<script id="aside-legislation-template" type="text/x-handlebars-template"><!--#include virtual="template/aside-legislation.html"--></script>
+
 				<div class="aside tip">
 					<h2>Legal advice</h2>
 					<p><a href="http://www.qld.gov.au/law/legal-mediation-and-justice-of-the-peace/legal-advice-and-investment/legal-information-and-advice/">Find a solicitor</a>, law firm, barrister or free legal services.</p>
@@ -175,8 +158,10 @@ blockquote strong {
 	</div></div><!-- end #page-container, .max-width -->
 
 <!--#include virtual="/assets/includes/global/footer-page.html"-->
-<script src="/assets/law/handlebars.min.js"></script>
-<script src="/assets/law/dispute-pathways.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/history.js/1.8/bundled-uncompressed/html4+html5/jquery.history.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.7/js/jquery.dataTables.min.js"></script>
+<script src="../dispute-pathways.js"></script>
 <!--#include virtual="/assets/includes/global/footer-stats.html"-->
 
 </body>
