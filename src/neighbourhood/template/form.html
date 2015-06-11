@@ -16,7 +16,13 @@
 			<select id="dispute-pathway-have" name="have" required="required">
 				{{#select story.have}}
 				<option class="placeholder" value=""></option>
-				{{#each form.haveOptions}}<option value="{{ value }}">{{ label }}</option>{{/each}}
+				<option value="question">question</option>
+				<option value="problem">problem</option>
+				<option value="issue">issue</option>
+				<option value="disagreement">disagreement</option>
+				<option value="conflict">conflict</option>
+				<option value="complaint">complaint</option>
+				<option value="dispute">dispute</option>
 				{{/select}}
 			</select>
 		</li>
