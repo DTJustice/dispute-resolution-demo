@@ -221,6 +221,11 @@ Customers with javascript disabled should see a useful message pointing them to 
 
 Data is to be hosted on [data.qld.gov.au][data] and will be loaded and cached in the browser via JSONP.
 
+Please note: issues with the CSV format will break the application!!
+
+It is **highly recommended** that a test page be setup and linked to a test dataset (preferably hosted on staging.qld.gov.au).
+Changes to the CSV data should be manually tested before being published live.
+
 
 ### CSV format
 
