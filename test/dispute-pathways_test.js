@@ -92,13 +92,13 @@ casper.test.begin( 'search results behaviour', 44, function suite( test ) {
 	.then(function() {
 		test.assertSelectorHasText( '.story', 'I have an issue with a neighbour about noise', 'story is correct (noise)' );
 		test.assertExists( '.status.success', 'success message is shown (noise)' );
-		test.assertSelectorHasText( '.status.success h2', 'We have found 7 options about noise', 'heading displays: 7 results' );
+		test.assertSelectorHasText( '.status.success h2', 'We have found 9 options about noise', 'heading displays: 9 results' );
 		test.assertElementCount( '#dispute-pathways-view .section', 3, 'three sections (noise)' );
 		test.assertExists( '#self-resolution', 'Self resolution section is present (noise)' );
 		test.assertExists( '#assisted-resolution', 'Assisted resolution section is present (noise)' );
 		test.assertExists( '#formal-resolution', 'Formal resolution section is present (noise)' );
 		test.assertSelectorHasText( '.success li:nth-child(1)', '3 resources for resolving the issue yourself', 'status text for self resolution (noise)' );
-		test.assertSelectorHasText( '.success li:nth-child(2)', '4 resources for getting help to resolve your issue', 'status text for assisted resolution (noise)' );
+		test.assertSelectorHasText( '.success li:nth-child(2)', '6 resources for getting help to resolve your issue', 'status text for assisted resolution (noise)' );
 		test.assertSelectorHasText( '.success li:nth-child(3)', '1 resource about formal resolution of your issue', 'status text for formal resolution (noise)' );
 		test.assertSelectorDoesntHaveText( '#dispute-pathways-view tbody', 'legislation', 'no legislation results shown in tables' );
 		test.assertSelectorHasText( '.aside.tip:nth-child(2) h2', 'Check the law', 'legislation aside is present' );
@@ -109,11 +109,12 @@ casper.test.begin( 'search results behaviour', 44, function suite( test ) {
 		test.assertSelectorHasText( '#assisted-resolution tbody tr:last-child a:first-child', 'F', 'F is last' );
 		// click to sort by title
 		casper.click( '#assisted-resolution thead th:first-child' );
-		test.assertSelectorHasText( '#assisted-resolution tbody tr:last-child a:first-child', 'H', 'table was sorted' );
+		test.assertSelectorHasText( '#assisted-resolution tbody tr:last-child a:first-child', 'L', 'table was sorted' );
+
 		// click to second page in datatable
 		casper.click( '#assisted-resolution .next' );
 		test.assertElementCount( '#assisted-resolution tbody tr', 1, '1 row shown on second page' );
-		test.assertSelectorHasText( '#assisted-resolution tbody tr a', 'I', '1 row shown on second page' );
+		test.assertSelectorHasText( '#assisted-resolution tbody tr a', 'M', '1 row shown on second page' );
 
 		// follow link
 		casper.click( '#assisted-resolution tbody tr:last-child td:first-child a' );
@@ -127,7 +128,7 @@ casper.test.begin( 'search results behaviour', 44, function suite( test ) {
 	.then(function() {
 		// datatable should remember sort order and page
 		test.assertDoesntExist( '#assisted-resolution .next', 'datatable remembers second page' );
-		test.assertSelectorHasText( '#assisted-resolution tbody tr a', 'I', 'datatable remembers state' );
+		test.assertSelectorHasText( '#assisted-resolution tbody tr a', 'M', 'datatable remembers state' );
 	})
 
 	.run(function() {

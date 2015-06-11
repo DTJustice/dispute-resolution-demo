@@ -2,6 +2,8 @@
 (function( $ ) {
 	'use strict';
 
+	var RESULTS_PER_PAGE = 5;
+
 	var model = {
 		have: [],
 		'with': [],
@@ -63,7 +65,7 @@
 		$( '.even, .odd', dataTables ).removeClass( 'even odd' );
 		dataTables.dataTable({
 			lengthChange: false,
-			pageLength: 3,
+			pageLength: RESULTS_PER_PAGE,
 			pagingType: 'simple_numbers',
 			order: [[ 2, 'desc' ]],
 			searching: false,
