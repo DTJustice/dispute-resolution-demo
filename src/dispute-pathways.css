@@ -31,12 +31,22 @@ blockquote strong {
 
 
 /* datatables */
+.dataTables_wrapper {
+	padding-top: 0;
+}
 .dataTables_info,
 .paginate_button {
 	font-size: 80%;
 }
-.dataTables_info {
-	margin-left: 1em;
+table.dataTable thead th {
+	font-size: 100%;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+.dataTables_paginate {
+	float: none;
+	text-align: left;
+	margin-left: .3em;
 }
 .paginate_button {
 	margin-left: .7em;

@@ -64,6 +64,10 @@
 		var dataTables = $( '.data-table', viewContainer );
 		$( '.even, .odd', dataTables ).removeClass( 'even odd' );
 		dataTables.dataTable({
+			dom: '<"top"i>rt<"bottom"p><"clear">',
+			language: {
+				info: 'Displaying results <strong>_START_</strong>–<strong>_END_</strong> of <strong>_TOTAL_</strong>'
+			},
 			lengthChange: false,
 			pageLength: RESULTS_PER_PAGE,
 			pagingType: 'simple_numbers',
