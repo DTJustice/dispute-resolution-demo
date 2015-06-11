@@ -125,22 +125,22 @@ This handles history state as customers move back and forward between results an
 
 ```json
 {
-	"form": {
-		"withOptions": [],
-		"aboutOptions": []
-	},
-	"story": {
-		"have": "dispute",
-		"with": "a neighbour",
-		"about": "fences"
-	}
+  "form": {
+    "withOptions": [],
+    "aboutOptions": []
+  },
+  "story": {
+    "have": "dispute",
+    "with": "a neighbour",
+    "about": "fences"
+  }
 }
 ```
 
 - `story` values are retrieved from the history state.
 - `form` contains arrays of options to populate the select lists
 - each item in the option arrays follows the simple format: `{ label: text, value: text }`
-- `have` options should be hardcoded in the view template in order to control the ranking
+- `have` options are hardcoded in the view template in order to control the ranking
 
 ![Diagram of form options for 'have' question](/docs/form-q1-have.png)
 ![Diagram of form options for 'with' question](/docs/form-q2-with.png)
@@ -158,18 +158,21 @@ Sample template: [results.html](test/acceptance/template/results.html)
 
 ```json
 {
-	"results": {
-		"assisted": [],
-		"formal": [],
-		"legislation": [],
-		"self": [],
-		"totalMatches": 0
-	},
-	"story": {
-		"have": "dispute",
-		"with": "a neighbour",
-		"about": "fences"
-	}
+  "results": {
+    "assisted": [],
+    "formal": [],
+    "legislation": [],
+    "self": [],
+    "totalMatches": 0
+  },
+  "story": {
+    "have": "dispute",
+    "with": "a neighbour",
+    "about": "fences",
+    "have_dispute": true,
+    "with_a_neighbour": true,
+    "about_fences": true,
+  }
 }
 ```
 
@@ -177,9 +180,11 @@ Sample template: [results.html](test/acceptance/template/results.html)
 - `legislation`: array of results that have a `documentType` of `legislation`. Legislation results are excluded from self, assisted and formal arrays.
 - `totalMatches`: (integer) accurate count of the total number of results. Results that are repeated in more than one pathway are only counted once.
 - `story` provides access to the customer input values (read from the URL)
-
-The structure of each item in the result arrays mirrors the [CSV format](#CSV format).
-Review the [data.qld.gov.au][data] API documentation for more information.
+- additional boolean values in `story` are provided to assist with conditionals in handlebars templates. For example, if the URL contains `with=a neighbour" then these 2 properties will be present: `{ "with": "a neighbour", "with_a_neighbour": true }`
+- The structure of each item in the result arrays mirrors the [CSV format](#CSV format)
+  Review the [data.qld.gov.au][data] API documentation for more information.
+- `with`, `about` and `pathways` values for each result are exploded like so: `{ "with": { "a neighbour": true, "the body corporate": true }}`.
+  Each value (separated by semicolons) becomes a property with the value `true` recorded.
 
 #### Legislation aside
 

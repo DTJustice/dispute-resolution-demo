@@ -5,7 +5,6 @@
 	var RESULTS_PER_PAGE = 5;
 
 	var model = {
-		have: [],
 		'with': [],
 		about: []
 	};
@@ -101,8 +100,8 @@
 		mappedData = $.map( data, function( record ) {
 			var explode;
 
-			// convert { have: 'a;b;c;' } to { have: { a: true, b: true, c: true }}
-			$.each([ 'have', 'with', 'about', 'pathway' ], function( i, key ) {
+			// convert { with: 'a;b;c;' } to { with: { a: true, b: true, c: true }}
+			$.each([ 'with', 'about', 'pathway' ], function( i, key ) {
 				explode = record[ key ] ? record[ key ].toLowerCase().split( /\s*;\s*/ ) : [];
 				record[ key ] = {};
 				$.each( explode, function( j, value ) {
@@ -117,7 +116,6 @@
 
 		// TODO get lists of options from data
 		model = {
-			have: [ 'question', 'concern', 'problem', 'issue', 'disagreement', 'conflict', 'complaint', 'dispute' ],
 			'with': [ 'a neighbour', 'a neighbour in my body corporate', 'a neighbour in my building', 'a neighbour in my street', 'a neighbour next door', 'an adjoining landowners', 'another unit owner/lot owner', 'someone in my neighbourhood', 'the body corporate' ],
 			about: [ 'abuse', 'access', 'behaviours', 'by-law breaches (body corporate)', 'cameras', 'children', 'common property (body corporate)', 'dogs and other pets', 'drainage', 'easements', 'fences', 'harassment', 'lighting', 'noise', 'objects', 'overgrown gardens', 'parking', 'pools', 'privacy', 'renovations', 'retaining walls', 'rubbish bins', 'security', 'smells', 'threats', 'trees', 'wildlife' ]
 		};
@@ -129,18 +127,28 @@
 
 
 	function checkStoryIsComplete() {
+		var complete;
+
 		// current page url
 		story = $.url().param();
 
 		// check against valid values
-		$.each([ 'have', 'with', 'about' ], function( i, key ) {
+		$.each([ 'with', 'about' ], function( i, key ) {
 			if ( story[ key ] && model[ key ].indexOf( story[ key ]) === -1 ) {
 				delete story[ key ];
 			}
 		});
 
+		complete = story.have && story[ 'with' ] && story.about;
+
+		if ( complete ) {
+			story[ 'have_' + story.have.replace( /\s+/g, '_' )] = true;
+			story[ 'with_' + story[ 'with' ].replace( /\s+/g, '_')] = true;
+			story[ 'about_' + story.about.replace( /\s+/g, '_' )] = true;
+		}
+
 		// do we have a complete story?
-		return story.have && story[ 'with' ] && story.about;
+		return complete;
 	}
 
 
@@ -189,7 +197,6 @@
 		render( 'form', {
 			story: $.extend( story, History.getState().data ),
 			form: {
-				haveOptions: $.map( model.have, mapToOption ),
 				withOptions: $.map( model[ 'with' ], mapToOption ),
 				aboutOptions: $.map( model.about, mapToOption )
 			}
