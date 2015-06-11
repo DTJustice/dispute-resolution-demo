@@ -50,7 +50,13 @@ Some minor sections cannot be customised without updating the script.
 ## Page structure
 
 1. follow the standard SWE template page structure
-2. metadata: specify the dataset in the 'source', example:
+2. load SWE form validation library (required for dynamic forms). Add the following custom script in the `<head>`:
+
+   ```html
+   <script>qg.swe.load.formValidation = true;</script>
+   ```
+
+3. metadata: specify the dataset in the 'source', example:
 
    ```html
    <meta name="DCTERMS.source" scheme="DCTERMS.URI" content="https://staging.data.qld.gov.au/dataset/dispute-resolution-datasets/resource/56ac21ba-3de3-421a-ac40-297713e37e9d" />
@@ -58,13 +64,13 @@ Some minor sections cannot be customised without updating the script.
 
    ![Diagram of HTML source META tag](/docs/html-meta.png)
 
-3. embed custom styles: if any custom styles are required for the UI, embed them in a `<style>` tag
-4. add a container for the main view:
+4. embed custom styles: if any custom styles are required for the UI, embed them in a `<style>` tag
+5. add a container for the main view:
 
    ```html
    <div id="dispute-pathways-view"></div>
    ```
-5. add view templates (see below)
+6. add view templates (see below)
 
    Templates must use the ID values specified in order for the script to locate them.
 
@@ -76,7 +82,7 @@ Some minor sections cannot be customised without updating the script.
 
    ![Diagram of HTML source views](/docs/html-content.png)
 
-6. link to dependencies:
+7. link to dependencies:
 
    ```html
    <script src="https://cdnjs.cloudflare.com/ajax/libs/history.js/1.8/bundled-uncompressed/html4+html5/jquery.history.js"></script>
@@ -86,7 +92,7 @@ Some minor sections cannot be customised without updating the script.
 
    ![Diagram of HTML source footer](/docs/html-footer.png)
 
-7. link to the pathway tool script:
+8. link to the pathway tool script:
 
    ```html
    <script src="/assets/law/dispute-pathways.js"></script>
