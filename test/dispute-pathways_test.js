@@ -51,6 +51,64 @@ casper.test.begin( 'form state', 15, function suite( test ) {
 });
 
 
+// Given the customer chooses a pathway that contains council resources,
+// then they will be given the option to select their council (use relevance on form)
+
+/* TODO this test requires a workaround in casperjs to trigger change events.
+The change handler controls the display and options of the council question
+Using .evaluate to trigger change events with jquery or DOM code was not successful*/
+casper.test.begin( 'council question relevance', 12, function suite( test ) {
+	casper.start( URL )
+	.then(function() {
+		// council question is present but not visible
+		test.assertExists( '#dispute-pathways-view .questions > li:nth-child(4) #dispute-pathway-council', 'council question exists' );
+		test.assertNotVisible( '#dispute-pathways-view .questions > li:nth-child(4)', 'council question is hidden' );
+
+		// question becomes relevance for pathway: with a neighbour about dogs and other pets
+		casper.fill( '#dispute-pathways-view form', { 'with': 'a neighbour' });
+		casper.evaluate(function() {
+			$( '#dispute-pathways-view form' ).change();
+		});
+	})
+
+	.then(function() {
+		test.assertNotVisible( '#dispute-pathways-view .questions > li:nth-child(4)', 'council question is hidden after selecting "a neighbour"' );
+
+		casper.fill( '#dispute-pathways-view form', { 'about': 'dogs and other pets' });
+		casper.evaluate(function() {
+			$( '#dispute-pathways-view form' ).change();
+		});
+	})
+
+	.then(function() {
+		test.assertVisible( '#dispute-pathways-view .questions > li:nth-child(4)', 'council question is visible (a neighbour, dogs and other pets)' );
+		test.assertSelectorHasText( '#dispute-pathways-view .questions > li:nth-child(4) .label', 'Some disputes about dogs and other pets are handled by your local council. We can help you find the right information if you tell us where you live:', 'Correct label for council question' );
+		test.assertElementCount( 'select[name="council"] option', 3, '3 council options available' );
+		test.assertSelectorHasText( 'select[name="council"] option:nth-child(2)', 'A Council', 'Correct option for first council' );
+		test.assertSelectorHasText( 'select[name="council"] option:nth-child(3)', 'Another Council', 'Correct option for second council' );
+
+		casper.fill( '#dispute-pathways-view form', {
+			'have': 'issue',
+			'about': 'noise'
+		});
+		casper.evaluate(function() {
+			$( '#dispute-pathways-view form' ).change();
+		});
+	})
+
+	.then(function() {
+		test.assertVisible( '#dispute-pathways-view .questions > li:nth-child(4)', 'council question is visible (a neighbour, noise)' );
+		test.assertSelectorHasText( '#dispute-pathways-view .questions > li:nth-child(4) .label', 'Some issues about noise are handled by your local council. We can help you find the right information if you tell us where you live:', 'Correct label for council question' );
+		test.assertElementCount( 'select[name="council"] option', 2, '2 council options available' );
+		test.assertSelectorHasText( 'select[name="council"] option:nth-child(2)', 'A third council', 'Correct option for third council' );
+	})
+
+	.run(function() {
+		test.done();
+	});
+});
+
+
 // Given a customer visits the tool,
 // when the URL contains a complete story
 // then they will see search results

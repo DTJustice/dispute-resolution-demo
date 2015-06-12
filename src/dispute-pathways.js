@@ -44,6 +44,11 @@
 		return { label: s, value: s };
 	}
 
+	// map keys in hash to array of unique values
+	function mapHashKeysToArray( value, key ) {
+		return key.length ? key : null;
+	}
+
 
 	// render view
 	function render( view, viewModel ) {
@@ -120,10 +125,6 @@
 			return record;
 		});
 
-		function mapHashKeysToArray( value, key ) {
-			return key.length ? key : null;
-		}
-
 		// alphabetical order for with and about
 		model[ 'with' ] = $.map( model[ 'with' ], mapHashKeysToArray ).sort();
 		model.about = $.map( model.about, mapHashKeysToArray ).sort();
@@ -167,9 +168,9 @@
 		};
 
 		$.each( mappedData, function( i, result ) {
-			if ( result[ 'with' ][ story[ 'with' ]] && result.about[ story.about ]) {
+			if ( result.about[ story.about ] && result[ 'with' ][ story[ 'with' ]]) {
 				// filter council results
-				if ( ! /Council/.test( result.publisher ) || result.publisher === story.council ) {
+				if ( ! /Council/i.test( result.publisher ) || result.publisher === story.council ) {
 					// separate legislation results
 					if ( result.documentType === 'legislation' ) {
 						results.legislation.push( result );
@@ -186,7 +187,6 @@
 						}
 					}
 				}
-
 			}
 		});
 	}
@@ -203,6 +203,10 @@
 
 	// show the form
 	function renderForm() {
+		// grab template for councils
+		var councilQuestionTemplate = Handlebars.compile( $( $( '#form-template' ).html() ).find( '#dispute-pathway-council' ).closest( 'li' ).html() );
+
+		// render initial form
 		render( 'form', {
 			story: $.extend( story, History.getState().data ),
 			form: {
@@ -215,6 +219,41 @@
 		// https://github.com/qld-gov-au/swe_template/blob/master/src/qgov/assets/v2/script/initialise-forms.js#L8
 		window.initConstraintValidationAPI();
 		$( 'form' ).formValidation( 'validate' );
+
+		var councilQuestion = $( '#dispute-pathway-council' ).closest( 'li' );
+		var form = councilQuestion.closest( 'form' );
+
+		// find relevant councils
+		function councilRelevance() {
+			var withValue = $( form[ 0 ][ 'with'] ).val();
+			var aboutValue = $( form[ 0 ].about ).val();
+			var councils = {};
+
+			if ( withValue && aboutValue ) {
+				$.each( mappedData, function( i, result ) {
+					if ( /Council/i.test( result.publisher ) && result.about[ aboutValue ] && result[ 'with' ][ withValue ]) {
+						councils[ result.publisher ] = true;
+					}
+				});
+			}
+			// update council options
+			councils = $.map( councils, mapHashKeysToArray ).sort();
+			if ( councils.length > 0 ) {
+				councilQuestion.html( councilQuestionTemplate({
+					story: $.extend( {}, story, {
+						have: $( form[ 0 ].have ).val() || 'dispute',
+						'with': withValue,
+						about: aboutValue
+					}),
+					form: { councilOptions: $.map( councils, mapToOption ) }
+				}));
+			}
+			councilQuestion.relevance( 'relevant', councils.length > 0 );
+		}
+		$( form ).on( 'change', 'select[name="with"],select[name="about"]', councilRelevance );
+
+		// council question initial state
+		councilRelevance();
 	}
 
 
@@ -245,7 +284,8 @@
 		return {
 			have:   $( 'select[name="have"]', form ).val(),
 			'with': $( 'select[name="with"]', form ).val(),
-			about:  $( 'select[name="about"]', form ).val()
+			about:  $( 'select[name="about"]', form ).val(),
+			council:  $( 'select[name="council"]', form ).val()
 		};
 	}
 

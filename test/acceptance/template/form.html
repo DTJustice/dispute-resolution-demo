@@ -51,6 +51,19 @@
 			</select>
 		</li>
 
+		<li>
+			<label for="dispute-pathway-council">
+				<span class="label">Some {{ story.have }}s about {{ story.about }} are handled by your local council. We can help you find the right information if you tell us where you live:</span>
+				<small class="hint help">Find your council in the <a href="http://growthsummit.premiers.qld.gov.au/local-government-directory.html">Local Government Directory</a></small>
+			</label>
+			<select name="council" id="dispute-pathway-council">
+				{{#select story.council}}
+				<option value="placeholder" value=""></option>
+				{{#each form.councilOptions}}<option value="{{ value }}">{{ label }}</option>{{/each}}
+				{{/select}}
+			</select>
+		</li>
+
 		<li class="actions">
 			<ul class="actions">
 				<li><strong><input type="submit" value="Find options" /></strong></li>
