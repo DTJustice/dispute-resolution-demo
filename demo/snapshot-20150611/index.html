@@ -59,7 +59,7 @@
 	<meta name="DCTERMS.creator" scheme="AGLSTERMS.GOLD" content="c=AU; o=The State of Queensland; ou=DEPARTMENT NAME; ou=UNIT NAME" />
 	<meta name="DCTERMS.publisher" scheme="AGLSTERMS.AglsAgent" content="corporateName=The State of Queensland; jurisdiction=Queensland" />
 	<meta name="DCTERMS.created" content="2015-06-11" />
-	<meta name="DCTERMS.modified" content="2015-06-11" />
+	<meta name="DCTERMS.modified" content="2015-06-12" />
 	<meta name="DCTERMS.title" content="How to resolve neighbourhood disputes | Your rights, crime and the law" />
 	<meta name="DCTERMS.description" content="DESCRIPTION" />
 	<meta name="DCTERMS.subject" scheme="AGLSTERMS.APAIS" content="Dispute resolution" />
@@ -223,6 +223,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				{{#select story.about}}
 				<option class="placeholder" value=""></option>
 				{{#each form.aboutOptions}}<option value="{{ value }}">{{ label }}</option>{{/each}}
+				{{/select}}
+			</select>
+		</li>
+
+		<li>
+			<label for="dispute-pathway-council">
+				<span class="label">Some {{ story.have }}s about {{ story.about }} are handled by your local council. We can help you find the right information if you tell us where you live:</span>
+				<small class="hint help">Find your council in the <a href="http://growthsummit.premiers.qld.gov.au/local-government-directory.html">Local Government Directory</a></small>
+			</label>
+			<select name="council" id="dispute-pathway-council">
+				{{#select story.council}}
+				<option value="placeholder" value=""></option>
+				{{#each form.councilOptions}}<option value="{{ value }}">{{ label }}</option>{{/each}}
 				{{/select}}
 			</select>
 		</li>
@@ -429,7 +442,7 @@ $( '#body-corporate-check .footer' ).hide();
 						</dd>
 
 						<dt>Last updated</dt>
-						<dd>11 June 2015</dd>
+						<dd>12 June 2015</dd>
 					</dl>
 				</div></div>
 
