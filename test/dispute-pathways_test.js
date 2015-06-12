@@ -154,6 +154,36 @@ casper.test.begin( 'search results behaviour', 49, function suite( test ) {
 });
 
 
+// Given the customer has specified a council (in the URL),
+// then results relating to that council will be included
+casper.test.begin( 'council results', 11, function suite( test ) {
+	casper.start()
+	.thenOpen( URL + queryFromObject({ have: 'dispute', 'with': 'a neighbour', about: 'dogs and other pets', council: 'A Council' }), function() {
+		test.assertSelectorHasText( '.story', 'I have a dispute with a neighbour about dogs and other pets', 'story is correct (dogs)' );
+		test.assertExists( '.status.success', 'success message is shown (dogs)' );
+		test.assertSelectorHasText( '.status.success h2', 'We have found 3 options about dogs and other pets', 'heading displays: 3 results (A Council)' );
+		test.assertSelectorHasText( '#assisted-resolution', 'A Council', 'council result shown (A Council)' );
+		test.assertSelectorDoesntHaveText( '#assisted-resolution', 'Another Council', 'council result from Another Council NOT shown (A Council)' );
+	})
+
+	.thenOpen( URL + queryFromObject({ have: 'dispute', 'with': 'a neighbour', about: 'dogs and other pets', council: 'Another Council' }), function() {
+		test.assertSelectorHasText( '.status.success h2', 'We have found 3 options about dogs and other pets', 'heading displays: 3 results (Another Council)' );
+		test.assertSelectorHasText( '#assisted-resolution', 'Another Council', 'council result shown (Another Council)' );
+		test.assertSelectorDoesntHaveText( '#assisted-resolution', 'A Council', 'council result from A Council NOT shown (Another Council)' );
+	})
+
+	.thenOpen( URL + queryFromObject({ have: 'dispute', 'with': 'a neighbour', about: 'dogs and other pets', council: 'Unknown Council' }), function() {
+		test.assertSelectorHasText( '.status.success h2', 'We have found 2 options about dogs and other pets', 'heading displays: 2 results (Unknown Council)' );
+		test.assertSelectorDoesntHaveText( '#assisted-resolution', 'A Council', 'council result from A Council NOT shown (Unknown Council)' );
+		test.assertSelectorDoesntHaveText( '#assisted-resolution', 'Another Council', 'council result from Another council NOT shown (Unknown Council)' );
+	})
+
+	.run(function() {
+		test.done();
+	});
+});
+
+
 // Given a custom visits the tool,
 // when the URL contains part of a story
 // then they will see the form with those values prefilled

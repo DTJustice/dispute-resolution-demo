@@ -32,6 +32,28 @@
 				"documentType": "guidelines"
 			},
 			{
+				"url": "http://www.example.com/c1",
+				"have": "dispute",
+				"with": "a neighbour",
+				"about": "dogs and other pets",
+				"pathway": "Assisted resolution;",
+				"title": "C1",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, dicta, eos.",
+				"documentType": "guidelines",
+				"publisher": "A Council"
+			},
+			{
+				"url": "http://www.example.com/c2",
+				"have": "dispute",
+				"with": "a neighbour",
+				"about": "dogs and other pets",
+				"pathway": "Assisted resolution;",
+				"title": "C2",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, dicta, eos.",
+				"documentType": "guidelines",
+				"publisher": "Another Council"
+			},
+			{
 				"url": "http://www.example.com/d",
 				"have": "dispute",
 				"with": "a neighbour;the body corporate",

@@ -168,20 +168,25 @@
 
 		$.each( mappedData, function( i, result ) {
 			if ( result[ 'with' ][ story[ 'with' ]] && result.about[ story.about ]) {
-				if ( result.documentType === 'legislation' ) {
-					results.legislation.push( result );
-				} else {
-					results.totalMatches++;
-					if ( result.pathway[ 'self resolution' ]) {
-						results.self.push( result );
-					}
-					if ( result.pathway[ 'assisted resolution' ]) {
-						results.assisted.push( result );
-					}
-					if ( result.pathway[ 'formal resolution' ]) {
-						results.formal.push( result );
+				// filter council results
+				if ( ! /Council/.test( result.publisher ) || result.publisher === story.council ) {
+					// separate legislation results
+					if ( result.documentType === 'legislation' ) {
+						results.legislation.push( result );
+					} else {
+						results.totalMatches++;
+						if ( result.pathway[ 'self resolution' ]) {
+							results.self.push( result );
+						}
+						if ( result.pathway[ 'assisted resolution' ]) {
+							results.assisted.push( result );
+						}
+						if ( result.pathway[ 'formal resolution' ]) {
+							results.formal.push( result );
+						}
 					}
 				}
+
 			}
 		});
 	}
