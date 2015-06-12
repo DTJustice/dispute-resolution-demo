@@ -231,19 +231,19 @@ Changes to the CSV data should be manually tested before being published live.
 
 [Sample CSV dataset](https://staging.data.qld.gov.au/dataset/dispute-resolution-datasets)
 
-| Column       | Required    | Purpose                               | Notes                                                                                            |
-|--------------|-------------|---------------------------------------|--------------------------------------------------------------------------------------------------|
-| have         | ignored     | No longer used.                       | Any value accepted                                                                               |
-| with         | required    | Used to match against search criteria | Any values accepted, separate with semicolons                                                    |
-| about        | required    | Used to match against search criteria | Any values accepted, separate with semicolons                                                    |
-| pathway      | required    | Used to group search results          | 1 or more of `Self resolution; Assisted resolution; Formal resolution` (separated by semicolons) |
-| url          | recommended | Used for search results               | Can be customised in results view template                                                       |
-| title        | recommended | Used for search results               | Can be customised in results view template                                                       |
-| description  | recommended | Used for search results               | Can be customised in results view template                                                       |
-| documentType | required    | Used to tag results for sorting       | Use a single value from [AGLS document](AGLS.document) scheme. `legislation` results are shown only an aside      |
-| format       | optional    | Indicate PDF/doc/other results        | Can be customised in results view template                                                       |
-| publisher    | optional    | Used to identify Council resources    | Any result containing the word 'Council' will be filtered from the results.                        |
-| comments     | optional    | Internal use only                     |                                                                                                  |
+| Column       | Required    | Purpose                               | Notes                                                                                                        |
+|--------------|-------------|---------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| have         | ignored     | No longer used.                       | Any value accepted                                                                                           |
+| with         | required    | Used to match against search criteria | Any values accepted, separate with semicolons                                                                |
+| about        | required    | Used to match against search criteria | Any values accepted, separate with semicolons                                                                |
+| pathway      | required    | Used to group search results          | 1 or more of `Self resolution; Assisted resolution; Formal resolution` (separated by semicolons)             |
+| url          | recommended | Used for search results               | Can be customised in results view template                                                                   |
+| title        | recommended | Used for search results               | Can be customised in results view template                                                                   |
+| description  | recommended | Used for search results               | Can be customised in results view template                                                                   |
+| documentType | required    | Used to tag results for sorting       | Use a single value from [AGLS document](AGLS.document) scheme. `legislation` results are shown only an aside |
+| format       | optional    | Indicate PDF/doc/other results        | Can be customised in results view template                                                                   |
+| publisher    | optional    | Used to identify Council resources    | Any publisher containing the words 'Council', 'City' or 'Town' will be filtered from the results.            |
+| comments     | optional    | Internal use only                     |                                                                                                              |
 
 - Most columns may be renamed or ignored (changes must be reflected in the template)
 - Additional columns may be added (and then used in templates)

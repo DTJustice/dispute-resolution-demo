@@ -170,7 +170,7 @@
 		$.each( mappedData, function( i, result ) {
 			if ( result.about[ story.about ] && result[ 'with' ][ story[ 'with' ]]) {
 				// filter council results
-				if ( ! /Council/i.test( result.publisher ) || result.publisher === story.council ) {
+				if ( ! /Council|City|Town/i.test( result.publisher ) || result.publisher === story.council ) {
 					// separate legislation results
 					if ( result.documentType === 'legislation' ) {
 						results.legislation.push( result );
@@ -231,7 +231,7 @@
 
 			if ( withValue && aboutValue ) {
 				$.each( mappedData, function( i, result ) {
-					if ( /Council/i.test( result.publisher ) && result.about[ aboutValue ] && result[ 'with' ][ withValue ]) {
+					if ( /Council|City|Town/i.test( result.publisher ) && result.about[ aboutValue ] && result[ 'with' ][ withValue ]) {
 						councils[ result.publisher ] = true;
 					}
 				});
