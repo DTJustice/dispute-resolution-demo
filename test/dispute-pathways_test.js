@@ -14,7 +14,7 @@ function queryFromObject( params ) {
 // when they use the default web address
 // then they will see the default form asking for their story
 // and the form is not prefilled
-casper.test.begin( 'form state', 11, function suite( test ) {
+casper.test.begin( 'form state', 15, function suite( test ) {
 	casper.start( URL )
 	.then(function() {
 		var options;
@@ -33,11 +33,16 @@ casper.test.begin( 'form state', 11, function suite( test ) {
 		test.assertSelectorHasText( 'select[name="have"] > option:nth-child(2)', 'question', 'first option is "question"' );
 		test.assertSelectorHasText( 'select[name="have"] > option:last-child', 'dispute', 'last option is "dispute"' );
 
-		// with and about lists are in alphabetical order (ignore first blank option)
+		// with and about options are pulled from data, sorted alphabetically (first option is blank)
+		test.assertElementCount( 'select[name="with"] > option', 6, '6 options for with' );
 		options = casper.getElementsInfo( 'select[name="with"] > option' ).map(function( info ) { return info.text; });
 		test.assertEquals( options.slice( 1 ), options.slice( 1 ).sort(), 'with options are in alphabetical order' );
+		test.assertEquals( options.slice( 1 ), [ 'a neighbour', 'apple', 'banana', 'the body corporate', 'zebra' ], 'with options extracted and trimmed correctly' );
+
+		test.assertElementCount( 'select[name="about"] > option', 7, '7 options for about' );
 		options = casper.getElementsInfo( 'select[name="about"] > option' ).map(function( info ) { return info.text; });
 		test.assertEquals( options.slice( 1 ), options.slice( 1 ).sort(), 'about options are in alphabetical order' );
+		test.assertEquals( options.slice( 1 ), [ 'cricket', 'dogs and other pets', 'fences', 'noise', 'soccer', 'tennis' ], 'about options extracted and trimmed correctly' );
 	})
 
 	.run(function() {

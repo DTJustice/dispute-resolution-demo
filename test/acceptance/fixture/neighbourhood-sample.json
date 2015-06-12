@@ -130,6 +130,16 @@
 				"title": "M",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, dicta, eos.",
 				"documentType": "guidelines"
+			},
+			{
+				"url": "http://www.example.com/n",
+				"have": "dispute",
+				"with": "apple; banana ; zebra",
+				"about": "soccer; tennis ; cricket;;",
+				"pathway": "Assisted resolution;",
+				"title": "Test data",
+				"description": "This item is for testing 'with' and 'about' property parsing",
+				"documentType": "guidelines"
 			}
 		]
 	}

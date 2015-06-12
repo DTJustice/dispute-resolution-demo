@@ -4,10 +4,7 @@
 
 	var RESULTS_PER_PAGE = 5;
 
-	var model = {
-		'with': [],
-		about: []
-	};
+	var model;
 	var mappedData, results;
 	var story = {};
 
@@ -97,6 +94,11 @@
 
 	// build the app model from the data
 	function constructModel( data ) {
+		model = {
+			'with': {},
+			about: {}
+		};
+
 		mappedData = $.map( data, function( record ) {
 			var explode;
 
@@ -108,21 +110,23 @@
 					if ( value.length ) {
 						record[ key ][ value ] = true;
 					}
+					// capture with/about terms
+					if ( i < 2 ) {
+						model[ key ][ value ] = true;
+					}
 				});
 			});
 
 			return record;
 		});
 
-		// TODO get lists of options from data
-		model = {
-			'with': [ 'a neighbour', 'a neighbour in my body corporate', 'a neighbour in my building', 'a neighbour in my street', 'a neighbour next door', 'an adjoining landowners', 'another unit owner/lot owner', 'someone in my neighbourhood', 'the body corporate' ],
-			about: [ 'abuse', 'access', 'behaviours', 'by-law breaches (body corporate)', 'cameras', 'children', 'common property (body corporate)', 'dogs and other pets', 'drainage', 'easements', 'fences', 'harassment', 'lighting', 'noise', 'objects', 'overgrown gardens', 'parking', 'pools', 'privacy', 'renovations', 'retaining walls', 'rubbish bins', 'security', 'smells', 'threats', 'trees', 'wildlife' ]
-		};
+		function mapHashKeysToArray( value, key ) {
+			return key.length ? key : null;
+		}
 
 		// alphabetical order for with and about
-		model[ 'with' ].sort();
-		model.about.sort();
+		model[ 'with' ] = $.map( model[ 'with' ], mapHashKeysToArray ).sort();
+		model.about = $.map( model.about, mapHashKeysToArray ).sort();
 	}
 
 
