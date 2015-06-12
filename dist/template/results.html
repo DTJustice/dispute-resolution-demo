@@ -1,0 +1,113 @@
+<blockquote class="story">
+	<p>I have {{ vowelSound story.have 'an' 'a' }} <strong>{{ story.have }}</strong> with <strong>{{ story.with }}</strong> about <strong>{{ story.about }}</strong>.</p>
+</blockquote>
+
+<div class="status success">
+	<h2>We have found {{ results.totalMatches }} {{ pluralize results.totalMatches 'option' 'options' }} about {{ story.about }}</h2>
+
+	<p>We provide general information which does not consider your individual circumstances.
+	If you are unsure about your legal rights you should get <a href="http://www.qld.gov.au/law/legal-mediation-and-justice-of-the-peace/legal-advice-and-investment/legal-information-and-advice/">independent legal advice</a>.</p>
+
+	<ul>
+		{{#if results.self.length}}<li><a href="#self-resolution">{{ results.self.length }} {{ pluralize results.self.length 'resource' 'resources' }} for resolving the {{ story.have }} yourself</a></li>{{/if}}
+		{{#if results.assisted.length}}<li><a href="#assisted-resolution">{{ results.assisted.length }} {{ pluralize results.assisted.length 'resource' 'resources' }} for getting help to resolve your {{ story.have }}</a></li>{{/if}}
+		{{#if results.formal.length}}<li><a href="#formal-resolution">{{ results.formal.length }} {{ pluralize results.formal.length 'resource' 'resources' }} about formal resolution of your {{ story.have }}</a></li>{{/if}}
+	</ul>
+</div>
+
+{{#unless story.with_the_body_corporate }}
+<form id="body-corporate-check">
+	<ol class="questions">
+		<li class="select">
+			<ul class="choices">
+				<li>
+					<input type="checkbox" id="body-corporate-toggle" name="with" value="the body corporate" />
+					<label for="body-corporate-toggle">I live in a body corporate<br />
+					<small>(i.e. you share common property with other owners and occupiers)</small></label>
+				</li>
+			</ul>
+		</li>
+		<li class="footer">
+			<p>Formal resolution of many disputes between neighbours in a body corporate can only be dealt with through the <a href="http://www.qld.gov.au/law/housing-and-neighbours/body-corporate/body-corporate-disputes/">Office of the Commissioner for Body Corporate and Community Management</a>.</p>
+			<ul class="actions">
+				<li><strong><input type="submit" value="Find options for neighbours in a body corporate" /></strong></li>
+			</ul>
+			<input type="hidden" name="have" value="{{ story.have }}" />
+			<input type="hidden" name="about" value="{{ story.about }}" />
+		</li>
+	</ol>
+</form>
+
+<script>
+$( '#body-corporate-toggle' ).click(function() {
+	$( '#body-corporate-check .footer' ).toggle( this.checked );
+});
+$( '#body-corporate-check .footer' ).hide();
+<{{!}}/script>
+{{/unless}}
+
+
+{{#if results.self}}<div id="self-resolution" class="section self">
+	<h2>{{ results.self.length }} {{ pluralize results.self.length 'resource' 'resources' }} for resolving the {{ story.have }} yourself</h2>
+	<table class="data-table">
+		<thead>
+			<tr>
+				<th>Option</th>
+				<th>Organisation</th>
+				<th>Type</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each results.self}}<tr>
+				<td><a href="{{ url }}">{{ title }}</a><br /><small>{{ description }}</small></td>
+				<td>{{ publisher }}</td>
+				<td><span class="tag {{ documentType }}">{{ documentType }}</span></td>
+			</tr>{{/each}}
+		</tbody>
+	</table>
+</div>{{/if}}
+
+{{#if results.assisted}}<div id="assisted-resolution" class="section assisted">
+	<h2>{{ results.assisted.length }} {{ pluralize results.assisted.length 'resource' 'resources' }} for getting help to resolve your {{ story.have }}</h2>
+	<table class="data-table">
+		<thead>
+			<tr>
+				<th>Option</th>
+				<th>Organisation</th>
+				<th>Type</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each results.assisted}}<tr>
+				<td><a href="{{ url }}">{{ title }}</a><br /><small>{{ description }}</small></td>
+				<td>{{ publisher }}</td>
+				<td><span class="tag {{ documentType }}">{{ documentType }}</span></td>
+			</tr>{{/each}}
+		</tbody>
+	</table>
+</div>{{/if}}
+
+{{#if results.formal}}<div id="formal-resolution" class="section formal">
+	<h2>{{ results.formal.length }} {{ pluralize results.formal.length 'resource' 'resources' }} about formal resolution of your {{ story.have }}</h2>
+	<table class="data-table">
+		<thead>
+			<tr>
+				<th>Option</th>
+				<th>Organisation</th>
+				<th>Type</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each results.formal}}<tr>
+				<td><a href="{{ url }}">{{ title }}</a><br /><small>{{ description }}</small></td>
+				<td>{{ publisher }}</td>
+				<td><span class="tag {{ documentType }}">{{ documentType }}</span></td>
+			</tr>{{/each}}
+		</tbody>
+	</table>
+</div>{{/if}}
+
+
+<ul class="actions">
+	<li><strong><a class="button" href="./">Ask another question</a></strong></li>
+</ul>

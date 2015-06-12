@@ -1,0 +1,73 @@
+<div class="preamble">
+	<p>Use this tool to discover how to resolve a neighbourhood dispute.</p>
+
+	<p>We provide general information which does not consider your individual circumstances.
+	If you are unsure about your legal rights you should get <a href="http://www.qld.gov.au/law/legal-mediation-and-justice-of-the-peace/legal-advice-and-investment/legal-information-and-advice/">independent legal advice</a>.</p>
+</div>
+
+
+<form class="form" method="get">
+	<ol class="questions">
+		<li>
+			<label for="dispute-pathway-have">
+				<span class="label">I have a</span>
+				<abbr class="required" title="(required)">*</abbr>
+			</label>
+			<select id="dispute-pathway-have" name="have" required="required">
+				{{#select story.have}}
+				<option class="placeholder" value=""></option>
+				<option value="question">question</option>
+				<option value="problem">problem</option>
+				<option value="issue">issue</option>
+				<option value="disagreement">disagreement</option>
+				<option value="conflict">conflict</option>
+				<option value="complaint">complaint</option>
+				<option value="dispute">dispute</option>
+				{{/select}}
+			</select>
+		</li>
+		<li>
+			<label for="dispute-pathway-with">
+				<span class="label">with</span>
+				<abbr class="required" title="(required)">*</abbr>
+			</label>
+			<select id="dispute-pathway-with" name="with" required="required">
+				{{#select story.with}}
+				<option class="placeholder" value=""></option>
+				{{#each form.withOptions}}<option value="{{ value }}">{{ label }}</option>{{/each}}
+				{{/select}}
+			</select>
+		</li>
+		<li>
+			<label for="dispute-pathway-about">
+				<span class="label">about</span>
+				<abbr class="required" title="(required)">*</abbr>
+			</label>
+			<select id="dispute-pathway-about" name="about" required="required">
+				{{#select story.about}}
+				<option class="placeholder" value=""></option>
+				{{#each form.aboutOptions}}<option value="{{ value }}">{{ label }}</option>{{/each}}
+				{{/select}}
+			</select>
+		</li>
+
+		<li>
+			<label for="dispute-pathway-council">
+				<span class="label">Some {{ story.have }}s about {{ story.about }} are handled by your local council. We can help you find the right information if you tell us where you live:</span>
+				<small class="hint help">Find your council in the <a href="http://growthsummit.premiers.qld.gov.au/local-government-directory.html">Local Government Directory</a></small>
+			</label>
+			<select name="council" id="dispute-pathway-council">
+				{{#select story.council}}
+				<option class="placeholder" value=""></option>
+				{{#each form.councilOptions}}<option value="{{ value }}">{{ label }}</option>{{/each}}
+				{{/select}}
+			</select>
+		</li>
+
+		<li class="actions">
+			<ul class="actions">
+				<li><strong><input type="submit" value="Find options" /></strong></li>
+			</ul>
+		</li>
+	</ol>
+</form>
