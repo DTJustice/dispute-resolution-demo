@@ -234,7 +234,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			</label>
 			<select name="council" id="dispute-pathway-council">
 				{{#select story.council}}
-				<option value="placeholder" value=""></option>
+				<option class="placeholder" value=""></option>
 				{{#each form.councilOptions}}<option value="{{ value }}">{{ label }}</option>{{/each}}
 				{{/select}}
 			</select>
