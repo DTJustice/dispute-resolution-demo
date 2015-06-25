@@ -235,7 +235,7 @@
         "disputeSubject": "Parking;",
         "resolution": "Formal Resolution;",
         "documentType": "",
-        "Comments": "Gives neighbour an avenue to complain/report parking issues",
+        "Comments": "Gives neighbour an avenue to complain/report parking issues. 18/6/15 - LS - if we're keeping council information this looks okay",
         "Description": "Report parking issues in Brisbane."
     },
     {
@@ -252,7 +252,7 @@
         "URL": "http://www.brisbane.qld.gov.au/laws-permits/local-laws/information-about-local-laws/neighbourhood-complaints",
         "disputeType": "Complaint;Dispute;",
         "party": "a neighbour;someone in my neighbourhood;a neighbour next door;a neighbour in my street;",
-        "disputeSubject": "Rubbish bins;Smells;Objects;",
+        "disputeSubject": "Rubbish bins;Smells;Objects;Noise;",
         "resolution": "Self Resolution;Assisted Resolution;Formal Resolution;",
         "documentType": "guidelines",
         "Comments": "Could cover any dispute with neighbours. Includes a link to DRB.",
@@ -272,7 +272,7 @@
         "URL": "http://www.brisbane.qld.gov.au/traffic-transport/parking-permits/parking-rules/residential-parking",
         "disputeType": "Question;Complaint;",
         "party": "a neighbour;someone in my neighbourhood;a neighbour next door;a neighbour in my street;a neighbour in my building;",
-        "disputeSubject": "Access;",
+        "disputeSubject": "Access;Parking;",
         "resolution": "Formal Resolution;",
         "documentType": "guidelines",
         "Comments": "",
@@ -335,7 +335,7 @@
         "disputeSubject": "Noise;Dogs and other pets;Overgrown gardens;",
         "resolution": "Self Resolution;",
         "documentType": "legislation",
-        "Comments": "Local laws database",
+        "Comments": "Local laws database - LS 18/6/15 - there was nothing immediately apparent at this site on overgrown gardens and it doesn't come up as a link for overgrown gardens on the tool",
         "Description": "Database of local government laws in Queensland."
     },
     {
@@ -479,7 +479,7 @@
         "Description": "How to apply for protection under the Peace and Good Behaviour Act."
     },
     {
-        "URL": "https://caxton.org.au/self_help_kits.html",
+        "URL": "https://caxton.org.au/pdfs/Peace%20and%20Good%20Behaviour%20Order%20kit%202013.pdf",
         "disputeType": "Disagreement;Conflict;Dispute;Issue;",
         "party": "a neighbour;someone in my neighbourhood;",
         "disputeSubject": "Behaviours;Abuse;Threats;Harassment;",
@@ -651,12 +651,12 @@
     {
         "URL": "http://www.justice.qld.gov.au/fair-and-safe-work/industrial-relations/codes-of-practice-and-guidelines/queensland-code-of-practice-for-the-building-and-construction-industry",
         "disputeType": "Concern;Dispute;Conflict;Question;",
-        "party": "someone in my neighbourhood;a neighbour in my street;a neighbour next door;a neighbour in my building;",
+        "party": "someone in my neighbourhood;a neighbour in my street;a neighbour next door;a neighbour in my building;a neighbour;",
         "disputeSubject": "Renovations;",
         "resolution": "Self Resolution;Formal Resolution;",
         "documentType": "guidelines",
         "Comments": "Information on the code of practice for the building and construction industry",
-        "Description": "TBC"
+        "Description": "Code of practice for building and construction industry"
     },
     {
         "URL": "http://www.qldneighbourhoods.com/development-permits-and-approvals.html",
@@ -679,24 +679,6 @@
         "Description": "Understand your rights and responsibilities to avoid building disputes."
     },
     {
-        "URL": "http://www.logan.qld.gov.au/__data/assets/pdf_file/0007/49093/stormwater-factsheet.pdf",
-        "disputeType": "Concern;Question;Issue;",
-        "party": "a neighbour;someone in my neighbourhood;a neighbour in my street;",
-        "disputeSubject": "Drainage;",
-        "resolution": "Self Resolution;",
-        "documentType": "guidelines",
-        "Comments": "Council information about stormwater drainage"
-    },
-    {
-        "URL": "http://www.brisbane.qld.gov.au/laws-permits/complaints-fines/noise-air-light-water-complaints/stormwater-pollution-runoff-drainage-complaints",
-        "disputeType": "Complaint;Question;",
-        "party": "a neighbour;a neighbour next door;a neighbour in my street;",
-        "disputeSubject": "Drainage;",
-        "resolution": "Self Resolution;Assisted Resolution;",
-        "documentType": "procedure",
-        "Comments": "how to make a complaint to the council about drainage and stormwater pollution"
-    },
-    {
         "URL": "http://www.qldneighbourhoods.com/prohibited-pets.html",
         "disputeType": "Concern;Problem;Complaint;Question;Issue;",
         "party": "a neighbour;someone in my neighbourhood;a neighbour next door;a neighbour in my street;a neighbour in my building;",
@@ -707,7 +689,7 @@
         "Description": "What pets and wildlife are prohibited in Queensland."
     },
     {
-        "URL": "http://www.goldcoast.qld.gov.au/community/animal-complaints-18356.html",
+        "URL": "http://www.goldcoast.qld.gov.au/community/animal-complaints-18356.html LS - Suggest you replace it with the next page entitled WILDLIFE -",
         "disputeType": "Concern;Complaint;Question;Issue;",
         "party": "a neighbour;someone in my neighbourhood;a neighbour next door;a neighbour in my street;a neighbour in my building;",
         "disputeSubject": "Wildlife;",
@@ -742,25 +724,8 @@
         "disputeSubject": "Lighting;Noise;Smells;",
         "resolution": "Self Resolution;",
         "documentType": "procedure",
-        "Comments": "information on Dept of Environment website outlining legal responsibilities in relation to noise, light and odour issues"
-    },
-    {
-        "URL": "http://www.townsville.qld.gov.au/.../Documents/Light Nuisance-final.pdf",
-        "disputeType": "Concern;Problem;Disagreement;Complaint;Dispute;",
-        "party": "someone in my neighbourhood;a neighbour;a neighbour next door;a neighbour in my street;a neighbour in my building;",
-        "disputeSubject": "Lighting;",
-        "resolution": "Self Resolution;Assisted Resolution;",
-        "documentType": "",
-        "Comments": "Fact sheet on nuisance lighting, encouraging self-resolution as first step and noting that local councils are responsible for investigating lighting disputes."
-    },
-    {
-        "URL": "http://www.sunshinecoast.qld.gov.au/sitePage.cfm?code=noise-light",
-        "disputeType": "Issue;Concern;Disagreement;Complaint;Dispute;Question;",
-        "party": "someone in my neighbourhood;a neighbour in my building;a neighbour next door;a neighbour in my street;a neighbour;",
-        "disputeSubject": "Lighting;Noise;",
-        "resolution": "Self Resolution;Assisted Resolution;Formal Resolution;",
-        "documentType": "guidelines",
-        "Comments": "Information on light and noise nuisance that clarifies where local council has responsibility to investigate, and when the issue is outside of their control. Includes links to fact sheets and related information."
+        "Comments": "information on Dept of Environment website outlining legal responsibilities in relation to noise, light and odour issues",
+        "Description": "Noise, light and odour issues caused by companies."
     },
     {
         "URL": "http://www.lawstuff.org.au/qld_law/topics/",
@@ -768,27 +733,9 @@
         "party": "someone in my neighbourhood;",
         "disputeSubject": "Children;",
         "resolution": "Self Resolution;Assisted Resolution;Formal Resolution;",
-        "documentType": "",
-        "Comments": "Website designed for young people. Provides information on legal rights with links to detailed information listed under topic names e.g. cyberbullying."
-    },
-    {
-        "URL": "http://www.brisbane.qld.gov.au/sites/default/files/lawful_point_discharge_neighbours.pdf",
-        "disputeType": "Question;Problem;",
-        "party": "a neighbour;someone in my neighbourhood;a neighbour next door;an adjoining landowners;",
-        "disputeSubject": "Drainage;",
-        "resolution": "Self Resolution;",
-        "documentType": "fact sheet",
-        "Comments": "Brisbane City Council Information for neighbours about stormwater lawful points of discharge.",
-        "Description": "URL"
-    },
-    {
-        "URL": "http://www.brisbane.qld.gov.au/laws-permits/laws-permits-residents/animals-pets/cats-dogs/barking-dogs",
-        "disputeType": "Concern;Problem;Complaint;Issue;",
-        "party": "a neighbour;someone in my neighbourhood;",
-        "disputeSubject": "Noise;Dogs and other pets;",
-        "resolution": "Self Resolution;",
         "documentType": "guidelines",
-        "Comments": "Brisbane City Council Barking Dog Information"
+        "Comments": "Website designed for young people. Provides information on legal rights with links to detailed information listed under topic names e.g. cyberbullying.",
+        "Description": "TBC"
     },
     {
         "URL": "http://www.goldcoast.qld.gov.au/community/barking-dogs-3498.html",
@@ -1382,7 +1329,8 @@
         "disputeSubject": "Noise;Behaviours;Trees;Smells;Fences;Abuse;Dogs and other pets;Threats;Children;Drainage;Pools;Renovations;Retaining walls;Parking;Overgrown gardens;Objects;Rubbish bins;Easements;Lighting;By-law breaches (body corporate);Cameras;Common property (body corporate);Security;Harassment;Wildlife;",
         "resolution": "Assisted Resolution;",
         "documentType": "procedure",
-        "Comments": "Conciliation for body corporate disputes between neighbours, which could cover all of the dispute categories * Most important link for assisted resolution in bodies coprorate"
+        "Comments": "Conciliation for body corporate disputes between neighbours, which could cover all of the dispute categories * Most important link for assisted resolution in bodies coprorate",
+        "Description": "Conciliation in body corporate disputes."
     },
     {
         "URL": "http://www.qld.gov.au/law/housing-and-neighbours/body-corporate/body-corporate-disputes/types-of-dispute-resolution/adjudication-for-body-corporate-disputes/",
@@ -1400,34 +1348,38 @@
         "disputeSubject": "Noise;Trees;Fences;Dogs and other pets;Children;Pools;Retaining walls;Overgrown gardens;Rubbish bins;Privacy;Lighting;Cameras;Security;Behaviours;Smells;Abuse;Threats;Drainage;Renovations;Parking;Objects;Easements;Access;By-law breaches (body corporate);Common property (body corporate);Harassment;Wildlife;",
         "resolution": "Self Resolution;",
         "documentType": "",
-        "Comments": "Titles registry will be able to assist with questions like - \"the property next door is rented. Who is the owner?\""
+        "Comments": "Titles registry will be able to assist with questions like - \"the property next door is rented. Who is the owner?\"",
+        "Description": "How to find out who owns a property so you can contact them"
     },
     {
-        "URL": "http://www.sclqld.org.au/caselaw/",
+        "URL": "http://www.sclqld.org.au/caselaw/QCAT",
         "disputeType": "Question;",
         "party": "a neighbour;",
-        "disputeSubject": "Trees;Fences;",
-        "resolution": "Self Resolution;",
-        "documentType": "",
-        "Comments": "Supreme Court library - will have all published decisions regarding QCAT matters, including NDR - Tree disputes"
+        "disputeSubject": "Trees;",
+        "resolution": "Self Resolution;Formal Resolution;",
+        "documentType": "guidelines",
+        "Comments": "Supreme Court library - will have all published decisions regarding QCAT matters, including NDR - Tree disputes",
+        "Description": "Search for QCAT decisions about tree disputes."
+    },
+    {
+        "URL": "http://www.sclqld.org.au/caselaw/QCAT",
+        "disputeType": "Question;",
+        "party": "a neighbour;",
+        "disputeSubject": "Fences;",
+        "resolution": "Self Resolution;Formal Resolution;",
+        "documentType": "guidelines",
+        "Comments": "Supreme Court library - will have all published decisions regarding QCAT matters, including NDR - Tree disputes",
+        "Description": "Search for QCAT decisions about fence disputes."
     },
     {
         "URL": "http://www.qcat.qld.gov.au/matter-types/tree-disputes/tree-order-register",
         "disputeType": "Question;",
         "party": "a neighbour;",
         "disputeSubject": "Trees;",
-        "resolution": "Self Resolution;",
-        "documentType": "",
-        "Comments": "QCAT website - what type of decisions have been made regarding tree disputes before QCAT?"
-    },
-    {
-        "URL": "https://www.dews.qld.gov.au/water-supply-regulations/urban-drainage",
-        "disputeType": "Concern;Question;Problem;",
-        "party": ";a neighbour;someone in my neighbourhood;a neighbour next door;a neighbour in my street;",
-        "disputeSubject": "Drainage;",
-        "resolution": "Self Resolution;",
-        "documentType": "",
-        "Comments": "Dept of Energy & Water supply - Urban Drainage Manual"
+        "resolution": "Self Resolution;Formal Resolution;",
+        "documentType": "guidelines",
+        "Comments": "QCAT website - what type of decisions have been made regarding tree disputes before QCAT?",
+        "Description": "Search for tree orders made by QCAT."
     },
     {
         "URL": "http://www.qld.gov.au/law/housing-and-neighbours/body-corporate/",
@@ -1439,24 +1391,14 @@
         "Comments": "General information on body corporates. *Most important link for general information on bodies corporate"
     },
     {
-        "URL": "http://www.hpw.qld.gov.au/construction/BuildingPlumbing/PoolSafety/PoolFencesSafetyBarriers/Pages/DividingFences.aspx",
+        "URL": "https://www.qbcc.qld.gov.au/home-building-owners/pool-safety/using-dividing-fences-pool-barrier",
         "disputeType": "Concern;Question;Problem;",
         "party": "a neighbour;a neighbour next door;someone in my neighbourhood;a neighbour next door;a neighbour in my street;a neighbour in my building;an adjoining landowners;another unit owner/lot owner;a neighbour in my body corporate;",
         "disputeSubject": "Pools;",
         "resolution": "Self Resolution;Formal Resolution;",
-        "documentType": "procedure",
-        "Comments": "HPW info on dividing fences which are pool fences - links to forms and fact sheets",
-        "Description": "Information about dividing fences which are also pool fences."
-    },
-    {
-        "URL": "http://www.hpw.qld.gov.au/SiteCollectionDocuments/QDCMP3.4SwimmingPoolBarriers.pdf",
-        "disputeType": "Concern;Question;Problem;Complaint;Conflict;Issue;",
-        "party": "a neighbour;a neighbour next door;someone in my neighbourhood;a neighbour next door;a neighbour in my street;a neighbour in my building;an adjoining landowners;another unit owner/lot owner;a neighbour in my body corporate;",
-        "disputeSubject": "Pools;",
-        "resolution": "Self Resolution;Formal Resolution;",
-        "documentType": "legislation",
-        "Comments": "Relevant?",
-        "Description": "Queensland Development Code on swimming pool barriers."
+        "documentType": "fact sheet",
+        "Comments": "QBCC fact sheet",
+        "Description": "Working with your neighbour on dividing fences which are pool barriers. Who pays? What are the laws?"
     },
     {
         "URL": "http://www.hpw.qld.gov.au/SiteCollectionDocuments/GuidelinesForPoolOwnersAndPropertyAgents.pdf",
@@ -1465,7 +1407,7 @@
         "disputeSubject": "Pools;",
         "resolution": "Self Resolution;Formal Resolution;",
         "documentType": "guidelines",
-        "Comments": "",
+        "Comments": "18/6/15 - LS - Suggest this site moves onto the front page of pool results",
         "Description": "Guideline for pool owners and property agents on pool owner responsibilities."
     },
     {
@@ -1475,7 +1417,7 @@
         "disputeSubject": "Pools;",
         "resolution": "Self Resolution;",
         "documentType": "procedure",
-        "Comments": "Pool register search",
+        "Comments": "Pool register search - 18/6/15 - LS - ok",
         "Description": "Search a property to check if a pool is registered."
     },
     {
@@ -1485,8 +1427,8 @@
         "disputeSubject": "Pools;Noise;",
         "resolution": "Self Resolution;",
         "documentType": "procedure",
-        "Comments": "Info from Legal Aid on managing noise/smells issues including pool pumps",
-        "Description": "Advice from Legal Aid on managing pool or spa noise issues."
+        "Comments": "Info from Legal Aid on managing noise/smells issues including pool pumps - 18/6/15 - LS - ok",
+        "Description": "Advice on managing pool or spa noise issues."
     },
     {
         "URL": "https://www.qld.gov.au/law/housing-and-neighbours/noise-and-crime-in-the-neighbourhood/complain-about-noisy-neighbours/",
@@ -1495,8 +1437,8 @@
         "disputeSubject": "Pools;Noise;",
         "resolution": "Self Resolution;Formal Resolution;Assisted Resolution;",
         "documentType": "procedure",
-        "Comments": "Guide to complaining about noisy neighbours",
-        "Description": "How to manage an issue with your neighbour about pool noise."
+        "Comments": "Guide to complaining about noisy neighbours -18/6/15 - LS good site",
+        "Description": "How to manage an issue with your neighbour about noise."
     },
     {
         "URL": "https://www.qld.gov.au/law/your-rights/legal-and-property-rights/laws-for-building-houses-and-pools/pool-fencing-and-safety-laws/",
@@ -1505,7 +1447,7 @@
         "disputeSubject": "Pools;",
         "resolution": "Self Resolution;Formal Resolution;Assisted Resolution;",
         "documentType": "procedure",
-        "Comments": "Laws about pool fences and safety",
+        "Comments": "Laws about pool fences and safety - 18/6/15 - LS good site",
         "Description": "Guide to pool fencing and safety laws in Queensland."
     }
 ]
