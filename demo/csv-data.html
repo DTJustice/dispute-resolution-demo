@@ -25,6 +25,7 @@
 	<main data-ng-controller="csvController">
 
 		<button class="btn btn-primary" ng-csv="csvData" csv-header="csvHeader">Export CSV</button>
+		<button class="btn" ng-csv="csvDataConsolidated" csv-header="csvHeader">Export CSV (consolidated)</button>
 
 		<table id="csv-table" class="table table-striped table-hover table-condensed">
 			<thead>
