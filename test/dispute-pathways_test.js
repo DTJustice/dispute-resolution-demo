@@ -53,10 +53,6 @@ casper.test.begin( 'form state', 15, function suite( test ) {
 
 // Given the customer chooses a pathway that contains council resources,
 // then they will be given the option to select their council (use relevance on form)
-
-/* TODO this test requires a workaround in casperjs to trigger change events.
-The change handler controls the display and options of the council question
-Using .evaluate to trigger change events with jquery or DOM code was not successful*/
 casper.test.begin( 'council question relevance', 12, function suite( test ) {
 	casper.start( URL )
 	.then(function() {
@@ -380,6 +376,24 @@ casper.test.begin( 'back button behaves as expected', 19, function suite( test )
 		test.assertField( 'with', 'a neighbour', 'with a neighbour (is prefilled)' );
 		test.assertExists( 'select[name="about"]', 'question exists: about' );
 		test.assertField( 'about', 'fences', 'about fences (is prefilled)' );
+	})
+
+	.run(function() {
+		test.done();
+	});
+});
+
+
+// Given the user is filling out the form,
+// when they answer all questions
+// and there are no matching results
+// then a message is displayed and suggested similar stories are shown and no link to view results is visible
+casper.test.begin( 'no results message', 2, function suite( test ) {
+	casper.start()
+
+	.thenOpen( URL + queryFromObject({ have: 'question', 'with': 'a neighbour', about: 'cricket' }), function() {
+		test.assertTitle( TITLE, 'loaded neighbourhood dispute page' );
+		test.assertSelectorHasText( '.warn h2', 'Your search for cricket did not return any results' );
 	})
 
 	.run(function() {

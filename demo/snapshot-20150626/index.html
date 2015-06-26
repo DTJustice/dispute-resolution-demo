@@ -255,6 +255,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	</ol>
 </form>
 </script>
+<script id="no-results-template" type="text/x-handlebars-template">
+<blockquote class="story">
+	<p>I have {{ vowelSound story.have 'an' 'a' }} <strong>{{ story.have }}</strong> with <strong>{{ story.with }}</strong> about <strong>{{ story.about }}</strong>.</p>
+</blockquote>
+
+<div class="status warn">
+	<h2>Your search for {{ story.about }} did not return any results</h2>
+	<p>Please try the search suggestions below.</p>
+</div>
+
+<h2>Tips for searching</h2>
+<ul>
+	{{#unless story.with_a_neighbour}}
+	<li>Search for <a href="?have={{ story.have }}&amp;with=a neighbour&amp;about={{ story.about }}&amp;council={{ story.council }}">{{ story.have }} with <strong>a neighbour</strong> about {{ story.about }}</a></li>
+	{{/unless}}
+	<li>Go back and change '{{ story.with }}' to another value</li>
+	<li>Go back and change '{{ story.about }}' to another value</li>
+</ul>
+</script>
 <script id="results-template" type="text/x-handlebars-template"><blockquote class="story">
 	<p>I have {{ vowelSound story.have 'an' 'a' }} <strong>{{ story.have }}</strong> with <strong>{{ story.with }}</strong> about <strong>{{ story.about }}</strong>.</p>
 </blockquote>

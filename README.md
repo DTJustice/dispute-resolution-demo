@@ -22,7 +22,7 @@ There is no server-side support for rendering the search result content into the
 
 - SWE template
 - dataset (hosted on Queensland Government's [open data portal][data])
-- views: form, results, noresults, noscript.
+- views: form, results, noresults, error, noscript.
 
 ### Customising page content
 
@@ -77,6 +77,7 @@ Some minor sections cannot be customised without updating the script.
    ```html
    <script id="form-template" type="text/x-handlebars-template"><!--#include virtual="template/form.html"--></script>
    <script id="results-template" type="text/x-handlebars-template"><!--#include virtual="template/results.html"--></script>
+   <script id="no-results-template" type="text/x-handlebars-template"><!--#include virtual="template/no-results.html"--></script>
    <script id="error-template" type="text/x-handlebars-template"><!--#include virtual="template/error.html"--></script>
    ```
 
@@ -132,7 +133,11 @@ This handles history state as customers move back and forward between results an
   "story": {
     "have": "dispute",
     "with": "a neighbour",
-    "about": "fences"
+    "about": "fences",
+    "have_dispute": true,
+    "with_a_neighbour": true,
+    "about_fences": true,
+    "council": ""
   }
 }
 ```
@@ -141,6 +146,8 @@ This handles history state as customers move back and forward between results an
 - `form` contains arrays of options to populate the select lists
 - each item in the option arrays follows the simple format: `{ label: text, value: text }`
 - `have` options are hardcoded in the view template in order to control the ranking
+- additional boolean values in `story` are provided to assist with conditionals in handlebars templates. For example, if the URL contains `with=a neighbour"` then these 2 properties will be present: `{ "with": "a neighbour", "with_a_neighbour": true }`
+- council value will be available if it was present in the URL.
 
 ![Diagram of form options for 'have' question](/docs/form-q1-have.png)
 ![Diagram of form options for 'with' question](/docs/form-q2-with.png)
@@ -152,7 +159,7 @@ The results page retrieves all data from the dataset and constructs a viewmodel 
 Search criteria are defined in the URL query string in the format: `?have=dispute&with=a neighbour&about=fences`.
 Customers are redirected to the form if any parameter values are missing or invalid.
 
-Sample template: [results.html](test/acceptance/template/results.html)
+Sample template: [results.html](dist/template/results.html)
 
 #### Viewmodel
 
@@ -172,6 +179,7 @@ Sample template: [results.html](test/acceptance/template/results.html)
     "have_dispute": true,
     "with_a_neighbour": true,
     "about_fences": true,
+    "council": ""
   }
 }
 ```
@@ -180,28 +188,28 @@ Sample template: [results.html](test/acceptance/template/results.html)
 - `legislation`: array of results that have a `documentType` of `legislation`. Legislation results are excluded from self, assisted and formal arrays.
 - `totalMatches`: (integer) accurate count of the total number of results. Results that are repeated in more than one pathway are only counted once.
 - `story` provides access to the customer input values (read from the URL)
-- additional boolean values in `story` are provided to assist with conditionals in handlebars templates. For example, if the URL contains `with=a neighbour" then these 2 properties will be present: `{ "with": "a neighbour", "with_a_neighbour": true }`
+- additional boolean values in `story` are provided to assist with conditionals in handlebars templates. For example, if the URL contains `with=a neighbour"` then these 2 properties will be present: `{ "with": "a neighbour", "with_a_neighbour": true }`
 - The structure of each item in the result arrays mirrors the [CSV format](#csv-format)
   Review the [data.qld.gov.au][data] API documentation for more information.
 - `with`, `about` and `pathways` values for each result are exploded like so: `{ "with": { "a neighbour": true, "the body corporate": true }}`.
   Each value (separated by semicolons) becomes a property with the value `true` recorded.
+- council value will be available if it was present in the URL.
 
 #### Legislation aside
 
 This template is rendered in place when there are 1 or more matching results with a `documentType` of `legislation`.
 Uses the `results` viewmodel described above (`story` property is not provided).
 
-Sample template: [aside-legislation.html](test/acceptance/template/aside-legislation.html)
+Sample template: [aside-legislation.html](dist/template/aside-legislation.html)
 
 ![Diagram of legislation aside HTML source](/docs/html-asides.png)
 
 #### No results
 
 Will be rendered when no data matches the search criteria.
-Static content only.
-Will be processed by handlebars, but no viewmodel data is provided.
+Will be processed by handlebars using the same viewmodel as results (above), however the results arrays will all be empty.
 
-Sample template: TBA
+Sample template: [no-results.html](dist/template/no-results.html)
 
 #### Error
 
@@ -209,13 +217,13 @@ This template is used when there is an error accessing data via JSONP.
 Static content only.
 Will be processed by handlebars, but no viewmodel data is provided.
 
-[Recommended content](/test/acceptance/template/error.html) is bundled with the source code.
+[Recommended content](dist/template/error.html) is bundled with the source code.
 
 #### No script
 
 This tool relies on javascript and will not function without it.
 Customers with javascript disabled should see a useful message pointing them to existing resources.
-[Recommended content](/test/acceptance/template/noscript.html) is bundled with the source code.
+[Recommended content](dist/template/noscript.html) is bundled with the source code.
 
 ## Source data
 
@@ -268,8 +276,8 @@ Some knowledge of front-end development workflow tools and command line is assum
 
 ### Getting started
 
-- download and install node (includes npm)
-- download install phantomjs
+- download and install [node][node] (includes npm)
+- download and install [phantomjs][phantomjs]
 - install grunt command line: `npm install -g grunt-cli`
 - clone this git repository
 - run `npm install` to install other dependencies (grunt tasks, casper, etc.)
@@ -279,12 +287,12 @@ Some knowledge of front-end development workflow tools and command line is assum
 - type `grunt` to run the build
 - browse [http://localhost:9999/](http://localhost:9999/) to preview files in the browser
 - update [acceptance tests](test/acceptance/) for new/changed features
-- add new functionality to the [custom script](src/dispute-pathways.js)
+- add new functionality to the custom script: [src/dispute-pathways.js](src/dispute-pathways.js)
 
 ### Publishing changes
 
 - update the version in git
-- liase with the Channel improvement team in the One-Stop-Shop strategy and implementation office to publish the script to www.qld.gov.au
+- liase with the Channel improvement team in the One-Stop-Shop strategy and implementation office (OSSSIO) to publish the script to www.qld.gov.au
 
 [data]: https://data.qld.gov.au
 [SWE]: https://github.com/qld-gov-au/swe_template
@@ -300,3 +308,4 @@ Some knowledge of front-end development workflow tools and command line is assum
 [phantomjs]: http://phantomjs.org/
 [casperjs]: http://casperjs.org/
 [AGLS.document]: http://www.agls.gov.au/documents/agls-document/
+[SSI]: https://en.wikipedia.org/wiki/Server_Side_Includes

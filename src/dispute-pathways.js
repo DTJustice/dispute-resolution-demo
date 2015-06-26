@@ -198,7 +198,7 @@
 			// create asides
 			renderInPlace( 'aside-legislation', { results: results });
 		}
-		render( 'results', { story: story, results: results });
+		render( results.totalMatches > 0 ? 'results' : 'no-results', { story: story, results: results });
 	}
 
 	// show the form
