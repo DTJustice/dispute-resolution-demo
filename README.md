@@ -68,7 +68,7 @@ Some minor sections cannot be customised without updating the script.
 5. add a container for the main view:
 
    ```html
-   <div id="dispute-pathways-view"></div>
+   <div id="dispute-pathways-view" aria-live="polite"></div>
    ```
 6. add view templates (see below)
 
