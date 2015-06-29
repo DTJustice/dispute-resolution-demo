@@ -287,7 +287,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<li>Go back and change '{{ story.about }}' to another value</li>
 </ul>
 </script>
-<script id="results-template" type="text/x-handlebars-template"><blockquote class="story">
+
+
+<script id="results-template" type="text/x-handlebars-template">
+<blockquote class="story">
 	<p>I have {{ vowelSound story.have 'an' 'a' }} <strong>{{ story.have }}</strong> with <strong>{{ story.with }}</strong> about <strong>{{ story.about }}</strong>.</p>
 </blockquote>
 
@@ -304,7 +307,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	</ul>
 </div>
 
-{{#unless story.with_the_body_corporate }}
+{{#if story.with_a_neighbour }}
 <form id="body-corporate-check">
 	<ol class="questions">
 		<li class="select">
@@ -333,7 +336,127 @@ $( '#body-corporate-toggle' ).click(function() {
 });
 $( '#body-corporate-check .footer' ).hide();
 <{{!}}/script>
-{{/unless}}
+{{/if}}
+{{#if story.with_an_adjoining_landowners }}
+<form id="body-corporate-check">
+	<ol class="questions">
+		<li class="select">
+			<ul class="choices">
+				<li>
+					<input type="checkbox" id="body-corporate-toggle" name="with" value="the body corporate" />
+					<label for="body-corporate-toggle">I live in a body corporate<br />
+					<small>(i.e. you share common property with other owners and occupiers)</small></label>
+				</li>
+			</ul>
+		</li>
+		<li class="footer">
+			<p>Formal resolution of many disputes between neighbours in a body corporate can only be dealt with through the <a href="http://www.qld.gov.au/law/housing-and-neighbours/body-corporate/body-corporate-disputes/">Office of the Commissioner for Body Corporate and Community Management</a>.</p>
+			<ul class="actions">
+				<li><strong><input type="submit" value="Find options for neighbours in a body corporate" /></strong></li>
+			</ul>
+			<input type="hidden" name="have" value="{{ story.have }}" />
+			<input type="hidden" name="about" value="{{ story.about }}" />
+		</li>
+	</ol>
+</form>
+
+<script>
+$( '#body-corporate-toggle' ).click(function() {
+	$( '#body-corporate-check .footer' ).toggle( this.checked );
+});
+$( '#body-corporate-check .footer' ).hide();
+<{{!}}/script>
+{{/if}}
+{{#if story.with_someone_in_my_neighbourhood }}
+<form id="body-corporate-check">
+	<ol class="questions">
+		<li class="select">
+			<ul class="choices">
+				<li>
+					<input type="checkbox" id="body-corporate-toggle" name="with" value="the body corporate" />
+					<label for="body-corporate-toggle">I live in a body corporate<br />
+					<small>(i.e. you share common property with other owners and occupiers)</small></label>
+				</li>
+			</ul>
+		</li>
+		<li class="footer">
+			<p>Formal resolution of many disputes between neighbours in a body corporate can only be dealt with through the <a href="http://www.qld.gov.au/law/housing-and-neighbours/body-corporate/body-corporate-disputes/">Office of the Commissioner for Body Corporate and Community Management</a>.</p>
+			<ul class="actions">
+				<li><strong><input type="submit" value="Find options for neighbours in a body corporate" /></strong></li>
+			</ul>
+			<input type="hidden" name="have" value="{{ story.have }}" />
+			<input type="hidden" name="about" value="{{ story.about }}" />
+		</li>
+	</ol>
+</form>
+
+<script>
+$( '#body-corporate-toggle' ).click(function() {
+	$( '#body-corporate-check .footer' ).toggle( this.checked );
+});
+$( '#body-corporate-check .footer' ).hide();
+<{{!}}/script>
+{{/if}}
+{{#if story.with_a_neighbour_next_door }}
+<form id="body-corporate-check">
+	<ol class="questions">
+		<li class="select">
+			<ul class="choices">
+				<li>
+					<input type="checkbox" id="body-corporate-toggle" name="with" value="the body corporate" />
+					<label for="body-corporate-toggle">I live in a body corporate<br />
+					<small>(i.e. you share common property with other owners and occupiers)</small></label>
+				</li>
+			</ul>
+		</li>
+		<li class="footer">
+			<p>Formal resolution of many disputes between neighbours in a body corporate can only be dealt with through the <a href="http://www.qld.gov.au/law/housing-and-neighbours/body-corporate/body-corporate-disputes/">Office of the Commissioner for Body Corporate and Community Management</a>.</p>
+			<ul class="actions">
+				<li><strong><input type="submit" value="Find options for neighbours in a body corporate" /></strong></li>
+			</ul>
+			<input type="hidden" name="have" value="{{ story.have }}" />
+			<input type="hidden" name="about" value="{{ story.about }}" />
+		</li>
+	</ol>
+</form>
+
+<script>
+$( '#body-corporate-toggle' ).click(function() {
+	$( '#body-corporate-check .footer' ).toggle( this.checked );
+});
+$( '#body-corporate-check .footer' ).hide();
+<{{!}}/script>
+{{/if}}
+{{#if story.with_a_neighbour_in_my_street }}
+<form id="body-corporate-check">
+	<ol class="questions">
+		<li class="select">
+			<ul class="choices">
+				<li>
+					<input type="checkbox" id="body-corporate-toggle" name="with" value="the body corporate" />
+					<label for="body-corporate-toggle">I live in a body corporate<br />
+					<small>(i.e. you share common property with other owners and occupiers)</small></label>
+				</li>
+			</ul>
+		</li>
+		<li class="footer">
+			<p>Formal resolution of many disputes between neighbours in a body corporate can only be dealt with through the <a href="http://www.qld.gov.au/law/housing-and-neighbours/body-corporate/body-corporate-disputes/">Office of the Commissioner for Body Corporate and Community Management</a>.</p>
+			<ul class="actions">
+				<li><strong><input type="submit" value="Find options for neighbours in a body corporate" /></strong></li>
+			</ul>
+			<input type="hidden" name="have" value="{{ story.have }}" />
+			<input type="hidden" name="about" value="{{ story.about }}" />
+		</li>
+	</ol>
+</form>
+
+<script>
+$( '#body-corporate-toggle' ).click(function() {
+	$( '#body-corporate-check .footer' ).toggle( this.checked );
+});
+$( '#body-corporate-check .footer' ).hide();
+<{{!}}/script>
+{{/if}}
 
 {{#if results.self}}<div id="self-resolution" class="section self">
 	<h2>{{ results.self.length }} {{ pluralize results.self.length 'resource' 'resources' }} for resolving the {{ story.have }} yourself</h2>
@@ -400,6 +523,8 @@ $( '#body-corporate-check .footer' ).hide();
 	<li><strong><a class="button" href="./">Ask another question</a></strong></li>
 </ul>
 </script>
+
+
 <script id="error-template" type="text/x-handlebars-template">
 <div class="status fail">
 	<h2>An internal error has prevented the requested resource from being displayed</h2>
