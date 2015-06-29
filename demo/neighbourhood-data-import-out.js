@@ -23,6 +23,18 @@ getAlternativeDisputeResolutionData([{
 	"format": "application/pdf",
 	"jurisdiction": "Queensland"
 }, {
+	"URL": "http://www.hpw.qld.gov.au/SiteCollectionDocuments/GuidelinesForPoolOwnersAndPropertyAgents.pdf",
+	"disputeType": "Concern;Question;Problem;Disagreement;Issue;Dispute;",
+	"party": "a neighbour;a neighbour next door;someone in my neighbourhood;a neighbour next door;a neighbour in my street;a neighbour in my building;an adjoining landowners;another unit owner/lot owner;a neighbour in my body corporate;",
+	"disputeSubject": "Pools;",
+	"resolution": "Self Resolution;Formal Resolution;",
+	"documentType": "guidelines",
+	"Comments": "18/6/15 - LS - Suggest this site moves onto the front page of pool results",
+	"Description": "Guideline for pool owners and property agents on pool owner responsibilities.",
+	"Title": "Guidelines for pool owners and property agents",
+	"format": "application/pdf",
+	"jurisdiction": "Queensland"
+}, {
 	"URL": "http://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/avoiding-fence-tree-and-building-disputes/your-responsibility-as-a-fence-owner/",
 	"disputeType": "Question;Issue;Disagreement;Problem;Conflict;Concern;",
 	"party": "a neighbour;a neighbour next door;",
@@ -439,7 +451,7 @@ getAlternativeDisputeResolutionData([{
 	"URL": "http://www.dlg.qld.gov.au/local-government/laws/local-laws-database.html",
 	"disputeType": "Question;",
 	"party": "a neighbour;",
-	"disputeSubject": "Noise;Dogs and other pets;Overgrown gardens;",
+	"disputeSubject": "Noise;Dogs and other pets;",
 	"resolution": "Self Resolution;",
 	"documentType": "legislation",
 	"Comments": "Local laws database - LS 18/6/15 - there was nothing immediately apparent at this site on overgrown gardens and it doesn't come up as a link for overgrown gardens on the tool",
@@ -1169,9 +1181,9 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "South Burnett Regional Council Responsible Pet Ownership - information under 'Barking Dogs'",
-	"Title": "",
+	"Title": "Responsible Pet Ownership - South Burnett Regional Council",
 	"Description": null,
-	"Publisher": null,
+	"Publisher": "South Burnett Regional Council",
 	"format": "text/html",
 	"jurisdiction": "South Burnett Regional Council"
 }, {
@@ -1182,9 +1194,9 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "procedure",
 	"Comments": "South Burnett Regional Council Request for Service- Barking dogs is a request for service NOT a complaint",
-	"Title": "",
+	"Title": "Contact Us - South Burnett Regional Council",
 	"Description": null,
-	"Publisher": null,
+	"Publisher": "South Burnett Regional Council",
 	"format": "text/html",
 	"jurisdiction": "South Burnett Regional Council"
 }, {
@@ -1319,9 +1331,9 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Self Resolution;",
 	"documentType": "fact sheet",
 	"Comments": "Hinchinbrook Shire Council Barking Dogs",
-	"Title": "",
+	"Title": "Barking Dogs - Hinchinbrook Shire Council",
 	"Description": null,
-	"Publisher": null,
+	"Publisher": "Hinchinbrook Shire Council",
 	"format": "text/html",
 	"jurisdiction": "Hinchinbrook Shire Council"
 }, {
@@ -1551,9 +1563,9 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "form",
 	"Comments": "Flinders Shire Council - Online complaints form about barking dogs",
-	"Title": "",
+	"Title": "Request for Service - Flinders Shire Council",
 	"Description": null,
-	"Publisher": null,
+	"Publisher": "Flinders Shire Council",
 	"format": "text/html",
 	"jurisdiction": "Flinders Shire Council"
 }, {
@@ -1642,7 +1654,7 @@ getAlternativeDisputeResolutionData([{
 	"resolution": "Formal Resolution;",
 	"documentType": "procedure",
 	"Comments": "Diamantina Shire Council - Information about dog registration and complaints process for barking dogs",
-	"Title": "",
+	"Title": "Dog Registration - Diamantina Shire Council",
 	"Description": null,
 	"Publisher": null,
 	"format": "text/html",
@@ -1753,7 +1765,7 @@ getAlternativeDisputeResolutionData([{
 	"URL": "http://www.qld.gov.au/law/housing-and-neighbours/body-corporate/body-corporate-disputes/types-of-dispute-resolution/self-resolution-for-disputes/",
 	"disputeType": "Concern;Question;",
 	"party": "a neighbour in my building;another unit owner/lot owner;a neighbour in my body corporate;the body corporate;",
-	"disputeSubject": "Noise;Behaviours;Trees;Smells;Fences;Abuse;Dogs and other pets;Threats;Children;Drainage;Pools;Renovations;Retaining walls;Parking;Overgrown gardens;Objects;Rubbish bins;Easements;Lighting;By-law breaches (body corporate);Cameras;Common property (body corporate);Security;Harassment;Wildlife;",
+	"disputeSubject": "Noise;Behaviours;Trees;Smells;Fences;Abuse;Dogs and other pets;Threats;Children;Drainage;Pools;Renovations;Retaining walls;Parking;Objects;Rubbish bins;Easements;Lighting;By-law breaches (body corporate);Cameras;Common property (body corporate);Harassment;Wildlife;",
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Self resolution for body corporate disputes between neighbours, which could cover all of the dispute categories. * Most important link for self resolution in bodies coprorate",
@@ -1766,7 +1778,7 @@ getAlternativeDisputeResolutionData([{
 	"URL": "http://www.qld.gov.au/law/housing-and-neighbours/body-corporate/body-corporate-disputes/types-of-dispute-resolution/conciliation-for-body-corporate-disputes/",
 	"disputeType": "Problem;Issue;",
 	"party": "a neighbour in my building;another unit owner/lot owner;a neighbour in my body corporate;the body corporate;",
-	"disputeSubject": "Noise;Behaviours;Trees;Smells;Fences;Abuse;Dogs and other pets;Threats;Children;Drainage;Pools;Renovations;Retaining walls;Parking;Overgrown gardens;Objects;Rubbish bins;Easements;Lighting;By-law breaches (body corporate);Cameras;Common property (body corporate);Security;Harassment;Wildlife;",
+	"disputeSubject": "Noise;Behaviours;Trees;Smells;Fences;Abuse;Dogs and other pets;Threats;Children;Drainage;Pools;Renovations;Retaining walls;Parking;Objects;Rubbish bins;Easements;Lighting;By-law breaches (body corporate);Cameras;Common property (body corporate);Harassment;Wildlife;",
 	"resolution": "Assisted Resolution;",
 	"documentType": "procedure",
 	"Comments": "Conciliation for body corporate disputes between neighbours, which could cover all of the dispute categories * Most important link for assisted resolution in bodies coprorate",
@@ -1779,7 +1791,7 @@ getAlternativeDisputeResolutionData([{
 	"URL": "http://www.qld.gov.au/law/housing-and-neighbours/body-corporate/body-corporate-disputes/types-of-dispute-resolution/adjudication-for-body-corporate-disputes/",
 	"disputeType": "Disagreement;",
 	"party": "a neighbour in my building;another unit owner/lot owner;a neighbour in my body corporate;the body corporate;",
-	"disputeSubject": "Noise;Behaviours;Trees;Smells;Fences;Abuse;Dogs and other pets;Threats;Children;Drainage;Pools;Renovations;Retaining walls;Parking;Overgrown gardens;Objects;Rubbish bins;Easements;Lighting;By-law breaches (body corporate);Cameras;Common property (body corporate);Security;Harassment;Wildlife;",
+	"disputeSubject": "Noise;Behaviours;Trees;Smells;Fences;Abuse;Dogs and other pets;Threats;Children;Drainage;Pools;Renovations;Retaining walls;Parking;Objects;Rubbish bins;Easements;Lighting;By-law breaches (body corporate);Cameras;Common property (body corporate);Harassment;Wildlife;",
 	"resolution": "Formal Resolution;",
 	"documentType": "procedure",
 	"Comments": "Adjudication body corporate disputes between neighbours, which could cover all of the dispute categories. * Most important link for formal resolution in bodies coprorate",
@@ -1792,7 +1804,7 @@ getAlternativeDisputeResolutionData([{
 	"URL": "https://www.dnrm.qld.gov.au/our-department/contact-us/titles-registry-contacts",
 	"disputeType": "Question;",
 	"party": "a neighbour;someone in my neighbourhood;a neighbour next door;a neighbour in my street;",
-	"disputeSubject": "Noise;Trees;Fences;Dogs and other pets;Children;Pools;Retaining walls;Overgrown gardens;Rubbish bins;Lighting;Cameras;Security;Behaviours;Smells;Abuse;Threats;Drainage;Renovations;Parking;Objects;Easements;Access;By-law breaches (body corporate);Common property (body corporate);Harassment;Wildlife;",
+	"disputeSubject": "Noise;Trees;Fences;Dogs and other pets;Children;Pools;Retaining walls;Rubbish bins;Lighting;Cameras;Behaviours;Smells;Abuse;Threats;Drainage;Renovations;Parking;Objects;Easements;Access;By-law breaches (body corporate);Common property (body corporate);Harassment;Wildlife;",
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Titles registry will be able to assist with questions like - \"the property next door is rented. Who is the owner?\"",
@@ -1841,19 +1853,6 @@ getAlternativeDisputeResolutionData([{
 	"format": "text/html",
 	"jurisdiction": "Queensland"
 }, {
-	"URL": "http://www.qld.gov.au/law/housing-and-neighbours/body-corporate/",
-	"disputeType": "Concern;Question;Problem;",
-	"party": "a neighbour;someone in my neighbourhood;a neighbour next door;a neighbour in my street;",
-	"disputeSubject": "Noise;Behaviours;Trees;Smells;Fences;Abuse;Dogs and other pets;Threats;Children;Drainage;Pools;Renovations;Retaining walls;Parking;Overgrown gardens;Objects;Rubbish bins;Easements;Lighting;By-law breaches (body corporate);Cameras;Common property (body corporate);Security;Harassment;Wildlife;",
-	"resolution": "Self Resolution;",
-	"documentType": "guidelines",
-	"Comments": "General information on body corporates. *Most important link for general information on bodies corporate",
-	"Title": "Body corporate",
-	"Description": "Body corporate law in Queensland, including the main legislation, covenants, bylaws, and recent changes.",
-	"Publisher": null,
-	"format": "text/html",
-	"jurisdiction": "Queensland"
-}, {
 	"URL": "https://www.qbcc.qld.gov.au/home-building-owners/pool-safety/using-dividing-fences-pool-barrier",
 	"disputeType": "Concern;Question;Problem;",
 	"party": "a neighbour;a neighbour next door;someone in my neighbourhood;a neighbour next door;a neighbour in my street;a neighbour in my building;an adjoining landowners;another unit owner/lot owner;a neighbour in my body corporate;",
@@ -1867,27 +1866,15 @@ getAlternativeDisputeResolutionData([{
 	"format": "text/html",
 	"jurisdiction": "Queensland"
 }, {
-	"URL": "http://www.hpw.qld.gov.au/SiteCollectionDocuments/GuidelinesForPoolOwnersAndPropertyAgents.pdf",
-	"disputeType": "Concern;Question;Problem;Disagreement;Issue;Dispute;",
-	"party": "a neighbour;a neighbour next door;someone in my neighbourhood;a neighbour next door;a neighbour in my street;a neighbour in my building;an adjoining landowners;another unit owner/lot owner;a neighbour in my body corporate;",
-	"disputeSubject": "Pools;",
-	"resolution": "Self Resolution;Formal Resolution;",
-	"documentType": "guidelines",
-	"Comments": "18/6/15 - LS - Suggest this site moves onto the front page of pool results",
-	"Description": "Guideline for pool owners and property agents on pool owner responsibilities.",
-	"Title": "GuidelinesForPoolOwnersAndPropertyAgents",
-	"format": "application/pdf",
-	"jurisdiction": "Queensland"
-}, {
-	"URL": "https://www.smarteda.qld.gov.au/pools/properties/propertySearch.action;jsessionid=9CD93A5835C09059BFC9500E781EA223",
+	"URL": "https://www.smarteda.qld.gov.au/pools/properties/propertySearch.action",
 	"disputeType": "Concern;Question;Problem;",
 	"party": "a neighbour;a neighbour next door;someone in my neighbourhood;a neighbour next door;a neighbour in my street;a neighbour in my building;an adjoining landowners;another unit owner/lot owner;a neighbour in my body corporate;",
 	"disputeSubject": "Pools;",
 	"resolution": "Self Resolution;",
 	"documentType": "procedure",
 	"Comments": "Pool register search - 18/6/15 - LS - ok",
-	"Description": null,
-	"Title": "",
+	"Description": "Find registered pools in Queensland by address, lot on plan or on a map.",
+	"Title": "Pool register search",
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
