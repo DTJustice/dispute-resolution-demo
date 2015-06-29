@@ -96,6 +96,8 @@
 		.trigger( 'x-height-change' );
 	}
 
+	// initial UI
+	renderInPlace( 'loading', {} );
 
 	// build the app model from the data
 	function constructModel( data ) {
@@ -318,7 +320,6 @@
 		.done( loadedData )
 		.error( handleDataError );
 	}
-
 	init();
 
 

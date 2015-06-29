@@ -75,6 +75,7 @@ Some minor sections cannot be customised without updating the script.
    Templates must use the ID values specified in order for the script to locate them.
 
    ```html
+   <script id="loading-template" type="text/x-handlebars-template"><!--#include virtual="template/loading.html"--></script>
    <script id="form-template" type="text/x-handlebars-template"><!--#include virtual="template/form.html"--></script>
    <script id="results-template" type="text/x-handlebars-template"><!--#include virtual="template/results.html"--></script>
    <script id="no-results-template" type="text/x-handlebars-template"><!--#include virtual="template/no-results.html"--></script>
@@ -203,6 +204,13 @@ Uses the `results` viewmodel described above (`story` property is not provided).
 Sample template: [aside-legislation.html](dist/template/aside-legislation.html)
 
 ![Diagram of legislation aside HTML source](/docs/html-asides.png)
+
+#### Loading
+
+Will be rendered while data is being fetched, before the form, results or error template kicks in.
+Will be processed by handlebars with an empty viewmodel object `{}`. it is rendered in place.
+
+Sample template: [loading.html](dist/template/loading.html)
 
 #### No results
 
