@@ -44,7 +44,7 @@ angular.module( 'disputeResolutionCSV', [ 'ngSanitize', 'ngCsv' ])
 	$scope.csvDataConsolidated = $scope.results.map(function( item ) {
 		var withValues = item.party;
 
-		withValues = withValues.replace( /(^|;)\s*(a neighbour|someone in my neighbourhood|a neighbour next door|a neighbour in my street)\s*(;|$)/, '$1a neighbour;someone in my neighbourhood;a neighbour next door;a neighbour in my street$3' );
+		withValues = withValues.replace( /(^|;)\s*(a neighbour|an adjoining landowners|someone in my neighbourhood|a neighbour next door|a neighbour in my street)\s*(;|$)/, '$1a neighbour;someone in my neighbourhood;a neighbour next door;a neighbour in my street$3' );
 		withValues = withValues.replace( /(^|;)\s*(the body corporate|another unit owner\/lot owner|a neighbour in my body corporate|a neighbour in my building)\s*(;|$)/, '$1the body corporate;another unit owner/lot owner;a neighbour in my body corporate;a neighbour in my building$3' );
 		// unique values
 		withValues = withValues.split( /\s*;\s*/ ).filter(function( value, index, values ) {

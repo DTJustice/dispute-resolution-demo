@@ -84,7 +84,7 @@ function clean() {
 
 		// missing subject
 		if ( /^;*$/.test( record.disputeSubject )) {
-			record.disputeSubject = 'Noise;Trees;Fences;Dogs and other pets;Children;Pools;Retaining walls;Overgrown gardens;Rubbish bins;Privacy;Lighting;Cameras;Security;Behaviours;Smells;Abuse;Threats;Drainage;Renovations;Parking;Objects;Easements;Access;By-law breaches (body corporate);Common property (body corporate);Harassment;Wildlife;'
+			record.disputeSubject = 'Noise;Trees;Fences;Dogs and other pets;Children;Pools;Retaining walls;Overgrown gardens;Rubbish bins;Lighting;Cameras;Security;Behaviours;Smells;Abuse;Threats;Drainage;Renovations;Parking;Objects;Easements;Access;By-law breaches (body corporate);Common property (body corporate);Harassment;Wildlife;'
 		} else {
 			record.disputeSubject = record.disputeSubject.replace( /Dogs;/, 'Dogs and other pets;' );
 			record.disputeSubject = record.disputeSubject.replace( /Dogs$/, 'Dogs and other pets' );

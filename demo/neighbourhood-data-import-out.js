@@ -2,12 +2,24 @@ getAlternativeDisputeResolutionData([{
 	"URL": "http://www.justice.qld.gov.au/__data/assets/pdf_file/0007/180484/form-1-ndr.pdf",
 	"disputeType": "Question;Concern;Problem;Issue;",
 	"party": "a neighbour next door;",
-	"disputeSubject": "Fences;http://www.justice.qld.gov.au/__data/assets/pdf_file/0006/180483/form-2-ndr.pdf ;Question;Concern;a neighbour next door;",
+	"disputeSubject": "Fences;",
 	"resolution": "Self Resolution;",
 	"documentType": "form",
 	"Comments": "Use this notice to ask your neighbour to contribute to costs of urgent dividing fence work.",
 	"Description": "Problem",
-	"Title": "form 1 ndr",
+	"Title": "NOTICE TO CONTRIBUTE FOR URGENT FENCING WORK",
+	"format": "application/pdf",
+	"jurisdiction": "Queensland"
+}, {
+	"URL": "http://www.justice.qld.gov.au/__data/assets/pdf_file/0006/180483/form-2-ndr.pdf",
+	"disputeType": "Question;Concern;Problem;Disagreement;Issue;",
+	"party": "a neighbour next door;",
+	"disputeSubject": "Fences;",
+	"resolution": "Self Resolution;",
+	"documentType": "form",
+	"Comments": "Approved notice - fencing. Use this notice to ask your neighbour to contribute to costs of dividing fences.",
+	"Description": "Problem",
+	"Title": "NOTICE TO CONTRIBUTE FOR FENCING WORK",
 	"format": "application/pdf",
 	"jurisdiction": "Queensland"
 }, {
@@ -40,7 +52,7 @@ getAlternativeDisputeResolutionData([{
 	"URL": "http://www.qld.gov.au/law/housing-and-neighbours/disputes-about-fences-trees-and-buildings/resolving-tree-and-fence-disputes/step-by-step-guide-to-resolving-tree-and-fence-disputes/",
 	"disputeType": "Concern;Problem;Disagreement;Complaint;Conflict;Dispute;",
 	"party": "a neighbour;a neighbour next door;",
-	"disputeSubject": "Fences;Advice on how to solve your tree or fence dispute.;",
+	"disputeSubject": "Fences;",
 	"resolution": "Self Resolution;Assisted Resolution;Formal Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Step by step guide to resolving tree and fence disputes",
@@ -303,7 +315,7 @@ getAlternativeDisputeResolutionData([{
 	"Comments": "Gives neighbour an avenue to complain/report parking issues. 18/6/15 - LS - if we're keeping council information this looks okay",
 	"Description": "Parking rules and regulations are used throughout Brisbane to maintain the safety of all road users and pedestrians and also to ensure that street parking is available for all to use. An illegally or dangerously parked vehicle, is any vehicle parked outside of Brisbane City Council's parking rules and regulations or any vehicle that maybe creating a public safety problem.",
 	"Title": "Illegal and dangerous parking | Brisbane City Council",
-	"Publisher": null,
+	"Publisher": "Brisbane City Council",
 	"format": "text/html",
 	"jurisdiction": "Brisbane City Council"
 }, {
@@ -329,7 +341,7 @@ getAlternativeDisputeResolutionData([{
 	"Comments": "Could cover any dispute with neighbours. Includes a link to DRB.",
 	"Description": "This section has information about common neighbourhood complaints, including actions you can take as a good neighbour to avoid disturbing surrounding residents.",
 	"Title": "Neighbourhood complaints | Brisbane City Council",
-	"Publisher": null,
+	"Publisher": "Brisbane City Council",
 	"format": "text/html",
 	"jurisdiction": "Brisbane City Council"
 }, {
@@ -342,7 +354,7 @@ getAlternativeDisputeResolutionData([{
 	"Comments": "",
 	"Description": "Your home has wheelie bins for separating general rubbish from green waste and recyclables. Check your bin collection day with the bin collection calendar. To make sure your bin is collected:",
 	"Title": "Bin collections | Brisbane City Council",
-	"Publisher": null,
+	"Publisher": "Brisbane City Council",
 	"format": "text/html",
 	"jurisdiction": "Brisbane City Council"
 }, {
@@ -355,7 +367,7 @@ getAlternativeDisputeResolutionData([{
 	"Comments": "",
 	"Description": "Brisbane residential areas have parking rules in place to ensure parked or stopped vehicles do not affect local access or traffic flow. Parking illegally can be frustrating for neighbours and the community. Residents are often prevented from accessing their home or local area. If vehicles are illegally parked, Council can help. There are two courses of action you can take to deal with parking problems in your area.",
 	"Title": "Residential parking | Brisbane City Council",
-	"Publisher": null,
+	"Publisher": "Brisbane City Council",
 	"format": "text/html",
 	"jurisdiction": "Brisbane City Council"
 }, {
@@ -539,18 +551,6 @@ getAlternativeDisputeResolutionData([{
 	"Title": "Animals - controlling, treating and owning",
 	"Publisher": null,
 	"format": "text/html",
-	"jurisdiction": "Queensland"
-}, {
-	"URL": "http://www.justice.qld.gov.au/__data/assets/pdf_file/0010/134893/resolving-neighbourhood-disputes-trees.pdf",
-	"disputeType": "Question;",
-	"party": "a neighbour;a neighbour next door;",
-	"disputeSubject": "Trees;",
-	"resolution": "Assisted Resolution;",
-	"documentType": "fact sheet",
-	"Comments": "Resolve a neighbourhood dispute about trees - brochure",
-	"Description": "About the law and how to resolve tree problems.",
-	"Title": "resolving neighbourhood disputes trees",
-	"format": "application/pdf",
 	"jurisdiction": "Queensland"
 }, {
 	"URL": "http://www.qldneighbourhoods.com/animals.html",
@@ -832,19 +832,6 @@ getAlternativeDisputeResolutionData([{
 	"format": "text/html",
 	"jurisdiction": "Queensland"
 }, {
-	"URL": "http://www.justice.qld.gov.au/fair-and-safe-work/industrial-relations/codes-of-practice-and-guidelines/queensland-code-of-practice-for-the-building-and-construction-industry",
-	"disputeType": "Concern;Dispute;Conflict;Question;",
-	"party": "someone in my neighbourhood;a neighbour in my street;a neighbour next door;a neighbour in my building;a neighbour;",
-	"disputeSubject": "Renovations;",
-	"resolution": "Self Resolution;Formal Resolution;",
-	"documentType": "guidelines",
-	"Comments": "Information on the code of practice for the building and construction industry",
-	"Description": null,
-	"Title": "Queensland Code of Practice for the Building and Construction Industry - Department of Justice and Attorney-General",
-	"Publisher": "Queensland Department of Justice and Attorney-General",
-	"format": "text/html",
-	"jurisdiction": "Queensland"
-}, {
 	"URL": "http://www.qldneighbourhoods.com/development-permits-and-approvals.html",
 	"disputeType": "Question;Concern;Conflict;Complaint;Issue;",
 	"party": "someone in my neighbourhood;a neighbour;a neighbour next door;a neighbour in my street;a neighbour in my building;",
@@ -884,7 +871,7 @@ getAlternativeDisputeResolutionData([{
 	"format": "text/html",
 	"jurisdiction": "Queensland"
 }, {
-	"URL": "http://www.goldcoast.qld.gov.au/community/animal-complaints-18356.html",
+	"URL": "http://www.goldcoast.qld.gov.au/community/wildlife-18266.html",
 	"disputeType": "Concern;Complaint;Question;Issue;",
 	"party": "a neighbour;someone in my neighbourhood;a neighbour next door;a neighbour in my street;a neighbour in my building;",
 	"disputeSubject": "Wildlife;",
@@ -893,7 +880,7 @@ getAlternativeDisputeResolutionData([{
 	"Comments": "LS - Suggest you replace it with the next page entitled WILDLIFE -",
 	"Title": "City of Gold Coast | Animal complaints",
 	"Description": "Information on how to report an animal complaint.",
-	"Publisher": "corporateName=City of Gold Coast",
+	"Publisher": "City of Gold Coast",
 	"format": "text/html",
 	"jurisdiction": "Gold Coast City Council"
 }, {
@@ -932,7 +919,7 @@ getAlternativeDisputeResolutionData([{
 	"Comments": "information on Dept of Environment website outlining legal responsibilities in relation to noise, light and odour issues",
 	"Description": "Any environmental nuisance issues arising out of Coal Seam Gas operations, such as noise, light and odour, are covered by environmental authority conditions.",
 	"Title": "Noise, light and odour issues (Department of Environment and Heritage Protection)",
-	"Publisher": "jurisdiction=Queensland; sector=government; corporateName=Department of Environment and Heritage Protection",
+	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
 }, {
@@ -958,7 +945,7 @@ getAlternativeDisputeResolutionData([{
 	"Comments": "Gold Coast City Council Barking Dog Page - Dog owner",
 	"Title": "City of Gold Coast | Barking dogs",
 	"Description": "Nearly all dogs bark - it is a natural response, but excessive barking can be annoying for neighbours.",
-	"Publisher": "corporateName=City of Gold Coast",
+	"Publisher": "City of Gold Coast",
 	"format": "text/html",
 	"jurisdiction": "Gold Coast City Council"
 }, {
@@ -971,7 +958,7 @@ getAlternativeDisputeResolutionData([{
 	"Comments": "Gold Coast City Council Barking Dog Page - Make a complaint",
 	"Title": "City of Gold Coast | Report a problem - Animals",
 	"Description": "Find out how to report a found animal or a problem with barking or dangerous dogs, excess animals on a property, plus how to find your lost pet, or have a dead animal removed from City land.",
-	"Publisher": "corporateName=City of Gold Coast",
+	"Publisher": "City of Gold Coast",
 	"format": "text/html",
 	"jurisdiction": "Gold Coast City Council"
 }, {
@@ -1805,7 +1792,7 @@ getAlternativeDisputeResolutionData([{
 	"URL": "https://www.dnrm.qld.gov.au/our-department/contact-us/titles-registry-contacts",
 	"disputeType": "Question;",
 	"party": "a neighbour;someone in my neighbourhood;a neighbour next door;a neighbour in my street;",
-	"disputeSubject": "Noise;Trees;Fences;Dogs and other pets;Children;Pools;Retaining walls;Overgrown gardens;Rubbish bins;Privacy;Lighting;Cameras;Security;Behaviours;Smells;Abuse;Threats;Drainage;Renovations;Parking;Objects;Easements;Access;By-law breaches (body corporate);Common property (body corporate);Harassment;Wildlife;",
+	"disputeSubject": "Noise;Trees;Fences;Dogs and other pets;Children;Pools;Retaining walls;Overgrown gardens;Rubbish bins;Lighting;Cameras;Security;Behaviours;Smells;Abuse;Threats;Drainage;Renovations;Parking;Objects;Easements;Access;By-law breaches (body corporate);Common property (body corporate);Harassment;Wildlife;",
 	"resolution": "Self Resolution;",
 	"documentType": "guidelines",
 	"Comments": "Titles registry will be able to assist with questions like - \"the property next door is rented. Who is the owner?\"",
@@ -1930,6 +1917,19 @@ getAlternativeDisputeResolutionData([{
 	"Publisher": null,
 	"format": "text/html",
 	"jurisdiction": "Queensland"
+}, {
+	"URL": "http://www.brisbane.qld.gov.au/laws-permits/laws-permits-residents/animals-pets/cats-dogs/barking-dogs",
+	"disputeType": "Concern;Problem;Complaint;Issue;",
+	"party": "a neighbour;someone in my neighbourhood;",
+	"disputeSubject": "Dogs and other pets;Noise;",
+	"resolution": "Self Resolution;",
+	"documentType": "guidelines",
+	"Comments": "Brisbane City Council Barking Dog Information",
+	"Description": "Excessive dog barking can be annoying for neighbours and the community. In Brisbane, a dog is considered a nuisance:",
+	"Title": "Barking dogs | Brisbane City Council",
+	"Publisher": "Brisbane City Council",
+	"format": "text/html",
+	"jurisdiction": "Brisbane City Council"
 }, {
 	"URL": "https://www.qld.gov.au/law/your-rights/legal-and-property-rights/laws-for-building-houses-and-pools/pool-fencing-and-safety-laws/",
 	"disputeType": "Concern;Question;Problem;Complaint;Dispute;Issue;",
